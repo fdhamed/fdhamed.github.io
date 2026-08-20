@@ -11,7 +11,7 @@
 <title>فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="فیزیک دهم H Quantum؛ مسیر آموزشی رشته ریاضی و رشته تجربی با پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
+      content="فیزیک دهم H Quantum؛ انتخاب رشته ریاضی یا تجربی و دسترسی به محتوای آموزشی فیزیک.">
 
 <style>
 
@@ -96,7 +96,7 @@ header {
 
     display: flex;
 
-    gap: 22px;
+    gap: 20px;
 
     font-size: 14px;
 
@@ -117,7 +117,7 @@ header {
 
     margin: auto;
 
-    padding: 85px 20px 65px;
+    padding: 90px 20px 70px;
 
     text-align: center;
 }
@@ -143,11 +143,11 @@ header {
 .hero h1 {
 
     font-size:
-    clamp(42px, 10vw, 76px);
+    clamp(45px, 10vw, 80px);
 
     line-height: 1.2;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -157,7 +157,7 @@ header {
 
 .hero p {
 
-    max-width: 760px;
+    max-width: 750px;
 
     margin: auto;
 
@@ -167,7 +167,7 @@ header {
 }
 
 
-/* GENERAL */
+/* CHOICE */
 
 section {
 
@@ -175,14 +175,14 @@ section {
 
     margin: auto;
 
-    padding: 65px 20px;
+    padding: 70px 20px;
 }
 
 .section-title {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .section-title h2 {
@@ -198,9 +198,9 @@ section {
 }
 
 
-/* MAJOR CARDS */
+/* PATHS */
 
-.majors {
+.paths {
 
     display: grid;
 
@@ -208,11 +208,15 @@ section {
     repeat(2, 1fr);
 
     gap: 25px;
+
+    max-width: 850px;
+
+    margin: auto;
 }
 
-.major-card {
+.path-card {
 
-    padding: 38px 30px;
+    padding: 40px 30px;
 
     background: #0c1b2c;
 
@@ -228,39 +232,30 @@ section {
     border-color 0.3s;
 }
 
-.major-card:hover {
+.path-card:hover {
 
     transform:
-    translateY(-7px);
+    translateY(-8px);
 
     border-color:
-    rgba(99,216,255,0.5);
+    rgba(99,216,255,0.55);
 }
 
-.major-icon {
+.path-icon {
 
-    font-size: 52px;
+    font-size: 55px;
 
     margin-bottom: 15px;
 }
 
-.major-card h3 {
+.path-card h3 {
 
-    font-size: 30px;
+    font-size: 28px;
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.major-card .subtitle {
-
-    color: #63d8ff;
-
-    font-size: 15px;
-
-    margin-bottom: 18px;
-}
-
-.major-card p {
+.path-card p {
 
     color: #aebdce;
 
@@ -269,7 +264,7 @@ section {
     margin-bottom: 25px;
 }
 
-.major-button {
+.path-button {
 
     display: inline-block;
 
@@ -277,79 +272,35 @@ section {
 
     border-radius: 10px;
 
-    background: #10243a;
+    background: #63d8ff;
 
-    border:
-    1px solid rgba(255,255,255,0.12);
-
-    color: #63d8ff;
+    color: #06101d;
 
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.major-button:hover {
+.path-button:hover {
 
-    background: #63d8ff;
+    transform:
+    translateY(-3px);
 
-    color: #06101d;
+    box-shadow:
+    0 8px 25px
+    rgba(99,216,255,0.2);
 }
 
 
-/* PATH */
+/* INFO */
 
-.path {
+.info {
 
-    margin-top: 25px;
+    max-width: 850px;
 
-    display: grid;
+    margin: auto;
 
-    grid-template-columns:
-    repeat(4, 1fr);
-
-    gap: 15px;
-}
-
-.path-item {
-
-    padding: 20px 15px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 15px;
-
-    text-align: center;
-}
-
-.path-item .icon {
-
-    font-size: 28px;
-
-    margin-bottom: 8px;
-}
-
-.path-item h3 {
-
-    font-size: 17px;
-
-    margin-bottom: 5px;
-}
-
-.path-item p {
-
-    color: #91a2b5;
-
-    font-size: 13px;
-}
-
-
-/* NOTE */
-
-.note {
+    padding: 35px 30px;
 
     background: #0a1828;
 
@@ -358,25 +309,19 @@ section {
 
     border-radius: 20px;
 
-    padding: 35px 25px;
-
     text-align: center;
 }
 
-.note h2 {
+.info h2 {
 
-    font-size: 27px;
+    font-size: 26px;
 
     margin-bottom: 15px;
 }
 
-.note p {
+.info p {
 
-    max-width: 780px;
-
-    margin: auto;
-
-    color: #b6c4d3;
+    color: #aebdce;
 
     font-size: 16px;
 }
@@ -388,7 +333,7 @@ section {
 
     text-align: center;
 
-    padding-top: 15px;
+    padding-top: 20px;
 
     padding-bottom: 80px;
 }
@@ -443,7 +388,7 @@ footer strong {
 
 /* MOBILE */
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 
     .nav {
 
@@ -454,7 +399,7 @@ footer strong {
 
     .nav-links {
 
-        gap: 13px;
+        gap: 12px;
 
         font-size: 12px;
 
@@ -473,29 +418,14 @@ footer strong {
         font-size: 16px;
     }
 
-    .majors {
+    .paths {
 
         grid-template-columns: 1fr;
-    }
-
-    .path {
-
-        grid-template-columns:
-        repeat(2, 1fr);
     }
 
     section {
 
         padding: 55px 16px;
-    }
-
-}
-
-@media (max-width: 450px) {
-
-    .path {
-
-        grid-template-columns: 1fr;
     }
 
 }
@@ -536,6 +466,10 @@ H <span>QUANTUM</span>
 🎙️ پادکست
 </a>
 
+<a href="books.html">
+📚 کتاب‌ها
+</a>
+
 <a href="simulations.html">
 🧪 آزمایشگاه
 </a>
@@ -569,41 +503,40 @@ H <span>QUANTUM</span>
 
 <p>
 
-اولین قدم جدی در مسیر یادگیری فیزیک.
-از مشاهده و اندازه‌گیری تا شناخت
-قوانین حاکم بر جهان فیزیکی.
+مسیر یادگیری فیزیک دهم را انتخاب کنید.
+مطالب آموزشی رشته‌های ریاضی و تجربی
+در H Quantum از اینجا آغاز می‌شوند.
 
 </p>
 
 </section>
 
 
-<!-- MAJORS -->
+<!-- CHOICE -->
 
 <section>
 
 <div class="section-title">
 
 <h2>
-مسیر تحصیلی خود را انتخاب کنید
+رشتهٔ تحصیلی خود را انتخاب کنید
 </h2>
 
 <p>
-فیزیک دهم برای دو رشتهٔ ریاضی و تجربی
-در مسیرهای جداگانه ارائه خواهد شد.
+برای ورود به محتوای فیزیک دهم، یکی از مسیرهای زیر را انتخاب کنید.
 </p>
 
 </div>
 
 
-<div class="majors">
+<div class="paths">
 
 
 <!-- MATH -->
 
-<article class="major-card">
+<article class="path-card">
 
-<div class="major-icon">
+<div class="path-icon">
 📐
 </div>
 
@@ -611,23 +544,18 @@ H <span>QUANTUM</span>
 فیزیک دهم ریاضی
 </h3>
 
-<div class="subtitle">
-۵ فصل
-</div>
-
 <p>
 
-مسیر کامل فیزیک دهم برای
-دانش‌آموزان رشتهٔ ریاضی و فیزیک،
-با دسترسی مرحله‌به‌مرحله به فصل‌ها
-و محتوای آموزشی.
+پنج فصل فیزیک دهم رشته ریاضی؛
+از فیزیک و اندازه‌گیری تا
+ترمودینامیک.
 
 </p>
 
-<a href="#math"
-   class="major-button">
+<a href="physics-10-math.html"
+   class="path-button">
 
-ورود به مسیر ریاضی ←
+ورود به فیزیک دهم ریاضی ←
 
 </a>
 
@@ -636,32 +564,28 @@ H <span>QUANTUM</span>
 
 <!-- EXPERIMENTAL -->
 
-<article class="major-card">
+<article class="path-card">
 
-<div class="major-icon">
-🔬
+<div class="path-icon">
+🧬
 </div>
 
 <h3>
 فیزیک دهم تجربی
 </h3>
 
-<div class="subtitle">
-۴ فصل
-</div>
-
 <p>
 
-مسیر فیزیک دهم برای
-دانش‌آموزان رشتهٔ علوم تجربی،
-با تمرکز بر فهم مفهومی و تجربهٔ فیزیک.
+چهار فصل فیزیک دهم رشته تجربی؛
+از اندازه‌گیری و ویژگی‌های مواد
+تا کار، انرژی و دما و گرما.
 
 </p>
 
-<a href="#experimental"
-   class="major-button">
+<a href="physics-10-experimental.html"
+   class="path-button">
 
-ورود به مسیر تجربی ←
+ورود به فیزیک دهم تجربی ←
 
 </a>
 
@@ -673,139 +597,25 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- LEARNING PATH -->
+<!-- LEARNING MODEL -->
 
 <section>
 
-<div class="section-title">
+<div class="info">
 
 <h2>
-ساختار یادگیری H Quantum
-</h2>
-
-<p>
-هر فصل می‌تواند از چند مسیر مختلف تجربه شود.
-</p>
-
-</div>
-
-
-<div class="path">
-
-
-<article class="path-item">
-
-<div class="icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-یادگیری از مسیر روایت و داستان
-</p>
-
-</article>
-
-
-<article class="path-item">
-
-<div class="icon">
-🎬
-</div>
-
-<h3>
-ویدئو
-</h3>
-
-<p>
-تدریس تصویری و توضیح مفهومی
-</p>
-
-</article>
-
-
-<article class="path-item">
-
-<div class="icon">
-📖
-</div>
-
-<h3>
-متن
-</h3>
-
-<p>
-مطالعهٔ دقیق و مرور مطالب
-</p>
-
-</article>
-
-
-<article class="path-item">
-
-<div class="icon">
-🧪
-</div>
-
-<h3>
-شبیه‌ساز
-</h3>
-
-<p>
-آزمایش و مشاهدهٔ نتیجه
-</p>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- MATH SECTION -->
-
-<section id="math">
-
-<div class="note">
-
-<h2>
-📐 فیزیک دهم رشته ریاضی
+🧠 فیزیک را چندبعدی یاد بگیریم
 </h2>
 
 <p>
 
-در مرحلهٔ بعد، پنج فصل کتاب درسی
-به‌صورت جداگانه در این مسیر قرار خواهند گرفت.
-برای هر فصل نیز می‌توانیم پادکست،
-ویدئو، متن آموزشی و شبیه‌ساز اختصاصی ایجاد کنیم.
+در H Quantum قرار نیست فیزیک فقط
+از روی کتاب خوانده شود.
 
-</p>
-
-</div>
-
-</section>
-
-
-<!-- EXPERIMENTAL SECTION -->
-
-<section id="experimental">
-
-<div class="note">
-
-<h2>
-🔬 فیزیک دهم رشته تجربی
-</h2>
-
-<p>
-
-در مرحلهٔ بعد، چهار فصل کتاب درسی
-به‌صورت جداگانه در این مسیر قرار خواهند گرفت.
-محتوای مشترک میان دو رشته نیز فقط یک‌بار
-تولید و از هر دو مسیر قابل دسترسی خواهد بود.
+در ادامه برای فصل‌های مختلف،
+پادکست‌های آموزشی، ویدئوهای تدریس،
+متن‌های آموزشی و شبیه‌سازهای تعاملی
+در اختیار شما قرار خواهد گرفت.
 
 </p>
 
@@ -853,4 +663,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
