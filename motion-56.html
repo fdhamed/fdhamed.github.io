@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>شبیه‌ساز حرکت | H Quantum</title>
+
+    <meta name="description"
+          content="شبیه‌ساز تعاملی حرکت بر خط راست - اپیزود ۵۶">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            font-family: Tahoma, Arial, sans-serif;
+
+            background: #07111f;
+
+            color: #f4f7fb;
+
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+
+        header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background:
+            rgba(7,17,31,0.95);
+
+            border-bottom:
+            1px solid rgba(255,255,255,0.08);
+
+            backdrop-filter:
+            blur(12px);
+        }
+
+        .nav {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 15px 20px;
+
+            display: flex;
+
+            justify-content:
+            space-between;
+
+            align-items: center;
+        }
+
+        .logo {
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+
+            color: #63d8ff;
+        }
+
+        .back {
+
+            color: #9fb1c4;
+
+            font-size: 14px;
+        }
+
+        .back:hover {
+
+            color: #63d8ff;
+        }
+
+        /* PAGE */
+
+        .container {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 40px 20px 80px;
+        }
+
+        .title {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+        }
+
+        .title .icon {
+
+            font-size: 50px;
+
+            margin-bottom: 10px;
+        }
+
+        .title h1 {
+
+            font-size:
+            clamp(30px, 7vw, 52px);
+
+            margin-bottom: 8px;
+        }
+
+        .title h1 span {
+
+            color: #63d8ff;
+        }
+
+        .title p {
+
+            color: #9fb1c4;
+
+            font-size: 16px;
+        }
+
+        /* SIMULATOR */
+
+        .simulator {
+
+            background: #0c1b2c;
+
+            border:
+            1px solid rgba(255,255,255,0.08);
+
+            border-radius: 22px;
+
+            padding: 25px;
+        }
+
+        /* TRACK */
+
+        .track-container {
+
+            margin: 25px 0;
+
+            padding: 35px 20px;
+
+            background: #081522;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+        }
+
+        .track {
+
+            position: relative;
+
+            height: 100px;
+
+            border-bottom:
+            3px solid #60758a;
+
+            margin: 0 10px;
+        }
+
+        .zero {
+
+            position: absolute;
+
+            bottom: -30px;
+
+            right: 0;
+
+            color: #8191a4;
+
+            font-size: 12px;
+        }
+
+        .end {
+
+            position: absolute;
+
+            bottom: -30px;
+
+            left: 0;
+
+            color: #8191a4;
+
+            font-size: 12px;
+        }
+
+        .object {
+
+            position: absolute;
+
+            bottom: 10px;
+
+            right: 0;
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 50%;
+
+            background: #63d8ff;
+
+            box-shadow:
+            0 0 25px rgba(99,216,255,0.45);
+
+            transition:
+            right 0.03s linear;
+        }
+
+        /* DATA */
+
+        .data {
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin: 35px 0 20px;
+        }
+
+        .data-box {
+
+            background: #10243a;
+
+            border-radius: 14px;
+
+            padding: 18px;
+
+            text-align: center;
+        }
+
+        .data-label {
+
+            display: block;
+
+            color: #8fa1b5;
+
+            font-size: 13px;
+
+            margin-bottom: 5px;
+        }
+
+        .data-value {
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            color: #63d8ff;
+        }
+
+        /* CONTROLS */
+
+        .controls {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin: 25px 0;
+        }
+
+        button {
+
+            border: none;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            padding: 12px 20px;
+
+            border-radius: 10px;
+
+            background: #13283e;
+
+            color: white;
+
+            font-size: 15px;
+
+            transition: 0.2s;
+        }
+
+        button:hover {
+
+            transform:
+            translateY(-2px);
+        }
+
+        .start {
+
+            background: #63d8ff;
+
+            color: #06101d;
+
+            font-weight: bold;
+        }
+
+        /* SPEED */
+
+        .speed-control {
+
+            background: #081522;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            margin-top: 20px;
+        }
+
+        .speed-control label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #aebdce;
+        }
+
+        input[type="range"] {
+
+            width: 100%;
+
+            accent-color: #63d8ff;
+
+        }
+
+        /* EXPLANATION */
+
+        .explanation {
+
+            margin-top: 25px;
+
+            padding: 25px;
+
+            background: #081522;
+
+            border-radius: 16px;
+
+            color: #aebdce;
+
+        }
+
+        .explanation h2 {
+
+            color: white;
+
+            font-size: 21px;
+
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+
+            margin-top: 60px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-top:
+            1px solid rgba(255,255,255,0.08);
+
+            color: #8191a4;
+        }
+
+        footer strong {
+
+            color: #63d8ff;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+
+            .nav {
+
+                flex-direction: column;
+
+                gap: 8px;
+            }
+
+            .data {
+
+                grid-template-columns: 1fr;
+            }
+
+            .simulator {
+
+                padding: 18px;
+            }
+
+            .track-container {
+
+                padding:
+                35px 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <nav class="nav">
+
+        <a href="index.html"
+           class="logo">
+
+            H <span>QUANTUM</span>
+
+        </a>
+
+        <a href="simulations.html"
+           class="back">
+
+            ← آزمایشگاه
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+
+
+    <!-- TITLE -->
+
+    <div class="title">
+
+        <div class="icon">
+            🧪
+        </div>
+
+        <h1>
+            شبیه‌ساز <span>حرکت</span>
+        </h1>
+
+        <p>
+            اپیزود ۵۶ — حرکت بر خط راست
+        </p>
+
+    </div>
+
+
+    <!-- SIMULATOR -->
+
+    <section class="simulator">
+
+
+        <!-- TRACK -->
+
+        <div class="track-container">
+
+            <div class="track">
+
+                <div class="object"
+                     id="object">
+                </div>
+
+                <span class="zero">
+                    x = 0 m
+                </span>
+
+                <span class="end">
+                    x = 100 m
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATA -->
+
+        <div class="data">
+
+            <div class="data-box">
+
+                <span class="data-label">
+                    زمان
+                </span>
+
+                <span class="data-value">
+                    <span id="time">
+                        0.00
+                    </span>
+                    s
+                </span>
+
+            </div>
+
+
+            <div class="data-box">
+
+                <span class="data-label">
+                    مکان
+                </span>
+
+                <span class="data-value">
+
+                    <span id="position">
+                        0.0
+                    </span>
+
+                    m
+
+                </span>
+
+            </div>
+
+
+            <div class="data-box">
+
+                <span class="data-label">
+                    سرعت
+                </span>
+
+                <span class="data-value">
+
+                    <span id="velocity">
+                        10
+                    </span>
+
+                    m/s
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <button
+                class="start"
+                onclick="startSimulation()">
+
+                ▶ شروع
+
+            </button>
+
+            <button
+                onclick="pauseSimulation()">
+
+                ⏸ توقف
+
+            </button>
+
+            <button
+                onclick="resetSimulation()">
+
+                🔄 بازنشانی
+
+            </button>
+
+        </div>
+
+
+        <!-- SPEED -->
+
+        <div class="speed-control">
+
+            <label>
+
+                سرعت اولیه:
+                <strong>
+                    <span id="speedLabel">
+                        10
+                    </span>
+                    m/s
+                </strong>
+
+            </label>
+
+            <input
+                type="range"
+                id="speed"
+                min="1"
+                max="30"
+                value="10"
+                step="1"
+                oninput="changeSpeed()">
+
+        </div>
+
+
+        <!-- EXPLANATION -->
+
+        <div class="explanation">
+
+            <h2>
+                چه چیزی می‌بینیم؟
+            </h2>
+
+            <p>
+
+                جسم از مکان صفر شروع می‌کند.
+                با انتخاب سرعت اولیه، می‌توانی ببینی
+                که جسم در هر لحظه چه مقدار جابه‌جا شده است.
+
+                در این مدل ساده، سرعت ثابت است؛
+                بنابراین با گذشت زمان، مکان جسم
+                به‌طور یکنواخت تغییر می‌کند.
+
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+
+        <strong>H Quantum</strong>
+
+        — Physics • Science • Wonder
+
+    </p>
+
+</footer>
+
+
+<script>
+
+
+    /* =========================
+       VARIABLES
+    ========================= */
+
+    let time = 0;
+
+    let position = 0;
+
+    let velocity = 10;
+
+    let running = false;
+
+    let animation;
+
+
+    const object =
+        document.getElementById("object");
+
+    const timeDisplay =
+        document.getElementById("time");
+
+    const positionDisplay =
+        document.getElementById("position");
+
+    const velocityDisplay =
+        document.getElementById("velocity");
+
+    const speedSlider =
+        document.getElementById("speed");
+
+    const speedLabel =
+        document.getElementById("speedLabel");
+
+
+    /* =========================
+       START
+    ========================= */
+
+    function startSimulation() {
+
+        if (running)
+            return;
+
+        running = true;
+
+        let previous =
+            performance.now();
+
+        function frame(current) {
+
+            if (!running)
+                return;
+
+            const delta =
+                (current - previous) / 1000;
+
+            previous = current;
+
+            time += delta;
+
+            position =
+                velocity * time;
+
+            if (position >= 100) {
+
+                position = 100;
+
+                running = false;
+
+            }
+
+            updateDisplay();
+
+            if (running) {
+
+                animation =
+                    requestAnimationFrame(frame);
+
+            }
+
+        }
+
+        animation =
+            requestAnimationFrame(frame);
+    }
+
+
+    /* =========================
+       PAUSE
+    ========================= */
+
+    function pauseSimulation() {
+
+        running = false;
+
+        cancelAnimationFrame(animation);
+    }
+
+
+    /* =========================
+       RESET
+    ========================= */
+
+    function resetSimulation() {
+
+        running = false;
+
+        cancelAnimationFrame(animation);
+
+        time = 0;
+
+        position = 0;
+
+        updateDisplay();
+    }
+
+
+    /* =========================
+       SPEED
+    ========================= */
+
+    function changeSpeed() {
+
+        velocity =
+            Number(speedSlider.value);
+
+        speedLabel.textContent =
+            velocity;
+
+        velocityDisplay.textContent =
+            velocity;
+    }
+
+
+    /* =========================
+       DISPLAY
+    ========================= */
+
+    function updateDisplay() {
+
+        timeDisplay.textContent =
+            time.toFixed(2);
+
+        positionDisplay.textContent =
+            position.toFixed(1);
+
+        velocityDisplay.textContent =
+            velocity;
+
+        /*
+           تبدیل مکان به درصد مسیر
+        */
+
+        const percentage =
+            position;
+
+        object.style.right =
+            percentage + "%";
+
+    }
+
+
+    /* INITIAL */
+
+    updateDisplay();
+
+
+</script>
+
+
+</body>
+
+  </html>
