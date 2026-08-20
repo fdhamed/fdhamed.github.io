@@ -4,84 +4,553 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>H Quantum | دنیای فیزیک و علم</title>
+    <title>H Quantum | فیزیک را ببین</title>
 
     <meta name="description"
-          content="H Quantum؛ خانه‌ای برای فیزیک، کتاب، پادکست، شبیه‌سازهای تعاملی و داستان علم.">
+          content="H Quantum؛ خانه‌ای برای فیزیک، پادکست، کتاب، شبیه‌سازهای تعاملی و داستان علم.">
 
     <style>
-        body {
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0b1020;
-            color: white;
-            text-align: center;
+            padding: 0;
         }
 
-        header {
-            padding: 80px 20px;
+        html {
+            scroll-behavior: smooth;
         }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 2;
-            color: #cfd5e6;
-        }
-
-        .buttons {
-            margin-top: 40px;
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #07111f;
+            color: #f4f7fb;
+            line-height: 1.9;
         }
 
         a {
-            display: inline-block;
-            margin: 8px;
-            padding: 14px 25px;
-            border-radius: 10px;
-            background: #ffffff;
-            color: #0b1020;
             text-decoration: none;
+            color: inherit;
+        }
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(7, 17, 31, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 16px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #63d8ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        .nav-links a:hover {
+            color: #63d8ff;
+        }
+
+        /* ---------- HERO ---------- */
+
+        .hero {
+            min-height: 85vh;
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 7px 18px;
+            border: 1px solid rgba(99,216,255,0.35);
+            border-radius: 30px;
+            color: #63d8ff;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 12vw, 92px);
+            line-height: 1.1;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #63d8ff;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 5vw, 36px);
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #aebdce;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 13px 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: #10243a;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            border-color: #63d8ff;
+        }
+
+        .btn-primary {
+            background: #63d8ff;
+            color: #06101d;
             font-weight: bold;
         }
 
-        footer {
-            margin-top: 100px;
-            padding: 30px;
-            color: #8d96ad;
+        /* ---------- GENERAL ---------- */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
         }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #9eafc2;
+        }
+
+        /* ---------- CARDS ---------- */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 30px;
+            background: #0c1b2c;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99,216,255,0.5);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aebdce;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            color: #63d8ff;
+            font-weight: bold;
+        }
+
+        /* ---------- ABOUT ---------- */
+
+        .about {
+            background: #0a1828;
+            border-radius: 24px;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            color: #b6c4d3;
+            font-size: 17px;
+        }
+
+        /* ---------- QUOTE ---------- */
+
+        .quote {
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .quote p {
+            font-size: clamp(24px, 5vw, 38px);
+            color: #dce8f3;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 20px;
+            color: #63d8ff;
+            font-size: 14px;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 35px 20px;
+            text-align: center;
+            color: #8191a4;
+        }
+
+        footer strong {
+            color: #63d8ff;
+        }
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 700px) {
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                gap: 13px;
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 75vh;
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                letter-spacing: 3px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 16px;
+            }
+
+        }
+
     </style>
 </head>
 
 <body>
 
+
+<!-- ================= HEADER ================= -->
+
 <header>
 
-    <h1>H Quantum</h1>
+    <nav class="nav">
 
-    <p>
-        جایی برای فیزیک، علم و شگفتی‌های جهان
-    </p>
+        <a href="#" class="logo">
+            H <span>QUANTUM</span>
+        </a>
 
-    <p>
-        از داستان دانشمندان تا پادکست‌ها،
-        کتاب‌ها و شبیه‌سازهای تعاملی.
-    </p>
+        <div class="nav-links">
 
-    <div class="buttons">
-        <a href="#">پادکست‌ها</a>
-        <a href="#">کتاب‌ها</a>
-        <a href="#">شبیه‌سازها</a>
-    </div>
+            <a href="#podcast">پادکست</a>
+            <a href="#books">کتاب‌ها</a>
+            <a href="#simulations">شبیه‌سازها</a>
+            <a href="#about">درباره</a>
+
+        </div>
+
+    </nav>
 
 </header>
 
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-badge">
+            فیزیک، علم و شگفتی‌های جهان
+        </div>
+
+        <h1>
+            H <span>QUANTUM</span>
+        </h1>
+
+        <h2>
+            فیزیک را فقط یاد نگیریم؛ جهان را ببینیم.
+        </h2>
+
+        <p>
+            جایی برای کشف فیزیک از مسیر داستان، کتاب،
+            پادکست و تجربه‌های تعاملی.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#podcast" class="btn btn-primary">
+                🎙 شروع پادکست
+            </a>
+
+            <a href="#simulations" class="btn">
+                🧪 ورود به آزمایشگاه
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTENT ================= -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                دنیای H Quantum
+            </h2>
+
+            <p>
+                چند راه برای نزدیک‌تر شدن به جهان فیزیک
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- PODCAST -->
+
+            <article class="card" id="podcast">
+
+                <div class="card-icon">
+                    🎙️
+                </div>
+
+                <h3>
+                    پادکست فیزیک
+                </h3>
+
+                <p>
+                    فیزیک را از دل داستان‌ها، پرسش‌ها و
+                    اتفاق‌هایی که جهان را تغییر داده‌اند بشنو.
+                </p>
+
+                <a href="#" class="card-link">
+                    شنیدن اپیزودها ←
+                </a>
+
+            </article>
+
+
+            <!-- BOOKS -->
+
+            <article class="card" id="books">
+
+                <div class="card-icon">
+                    📚
+                </div>
+
+                <h3>
+                    کتاب‌ها
+                </h3>
+
+                <p>
+                    کتاب‌های علمی درباره فیزیک، کیهان،
+                    دانشمندان و پرسش‌های بزرگ انسان.
+                </p>
+
+                <a href="#" class="card-link">
+                    مشاهده کتاب‌ها ←
+                </a>
+
+            </article>
+
+
+            <!-- SIMULATIONS -->
+
+            <article class="card" id="simulations">
+
+                <div class="card-icon">
+                    🧪
+                </div>
+
+                <h3>
+                    آزمایشگاه تعاملی
+                </h3>
+
+                <p>
+                    مفاهیم فیزیک را فقط نخوان؛
+                    تغییرشان بده، آزمایش کن و نتیجه را ببین.
+                </p>
+
+                <a href="#" class="card-link">
+                    ورود به شبیه‌سازها ←
+                </a>
+
+            </article>
+
+
+            <!-- PHYSICS WORLD -->
+
+            <article class="card">
+
+                <div class="card-icon">
+                    🌌
+                </div>
+
+                <h3>
+                    دنیای فیزیک
+                </h3>
+
+                <p>
+                    از کوانتوم و نسبیت تا ستاره‌ها،
+                    سیاه‌چاله‌ها و داستان کشف‌های علمی.
+                </p>
+
+                <a href="#" class="card-link">
+                    کشف جهان ←
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUOTE ================= -->
+
+    <section class="quote">
+
+        <p>
+            «گاهی یک پرسش ساده،
+            می‌تواند دریچه‌ای به سوی تمام جهان باز کند.»
+        </p>
+
+        <span>
+            H Quantum
+        </span>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="about">
+
+            <div class="section-title">
+
+                <h2>
+                    درباره H Quantum
+                </h2>
+
+            </div>
+
+            <p>
+                H Quantum تلاشی است برای نزدیک‌تر کردن فیزیک
+                به زندگی روزمره؛ جایی که علم فقط مجموعه‌ای از
+                فرمول‌ها نیست، بلکه راهی برای دیدن جهان است.
+                اینجا قرار است فیزیک را بشنویم، بخوانیم،
+                تجربه کنیم و گاهی با یک شبیه‌ساز، خودمان
+                آزمایش را انجام دهیم.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    H Quantum — Physics, Science & Wonder
+
+    <p>
+        © 2026 — <strong>H Quantum</strong>
+    </p>
+
+    <p>
+        Physics • Science • Wonder
+    </p>
+
 </footer>
 
+
 </body>
-</html>
+                </html>
