@@ -11,7 +11,7 @@
 <title>مدرسه فیزیک | H Quantum</title>
 
 <meta name="description"
-      content="مدرسه فیزیک H Quantum؛ آموزش فیزیک دهم، یازدهم و دوازدهم با پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
+      content="مدرسه فیزیک H Quantum؛ مسیر آموزشی فیزیک دهم، یازدهم و دوازدهم با پادکست، ویدئو، متن آموزشی و آزمایشگاه تعاملی.">
 
 <style>
 
@@ -42,7 +42,9 @@ a {
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
 
@@ -53,7 +55,7 @@ header {
     z-index: 1000;
 
     background:
-    rgba(7,17,31,0.92);
+    rgba(7,17,31,0.94);
 
     backdrop-filter:
     blur(12px);
@@ -64,7 +66,7 @@ header {
 
 .nav {
 
-    max-width: 1100px;
+    max-width: 1150px;
 
     margin: auto;
 
@@ -96,11 +98,20 @@ header {
 
     display: flex;
 
-    gap: 22px;
+    gap: 20px;
 
     font-size: 14px;
 
     color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a {
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -109,7 +120,9 @@ header {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
 
@@ -117,7 +130,7 @@ header {
 
     margin: auto;
 
-    padding: 90px 20px 70px;
+    padding: 90px 20px 75px;
 
     text-align: center;
 }
@@ -157,7 +170,7 @@ header {
 
 .hero p {
 
-    max-width: 720px;
+    max-width: 760px;
 
     margin: auto;
 
@@ -167,11 +180,13 @@ header {
 }
 
 
-/* GENERAL */
+/* =========================
+   GENERAL
+========================= */
 
 section {
 
-    max-width: 1100px;
+    max-width: 1150px;
 
     margin: auto;
 
@@ -195,10 +210,14 @@ section {
 .section-title p {
 
     color: #9eafc2;
+
+    font-size: 15px;
 }
 
 
-/* GRADE CARDS */
+/* =========================
+   GRADE CARDS
+========================= */
 
 .grades {
 
@@ -221,13 +240,14 @@ section {
     border:
     1px solid rgba(255,255,255,0.08);
 
-    border-radius: 20px;
+    border-radius: 22px;
 
     text-align: center;
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .grade-card:hover {
@@ -237,6 +257,9 @@ section {
 
     border-color:
     rgba(99,216,255,0.5);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.2);
 }
 
 .grade-icon {
@@ -250,7 +273,7 @@ section {
 
     color: #63d8ff;
 
-    font-size: 15px;
+    font-size: 14px;
 
     margin-bottom: 5px;
 }
@@ -311,7 +334,9 @@ section {
 }
 
 
-/* LEARNING MODEL */
+/* =========================
+   LEARNING MODEL
+========================= */
 
 .learning {
 
@@ -332,9 +357,20 @@ section {
     border:
     1px solid rgba(255,255,255,0.07);
 
-    border-radius: 16px;
+    border-radius: 17px;
 
     text-align: center;
+
+    transition: 0.3s;
+}
+
+.learning-card:hover {
+
+    transform:
+    translateY(-4px);
+
+    border-color:
+    rgba(99,216,255,0.3);
 }
 
 .learning-card .icon {
@@ -359,7 +395,84 @@ section {
 }
 
 
-/* PHILOSOPHY */
+/* =========================
+   PATH
+========================= */
+
+.path {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    gap: 14px;
+}
+
+.path-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px 22px;
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.path-item:hover {
+
+    border-color:
+    rgba(99,216,255,0.3);
+}
+
+.path-icon {
+
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #10243a;
+
+    font-size: 23px;
+}
+
+.path-content h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.path-content p {
+
+    color: #91a2b5;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
 
 .philosophy {
 
@@ -370,6 +483,9 @@ section {
     padding: 50px 30px;
 
     text-align: center;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
 }
 
 .philosophy h2 {
@@ -391,7 +507,68 @@ section {
 }
 
 
-/* BACK */
+/* =========================
+   FUTURE
+========================= */
+
+.future {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.future-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.future-card {
+
+    padding: 22px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+}
+
+.future-card .icon {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.future-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.future-card p {
+
+    color: #91a2b5;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BACK
+========================= */
 
 .back-section {
 
@@ -430,7 +607,9 @@ section {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
 
@@ -450,7 +629,9 @@ footer strong {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -466,10 +647,6 @@ footer strong {
         gap: 13px;
 
         font-size: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
     }
 
     .hero {
@@ -493,6 +670,11 @@ footer strong {
         repeat(2, 1fr);
     }
 
+    .future-grid {
+
+        grid-template-columns: 1fr;
+    }
+
     section {
 
         padding: 55px 16px;
@@ -507,6 +689,11 @@ footer strong {
         grid-template-columns: 1fr;
     }
 
+    .path-item {
+
+        align-items: flex-start;
+    }
+
 }
 
 </style>
@@ -517,7 +704,9 @@ footer strong {
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -535,6 +724,10 @@ H <span>QUANTUM</span>
 
 <a href="index.html">
 خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
 </a>
 
 <a href="podcast.html">
@@ -556,7 +749,9 @@ H <span>QUANTUM</span>
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <main>
 
@@ -578,27 +773,32 @@ H <span>QUANTUM</span>
 
 <p>
 
-فیزیک را فقط حفظ نکنیم؛
-آن را بفهمیم، ببینیم، بشنویم
-و خودمان تجربه کنیم.
+اینجا قرار نیست فیزیک فقط مجموعه‌ای
+از فرمول‌ها باشد.
+
+در مدرسه فیزیک H Quantum،
+یادگیری از فهمیدن آغاز می‌شود
+و به دیدن، شنیدن و تجربه کردن می‌رسد.
 
 </p>
 
 </section>
 
 
-<!-- GRADES -->
+<!-- =========================
+     GRADES
+========================= -->
 
 <section>
 
 <div class="section-title">
 
 <h2>
-پایه تحصیلی را انتخاب کنید
+مسیر تحصیلی خود را انتخاب کنید
 </h2>
 
 <p>
-مسیر یادگیری فیزیک خود را آغاز کنید.
+از پایه دهم تا دوازدهم، مسیر آموزش فیزیک را دنبال کنید.
 </p>
 
 </div>
@@ -616,7 +816,7 @@ H <span>QUANTUM</span>
 </div>
 
 <div class="grade-number">
-پایه
+پایه دهم
 </div>
 
 <h3>
@@ -627,8 +827,7 @@ H <span>QUANTUM</span>
 
 آغاز مسیر فیزیک؛
 از اندازه‌گیری و ویژگی‌های مواد
-تا انرژی، گرما و مفاهیم بنیادی
-فیزیک.
+تا انرژی، گرما و مفاهیم بنیادی.
 
 </p>
 
@@ -651,7 +850,7 @@ H <span>QUANTUM</span>
 </div>
 
 <div class="grade-number">
-پایه
+پایه یازدهم
 </div>
 
 <h3>
@@ -660,9 +859,9 @@ H <span>QUANTUM</span>
 
 <p>
 
-ادامه مسیر یادگیری فیزیک
-با مفاهیم مهم الکتریسیته،
-مغناطیس و مدارهای الکتریکی.
+ساختار این پایه در حال آماده‌سازی است
+و در آینده فصل‌های آن به‌صورت کامل
+در مدرسه فیزیک قرار خواهند گرفت.
 
 </p>
 
@@ -684,7 +883,7 @@ H <span>QUANTUM</span>
 </div>
 
 <div class="grade-number">
-پایه
+پایه دوازدهم
 </div>
 
 <h3>
@@ -693,8 +892,9 @@ H <span>QUANTUM</span>
 
 <p>
 
-حرکت، دینامیک، نوسان، امواج
-و مفاهیم پیشرفته‌تر فیزیک.
+ساختار این پایه نیز در حال آماده‌سازی است
+و فصل‌های آن در معماری نهایی مدرسه
+قرار خواهند گرفت.
 
 </p>
 
@@ -712,18 +912,20 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- LEARNING MODEL -->
+<!-- =========================
+     LEARNING MODEL
+========================= -->
 
 <section>
 
 <div class="section-title">
 
 <h2>
-چهار راه برای یادگیری
+مدل یادگیری H Quantum
 </h2>
 
 <p>
-هر مفهوم را از چند زاویه تجربه کنید.
+هر فصل در آینده می‌تواند از چند مسیر مستقل اما هماهنگ ارائه شود.
 </p>
 
 </div>
@@ -743,7 +945,7 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-مفهوم را از مسیر داستان و روایت بشنوید.
+یادگیری از مسیر روایت، داستان و توضیح صوتی.
 </p>
 
 </article>
@@ -760,7 +962,7 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-تدریس و توضیح تصویری مفاهیم فیزیک.
+تدریس تصویری، مثال‌ها و توضیح مفهومی.
 </p>
 
 </article>
@@ -777,7 +979,7 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-مطالعه و مرور دقیق مفاهیم و روابط.
+مطالعه دقیق مفاهیم، روابط و مثال‌ها.
 </p>
 
 </article>
@@ -794,7 +996,7 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-پارامترها را تغییر دهید و نتیجه را ببینید.
+تغییر پارامترها و مشاهده مستقیم نتیجه.
 </p>
 
 </article>
@@ -805,7 +1007,120 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- PHILOSOPHY -->
+<!-- =========================
+     LEARNING PATH
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ساختار هر پایه
+</h2>
+
+<p>
+در معماری نهایی، هر پایه به فصل‌های مستقل و قابل توسعه تقسیم می‌شود.
+</p>
+
+</div>
+
+
+<div class="path">
+
+
+<article class="path-item">
+
+<div class="path-icon">
+📚
+</div>
+
+<div class="path-content">
+
+<h3>
+انتخاب پایه
+</h3>
+
+<p>
+دهم، یازدهم یا دوازدهم را انتخاب می‌کنید.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="path-item">
+
+<div class="path-icon">
+📖
+</div>
+
+<div class="path-content">
+
+<h3>
+انتخاب فصل
+</h3>
+
+<p>
+هر پایه به فصل‌های مستقل تقسیم می‌شود.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="path-item">
+
+<div class="path-icon">
+🎓
+</div>
+
+<div class="path-content">
+
+<h3>
+صفحه اختصاصی فصل
+</h3>
+
+<p>
+هر فصل یک صفحه مرکزی برای دسترسی به تمام منابع خواهد داشت.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="path-item">
+
+<div class="path-icon">
+🧩
+</div>
+
+<div class="path-content">
+
+<h3>
+محتوای چندرسانه‌ای
+</h3>
+
+<p>
+پادکست، ویدئو، متن، شبیه‌ساز و مطالب تکمیلی در کنار هم قرار می‌گیرند.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PHILOSOPHY
+========================= -->
 
 <section>
 
@@ -820,13 +1135,14 @@ H <span>QUANTUM</span>
 قرار نیست فیزیک فقط مجموعه‌ای از
 فرمول‌ها برای حل مسئله باشد.
 
-در H Quantum تلاش می‌کنیم هر مفهوم
-را ابتدا بفهمیم، سپس ببینیم و در نهایت
-با آن آزمایش کنیم.
+هدف این است که دانش‌آموز ابتدا
+با یک پرسش روبه‌رو شود، مفهوم را بفهمد،
+آن را در جهان واقعی ببیند و سپس بتواند
+با زبان ریاضی آن را توصیف کند.
 
-دانش‌آموز می‌تواند یک مفهوم را بشنود،
-تدریس آن را ببیند، متن آن را بخواند
-و با یک شبیه‌ساز خودش نتیجه را تجربه کند.
+به همین دلیل، در معماری H Quantum
+هر فصل می‌تواند ترکیبی از روایت،
+تدریس، متن و تجربه تعاملی باشد.
 
 </p>
 
@@ -835,7 +1151,142 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- BACK -->
+<!-- =========================
+     FUTURE
+========================= -->
+
+<section>
+
+<div class="future">
+
+<div class="section-title">
+
+<h2>
+آینده مدرسه فیزیک
+</h2>
+
+<p>
+این بخش‌ها در مراحل بعد به‌صورت کامل طراحی و فعال خواهند شد.
+</p>
+
+</div>
+
+
+<div class="future-grid">
+
+
+<article class="future-card">
+
+<div class="icon">
+📝
+</div>
+
+<h3>
+آزمون و تمرین
+</h3>
+
+<p>
+تمرین‌های مفهومی و محاسباتی مرتبط با هر فصل.
+</p>
+
+</article>
+
+
+<article class="future-card">
+
+<div class="icon">
+💡
+</div>
+
+<h3>
+پرسش‌های مفهومی
+</h3>
+
+<p>
+سؤال‌هایی برای عمیق‌تر فکر کردن درباره فیزیک.
+</p>
+
+</article>
+
+
+<article class="future-card">
+
+<div class="icon">
+🔬
+</div>
+
+<h3>
+آزمایش‌های ساده
+</h3>
+
+<p>
+تجربه‌های قابل انجام برای ارتباط دادن فیزیک با جهان واقعی.
+</p>
+
+</article>
+
+
+<article class="future-card">
+
+<div class="icon">
+📊
+</div>
+
+<h3>
+نمودار و تحلیل
+</h3>
+
+<p>
+نمایش و تحلیل داده‌ها و روابط فیزیکی.
+</p>
+
+</article>
+
+
+<article class="future-card">
+
+<div class="icon">
+🎯
+</div>
+
+<h3>
+مرور و جمع‌بندی
+</h3>
+
+<p>
+جمع‌بندی فصل‌ها برای تثبیت مفاهیم.
+</p>
+
+</article>
+
+
+<article class="future-card">
+
+<div class="icon">
+🔎
+</div>
+
+<h3>
+جست‌وجوی علمی
+</h3>
+
+<p>
+دسترسی سریع به مفاهیم و منابع مرتبط.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BACK
+========================= -->
 
 <section class="back-section">
 
@@ -852,7 +1303,9 @@ H <span>QUANTUM</span>
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -874,4 +1327,4 @@ Physics • Science • Wonder
 
 </body>
 
-</html>
+      </html>
