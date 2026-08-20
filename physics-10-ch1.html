@@ -8,10 +8,10 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>فصل اول فیزیک دهم | H Quantum</title>
+<title>فصل اول فیزیک دهم | فیزیک و اندازه‌گیری | H Quantum</title>
 
 <meta name="description"
-      content="فصل اول فیزیک دهم؛ فیزیک و اندازه‌گیری در H Quantum با پادکست، ویدئو، متن آموزشی و شبیه‌ساز تعاملی.">
+      content="فصل اول فیزیک دهم؛ فیزیک و اندازه‌گیری در H Quantum با پادکست، ویدئو، متن آموزشی، مطالب تکمیلی و شبیه‌سازهای تعاملی.">
 
 <style>
 
@@ -171,7 +171,7 @@ header {
 
 .hero p {
 
-    max-width: 760px;
+    max-width: 780px;
 
     margin: auto;
 
@@ -305,7 +305,7 @@ section {
 }
 
 
-/* SPECIAL SIMULATOR CARD */
+/* ACTIVE CARD */
 
 .simulator {
 
@@ -318,6 +318,21 @@ section {
     background: #63d8ff;
 
     color: #06101d;
+}
+
+
+/* PREPARING CARD */
+
+.preparing {
+
+    opacity: 0.85;
+}
+
+.preparing .content-button {
+
+    color: #91a2b5;
+
+    cursor: default;
 }
 
 
@@ -355,6 +370,69 @@ section {
     font-size: 16px;
 
     text-align: justify;
+}
+
+
+/* TOPICS */
+
+.topic-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 16px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.topic-card {
+
+    padding: 22px;
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+
+    border-color:
+    rgba(99,216,255,0.35);
+
+    transform:
+    translateY(-3px);
+}
+
+.topic-number {
+
+    color: #63d8ff;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.topic-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+.topic-card p {
+
+    color: #91a2b5;
+
+    font-size: 14px;
 }
 
 
@@ -498,6 +576,11 @@ footer strong {
         grid-template-columns: 1fr;
     }
 
+    .topic-grid {
+
+        grid-template-columns: 1fr;
+    }
+
     section {
 
         padding: 50px 16px;
@@ -590,10 +673,12 @@ H <span>QUANTUM</span>
 
 <p>
 
-در این فصل با یکی از بنیادی‌ترین
-ایده‌های فیزیک آشنا می‌شویم:
-چگونه جهان اطراف خود را اندازه می‌گیریم
-و چگونه به اندازه‌گیری‌های خود اعتماد می‌کنیم؟
+فیزیک از اندازه‌گیری آغاز می‌شود؛
+از لحظه‌ای که می‌خواهیم جهان اطراف خود را
+نه فقط ببینیم، بلکه دقیق‌تر توصیف کنیم.
+
+در این فصل قدم‌به‌قدم با زبان اندازه‌گیری
+و مفاهیم بنیادی آن آشنا می‌شویم.
 
 </p>
 
@@ -607,11 +692,12 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-مسیر یادگیری فصل
+مسیرهای یادگیری فصل
 </h2>
 
 <p>
-این فصل را می‌توانید از چند مسیر مختلف تجربه کنید.
+یک مفهوم را فقط از یک مسیر یاد نمی‌گیریم؛
+آن را می‌خوانیم، می‌شنویم و تجربه می‌کنیم.
 </p>
 
 </div>
@@ -622,7 +708,7 @@ H <span>QUANTUM</span>
 
 <!-- PODCAST -->
 
-<article class="content-card">
+<article class="content-card preparing">
 
 <div class="content-icon">
 🎙️
@@ -634,15 +720,15 @@ H <span>QUANTUM</span>
 
 <p>
 
-فصل را از مسیر روایت،
-داستان و پرسش‌های فیزیکی بشنوید.
+اپیزودهای صوتی اختصاصی فصل اول
+در حال آماده‌سازی هستند.
 
 </p>
 
-<a href="podcast.html"
+<a href="#podcast"
    class="content-button">
 
-🎙️ ورود به پادکست
+به‌زودی
 
 </a>
 
@@ -651,7 +737,7 @@ H <span>QUANTUM</span>
 
 <!-- VIDEO -->
 
-<article class="content-card">
+<article class="content-card preparing">
 
 <div class="content-icon">
 🎬
@@ -663,8 +749,8 @@ H <span>QUANTUM</span>
 
 <p>
 
-توضیح مفاهیم فصل با تدریس تصویری
-و مثال‌های آموزشی.
+تدریس ویدئویی فصل، همراه با توضیح مفهومی
+و حل مثال‌ها در مرحله بعد اضافه خواهد شد.
 
 </p>
 
@@ -680,7 +766,7 @@ H <span>QUANTUM</span>
 
 <!-- TEXT -->
 
-<article class="content-card">
+<article class="content-card preparing">
 
 <div class="content-icon">
 📖
@@ -692,8 +778,8 @@ H <span>QUANTUM</span>
 
 <p>
 
-مطالعهٔ مفاهیم، مثال‌ها و نکات مهم
-فصل اول.
+متن کامل آموزشی فصل، مثال‌ها و نکات مهم
+به‌تدریج در این بخش قرار می‌گیرند.
 
 </p>
 
@@ -758,21 +844,170 @@ H <span>QUANTUM</span>
 
 وقتی می‌گوییم یک جسم بزرگ است،
 سریع حرکت می‌کند یا دمای آن زیاد است،
-در واقع هنوز اطلاعات کاملاً دقیقی
-در اختیار نداریم.
+هنوز اطلاعات کاملاً دقیقی در اختیار نداریم.
 
 فیزیک به ما یاد می‌دهد که کمیت‌های
 فیزیکی را اندازه بگیریم، برای آن‌ها
-واحد تعیین کنیم و نتایج اندازه‌گیری
+یکا تعیین کنیم و نتایج اندازه‌گیری
 را به شکلی بیان کنیم که دیگران نیز
-بتوانند آن را بفهمند و بررسی کنند.
+بتوانند آن را بخوانند، مقایسه کنند
+و دوباره بررسی کنند.
 
-از همین‌جا یکی از مهم‌ترین پایه‌های
+اندازه‌گیری فقط قرار دادن یک عدد کنار
+یک کمیت نیست؛ یکی از پایه‌هایی است که
+امکان شکل‌گیری فیزیک کمّی را فراهم می‌کند.
+
+از همین‌جا یکی از مهم‌ترین زبان‌های
 علم فیزیک شکل می‌گیرد:
 
 اندازه‌گیری.
 
 </p>
+
+</div>
+
+</section>
+
+
+<!-- CHAPTER TOPICS -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+نقشه مفهومی فصل
+</h2>
+
+<p>
+این بخش بعداً به درس‌ها و محتوای واقعی هر موضوع متصل خواهد شد.
+</p>
+
+</div>
+
+
+<div class="topic-grid">
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۱
+</div>
+
+<h3>
+کمیت‌های فیزیکی
+</h3>
+
+<p>
+
+چگونه ویژگی‌های قابل اندازه‌گیری
+اجسام و پدیده‌ها را به زبان فیزیک بیان کنیم؟
+
+</p>
+
+</article>
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۲
+</div>
+
+<h3>
+اندازه‌گیری و یکا
+</h3>
+
+<p>
+
+چرا برای بیان اندازه‌ها به یکای استاندارد
+و توافق‌شده نیاز داریم؟
+
+</p>
+
+</article>
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۳
+</div>
+
+<h3>
+دستگاه SI
+</h3>
+
+<p>
+
+آشنایی با دستگاه بین‌المللی یکاها
+و کمیت‌های پایه آن.
+
+</p>
+
+</article>
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۴
+</div>
+
+<h3>
+تبدیل یکاها
+</h3>
+
+<p>
+
+چگونه یک اندازه را از یک دستگاه یا یکا
+به یکای دیگر تبدیل کنیم؟
+
+</p>
+
+</article>
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۵
+</div>
+
+<h3>
+دقت و خطای اندازه‌گیری
+</h3>
+
+<p>
+
+چرا هیچ اندازه‌گیری کاملاً بی‌نقص نیست
+و چگونه کیفیت یک اندازه‌گیری را ارزیابی کنیم؟
+
+</p>
+
+</article>
+
+
+<article class="topic-card">
+
+<div class="topic-number">
+موضوع ۶
+</div>
+
+<h3>
+نمایش علمی
+</h3>
+
+<p>
+
+چگونه عددهای بسیار بزرگ یا بسیار کوچک
+را به شکلی مناسب در فیزیک بنویسیم؟
+
+</p>
+
+</article>
+
 
 </div>
 
@@ -788,13 +1023,13 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-این فصل در ادامه چه خواهد داشت؟
+محتوای تکمیلی فصل
 </h2>
 
 <p>
 
-به‌تدریج محتوای کامل آموزشی این فصل
-در H Quantum اضافه خواهد شد.
+در مراحل بعد، این فصل به یک محیط آموزشی
+کامل تبدیل خواهد شد.
 
 </p>
 
@@ -804,35 +1039,35 @@ H <span>QUANTUM</span>
 <div class="future-list">
 
 <div class="future-item">
-اندازه‌گیری
+مثال‌های حل‌شده
 </div>
 
 <div class="future-item">
-کمیت‌های فیزیکی
+تمرین
 </div>
 
 <div class="future-item">
-واحدها
+آزمایش‌های ساده
 </div>
 
 <div class="future-item">
-دستگاه SI
+پرسش‌های مفهومی
 </div>
 
 <div class="future-item">
-دقت اندازه‌گیری
+نکات امتحانی
 </div>
 
 <div class="future-item">
-خطای اندازه‌گیری
+واژه‌نامه فیزیک
 </div>
 
 <div class="future-item">
-تبدیل واحدها
+پادکست
 </div>
 
 <div class="future-item">
-نمایش علمی
+شبیه‌ساز
 </div>
 
 </div>
