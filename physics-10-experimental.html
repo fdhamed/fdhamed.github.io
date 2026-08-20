@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>فیزیک دهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="فیزیک دهم رشته تجربی H Quantum؛ چهار فصل فیزیک با پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: Tahoma, Arial, sans-serif;
+
+    background: #07111f;
+
+    color: #f4f7fb;
+
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* HEADER */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+    rgba(7,17,31,0.92);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    justify-content:
+    space-between;
+
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.logo span {
+
+    color: #63d8ff;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    font-size: 14px;
+
+    color: #cbd5e1;
+}
+
+.nav-links a:hover {
+
+    color: #63d8ff;
+}
+
+
+/* HERO */
+
+.hero {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 20px 60px;
+
+    text-align: center;
+}
+
+.hero-badge {
+
+    display: inline-block;
+
+    padding: 7px 18px;
+
+    border:
+    1px solid rgba(99,216,255,0.35);
+
+    border-radius: 30px;
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+
+    font-size:
+    clamp(38px, 9vw, 70px);
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+
+    color: #63d8ff;
+}
+
+.hero p {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    color: #aebdce;
+
+    font-size: 18px;
+}
+
+
+/* GENERAL */
+
+section {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+
+    color: #9eafc2;
+}
+
+
+/* CHAPTERS */
+
+.chapters {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.chapter-card {
+
+    padding: 30px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.chapter-card:hover {
+
+    transform:
+    translateY(-6px);
+
+    border-color:
+    rgba(99,216,255,0.5);
+}
+
+.chapter-number {
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.chapter-icon {
+
+    font-size: 36px;
+
+    margin-bottom: 12px;
+}
+
+.chapter-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.chapter-card p {
+
+    color: #aebdce;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.chapter-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.chapter-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* LEARNING */
+
+.learning {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.learning-card {
+
+    padding: 22px 15px;
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.learning-card .icon {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.learning-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.learning-card p {
+
+    color: #91a2b5;
+
+    font-size: 13px;
+}
+
+
+/* SHARED CONTENT */
+
+.shared {
+
+    margin-top: 20px;
+
+    padding: 30px;
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(99,216,255,0.18);
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.shared h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.shared p {
+
+    color: #aebdce;
+
+    max-width: 780px;
+
+    margin: auto;
+}
+
+
+/* BACK */
+
+.back-section {
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    padding-bottom: 80px;
+}
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.15);
+
+    color: #63d8ff;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+
+    transform:
+    translateY(-3px);
+
+    border-color:
+    #63d8ff;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: #8191a4;
+}
+
+footer strong {
+
+    color: #63d8ff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+
+        gap: 12px;
+
+        font-size: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+
+        padding-top: 60px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+    .chapters {
+
+        grid-template-columns: 1fr;
+    }
+
+    .learning {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    section {
+
+        padding: 50px 16px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .learning {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه
+</a>
+
+<a href="physics-10.html">
+فیزیک دهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<main>
+
+<section class="hero">
+
+<div class="hero-badge">
+
+مدرسه فیزیک H Quantum
+
+</div>
+
+
+<h1>
+
+فیزیک دهم <span>تجربی</span>
+
+</h1>
+
+
+<p>
+
+چهار فصل برای ساختن یک نگاه فیزیکی
+به جهان؛ از اندازه‌گیری و ویژگی‌های مواد
+تا انرژی و گرما.
+
+</p>
+
+</section>
+
+
+<!-- CHAPTERS -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+فصل‌های فیزیک دهم تجربی
+</h2>
+
+<p>
+مسیر یادگیری را از فصل اول آغاز کنید.
+</p>
+
+</div>
+
+
+<div class="chapters">
+
+
+<!-- CHAPTER 1 -->
+
+<article class="chapter-card">
+
+<div class="chapter-number">
+فصل اول
+</div>
+
+<div class="chapter-icon">
+📏
+</div>
+
+<h3>
+فیزیک و اندازه‌گیری
+</h3>
+
+<p>
+
+آشنایی با فیزیک، کمیت‌های فیزیکی،
+یکاها، اندازه‌گیری، دقت و چگالی
+به‌عنوان بخشی از زبان فیزیک.
+
+</p>
+
+<a href="#chapter1"
+   class="chapter-button">
+
+ورود به فصل ←
+
+</a>
+
+</article>
+
+
+<!-- CHAPTER 2 -->
+
+<article class="chapter-card">
+
+<div class="chapter-number">
+فصل دوم
+</div>
+
+<div class="chapter-icon">
+💧
+</div>
+
+<h3>
+ویژگی‌های فیزیکی مواد
+</h3>
+
+<p>
+
+شناخت ویژگی‌های مواد و شاره‌ها،
+فشار، شناوری و مفاهیمی که رفتار
+مواد را توضیح می‌دهند.
+
+</p>
+
+<a href="#chapter2"
+   class="chapter-button">
+
+ورود به فصل ←
+
+</a>
+
+</article>
+
+
+<!-- CHAPTER 3 -->
+
+<article class="chapter-card">
+
+<div class="chapter-number">
+فصل سوم
+</div>
+
+<div class="chapter-icon">
+⚡
+</div>
+
+<h3>
+کار، انرژی و توان
+</h3>
+
+<p>
+
+کار و انرژی، انرژی جنبشی،
+انرژی پتانسیل، پایستگی انرژی
+و توان.
+
+</p>
+
+<a href="#chapter3"
+   class="chapter-button">
+
+ورود به فصل ←
+
+</a>
+
+</article>
+
+
+<!-- CHAPTER 4 -->
+
+<article class="chapter-card">
+
+<div class="chapter-number">
+فصل چهارم
+</div>
+
+<div class="chapter-icon">
+🌡️
+</div>
+
+<h3>
+دما و گرما
+</h3>
+
+<p>
+
+دما، گرما، تغییرات دمایی،
+تغییر حالت و روش‌های انتقال انرژی
+گرمایی.
+
+</p>
+
+<a href="#chapter4"
+   class="chapter-button">
+
+ورود به فصل ←
+
+</a>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- LEARNING MODEL -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+هر فصل، چند مسیر یادگیری
+</h2>
+
+<p>
+در H Quantum یک مفهوم را از چند زاویه تجربه می‌کنیم.
+</p>
+
+</div>
+
+
+<div class="learning">
+
+
+<article class="learning-card">
+
+<div class="icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+مفهوم را بشنوید و با آن همراه شوید.
+</p>
+
+</article>
+
+
+<article class="learning-card">
+
+<div class="icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+تدریس تصویری و توضیح مفهومی.
+</p>
+
+</article>
+
+
+<article class="learning-card">
+
+<div class="icon">
+📖
+</div>
+
+<h3>
+متن آموزشی
+</h3>
+
+<p>
+مطالعه و مرور دقیق مفاهیم.
+</p>
+
+</article>
+
+
+<article class="learning-card">
+
+<div class="icon">
+🧪
+</div>
+
+<h3>
+شبیه‌ساز
+</h3>
+
+<p>
+تغییر پارامترها و مشاهده نتیجه.
+</p>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- CHAPTER 1 -->
+
+<section id="chapter1">
+
+<div class="shared">
+
+<h2>
+📏 فصل اول — فیزیک و اندازه‌گیری
+</h2>
+
+<p>
+
+صفحه اختصاصی این فصل در مرحله بعد ساخته خواهد شد.
+در آن می‌توانیم محتوای آموزشی، پادکست،
+ویدئو و شبیه‌سازهای مرتبط را قرار دهیم.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CHAPTER 2 -->
+
+<section id="chapter2">
+
+<div class="shared">
+
+<h2>
+💧 فصل دوم — ویژگی‌های فیزیکی مواد
+</h2>
+
+<p>
+
+صفحه اختصاصی فصل دوم در مرحله بعد ساخته خواهد شد.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CHAPTER 3 -->
+
+<section id="chapter3">
+
+<div class="shared">
+
+<h2>
+⚡ فصل سوم — کار، انرژی و توان
+</h2>
+
+<p>
+
+صفحه اختصاصی فصل سوم در مرحله بعد ساخته خواهد شد.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CHAPTER 4 -->
+
+<section id="chapter4">
+
+<div class="shared">
+
+<h2>
+🌡️ فصل چهارم — دما و گرما
+</h2>
+
+<p>
+
+صفحه اختصاصی فصل چهارم در مرحله بعد ساخته خواهد شد.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- BACK -->
+
+<section class="back-section">
+
+<a href="physics-10.html"
+   class="back-button">
+
+← بازگشت به فیزیک دهم
+
+</a>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
