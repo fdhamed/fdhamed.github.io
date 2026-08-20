@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>کتاب‌ها | H Quantum</title>
+
+    <meta name="description"
+          content="کتاب‌های علمی H Quantum درباره فیزیک، کیهان، دانشمندان و تاریخ علم.">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #07111f;
+            color: #f4f7fb;
+            line-height: 1.9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(7,17,31,0.95);
+
+            border-bottom:
+            1px solid rgba(255,255,255,0.08);
+
+            backdrop-filter: blur(12px);
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+
+            padding: 16px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #63d8ff;
+        }
+
+        .back {
+            color: #9fb1c4;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            color: #63d8ff;
+        }
+
+        /* HERO */
+
+        .hero {
+            max-width: 900px;
+            margin: auto;
+
+            padding: 80px 20px 55px;
+
+            text-align: center;
+        }
+
+        .hero-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 8vw, 64px);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #63d8ff;
+        }
+
+        .hero p {
+            color: #aebdce;
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* BOOK GRID */
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .books {
+            display: grid;
+
+            grid-template-columns:
+            repeat(2, 1fr);
+
+            gap: 22px;
+        }
+
+        .book {
+            background: #0c1b2c;
+
+            border:
+            1px solid rgba(255,255,255,0.08);
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            transition:
+            transform 0.3s,
+            border-color 0.3s;
+        }
+
+        .book:hover {
+            transform: translateY(-6px);
+
+            border-color:
+            rgba(99,216,255,0.5);
+        }
+
+        /* BOOK COVER */
+
+        .cover {
+            height: 230px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 25px;
+
+            background:
+            linear-gradient(
+                135deg,
+                #102c46,
+                #07111f
+            );
+        }
+
+        .cover h2 {
+            font-size: 28px;
+            line-height: 1.5;
+        }
+
+        .cover small {
+            display: block;
+
+            color: #63d8ff;
+
+            margin-top: 12px;
+        }
+
+        /* BOOK CONTENT */
+
+        .book-content {
+            padding: 25px;
+        }
+
+        .book-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .book-content p {
+            color: #aebdce;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .book-button {
+            display: inline-block;
+
+            padding: 11px 20px;
+
+            background: #13283e;
+
+            border-radius: 9px;
+
+            color: #63d8ff;
+
+            font-weight: bold;
+        }
+
+        .book-button:hover {
+            background: #63d8ff;
+            color: #06101d;
+        }
+
+        /* COMING */
+
+        .coming {
+            margin-top: 35px;
+
+            padding: 35px;
+
+            text-align: center;
+
+            border:
+            1px dashed rgba(255,255,255,0.15);
+
+            border-radius: 18px;
+
+            color: #8191a4;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 80px;
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            border-top:
+            1px solid rgba(255,255,255,0.08);
+
+            color: #8191a4;
+        }
+
+        footer strong {
+            color: #63d8ff;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .books {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <nav class="nav">
+
+        <a href="index.html"
+           class="logo">
+
+            H <span>QUANTUM</span>
+
+        </a>
+
+        <a href="index.html"
+           class="back">
+
+            ← صفحه اصلی
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-icon">
+        📚
+    </div>
+
+    <h1>
+        <span>کتاب‌های</span> H Quantum
+    </h1>
+
+    <p>
+        کتاب‌هایی برای نزدیک‌تر شدن به فیزیک،
+        جهان و داستان انسان‌هایی که آن را کشف کردند.
+    </p>
+
+</section>
+
+
+<!-- BOOKS -->
+
+<main class="container">
+
+    <div class="books">
+
+
+        <!-- BOOK 1 -->
+
+        <article class="book">
+
+            <div class="cover">
+
+                <div>
+
+                    <h2>
+                        زندگی استیون هاوکینگ
+                    </h2>
+
+                    <small>
+                        Stephen Hawking
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="book-content">
+
+                <h3>
+                    استیون هاوکینگ
+                </h3>
+
+                <p>
+                    داستان زندگی، اندیشه‌ها و مسیر علمی
+                    یکی از شناخته‌شده‌ترین فیزیکدانان معاصر.
+                </p>
+
+                <a href="#"
+                   class="book-button">
+
+                    معرفی کتاب ←
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOOK 2 -->
+
+        <article class="book">
+
+            <div class="cover">
+
+                <div>
+
+                    <h2>
+                        نیکولا تسلا
+                    </h2>
+
+                    <small>
+                        Nikola Tesla
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="book-content">
+
+                <h3>
+                    زندگی نیکولا تسلا
+                </h3>
+
+                <p>
+                    داستان ذهنی که نگاه انسان به برق،
+                    انرژی و فناوری را تغییر داد.
+                </p>
+
+                <a href="#"
+                   class="book-button">
+
+                    معرفی کتاب ←
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOOK 3 -->
+
+        <article class="book">
+
+            <div class="cover">
+
+                <div>
+
+                    <h2>
+                        سفر در زمان
+                    </h2>
+
+                    <small>
+                        Time Travel
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="book-content">
+
+                <h3>
+                    سفر در زمان
+                </h3>
+
+                <p>
+                    از نسبیت و زمان تا پرسش‌هایی درباره
+                    گذشته، آینده و ساختار جهان.
+                </p>
+
+                <a href="#"
+                   class="book-button">
+
+                    معرفی کتاب ←
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOOK 4 -->
+
+        <article class="book">
+
+            <div class="cover">
+
+                <div>
+
+                    <h2>
+                        فیزیک و جهان کوانتومی
+                    </h2>
+
+                    <small>
+                        Quantum Physics
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="book-content">
+
+                <h3>
+                    جهان کوانتومی
+                </h3>
+
+                <p>
+                    سفری به دنیای عجیب ذرات،
+                    عدم قطعیت و واقعیتی که در مقیاس
+                    کوانتومی شکل دیگری دارد.
+                </p>
+
+                <a href="#"
+                   class="book-button">
+
+                    معرفی کتاب ←
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="coming">
+
+        کتاب‌های بیشتری به‌زودی اضافه می‌شوند...
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        <strong>H Quantum</strong>
+        — Physics • Science • Wonder
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
