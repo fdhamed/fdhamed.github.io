@@ -11,13 +11,9 @@
 <title>فصل اول فیزیک دهم | فیزیک و اندازه‌گیری | H Quantum</title>
 
 <meta name="description"
-      content="فصل اول فیزیک دهم؛ فیزیک و اندازه‌گیری در H Quantum، مشترک برای رشته‌های تجربی و ریاضی.">
+      content="فصل اول فیزیک دهم؛ فیزیک و اندازه‌گیری در H Quantum با شش بخش آموزشی، پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 * {
     box-sizing: border-box;
@@ -111,11 +107,6 @@ header {
     flex-wrap: wrap;
 
     justify-content: center;
-}
-
-.nav-links a {
-
-    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -230,29 +221,41 @@ section {
 
 
 /* =========================
-   BOOK STRUCTURE
+   INTRO
 ========================= */
 
-.book-note {
+.intro {
 
     max-width: 900px;
 
-    margin: 0 auto 35px;
+    margin: auto;
 
-    padding: 20px 25px;
+    padding: 40px 30px;
 
     background: #0a1828;
 
-    border:
-    1px solid rgba(99,216,255,0.16);
+    border-radius: 22px;
 
-    border-radius: 16px;
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
 
     text-align: center;
+}
+
+.intro p {
 
     color: #b6c4d3;
 
-    font-size: 14px;
+    font-size: 16px;
+
+    text-align: justify;
 }
 
 
@@ -312,15 +315,6 @@ section {
     margin-bottom: 12px;
 }
 
-.content-number {
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    margin-bottom: 6px;
-}
-
 .content-card h3 {
 
     font-size: 22px;
@@ -334,15 +328,14 @@ section {
 
     font-size: 14px;
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .content-button {
 
     display: inline-block;
 
-    padding:
-    10px 20px;
+    padding: 10px 20px;
 
     border-radius: 9px;
 
@@ -367,76 +360,16 @@ section {
 
 
 /* =========================
-   PROBLEM CARD
+   FUTURE
 ========================= */
 
-.problem-card {
-
-    max-width: 950px;
-
-    margin: 0 auto;
-
-    padding: 32px 25px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    transition: 0.3s;
-}
-
-.problem-card:hover {
-
-    border-color:
-    rgba(99,216,255,0.4);
-
-    transform:
-    translateY(-4px);
-}
-
-.problem-icon {
-
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.problem-card h3 {
-
-    font-size: 23px;
-
-    margin-bottom: 12px;
-}
-
-.problem-card p {
-
-    max-width: 750px;
-
-    margin: 0 auto 22px;
-
-    color: #aebdce;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
+.future {
 
     max-width: 900px;
 
     margin: auto;
 
-    padding:
-    40px 30px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
@@ -444,45 +377,15 @@ section {
 
     border:
     1px solid rgba(99,216,255,0.12);
-}
-
-.intro h2 {
-
-    font-size: 27px;
-
-    margin-bottom: 18px;
 
     text-align: center;
-}
-
-.intro p {
-
-    color: #b6c4d3;
-
-    font-size: 16px;
-
-    text-align: justify;
-}
-
-
-/* =========================
-   FUTURE
-========================= */
-
-.future {
-
-    text-align: center;
-
-    max-width: 850px;
-
-    margin: auto;
 }
 
 .future h2 {
 
-    font-size: 27px;
+    font-size: 26px;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .future p {
@@ -507,8 +410,7 @@ section {
 
 .future-item {
 
-    padding:
-    8px 15px;
+    padding: 8px 15px;
 
     background: #0c1b2c;
 
@@ -540,8 +442,7 @@ section {
 
     display: inline-block;
 
-    padding:
-    13px 25px;
+    padding: 13px 25px;
 
     border-radius: 10px;
 
@@ -574,8 +475,7 @@ footer {
     border-top:
     1px solid rgba(255,255,255,0.08);
 
-    padding:
-    35px 20px;
+    padding: 35px 20px;
 
     text-align: center;
 
@@ -625,20 +525,17 @@ footer strong {
 
     section {
 
-        padding:
-        50px 16px;
+        padding: 50px 16px;
     }
 
     .intro {
 
-        padding:
-        30px 20px;
+        padding: 30px 20px;
     }
 
-    .content-card {
+    .future {
 
-        padding:
-        28px 20px;
+        padding: 30px 20px;
     }
 
 }
@@ -675,10 +572,6 @@ H <span>QUANTUM</span>
 
 <a href="school.html">
 مدرسه فیزیک
-</a>
-
-<a href="physics-10.html">
-فیزیک دهم
 </a>
 
 <a href="podcast.html">
@@ -732,295 +625,10 @@ H <span>QUANTUM</span>
 <p>
 
 فیزیک از اندازه‌گیری آغاز می‌شود؛
-از لحظه‌ای که می‌خواهیم جهان اطراف خود را
+از جایی که می‌خواهیم جهان اطراف خود را
 نه فقط ببینیم، بلکه دقیق‌تر توصیف کنیم.
 
-در این فصل با مفاهیم بنیادی فیزیک،
-مدل‌سازی، اندازه‌گیری، یکاها،
-دقت اندازه‌گیری و چگالی آشنا می‌شویم.
-
 </p>
-
-</section>
-
-
-<!-- =========================
-     BOOK STRUCTURE
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-ساختار فصل اول
-</h2>
-
-<p>
-این صفحه مطابق ترتیب بخش‌های فصل اول کتاب درسی طراحی شده است.
-</p>
-
-</div>
-
-
-<div class="book-note">
-
-این فصل در فیزیک دهم رشته‌های تجربی و ریاضی مشترک است؛
-بنابراین محتوای این صفحه برای هر دو رشته استفاده خواهد شد.
-
-</div>
-
-
-<div class="content-grid">
-
-
-<!-- 1-1 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🔭
-</div>
-
-<div class="content-number">
-۱-۱
-</div>
-
-<h3>
-فیزیک؛ دانش بنیادی
-</h3>
-
-<p>
-
-آشنایی با فیزیک به‌عنوان دانشی بنیادی
-برای شناخت قوانین و پدیده‌های طبیعت.
-
-</p>
-
-<a href="physics-10-ch1-1.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-<!-- 1-2 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🧩
-</div>
-
-<div class="content-number">
-۱-۲
-</div>
-
-<h3>
-مدل‌سازی در فیزیک
-</h3>
-
-<p>
-
-چگونگی ساده‌سازی پدیده‌های واقعی
-و استفاده از مدل‌ها برای مطالعه آن‌ها.
-
-</p>
-
-<a href="physics-10-ch1-2.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-<!-- 1-3 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-📏
-</div>
-
-<div class="content-number">
-۱-۳
-</div>
-
-<h3>
-اندازه‌گیری و کمیت‌های فیزیکی
-</h3>
-
-<p>
-
-آشنایی با کمیت‌های فیزیکی،
-اندازه‌گیری و چگونگی بیان کمیت‌ها.
-
-</p>
-
-<a href="physics-10-ch1-3.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-<!-- 1-4 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-📐
-</div>
-
-<div class="content-number">
-۱-۴
-</div>
-
-<h3>
-اندازه‌گیری و دستگاه بین‌المللی یکاها
-</h3>
-
-<p>
-
-آشنایی با دستگاه بین‌المللی یکاها،
-یکاهای پایه، یکاهای فرعی و تبدیل یکاها.
-
-</p>
-
-<a href="physics-10-ch1-4.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-<!-- 1-5 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🔬
-</div>
-
-<div class="content-number">
-۱-۵
-</div>
-
-<h3>
-اندازه‌گیری و دقت وسیله‌های اندازه‌گیری
-</h3>
-
-<p>
-
-شناخت دقت وسیله‌های اندازه‌گیری،
-خطا و نحوه گزارش نتیجه اندازه‌گیری.
-
-</p>
-
-<a href="physics-10-ch1-5.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-<!-- 1-6 -->
-
-<article class="content-card">
-
-<div class="content-icon">
-⚖️
-</div>
-
-<div class="content-number">
-۱-۶
-</div>
-
-<h3>
-چگالی
-</h3>
-
-<p>
-
-بررسی رابطه میان جرم، حجم و چگالی
-و کاربرد آن در توصیف مواد.
-
-</p>
-
-<a href="physics-10-ch1-6.html"
-   class="content-button">
-
-ورود به بخش ←
-
-</a>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     QUESTIONS
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-پرسش‌ها و مسئله‌های فصل اول
-</h2>
-
-<p>
-بخش پایانی فصل برای تمرین، مرور و ارزیابی یادگیری.
-</p>
-
-</div>
-
-
-<div class="problem-card">
-
-<div class="problem-icon">
-📝
-</div>
-
-<h3>
-پرسش‌ها و مسئله‌های فصل اول
-</h3>
-
-<p>
-
-در این بخش، پرسش‌ها و مسئله‌های فصل اول
-به‌صورت مرحله‌به‌مرحله بررسی خواهند شد.
-
-</p>
-
-<a href="physics-10-ch1-problems.html"
-   class="content-button">
-
-ورود به پرسش‌ها ←
-
-</a>
-
-</div>
 
 </section>
 
@@ -1034,30 +642,20 @@ H <span>QUANTUM</span>
 <div class="intro">
 
 <h2>
-چرا فصل اول مهم است؟
+نقشه راه فصل
 </h2>
 
 <p>
 
-فصل اول فقط مقدمه‌ای برای فیزیک دهم نیست.
+این فصل از شش بخش اصلی تشکیل شده است.
+در هر بخش، یک قسمت از زبان اندازه‌گیری
+را می‌آموزیم و در ادامه می‌توانیم همان
+مفهوم را با متن، پادکست، ویدئو و
+فعالیت‌های تعاملی تجربه کنیم.
 
-در این فصل دانش‌آموز با بخشی از زبان
-و روش فیزیک آشنا می‌شود؛ از اینکه فیزیک
-چگونه به پدیده‌های طبیعی نگاه می‌کند
-و چگونه برای توصیف آن‌ها مدل می‌سازد،
-تا اینکه چگونه یک کمیت را اندازه می‌گیرد
-و نتیجه اندازه‌گیری را با یکا و دقت مناسب
-گزارش می‌کند.
-
-در پایان فصل، مفهوم چگالی نمونه‌ای است
-از اینکه چگونه چند کمیت فیزیکی می‌توانند
-در قالب یک رابطه کمّی، ویژگی یک ماده را
-توصیف کنند.
-
-در H Quantum قرار است این مسیر فقط
-با خواندن فرمول‌ها طی نشود؛ بلکه هر مفهوم
-با متن، روایت، ویدئو و تجربه تعاملی
-تکمیل شود.
+در این مرحله ساختار صفحات آماده شده
+و محتوای علمی در مرحله بعد به آن‌ها
+اضافه خواهد شد.
 
 </p>
 
@@ -1067,7 +665,220 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     FUTURE CONTENT
+     SIX SECTIONS
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+بخش‌های فصل اول
+</h2>
+
+<p>
+برای ورود به هر بخش روی گزینه «ورود به بخش» بزنید.
+</p>
+
+</div>
+
+
+<div class="content-grid">
+
+
+<!-- =========================
+     SECTION 1
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+📏
+</div>
+
+<h3>
+بخش اول — کمیت‌های فیزیکی
+</h3>
+
+<p>
+
+آشنایی با کمیت‌های فیزیکی
+و چگونگی توصیف کمّی پدیده‌های فیزیکی.
+
+</p>
+
+<a href="physics-10-ch1-quantities.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SECTION 2
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+📐
+</div>
+
+<h3>
+بخش دوم — اندازه‌گیری و یکا
+</h3>
+
+<p>
+
+اندازه‌گیری، یکا و ضرورت استفاده
+از استانداردهای مشترک در فیزیک.
+
+</p>
+
+<a href="physics-10-ch1-measurement.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SECTION 3
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+🌐
+</div>
+
+<h3>
+بخش سوم — دستگاه SI
+</h3>
+
+<p>
+
+آشنایی با دستگاه بین‌المللی یکاها
+و کمیت‌های پایه فیزیکی.
+
+</p>
+
+<a href="physics-10-ch1-si.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SECTION 4
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+🔄
+</div>
+
+<h3>
+بخش چهارم — تبدیل یکاها
+</h3>
+
+<p>
+
+تبدیل اندازه‌ها بین یکاهای مختلف
+و استفاده درست از روابط تبدیل.
+
+</p>
+
+<a href="physics-10-ch1-conversion.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SECTION 5
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+🎯
+</div>
+
+<h3>
+بخش پنجم — دقت و خطای اندازه‌گیری
+</h3>
+
+<p>
+
+شناخت دقت اندازه‌گیری، خطا
+و محدودیت‌های ابزارهای اندازه‌گیری.
+
+</p>
+
+<a href="physics-10-ch1-error.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SECTION 6
+========================= -->
+
+<article class="content-card">
+
+<div class="content-icon">
+⚖️
+</div>
+
+<h3>
+بخش ششم — چگالی
+</h3>
+
+<p>
+
+بررسی رابطه میان جرم و حجم
+و مفهوم چگالی مواد.
+
+</p>
+
+<a href="physics-10-ch1-density.html"
+   class="content-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LEARNING MODEL
 ========================= -->
 
 <section>
@@ -1075,13 +886,13 @@ H <span>QUANTUM</span>
 <div class="future">
 
 <h2>
-مسیر توسعه فصل
+🎓 مسیرهای یادگیری فصل
 </h2>
 
 <p>
 
-در مرحله بعد، هر بخش به یک محیط آموزشی
-مستقل تبدیل خواهد شد.
+پس از آماده شدن محتوای آموزشی،
+هر بخش می‌تواند چند مسیر یادگیری داشته باشد.
 
 </p>
 
@@ -1109,15 +920,7 @@ H <span>QUANTUM</span>
 </div>
 
 <div class="future-item">
-💡 پرسش مفهومی
-</div>
-
-<div class="future-item">
-📌 نکات مهم
-</div>
-
-<div class="future-item">
-🔬 آزمایش
+❓ پرسش مفهومی
 </div>
 
 </div>
@@ -1170,4 +973,4 @@ Physics • Science • Wonder
 
 </body>
 
-      </html>
+</html>
