@@ -8,10 +8,10 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>فصل اول فیزیک دوازدهم ریاضی | حرکت بر خط راست | H Quantum</title>
+<title>فصل اول فیزیک دوازدهم ریاضی | H Quantum</title>
 
 <meta name="description"
-content="فصل اول فیزیک دوازدهم ریاضی | H Quantum">
+content="فصل اول فیزیک دوازدهم ریاضی؛ حرکت بر خط راست | H Quantum">
 
 <style>
 
@@ -82,6 +82,7 @@ header {
 
 .nav-links {
     display: flex;
+
     flex-wrap: wrap;
 
     justify-content: center;
@@ -172,7 +173,7 @@ header {
 
 
 /* =========================
-   SECTION
+   SECTIONS
 ========================= */
 
 section {
@@ -204,47 +205,54 @@ section {
 
 
 /* =========================
-   LESSONS
+   STRUCTURE
 ========================= */
 
-.lesson-list {
-    display: grid;
+.structure-box {
 
-    grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-    gap: 15px;
-}
-
-.lesson-item {
-    background: #0c1b2c;
+    background: #0a1828;
 
     border:
-    1px solid rgba(255,255,255,0.07);
+    1px dashed rgba(99,216,255,0.25);
 
-    border-radius: 16px;
+    border-radius: 20px;
 
-    padding: 20px;
+    padding:
+    30px 25px;
 }
 
-.lesson-number {
+.structure-list {
+
+    list-style: none;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.structure-list li {
+
+    padding:
+    13px 16px;
+
+    margin-bottom: 9px;
+
+    background: #0c1b2c;
+
+    border-radius: 10px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+.structure-list li span {
+
     color: #63d8ff;
 
-    font-size: 12px;
+    font-weight: bold;
 
-    margin-bottom: 5px;
-}
-
-.lesson-item h3 {
-    font-size: 17px;
-
-    margin-bottom: 6px;
-}
-
-.lesson-item p {
-    color: #9eafc2;
-
-    font-size: 12px;
+    margin-left: 8px;
 }
 
 
@@ -253,6 +261,7 @@ section {
 ========================= */
 
 .content-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -267,7 +276,6 @@ section {
 ========================= */
 
 .content-card {
-    display: block;
 
     background: #0c1b2c;
 
@@ -282,32 +290,34 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s,
-    background 0.3s;
+    border-color 0.3s;
 }
 
 .content-card:hover {
-    transform: translateY(-5px);
+
+    transform:
+    translateY(-5px);
 
     border-color:
     rgba(99,216,255,0.4);
-
-    background: #0e2033;
 }
 
 .card-icon {
+
     font-size: 42px;
 
     margin-bottom: 12px;
 }
 
 .content-card h3 {
+
     font-size: 21px;
 
     margin-bottom: 10px;
 }
 
 .content-card p {
+
     color: #aebdce;
 
     font-size: 13px;
@@ -316,6 +326,7 @@ section {
 }
 
 .card-status {
+
     display: inline-block;
 
     padding:
@@ -335,10 +346,11 @@ section {
 
 
 /* =========================
-   INFO BOX
+   INFO
 ========================= */
 
 .info-box {
+
     background: #0a1828;
 
     border:
@@ -353,18 +365,21 @@ section {
 }
 
 .info-icon {
+
     font-size: 44px;
 
     margin-bottom: 10px;
 }
 
 .info-box h3 {
+
     font-size: 23px;
 
     margin-bottom: 8px;
 }
 
 .info-box p {
+
     max-width: 750px;
 
     margin: auto;
@@ -380,6 +395,7 @@ section {
 ========================= */
 
 .navigation {
+
     display: flex;
 
     justify-content: center;
@@ -395,21 +411,22 @@ section {
 }
 
 .nav-button {
+
     display: inline-block;
 
     padding:
-    11px 20px;
+    10px 18px;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(99,216,255,0.2);
+    1px solid rgba(255,255,255,0.1);
 
     color: #63d8ff;
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: bold;
 
@@ -417,11 +434,10 @@ section {
 }
 
 .nav-button:hover {
+
     background: #63d8ff;
 
     color: #06101d;
-
-    transform: translateY(-2px);
 }
 
 
@@ -430,6 +446,7 @@ section {
 ========================= */
 
 footer {
+
     border-top:
     1px solid rgba(255,255,255,0.08);
 
@@ -444,6 +461,7 @@ footer {
 }
 
 footer strong {
+
     color: #63d8ff;
 }
 
@@ -460,31 +478,11 @@ footer strong {
 
     .nav-links {
         gap: 10px;
-
         font-size: 12px;
     }
 
-    .lesson-list {
-        grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-        gap: 10px;
-    }
-
-    .lesson-item {
-        padding:
-        15px 12px;
-    }
-
-    .lesson-item h3 {
-        font-size: 13px;
-    }
-
-    .lesson-item p {
-        font-size: 9px;
-    }
-
     .content-grid {
+
         grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
@@ -492,6 +490,7 @@ footer strong {
     }
 
     .content-card {
+
         padding:
         20px 12px;
 
@@ -499,36 +498,48 @@ footer strong {
     }
 
     .card-icon {
+
         font-size: 33px;
     }
 
     .content-card h3 {
-        font-size: 15px;
 
-        line-height: 1.8;
+        font-size: 16px;
+
+        line-height: 1.7;
     }
 
     .content-card p {
+
         font-size: 10px;
 
         line-height: 1.8;
     }
 
     .card-status {
+
         font-size: 9px;
 
         padding:
         5px 8px;
     }
 
-    .nav-button {
-        font-size: 11px;
+    .structure-box {
 
         padding:
-        9px 14px;
+        20px 12px;
+    }
+
+    .structure-list li {
+
+        font-size: 10px;
+
+        padding:
+        10px;
     }
 
     section {
+
         padding:
         35px 15px;
     }
@@ -542,6 +553,10 @@ footer strong {
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -592,6 +607,10 @@ H <span>QUANTUM</span>
 <main>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
 
 
@@ -617,17 +636,17 @@ H <span>QUANTUM</span>
 
 <h1>
 
-<span>حرکت بر خط راست</span>
+حرکت بر
+<span>خط راست</span>
 
 </h1>
 
 
 <p class="hero-description">
 
-در این فصل، حرکت را از ساده‌ترین شکل آن آغاز می‌کنیم؛
-از توصیف مکان و زمان تا سرعت و شتاب،
-و به کمک نمودارها و روابط ریاضی، حرکت اجسام
-را دقیق‌تر می‌خوانیم.
+در این فصل حرکت یک‌بعدی اجسام را بررسی می‌کنیم؛
+از توصیف موقعیت و جابه‌جایی تا سرعت،
+شتاب و تحلیل حرکت در طول زمان.
 
 </p>
 
@@ -636,132 +655,99 @@ H <span>QUANTUM</span>
 
 
 
+<!-- =========================
+     STRUCTURE
+========================= -->
+
 <section>
 
 
 <div class="section-title">
 
 <h2>
-📚 ساختار آموزشی فصل
+📚 ساختار فصل
 </h2>
 
 <p>
-ساختار فصل برای قرارگیری محتوای آینده آماده شده است.
+ساختار اولیه فصل برای تولید محتوای آینده آماده شده است.
 </p>
 
 </div>
 
 
-<div class="lesson-list">
+<div class="structure-box">
 
 
-<div class="lesson-item">
-
-<div class="lesson-number">
-درس ۱
-</div>
-
-<h3>
-موقعیت و جابه‌جایی
-</h3>
-
-<p>
-توصیف مکان جسم و مفهوم جابه‌جایی در حرکت بر خط راست.
-</p>
-
-</div>
+<ul class="structure-list">
 
 
-<div class="lesson-item">
+<li>
 
-<div class="lesson-number">
-درس ۲
-</div>
+<span>۱</span>
 
-<h3>
-سرعت و تندی
-</h3>
+موقعیت، مسافت و جابه‌جایی
 
-<p>
-بررسی سرعت متوسط، تندی متوسط و سرعت لحظه‌ای.
-</p>
-
-</div>
+</li>
 
 
-<div class="lesson-item">
+<li>
 
-<div class="lesson-number">
-درس ۳
-</div>
+<span>۲</span>
 
-<h3>
-شتاب
-</h3>
+سرعت متوسط و سرعت لحظه‌ای
 
-<p>
-آشنایی با مفهوم شتاب و رابطهٔ آن با تغییر سرعت.
-</p>
-
-</div>
+</li>
 
 
-<div class="lesson-item">
+<li>
 
-<div class="lesson-number">
-درس ۴
-</div>
+<span>۳</span>
 
-<h3>
+شتاب متوسط و شتاب لحظه‌ای
+
+</li>
+
+
+<li>
+
+<span>۴</span>
+
+حرکت با سرعت ثابت
+
+</li>
+
+
+<li>
+
+<span>۵</span>
+
 حرکت با شتاب ثابت
-</h3>
 
-<p>
-بررسی روابط حرکت با شتاب ثابت و کاربرد آن‌ها.
-</p>
-
-</div>
+</li>
 
 
-<div class="lesson-item">
+<li>
 
-<div class="lesson-number">
-درس ۵
-</div>
+<span>۶</span>
 
-<h3>
-نمودارهای حرکت
-</h3>
+نمودارهای مکان ـ زمان، سرعت ـ زمان و شتاب ـ زمان
 
-<p>
-خواندن و تحلیل نمودارهای مکان، سرعت و شتاب بر حسب زمان.
-</p>
-
-</div>
+</li>
 
 
-<div class="lesson-item">
-
-<div class="lesson-number">
-درس ۶
-</div>
-
-<h3>
-سقوط آزاد
-</h3>
-
-<p>
-بررسی حرکت اجسام تحت اثر گرانش زمین.
-</p>
-
-</div>
+</ul>
 
 
 </div>
+
 
 </section>
 
 
+
+<!-- =========================
+     RESOURCES
+========================= -->
 
 <section>
 
@@ -769,90 +755,77 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-🚀 امکانات آموزشی فصل
+🚀 بخش‌های آموزشی فصل
 </h2>
 
 <p>
-تمام محتوای آموزشی آینده از این بخش‌ها قابل دسترسی خواهد بود.
+محتوا در مرحله بعد به این ساختار اضافه خواهد شد.
 </p>
 
 </div>
+
 
 
 <div class="content-grid">
 
 
-<a href="#lesson"
-class="content-card">
+<!-- درسنامه -->
+
+<article class="content-card">
 
 <div class="card-icon">
 📖
 </div>
 
 <h3>
-درسنامه
+درسنامه فصل
 </h3>
 
 <p>
-درسنامهٔ کامل و مفهومی حرکت بر خط راست.
+
+درسنامه مفهومی و کامل حرکت بر خط راست،
+با توضیح مرحله‌به‌مرحله مفاهیم.
+
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</a>
+</article>
 
 
 
-<a href="#podcast"
-class="content-card">
+<!-- پادکست -->
+
+<article class="content-card">
 
 <div class="card-icon">
 🎙️
 </div>
 
 <h3>
-پادکست
+پادکست فصل
 </h3>
 
 <p>
-اپیزودهای صوتی مرتبط با مفاهیم حرکت.
+
+روایت صوتی مفاهیم حرکت،
+با نگاه مفهومی و داستانی.
+
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</a>
+</article>
 
 
 
-<a href="#video"
-class="content-card">
+<!-- شبیه ساز -->
 
-<div class="card-icon">
-🎬
-</div>
-
-<h3>
-ویدئوهای آموزشی
-</h3>
-
-<p>
-آموزش تصویری مفاهیم و حل مسائل فصل.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#simulator"
-class="content-card">
+<article class="content-card">
 
 <div class="card-icon">
 🧪
@@ -863,117 +836,25 @@ class="content-card">
 </h3>
 
 <p>
-محیط تعاملی برای مشاهده و تحلیل حرکت.
+
+محیط تعاملی برای مشاهده و بررسی
+حرکت یک‌بعدی و نمودارهای آن.
+
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</a>
+</article>
 
 
 
-<a href="#problems"
-class="content-card">
+<!-- ویدئو -->
+
+<article class="content-card">
 
 <div class="card-icon">
-🧮
-</div>
-
-<h3>
-مثال و حل مسئله
-</h3>
-
-<p>
-مثال‌های مفهومی و محاسباتی با راه‌حل مرحله‌به‌مرحله.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#quiz"
-class="content-card">
-
-<div class="card-icon">
-✏️
-</div>
-
-<h3>
-تمرین و آزمون
-</h3>
-
-<p>
-تمرین‌های طبقه‌بندی‌شده و آزمون‌های فصل.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<section id="lesson">
-
-<div class="info-box">
-
-<div class="info-icon">
-📖
-</div>
-
-<h3>
-درسنامه فصل اول
-</h3>
-
-<p>
-محل قرارگیری درسنامهٔ کامل فصل حرکت بر خط راست.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="podcast">
-
-<div class="info-box">
-
-<div class="info-icon">
-🎙️
-</div>
-
-<h3>
-پادکست فصل اول
-</h3>
-
-<p>
-اپیزودهای پادکست مرتبط با حرکت بر خط راست.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="video">
-
-<div class="info-box">
-
-<div class="info-icon">
 🎬
 </div>
 
@@ -982,42 +863,25 @@ class="content-card">
 </h3>
 
 <p>
-محل قرارگیری ویدئوهای آموزشی فصل.
+
+آموزش تصویری مفاهیم و حل مسائل
+فصل حرکت بر خط راست.
+
 </p>
 
-</div>
+<span class="card-status">
+به‌زودی
+</span>
 
-</section>
-
-
-
-<section id="simulator">
-
-<div class="info-box">
-
-<div class="info-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌سازهای تعاملی
-</h3>
-
-<p>
-شبیه‌سازهای مربوط به حرکت، سرعت و شتاب.
-</p>
-
-</div>
-
-</section>
+</article>
 
 
 
-<section id="problems">
+<!-- مثال -->
 
-<div class="info-box">
+<article class="content-card">
 
-<div class="info-icon">
+<div class="card-icon">
 🧮
 </div>
 
@@ -1026,20 +890,25 @@ class="content-card">
 </h3>
 
 <p>
-مثال‌های آموزشی و مسائل استاندارد حرکت بر خط راست.
+
+مثال‌های مفهومی و محاسباتی
+از مباحث فصل.
+
 </p>
 
-</div>
+<span class="card-status">
+به‌زودی
+</span>
 
-</section>
+</article>
 
 
 
-<section id="quiz">
+<!-- تمرین -->
 
-<div class="info-box">
+<article class="content-card">
 
-<div class="info-icon">
+<div class="card-icon">
 ✏️
 </div>
 
@@ -1048,16 +917,69 @@ class="content-card">
 </h3>
 
 <p>
-تمرین‌های مفهومی، محاسباتی و آزمون‌های فصل.
+
+تمرین‌های طبقه‌بندی‌شده و آزمون‌های
+مفهومی و محاسباتی.
+
 </p>
 
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
 </div>
+
 
 </section>
 
 
 
+<!-- =========================
+     INFO
+========================= -->
+
 <section>
+
+
+<div class="info-box">
+
+
+<div class="info-icon">
+🏗️
+</div>
+
+
+<h3>
+اسکلت فصل آماده است
+</h3>
+
+
+<p>
+
+ساختار فصل آماده شده است.
+در مرحله تولید محتوا، هر بخش به
+درسنامه، پادکست، شبیه‌ساز، ویدئو،
+مثال و تمرین متصل خواهد شد.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<section>
+
 
 <div class="navigation">
 
@@ -1065,20 +987,21 @@ class="content-card">
 <a href="./physics-12-math.html"
 class="nav-button">
 
-همه فصل‌ها
+📚 همه فصل‌ها
 
 </a>
 
 
-<a href="./physics-12-math-chapter-2.html"
+<a href="./physics-12.html"
 class="nav-button">
 
-فصل دوم →
+فیزیک دوازدهم
 
 </a>
 
 
 </div>
+
 
 </section>
 
@@ -1087,7 +1010,12 @@ class="nav-button">
 
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
+
 
 <p>
 
@@ -1100,8 +1028,11 @@ H Quantum
 
 
 <p>
+
 Physics • Science • Wonder
+
 </p>
+
 
 </footer>
 
