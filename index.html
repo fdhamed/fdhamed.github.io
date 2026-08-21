@@ -11,9 +11,13 @@
 <title>H Quantum | فیزیک را ببین</title>
 
 <meta name="description"
-      content="H Quantum؛ خانه‌ای برای فیزیک، پادکست، کتاب و شبیه‌سازهای تعاملی.">
+      content="H Quantum؛ خانه‌ای برای فیزیک، پادکست، کتاب، آموزش دبیرستان و شبیه‌سازهای تعاملی.">
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 * {
     box-sizing: border-box;
@@ -26,13 +30,9 @@ html {
 }
 
 body {
-
     font-family: Tahoma, Arial, sans-serif;
-
     background: #07111f;
-
     color: #f4f7fb;
-
     line-height: 1.9;
 }
 
@@ -41,14 +41,15 @@ a {
     color: inherit;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header {
 
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 
     background:
@@ -64,7 +65,6 @@ header {
 .nav {
 
     max-width: 1100px;
-
     margin: auto;
 
     padding: 16px 20px;
@@ -87,7 +87,6 @@ header {
 }
 
 .logo span {
-
     color: #63d8ff;
 }
 
@@ -95,11 +94,20 @@ header {
 
     display: flex;
 
-    gap: 22px;
+    gap: 20px;
 
     font-size: 14px;
 
     color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a {
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -108,7 +116,9 @@ header {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
 
@@ -231,7 +241,9 @@ header {
 }
 
 
-/* GENERAL */
+/* =========================
+   GENERAL
+========================= */
 
 section {
 
@@ -262,7 +274,9 @@ section {
 }
 
 
-/* CARDS */
+/* =========================
+   CARDS
+========================= */
 
 .cards {
 
@@ -330,7 +344,53 @@ section {
 }
 
 
-/* ABOUT */
+/* =========================
+   SCHOOL CARD
+========================= */
+
+.school-card {
+
+    border:
+    1px solid rgba(99,216,255,0.25);
+
+    background:
+    linear-gradient(
+        145deg,
+        #0d2237,
+        #0c1b2c
+    );
+}
+
+.school-card .card-icon {
+
+    font-size: 40px;
+}
+
+.school-card h3 {
+
+    color: #ffffff;
+}
+
+.school-card .card-link {
+
+    display: inline-block;
+
+    padding:
+    8px 15px;
+
+    border-radius: 8px;
+
+    background:
+    rgba(99,216,255,0.08);
+
+    border:
+    1px solid rgba(99,216,255,0.2);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
 
 .about {
 
@@ -355,13 +415,16 @@ section {
 }
 
 
-/* QUOTE */
+/* =========================
+   QUOTE
+========================= */
 
 .quote {
 
     text-align: center;
 
-    padding: 90px 20px;
+    padding:
+    90px 20px;
 }
 
 .quote p {
@@ -388,14 +451,17 @@ section {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
 
     border-top:
     1px solid rgba(255,255,255,0.08);
 
-    padding: 35px 20px;
+    padding:
+    35px 20px;
 
     text-align: center;
 
@@ -408,7 +474,9 @@ footer strong {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
 
@@ -421,7 +489,7 @@ footer strong {
 
     .nav-links {
 
-        gap: 13px;
+        gap: 12px;
 
         font-size: 12px;
     }
@@ -450,7 +518,8 @@ footer strong {
 
     section {
 
-        padding: 60px 16px;
+        padding:
+        60px 16px;
     }
 
 }
@@ -463,7 +532,9 @@ footer strong {
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -478,6 +549,10 @@ H <span>QUANTUM</span>
 
 
 <div class="nav-links">
+
+<a href="school.html">
+🎓 مدرسه فیزیک
+</a>
 
 <a href="podcast.html">
 🎙️ پادکست
@@ -502,11 +577,16 @@ H <span>QUANTUM</span>
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <main>
 
+
 <section class="hero">
+
 
 <div class="hero-badge">
 
@@ -532,8 +612,9 @@ H <span>QUANTUM</span>
 
 <p>
 
-جایی برای کشف فیزیک از مسیر داستان،
-کتاب، پادکست و تجربه‌های تعاملی.
+جایی برای کشف فیزیک از مسیر
+آموزش، داستان، کتاب، پادکست
+و تجربه‌های تعاملی.
 
 </p>
 
@@ -541,8 +622,16 @@ H <span>QUANTUM</span>
 <div class="hero-buttons">
 
 
-<a href="podcast.html"
+<a href="school.html"
    class="btn btn-primary">
+
+🎓 مدرسه فیزیک
+
+</a>
+
+
+<a href="podcast.html"
+   class="btn">
 
 🎙 شروع پادکست
 
@@ -559,40 +648,104 @@ H <span>QUANTUM</span>
 
 </div>
 
+
 </section>
 
 
-<!-- CONTENT -->
+
+<!-- =========================
+     CONTENT
+========================= -->
 
 <section>
+
 
 <div class="section-title">
 
 <h2>
+
 دنیای H Quantum
+
 </h2>
 
+
 <p>
-چند راه برای نزدیک‌تر شدن به جهان فیزیک
+
+چند راه برای نزدیک‌تر شدن
+به جهان فیزیک
+
 </p>
 
 </div>
 
 
+
 <div class="cards">
 
 
-<!-- PODCAST -->
+<!-- =========================
+     SCHOOL
+========================= -->
+
+<article class="card school-card">
+
+
+<div class="card-icon">
+
+🎓
+
+</div>
+
+
+<h3>
+
+مدرسه فیزیک
+
+</h3>
+
+
+<p>
+
+مسیر آموزش فیزیک دبیرستان
+از پایه دهم تا دوازدهم؛
+با فصل‌های آموزشی،
+پادکست‌ها و تجربه‌های تعاملی.
+
+</p>
+
+
+<a href="school.html"
+   class="card-link">
+
+ورود به مدرسه فیزیک ←
+
+</a>
+
+
+</article>
+
+
+
+<!-- =========================
+     PODCAST
+========================= -->
 
 <article class="card">
 
+
 <div class="card-icon">
+
 🎙️
+
 </div>
 
+
 <h3>
+
 پادکست فیزیک
+
 </h3>
+
 
 <p>
 
@@ -602,6 +755,7 @@ H <span>QUANTUM</span>
 
 </p>
 
+
 <a href="podcast.html"
    class="card-link">
 
@@ -609,20 +763,31 @@ H <span>QUANTUM</span>
 
 </a>
 
+
 </article>
 
 
-<!-- BOOKS -->
+
+<!-- =========================
+     BOOKS
+========================= -->
 
 <article class="card">
 
+
 <div class="card-icon">
+
 📚
+
 </div>
 
+
 <h3>
+
 کتاب‌ها
+
 </h3>
+
 
 <p>
 
@@ -632,6 +797,7 @@ H <span>QUANTUM</span>
 
 </p>
 
+
 <a href="books.html"
    class="card-link">
 
@@ -639,20 +805,31 @@ H <span>QUANTUM</span>
 
 </a>
 
+
 </article>
 
 
-<!-- SIMULATIONS -->
+
+<!-- =========================
+     SIMULATIONS
+========================= -->
 
 <article class="card">
 
+
 <div class="card-icon">
+
 🧪
+
 </div>
 
+
 <h3>
+
 آزمایشگاه تعاملی
+
 </h3>
+
 
 <p>
 
@@ -662,6 +839,7 @@ H <span>QUANTUM</span>
 
 </p>
 
+
 <a href="simulations.html"
    class="card-link">
 
@@ -669,37 +847,9 @@ H <span>QUANTUM</span>
 
 </a>
 
-</article>
-
-
-<!-- PHYSICS -->
-
-<article class="card">
-
-<div class="card-icon">
-🌌
-</div>
-
-<h3>
-دنیای فیزیک
-</h3>
-
-<p>
-
-از کوانتوم و نسبیت تا ستاره‌ها،
-سیاه‌چاله‌ها و داستان
-کشف‌های علمی.
-
-</p>
-
-<a href="simulations.html"
-   class="card-link">
-
-کشف جهان ←
-
-</a>
 
 </article>
+
 
 
 </div>
@@ -707,34 +857,50 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- QUOTE -->
+
+<!-- =========================
+     QUOTE
+========================= -->
 
 <section class="quote">
+
 
 <p>
 
 «گاهی یک پرسش ساده،
-می‌تواند دریچه‌ای به سوی تمام جهان باز کند.»
+می‌تواند دریچه‌ای به سوی
+تمام جهان باز کند.»
 
 </p>
 
+
 <span>
+
 H Quantum
+
 </span>
+
 
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
 
+
 <div class="about">
+
 
 <div class="section-title">
 
 <h2>
+
 درباره H Quantum
+
 </h2>
 
 </div>
@@ -751,7 +917,14 @@ H Quantum تلاشی است برای نزدیک‌تر کردن
 بخوانیم، تجربه کنیم و با شبیه‌سازها
 خودمان آزمایش کنیم.
 
+در مدرسه فیزیک نیز تلاش می‌کنیم
+آموزش دبیرستان را از حالت صرفاً
+فرمول‌محور خارج کنیم و مفاهیم را
+با روایت، تصویر، پادکست و تجربه
+تعاملی همراه کنیم.
+
 </p>
+
 
 </div>
 
@@ -761,9 +934,13 @@ H Quantum تلاشی است برای نزدیک‌تر کردن
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
+
 
 <p>
 
@@ -772,11 +949,13 @@ H Quantum تلاشی است برای نزدیک‌تر کردن
 
 </p>
 
+
 <p>
 
 Physics • Science • Wonder
 
 </p>
+
 
 </footer>
 
