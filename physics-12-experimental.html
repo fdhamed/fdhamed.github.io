@@ -11,13 +11,9 @@ content="width=device-width, initial-scale=1.0">
 <title>فیزیک دوازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-content="فیزیک دوازدهم تجربی | فصل‌ها، درسنامه، پادکست، شبیه‌ساز و منابع آموزشی | H Quantum">
+content="فیزیک دوازدهم رشته تجربی | H Quantum">
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 * {
     box-sizing: border-box;
@@ -31,8 +27,11 @@ html {
 
 body {
     font-family: Tahoma, Arial, sans-serif;
+
     background: #07111f;
+
     color: #f4f7fb;
+
     line-height: 1.9;
 }
 
@@ -47,44 +46,63 @@ a {
 ========================= */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
-    background: rgba(7,17,31,0.95);
+    background:
+    rgba(7,17,31,0.95);
 
-    backdrop-filter: blur(12px);
+    backdrop-filter:
+    blur(12px);
 
     border-bottom:
-    1px solid rgba(255,255,255,0.08);
+    1px solid
+    rgba(255,255,255,0.08);
 }
 
+
 .nav {
+
     max-width: 1150px;
+
     margin: auto;
 
-    padding: 15px 20px;
+    padding:
+    15px 20px;
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content:
+    space-between;
 
     align-items: center;
 
     gap: 20px;
 }
 
+
 .logo {
+
     font-size: 24px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
+
 .logo span {
+
     color: #63d8ff;
 }
 
+
 .nav-links {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -98,11 +116,15 @@ header {
     color: #cbd5e1;
 }
 
+
 .nav-links a {
+
     transition: 0.3s;
 }
 
+
 .nav-links a:hover {
+
     color: #63d8ff;
 }
 
@@ -112,17 +134,20 @@ header {
 ========================= */
 
 .hero {
+
     max-width: 1050px;
 
     margin: auto;
 
     padding:
-    75px 20px 55px;
+    80px 20px 60px;
 
     text-align: center;
 }
 
+
 .breadcrumb {
+
     color: #8fa2b7;
 
     font-size: 13px;
@@ -130,18 +155,23 @@ header {
     margin-bottom: 20px;
 }
 
+
 .breadcrumb span {
+
     color: #63d8ff;
 }
 
+
 .badge {
+
     display: inline-block;
 
     padding:
-    6px 18px;
+    7px 18px;
 
     border:
-    1px solid rgba(99,216,255,0.35);
+    1px solid
+    rgba(99,216,255,0.35);
 
     border-radius: 30px;
 
@@ -152,20 +182,26 @@ header {
     margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size:
-    clamp(38px, 9vw, 66px);
 
-    line-height: 1.3;
+.hero h1 {
+
+    font-size:
+    clamp(36px, 8vw, 62px);
+
+    line-height: 1.4;
 
     margin-bottom: 18px;
 }
 
+
 .hero h1 span {
+
     color: #63d8ff;
 }
 
+
 .hero-description {
+
     max-width: 780px;
 
     margin: auto;
@@ -181,30 +217,37 @@ header {
 ========================= */
 
 section {
+
     max-width: 1150px;
 
     margin: auto;
 
     padding:
-    45px 20px;
+    40px 20px;
 }
 
+
 .section-title {
+
     text-align: center;
 
     margin-bottom: 30px;
 }
 
+
 .section-title h2 {
-    font-size: 30px;
+
+    font-size: 29px;
 
     margin-bottom: 8px;
 }
 
+
 .section-title p {
+
     color: #9eafc2;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -213,6 +256,7 @@ section {
 ========================= */
 
 .chapter-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -227,12 +271,15 @@ section {
 ========================= */
 
 .chapter-card {
-    position: relative;
 
-    background: #0c1b2c;
+    display: block;
+
+    background:
+    #0c1b2c;
 
     border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid
+    rgba(255,255,255,0.08);
 
     border-radius: 22px;
 
@@ -242,91 +289,81 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
+
 
 .chapter-card:hover {
+
     transform:
-    translateY(-5px);
+    translateY(-6px);
 
     border-color:
-    rgba(99,216,255,0.4);
+    rgba(99,216,255,0.45);
+
+    background:
+    #0e2033;
 }
 
+
 .chapter-number {
-    position: absolute;
 
-    top: 18px;
+    display: inline-flex;
 
-    left: 18px;
+    width: 48px;
 
-    width: 38px;
-
-    height: 38px;
-
-    display: flex;
+    height: 48px;
 
     align-items: center;
 
     justify-content: center;
 
-    border-radius: 50%;
+    border-radius: 14px;
 
-    background: #10243a;
+    background:
+    #10243a;
 
-    color: #63d8ff;
+    color:
+    #63d8ff;
+
+    font-size: 20px;
 
     font-weight: bold;
 
-    font-size: 14px;
+    margin-bottom: 18px;
 }
 
-.chapter-icon {
-    font-size: 44px;
-
-    margin-bottom: 12px;
-}
 
 .chapter-card h3 {
-    font-size: 23px;
+
+    font-size: 21px;
 
     margin-bottom: 10px;
+
+    line-height: 1.8;
 }
 
+
 .chapter-card p {
+
     color: #aebdce;
 
-    font-size: 14px;
+    font-size: 13px;
 
     margin-bottom: 20px;
 }
 
-.chapter-button {
+
+.chapter-link {
+
     display: inline-block;
-
-    padding:
-    9px 18px;
-
-    border-radius: 9px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.1);
 
     color: #63d8ff;
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.chapter-button:hover {
-    background: #63d8ff;
-
-    color: #06101d;
 }
 
 
@@ -335,10 +372,13 @@ section {
 ========================= */
 
 .info-box {
-    background: #0a1828;
+
+    background:
+    #0a1828;
 
     border:
-    1px dashed rgba(99,216,255,0.25);
+    1px dashed
+    rgba(99,216,255,0.25);
 
     border-radius: 20px;
 
@@ -348,19 +388,25 @@ section {
     text-align: center;
 }
 
+
 .info-icon {
-    font-size: 45px;
+
+    font-size: 44px;
 
     margin-bottom: 10px;
 }
 
+
 .info-box h3 {
-    font-size: 24px;
+
+    font-size: 23px;
 
     margin-bottom: 8px;
 }
 
+
 .info-box p {
+
     max-width: 750px;
 
     margin: auto;
@@ -372,43 +418,60 @@ section {
 
 
 /* =========================
-   BACK BUTTON
+   NAVIGATION
 ========================= */
 
-.back-section {
-    text-align: center;
+.navigation {
 
-    padding-top: 10px;
+    display: flex;
 
-    padding-bottom: 65px;
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    padding:
+    20px;
 }
 
-.back-button {
+
+.nav-button {
+
     display: inline-block;
 
     padding:
-    10px 20px;
+    10px 18px;
 
     border-radius: 10px;
 
-    background: #10243a;
+    background:
+    #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.1);
+    1px solid
+    rgba(255,255,255,0.1);
 
-    color: #63d8ff;
+    color:
+    #63d8ff;
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.back-button:hover {
-    background: #63d8ff;
 
-    color: #06101d;
+.nav-button:hover {
+
+    background:
+    #63d8ff;
+
+    color:
+    #06101d;
 }
 
 
@@ -417,8 +480,10 @@ section {
 ========================= */
 
 footer {
+
     border-top:
-    1px solid rgba(255,255,255,0.08);
+    1px solid
+    rgba(255,255,255,0.08);
 
     padding:
     35px 20px;
@@ -426,9 +491,13 @@ footer {
     text-align: center;
 
     color: #8191a4;
+
+    margin-top: 40px;
 }
 
+
 footer strong {
+
     color: #63d8ff;
 }
 
@@ -440,98 +509,78 @@ footer strong {
 @media (max-width: 700px) {
 
     .nav {
-        flex-direction: column;
+
+        flex-direction:
+        column;
     }
 
+
     .nav-links {
+
         gap: 10px;
 
         font-size: 12px;
     }
 
-    /*
-       کارت‌های فصل در موبایل
-       دو ستونه باقی می‌مانند
-    */
 
     .chapter-grid {
+
         grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
         gap: 10px;
     }
 
+
     .chapter-card {
+
         padding:
-        20px 13px;
+        20px 12px;
 
         border-radius: 17px;
     }
 
+
     .chapter-number {
-        width: 30px;
 
-        height: 30px;
+        width: 38px;
 
-        top: 10px;
+        height: 38px;
 
-        left: 10px;
+        border-radius: 10px;
 
-        font-size: 11px;
+        font-size: 16px;
+
+        margin-bottom: 12px;
     }
 
-    .chapter-icon {
-        font-size: 34px;
-    }
 
     .chapter-card h3 {
-        font-size: 17px;
 
-        line-height: 1.7;
-    }
-
-    .chapter-card p {
-        font-size: 11px;
+        font-size: 14px;
 
         line-height: 1.8;
     }
 
-    .chapter-button {
-        padding:
-        7px 10px;
-
-        font-size: 10px;
-    }
-
-    section {
-        padding:
-        40px 16px;
-    }
-
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
-
-@media (max-width: 380px) {
-
-    .chapter-grid {
-        gap: 8px;
-    }
-
-    .chapter-card {
-        padding:
-        17px 9px;
-    }
-
-    .chapter-card h3 {
-        font-size: 15px;
-    }
 
     .chapter-card p {
+
         font-size: 10px;
+
+        line-height: 1.8;
+    }
+
+
+    .chapter-link {
+
+        font-size: 9px;
+    }
+
+
+    section {
+
+        padding:
+        35px 15px;
     }
 
 }
@@ -543,10 +592,6 @@ footer strong {
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
@@ -597,10 +642,6 @@ H <span>QUANTUM</span>
 <main>
 
 
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero">
 
 
@@ -608,16 +649,14 @@ H <span>QUANTUM</span>
 
 مدرسه فیزیک
 /
-فیزیک دوازدهم
-/
-<span>تجربی</span>
+<span>فیزیک دوازدهم تجربی</span>
 
 </div>
 
 
 <div class="badge">
 
-فیزیک دوازدهم تجربی
+رشته علوم تجربی
 
 </div>
 
@@ -632,9 +671,9 @@ H <span>QUANTUM</span>
 
 <p class="hero-description">
 
-ساختار کامل فیزیک دوازدهم رشته علوم تجربی؛
-چهار فصل که در ادامه با درسنامه،
-پادکست، شبیه‌ساز، ویدئو، مثال و تمرین تکمیل خواهند شد.
+مسیر یادگیری فیزیک دوازدهم تجربی؛
+از حرکت و دینامیک تا نوسان، موج
+و فیزیک اتمی و هسته‌ای.
 
 </p>
 
@@ -642,10 +681,6 @@ H <span>QUANTUM</span>
 </section>
 
 
-
-<!-- =========================
-     CHAPTERS
-========================= -->
 
 <section>
 
@@ -657,7 +692,10 @@ H <span>QUANTUM</span>
 </h2>
 
 <p>
-برای ورود به هر فصل، کارت مربوط به آن را انتخاب کنید.
+
+چهار فصل در ساختار سایت قرار گرفته‌اند
+و در ادامه محتوای آموزشی هر فصل تکمیل خواهد شد.
+
 </p>
 
 </div>
@@ -667,171 +705,150 @@ H <span>QUANTUM</span>
 <div class="chapter-grid">
 
 
-<!-- =========================
-     CHAPTER 1
-========================= -->
+<!-- فصل اول -->
 
-<article class="chapter-card">
-
+<a class="chapter-card"
+href="./physics-12-experimental-chapter-1.html">
 
 <div class="chapter-number">
 ۱
 </div>
 
-
-<div class="chapter-icon">
-🚆
-</div>
-
-
 <h3>
+
+فصل اول
+<br>
 حرکت بر خط راست
+
 </h3>
 
-
 <p>
-فصل اول فیزیک دوازدهم تجربی
+
+بررسی حرکت، مکان، جابه‌جایی،
+سرعت و شتاب و توصیف حرکت
+در یک بعد.
+
 </p>
 
+<span class="chapter-link">
 
-<a href="./physics-12-experimental-chapter-1.html"
-class="chapter-button">
+ورود به فصل ←
 
-ورود به فصل
+</span>
 
 </a>
 
 
-</article>
 
+<!-- فصل دوم -->
 
-
-<!-- =========================
-     CHAPTER 2
-========================= -->
-
-<article class="chapter-card">
-
+<a class="chapter-card"
+href="./physics-12-experimental-chapter-2.html">
 
 <div class="chapter-number">
 ۲
 </div>
 
-
-<div class="chapter-icon">
-⚙️
-</div>
-
-
 <h3>
+
+فصل دوم
+<br>
 دینامیک
+
 </h3>
 
-
 <p>
-فصل دوم فیزیک دوازدهم تجربی
+
+بررسی نیروها، قوانین نیوتون،
+اصطکاک و ارتباط میان نیرو
+و حرکت اجسام.
+
 </p>
 
+<span class="chapter-link">
 
-<a href="./physics-12-experimental-chapter-2.html"
-class="chapter-button">
+ورود به فصل ←
 
-ورود به فصل
+</span>
 
 </a>
 
 
-</article>
 
+<!-- فصل سوم -->
 
-
-<!-- =========================
-     CHAPTER 3
-========================= -->
-
-<article class="chapter-card">
-
+<a class="chapter-card"
+href="./physics-12-experimental-chapter-3.html">
 
 <div class="chapter-number">
 ۳
 </div>
 
-
-<div class="chapter-icon">
-〰️
-</div>
-
-
 <h3>
-نوسان و امواج
+
+فصل سوم
+<br>
+نوسان و موج
+
 </h3>
 
-
 <p>
-فصل سوم فیزیک دوازدهم تجربی
+
+آشنایی با حرکت نوسانی،
+ویژگی‌های موج و پدیده‌های
+مهم موجی.
+
 </p>
 
+<span class="chapter-link">
 
-<a href="./physics-12-experimental-chapter-3.html"
-class="chapter-button">
+ورود به فصل ←
 
-ورود به فصل
+</span>
 
 </a>
 
 
-</article>
 
+<!-- فصل چهارم -->
 
-
-<!-- =========================
-     CHAPTER 4
-========================= -->
-
-<article class="chapter-card">
-
+<a class="chapter-card"
+href="./physics-12-experimental-chapter-4.html">
 
 <div class="chapter-number">
 ۴
 </div>
 
-
-<div class="chapter-icon">
-⚛️
-</div>
-
-
 <h3>
-آشنایی با فیزیک اتمی و هسته‌ای
+
+فصل چهارم
+<br>
+فیزیک اتمی و هسته‌ای
+
 </h3>
 
-
 <p>
-فصل چهارم فیزیک دوازدهم تجربی
+
+آشنایی با ساختار اتم،
+فیزیک هسته‌ای، پرتوزایی
+و انرژی هسته‌ای.
+
 </p>
 
+<span class="chapter-link">
 
-<a href="./physics-12-experimental-chapter-4.html"
-class="chapter-button">
+ورود به فصل ←
 
-به‌زودی
+</span>
 
 </a>
 
 
-</article>
-
-
 </div>
-
 
 </section>
 
 
-
-<!-- =========================
-     INFO
-========================= -->
 
 <section>
 
@@ -840,46 +857,64 @@ class="chapter-button">
 
 
 <div class="info-icon">
-🚀
+🏗️
 </div>
 
 
 <h3>
-این صفحه هنوز در مرحله ساخت اسکلت است
+
+اسکلت دوازدهم تجربی آماده است
+
 </h3>
 
 
 <p>
 
-ساختار فصل‌ها ابتدا کامل می‌شود.
-پس از آماده شدن اسکلت سایت،
-درسنامه‌ها، پادکست‌ها، شبیه‌سازهای تعاملی،
-ویدئوها، مثال‌ها و تمرین‌ها به آن اضافه خواهند شد.
+چهار فصل اصلی در ساختار سایت قرار گرفته‌اند.
+در مرحله تولید محتوا، هر فصل به درسنامه،
+پادکست، شبیه‌ساز، ویدئو، مثال و تمرین
+متصل خواهد شد.
 
 </p>
 
 
 </div>
 
-
 </section>
 
 
 
-<!-- =========================
-     BACK
-========================= -->
+<section>
 
-<section class="back-section">
+
+<div class="navigation">
 
 
 <a href="./physics-12.html"
-class="back-button">
+class="nav-button">
 
-← بازگشت به فیزیک دوازدهم
+← دوازدهم
 
 </a>
 
+
+<a href="./physics-10-experimental.html"
+class="nav-button">
+
+دهم تجربی
+
+</a>
+
+
+<a href="./physics-11-experimental.html"
+class="nav-button">
+
+یازدهم تجربی
+
+</a>
+
+
+</div>
 
 </section>
 
@@ -888,12 +923,7 @@ class="back-button">
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
-
 
 <p>
 
@@ -911,10 +941,9 @@ Physics • Science • Wonder
 
 </p>
 
-
 </footer>
 
 
 </body>
 
-</html>
+   </html>
