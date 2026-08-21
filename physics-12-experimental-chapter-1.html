@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>فصل اول فیزیک دوازدهم تجربی | حرکت بر خط راست | H Quantum</title>
+
+<meta name="description"
+content="فصل اول فیزیک دوازدهم تجربی؛ حرکت بر خط راست در H Quantum">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+
+    background: #07111f;
+
+    color: #f4f7fb;
+
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+    rgba(7,17,31,0.94);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    justify-content:
+    space-between;
+
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.logo span {
+
+    color: #63d8ff;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 16px;
+
+    font-size: 13px;
+
+    color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a {
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+
+    color: #63d8ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding:
+    75px 20px 55px;
+
+    text-align: center;
+}
+
+.breadcrumb {
+
+    color: #8fa2b7;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.breadcrumb span {
+
+    color: #63d8ff;
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding:
+    6px 18px;
+
+    border:
+    1px solid rgba(99,216,255,0.35);
+
+    border-radius: 30px;
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+
+    font-size:
+    clamp(38px, 9vw, 64px);
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+
+    color: #63d8ff;
+}
+
+.hero p {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    color: #aebdce;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding:
+    45px 20px;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.section-title p {
+
+    color: #9eafc2;
+}
+
+
+/* =========================
+   LEARNING CARDS
+========================= */
+
+.learning-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.learning-card {
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.learning-card:hover {
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(99,216,255,0.45);
+}
+
+.card-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.learning-card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.learning-card p {
+
+    color: #aebdce;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.card-button {
+
+    display: inline-block;
+
+    padding:
+    9px 18px;
+
+    border-radius: 9px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.card-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   PODCAST FEATURE
+========================= */
+
+.podcast-box {
+
+    background:
+    linear-gradient(
+        145deg,
+        #0c1f32,
+        #091625
+    );
+
+    border:
+    1px solid rgba(99,216,255,0.2);
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.podcast-icon {
+
+    font-size: 48px;
+
+    margin-bottom: 12px;
+}
+
+.podcast-box h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.podcast-box p {
+
+    color: #aebdce;
+
+    max-width: 700px;
+
+    margin: auto auto 20px;
+}
+
+.coming {
+
+    display: inline-block;
+
+    padding:
+    7px 15px;
+
+    border-radius: 20px;
+
+    background: #10243a;
+
+    color: #8fa2b7;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CHAPTER MAP
+========================= */
+
+.map-box {
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.map-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.06);
+}
+
+.map-item:last-child {
+
+    border-bottom: none;
+}
+
+.map-number {
+
+    min-width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #10243a;
+
+    color: #63d8ff;
+
+    font-weight: bold;
+}
+
+.map-item strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+.map-item small {
+
+    color: #8fa2b7;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back {
+
+    text-align: center;
+
+    padding:
+    20px 20px 80px;
+}
+
+.back-button {
+
+    display: inline-block;
+
+    padding:
+    11px 23px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+}
+
+.back-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding:
+    35px 20px;
+
+    text-align: center;
+
+    color: #8191a4;
+}
+
+footer strong {
+
+    color: #63d8ff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+
+        gap: 11px;
+
+        font-size: 12px;
+    }
+
+    .learning-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    section {
+
+        padding:
+        40px 16px;
+    }
+
+    .learning-card {
+
+        padding: 24px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero">
+
+<div class="breadcrumb">
+
+مدرسه فیزیک
+/
+دوازدهم تجربی
+/
+<span>فصل اول</span>
+
+</div>
+
+<div class="badge">
+
+فیزیک دوازدهم تجربی
+
+</div>
+
+<h1>
+
+حرکت <span>بر خط راست</span>
+
+</h1>
+
+<p>
+
+در این فصل، حرکت را از ساده‌ترین پرسش‌ها
+آغاز می‌کنیم؛ از اینکه یک جسم کجاست و
+چگونه جای خود را تغییر می‌دهد، تا اینکه
+چگونه سرعت و شتاب آن را توصیف کنیم.
+
+</p>
+
+</section>
+
+
+
+<!-- =========================
+     LEARNING PATH
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+
+مسیر یادگیری فصل
+
+</h2>
+
+<p>
+
+محتوای این فصل به‌تدریج در این بخش‌ها تکمیل می‌شود.
+
+</p>
+
+</div>
+
+
+<div class="learning-grid">
+
+
+<!-- LESSON -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+📚
+
+</div>
+
+<h3>
+
+درسنامه
+
+</h3>
+
+<p>
+
+مفاهیم فصل را مرحله‌به‌مرحله،
+با زبان ساده و در عین حال دقیق
+یاد بگیرید.
+
+</p>
+
+<a href="#lesson"
+   class="card-button">
+
+شروع درسنامه ←
+
+</a>
+
+</article>
+
+
+
+<!-- PODCAST -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+🎙️
+
+</div>
+
+<h3>
+
+پادکست
+
+</h3>
+
+<p>
+
+مفاهیم حرکت را در قالب روایت‌های
+شنیداری و داستانی دنبال کنید.
+
+</p>
+
+<a href="#podcast"
+   class="card-button">
+
+پادکست‌های فصل ←
+
+</a>
+
+</article>
+
+
+
+<!-- SIMULATOR -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+🧪
+
+</div>
+
+<h3>
+
+شبیه‌ساز تعاملی
+
+</h3>
+
+<p>
+
+حرکت را فقط نخوانید؛
+پارامترهای حرکت را تغییر دهید
+و نتیجه را مشاهده کنید.
+
+</p>
+
+<a href="#simulator"
+   class="card-button">
+
+شبیه‌ساز ←
+
+</a>
+
+</article>
+
+
+
+<!-- EXAMPLES -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+✏️
+
+</div>
+
+<h3>
+
+مثال و مسئله
+
+</h3>
+
+<p>
+
+مسائل منتخب فصل را همراه با
+تحلیل فیزیکی و حل مرحله‌به‌مرحله
+بررسی کنید.
+
+</p>
+
+<a href="#examples"
+   class="card-button">
+
+مثال‌ها ←
+
+</a>
+
+</article>
+
+
+
+<!-- EXERCISES -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+📝
+
+</div>
+
+<h3>
+
+تمرین
+
+</h3>
+
+<p>
+
+برای سنجش میزان یادگیری،
+تمرین‌های مفهومی و محاسباتی
+حل کنید.
+
+</p>
+
+<a href="#exercises"
+   class="card-button">
+
+تمرین‌ها ←
+
+</a>
+
+</article>
+
+
+
+<!-- CONCEPTS -->
+
+<article class="learning-card">
+
+<div class="card-icon">
+
+💡
+
+</div>
+
+<h3>
+
+نکات مفهومی
+
+</h3>
+
+<p>
+
+نکته‌هایی که معمولاً در نگاه اول
+دیده نمی‌شوند اما فهم عمیق حرکت
+به آن‌ها وابسته است.
+
+</p>
+
+<a href="#concepts"
+   class="card-button">
+
+نکات مفهومی ←
+
+</a>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     LESSON
+========================= -->
+
+<section id="lesson">
+
+<div class="section-title">
+
+<h2>
+
+📚 درسنامه فصل
+
+</h2>
+
+<p>
+
+حرکت را از مفهوم مکان و دستگاه مرجع آغاز می‌کنیم.
+
+</p>
+
+</div>
+
+
+<div class="map-box">
+
+<div class="map-item">
+
+<div class="map-number">
+۱
+</div>
+
+<div>
+
+<strong>
+مفهوم حرکت و دستگاه مرجع
+</strong>
+
+<small>
+مکان، مرجع، سکون و حرکت
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۲
+</div>
+
+<div>
+
+<strong>
+مکان و جابه‌جایی
+</strong>
+
+<small>
+بردار مکان، جابه‌جایی و مسافت
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۳
+</div>
+
+<div>
+
+<strong>
+سرعت
+</strong>
+
+<small>
+سرعت متوسط و سرعت لحظه‌ای
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۴
+</div>
+
+<div>
+
+<strong>
+شتاب
+</strong>
+
+<small>
+شتاب متوسط و شتاب لحظه‌ای
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۵
+</div>
+
+<div>
+
+<strong>
+حرکت با سرعت ثابت
+</strong>
+
+<small>
+رابطه مکان و زمان
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۶
+</div>
+
+<div>
+
+<strong>
+حرکت با شتاب ثابت
+</strong>
+
+<small>
+معادلات حرکت و نمودارها
+</small>
+
+</div>
+
+</div>
+
+
+<div class="map-item">
+
+<div class="map-number">
+۷
+</div>
+
+<div>
+
+<strong>
+سقوط آزاد
+</strong>
+
+<small>
+حرکت تحت اثر گرانش
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PODCAST
+========================= -->
+
+<section id="podcast">
+
+<div class="section-title">
+
+<h2>
+
+🎙️ پادکست فصل
+
+</h2>
+
+</div>
+
+
+<div class="podcast-box">
+
+<div class="podcast-icon">
+
+🎧
+
+</div>
+
+<h3>
+
+روایت حرکت
+
+</h3>
+
+<p>
+
+پادکست‌های آموزشی این فصل به‌صورت
+اپیزودهای مستقل در H Quantum قرار خواهند گرفت.
+
+</p>
+
+<span class="coming">
+
+در حال آماده‌سازی
+
+</span>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<section id="simulator">
+
+<div class="section-title">
+
+<h2>
+
+🧪 شبیه‌ساز تعاملی
+
+</h2>
+
+</div>
+
+
+<div class="podcast-box">
+
+<div class="podcast-icon">
+
+🚗
+
+</div>
+
+<h3>
+
+آزمایشگاه حرکت
+
+</h3>
+
+<p>
+
+در نسخهٔ نهایی می‌توانیم موقعیت،
+سرعت و شتاب جسم را تغییر دهیم و
+حرکت آن را به‌صورت زنده مشاهده کنیم.
+
+</p>
+
+<span class="coming">
+
+شبیه‌ساز در حال ساخت
+
+</span>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     EXAMPLES
+========================= -->
+
+<section id="examples">
+
+<div class="section-title">
+
+<h2>
+
+✏️ مثال و مسئله
+
+</h2>
+
+<p>
+
+حل مسئله با تأکید بر تحلیل فیزیکی.
+
+</p>
+
+</div>
+
+
+<div class="learning-card">
+
+<h3>
+
+مثال‌های فصل
+
+</h3>
+
+<p>
+
+در این بخش، مسائل منتخب از ساده
+تا پیشرفته قرار خواهند گرفت.
+
+</p>
+
+<span class="coming">
+
+در حال آماده‌سازی
+
+</span>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<section id="exercises">
+
+<div class="section-title">
+
+<h2>
+
+📝 تمرین
+
+</h2>
+
+<p>
+
+تمرین‌های مفهومی و محاسباتی.
+
+</p>
+
+</div>
+
+
+<div class="learning-card">
+
+<h3>
+
+تمرین‌های فصل اول
+
+</h3>
+
+<p>
+
+تمرین‌های تعاملی و مجموعه سؤال‌های
+آموزشی در این بخش قرار خواهند گرفت.
+
+</p>
+
+<span class="coming">
+
+در حال آماده‌سازی
+
+</span>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONCEPTS
+========================= -->
+
+<section id="concepts">
+
+<div class="section-title">
+
+<h2>
+
+💡 نکات مفهومی
+
+</h2>
+
+<p>
+
+فیزیک را فقط با فرمول حفظ نکنیم؛
+معنای پشت فرمول‌ها را ببینیم.
+
+</p>
+
+</div>
+
+
+<div class="learning-card">
+
+<h3>
+
+حرکت همیشه مطلق نیست
+
+</h3>
+
+<p>
+
+ممکن است جسمی نسبت به یک دستگاه مرجع
+ساکن و نسبت به دستگاهی دیگر در حال حرکت باشد.
+
+این همان نقطه‌ای است که مطالعهٔ حرکت
+از یک محاسبهٔ ساده به یک مسئلهٔ فیزیکی
+تبدیل می‌شود.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     BACK
+========================= -->
+
+<section class="back">
+
+<a href="physics-12-experimental.html"
+   class="back-button">
+
+← بازگشت به فیزیک دوازدهم تجربی
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
