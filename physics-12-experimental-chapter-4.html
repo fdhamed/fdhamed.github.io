@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+فصل چهارم فیزیک دوازدهم تجربی | H Quantum
+</title>
+
+<meta name="description"
+content="فصل چهارم فیزیک دوازدهم تجربی؛ آشنایی با فیزیک اتمی و هسته‌ای">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #07111f;
+    color: #f4f7fb;
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(7,17,31,0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #63d8ff;
+}
+
+.nav-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    color: #cbd5e1;
+}
+
+.nav-links a {
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #63d8ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding:
+    70px 20px 50px;
+
+    text-align: center;
+}
+
+.breadcrumb {
+    color: #8fa2b7;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.breadcrumb span {
+    color: #63d8ff;
+}
+
+.chapter-badge {
+    display: inline-block;
+
+    padding:
+    7px 18px;
+
+    border:
+    1px solid rgba(99,216,255,0.35);
+
+    border-radius: 30px;
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size:
+    clamp(34px, 8vw, 60px);
+
+    line-height: 1.45;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #63d8ff;
+}
+
+.hero-description {
+    max-width: 780px;
+
+    margin: auto;
+
+    color: #aebdce;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+section {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding:
+    40px 20px;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 29px;
+
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #9eafc2;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTENT GRID
+========================= */
+
+.content-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CONTENT CARD
+========================= */
+
+.content-card {
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    min-width: 0;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.content-card:hover {
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(99,216,255,0.4);
+}
+
+.card-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.content-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.content-card p {
+
+    color: #aebdce;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+.card-status {
+
+    display: inline-block;
+
+    padding:
+    6px 12px;
+
+    border-radius: 8px;
+
+    background: #10243a;
+
+    color: #63d8ff;
+
+    font-size: 11px;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================
+   CHAPTER STRUCTURE
+========================= */
+
+.structure-box {
+
+    background: #0a1828;
+
+    border:
+    1px dashed rgba(99,216,255,0.25);
+
+    border-radius: 20px;
+
+    padding:
+    30px 25px;
+
+    margin-top: 20px;
+}
+
+.structure-list {
+
+    list-style: none;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.structure-list li {
+
+    padding:
+    12px 15px;
+
+    margin-bottom: 8px;
+
+    background: #0c1b2c;
+
+    border-radius: 10px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+.structure-list li span {
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    margin-left: 8px;
+}
+
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-box {
+
+    background: #0a1828;
+
+    border:
+    1px dashed rgba(99,216,255,0.25);
+
+    border-radius: 20px;
+
+    padding:
+    35px 25px;
+
+    text-align: center;
+}
+
+.info-icon {
+
+    font-size: 44px;
+
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+.info-box p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #9eafc2;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    padding:
+    20px;
+}
+
+.nav-button {
+
+    display: inline-block;
+
+    padding:
+    10px 18px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    color: #63d8ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding:
+    35px 20px;
+
+    text-align: center;
+
+    color: #8191a4;
+
+    margin-top: 40px;
+}
+
+footer strong {
+
+    color: #63d8ff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav {
+
+        flex-direction: column;
+    }
+
+    .nav-links {
+
+        gap: 10px;
+
+        font-size: 12px;
+    }
+
+    .content-grid {
+
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .content-card {
+
+        padding:
+        20px 12px;
+
+        border-radius: 17px;
+    }
+
+    .card-icon {
+
+        font-size: 33px;
+    }
+
+    .content-card h3 {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .content-card p {
+
+        font-size: 10px;
+
+        line-height: 1.8;
+    }
+
+    .card-status {
+
+        font-size: 9px;
+
+        padding:
+        5px 8px;
+    }
+
+    .structure-box {
+
+        padding:
+        20px 12px;
+    }
+
+    .structure-list li {
+
+        font-size: 10px;
+
+        padding:
+        10px;
+    }
+
+    section {
+
+        padding:
+        35px 15px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .content-card h3 {
+
+        font-size: 14px;
+    }
+
+    .content-card p {
+
+        font-size: 9px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="./index.html"
+class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="./index.html">
+خانه
+</a>
+
+<a href="./school.html">
+مدرسه فیزیک
+</a>
+
+<a href="./physics-10.html">
+دهم
+</a>
+
+<a href="./physics-11.html">
+یازدهم
+</a>
+
+<a href="./physics-12.html">
+دوازدهم
+</a>
+
+<a href="./podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+
+<div class="breadcrumb">
+
+مدرسه فیزیک
+/
+فیزیک دوازدهم
+/
+تجربی
+/
+<span>فصل چهارم</span>
+
+</div>
+
+
+<div class="chapter-badge">
+
+فصل چهارم
+
+</div>
+
+
+<h1>
+
+آشنایی با فیزیک
+<span>اتمی و هسته‌ای</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+در این فصل با برخی از مهم‌ترین مفاهیم
+فیزیک نوین آشنا می‌شویم؛
+از برهم‌کنش نور و ماده و ساختار اتم
+تا ساختار هسته و پدیده پرتوزایی.
+
+</p>
+
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATIONAL STRUCTURE
+========================= -->
+
+<section>
+
+
+<div class="section-title">
+
+<h2>
+📚 ساختار فصل
+</h2>
+
+<p>
+شش بخش اصلی این فصل در اسکلت آموزشی سایت
+در نظر گرفته شده‌اند.
+</p>
+
+</div>
+
+
+<div class="structure-box">
+
+
+<ul class="structure-list">
+
+
+<li>
+<span>۱</span>
+اثر فوتوالکتریک و فوتون
+</li>
+
+
+<li>
+<span>۲</span>
+طیف خطی
+</li>
+
+
+<li>
+<span>۳</span>
+مدل اتم رادرفورد ـ بور
+</li>
+
+
+<li>
+<span>۴</span>
+لیزر
+</li>
+
+
+<li>
+<span>۵</span>
+ساختار هسته
+</li>
+
+
+<li>
+<span>۶</span>
+پرتوزایی طبیعی و نیمه‌عمر
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     RESOURCES
+========================= -->
+
+<section>
+
+
+<div class="section-title">
+
+<h2>
+🚀 بخش‌های آموزشی فصل
+</h2>
+
+<p>
+این بخش‌ها فعلاً به‌صورت اسکلت طراحی شده‌اند
+و محتوا در مرحله بعد اضافه خواهد شد.
+</p>
+
+</div>
+
+
+
+<div class="content-grid">
+
+
+<!-- درسنامه -->
+
+<article class="content-card">
+
+<div class="card-icon">
+📖
+</div>
+
+<h3>
+درسنامه فصل
+</h3>
+
+<p>
+
+درسنامه کامل و مفهومی فصل چهارم،
+همراه با توضیح مرحله‌به‌مرحله مفاهیم.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+
+<!-- پادکست -->
+
+<article class="content-card">
+
+<div class="card-icon">
+🎙️
+</div>
+
+<h3>
+پادکست فصل
+</h3>
+
+<p>
+
+روایت صوتی مفاهیم فصل،
+با نگاه مفهومی و داستانی.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+
+<!-- شبیه ساز -->
+
+<article class="content-card">
+
+<div class="card-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌سازهای تعاملی
+</h3>
+
+<p>
+
+آزمایش‌ها و پدیده‌های فیزیک اتمی
+و هسته‌ای به شکل تعاملی.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+
+<!-- ویدئو -->
+
+<article class="content-card">
+
+<div class="card-icon">
+🎬
+</div>
+
+<h3>
+ویدئوهای آموزشی
+</h3>
+
+<p>
+
+آموزش تصویری مفاهیم و حل مسائل
+فصل چهارم.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+
+<!-- مثال -->
+
+<article class="content-card">
+
+<div class="card-icon">
+🧮
+</div>
+
+<h3>
+مثال و حل مسئله
+</h3>
+
+<p>
+
+مثال‌های مفهومی و محاسباتی
+از مباحث فصل.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+
+<!-- تمرین -->
+
+<article class="content-card">
+
+<div class="card-icon">
+✏️
+</div>
+
+<h3>
+تمرین و آزمون
+</h3>
+
+<p>
+
+تمرین‌های طبقه‌بندی‌شده و آزمون‌های
+مفهومی و محاسباتی.
+
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</article>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     INFO
+========================= -->
+
+<section>
+
+
+<div class="info-box">
+
+
+<div class="info-icon">
+🏗️
+</div>
+
+
+<h3>
+اسکلت فصل آماده است
+</h3>
+
+
+<p>
+
+ساختار اصلی این فصل آماده شده است.
+در مرحله تولید محتوا، هر بخش به
+درسنامه، پادکست، شبیه‌ساز، ویدئو،
+مثال و تمرین متصل خواهد شد.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<section>
+
+
+<div class="navigation">
+
+
+<a href="./physics-12-experimental-chapter-3.html"
+class="nav-button">
+
+← فصل سوم
+
+</a>
+
+
+<a href="./physics-12-experimental.html"
+class="nav-button">
+
+📚 همه فصل‌ها
+
+</a>
+
+
+<a href="./physics-12.html"
+class="nav-button">
+
+فیزیک دوازدهم
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+
+<p>
+
+© 2026 —
+<strong>
+H Quantum
+</strong>
+
+</p>
+
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+
+</footer>
+
+
+</body>
+
+  </html>
