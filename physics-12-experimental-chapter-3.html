@@ -6,18 +6,14 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+content="width=device-width, initial-scale=1.0">
 
 <title>فصل سوم فیزیک دوازدهم تجربی | نوسان و امواج | H Quantum</title>
 
 <meta name="description"
-      content="فصل سوم فیزیک دوازدهم تجربی | نوسان و امواج | H Quantum">
+content="فصل سوم فیزیک دوازدهم تجربی؛ نوسان و امواج | H Quantum">
 
 <style>
-
-/* ==============================
-   RESET
-============================== */
 
 * {
     box-sizing: border-box;
@@ -42,9 +38,9 @@ a {
 }
 
 
-/* ==============================
+/* =========================
    HEADER
-============================== */
+========================= */
 
 header {
     position: sticky;
@@ -86,12 +82,11 @@ header {
 
 .nav-links {
     display: flex;
-
-    gap: 16px;
-
     flex-wrap: wrap;
 
     justify-content: center;
+
+    gap: 15px;
 
     font-size: 13px;
 
@@ -107,9 +102,9 @@ header {
 }
 
 
-/* ==============================
+/* =========================
    HERO
-============================== */
+========================= */
 
 .hero {
     max-width: 1050px;
@@ -117,7 +112,7 @@ header {
     margin: auto;
 
     padding:
-    75px 20px 50px;
+    75px 20px 55px;
 
     text-align: center;
 }
@@ -127,18 +122,18 @@ header {
 
     font-size: 13px;
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .breadcrumb span {
     color: #63d8ff;
 }
 
-.badge {
+.chapter-badge {
     display: inline-block;
 
     padding:
-    6px 18px;
+    7px 18px;
 
     border:
     1px solid rgba(99,216,255,0.35);
@@ -154,9 +149,9 @@ header {
 
 .hero h1 {
     font-size:
-    clamp(38px, 9vw, 68px);
+    clamp(34px, 8vw, 60px);
 
-    line-height: 1.25;
+    line-height: 1.45;
 
     margin-bottom: 18px;
 }
@@ -176,64 +171,9 @@ header {
 }
 
 
-/* ==============================
-   PROGRESS
-============================== */
-
-.progress-wrapper {
-    max-width: 850px;
-
-    margin:
-    25px auto 0;
-
-    padding:
-    15px 20px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 14px;
-}
-
-.progress-text {
-    display: flex;
-
-    justify-content:
-    space-between;
-
-    font-size: 13px;
-
-    color: #9eafc2;
-
-    margin-bottom: 8px;
-}
-
-.progress-bar {
-    height: 7px;
-
-    background: #15283d;
-
-    border-radius: 20px;
-
-    overflow: hidden;
-}
-
-.progress-fill {
-    width: 0%;
-
-    height: 100%;
-
-    background: #63d8ff;
-
-    border-radius: 20px;
-}
-
-
-/* ==============================
-   SECTIONS
-============================== */
+/* =========================
+   SECTION
+========================= */
 
 section {
     max-width: 1150px;
@@ -241,7 +181,7 @@ section {
     margin: auto;
 
     padding:
-    45px 20px;
+    40px 20px;
 }
 
 .section-title {
@@ -251,7 +191,7 @@ section {
 }
 
 .section-title h2 {
-    font-size: 30px;
+    font-size: 29px;
 
     margin-bottom: 8px;
 }
@@ -259,13 +199,58 @@ section {
 .section-title p {
     color: #9eafc2;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
-/* ==============================
+/* =========================
+   LESSONS
+========================= */
+
+.lesson-list {
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.lesson-item {
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    padding: 20px;
+}
+
+.lesson-number {
+    color: #63d8ff;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.lesson-item h3 {
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.lesson-item p {
+    color: #9eafc2;
+
+    font-size: 12px;
+}
+
+
+/* =========================
    CONTENT GRID
-============================== */
+========================= */
 
 .content-grid {
     display: grid;
@@ -277,17 +262,19 @@ section {
 }
 
 
-/* ==============================
-   CARDS
-============================== */
+/* =========================
+   CONTENT CARD
+========================= */
 
 .content-card {
+    display: block;
+
     background: #0c1b2c;
 
     border:
     1px solid rgba(255,255,255,0.08);
 
-    border-radius: 20px;
+    border-radius: 22px;
 
     padding: 28px;
 
@@ -295,25 +282,27 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .content-card:hover {
-    transform:
-    translateY(-5px);
+    transform: translateY(-5px);
 
     border-color:
     rgba(99,216,255,0.4);
+
+    background: #0e2033;
 }
 
 .card-icon {
-    font-size: 40px;
+    font-size: 42px;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .content-card h3 {
-    font-size: 22px;
+    font-size: 21px;
 
     margin-bottom: 10px;
 }
@@ -321,97 +310,35 @@ section {
 .content-card p {
     color: #aebdce;
 
-    font-size: 15px;
+    font-size: 13px;
 
     margin-bottom: 18px;
 }
 
-.status {
+.card-status {
     display: inline-block;
 
     padding:
-    5px 12px;
+    6px 12px;
 
-    border-radius: 20px;
-
-    background: #10243a;
-
-    color: #8fa2b7;
-
-    font-size: 12px;
-}
-
-
-/* ==============================
-   TOC
-============================== */
-
-.toc {
-    background: #0a1828;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    padding: 25px;
-}
-
-.toc-item {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 14px 5px;
-
-    border-bottom:
-    1px solid rgba(255,255,255,0.06);
-}
-
-.toc-item:last-child {
-    border-bottom: none;
-}
-
-.toc-number {
-    width: 40px;
-
-    height: 40px;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
+    border-radius: 8px;
 
     background: #10243a;
 
     color: #63d8ff;
 
-    font-weight: bold;
-}
+    font-size: 11px;
 
-.toc-item strong {
-    display: block;
-
-    margin-bottom: 2px;
-}
-
-.toc-item small {
-    color: #8fa2b7;
+    border:
+    1px solid rgba(255,255,255,0.08);
 }
 
 
-/* ==============================
-   PLACEHOLDER
-============================== */
+/* =========================
+   INFO BOX
+========================= */
 
-.placeholder {
+.info-box {
     background: #0a1828;
 
     border:
@@ -420,160 +347,87 @@ section {
     border-radius: 20px;
 
     padding:
-    45px 25px;
+    35px 25px;
 
     text-align: center;
 }
 
-.placeholder-icon {
-    font-size: 45px;
+.info-icon {
+    font-size: 44px;
 
     margin-bottom: 10px;
 }
 
-.placeholder h3 {
-    font-size: 24px;
+.info-box h3 {
+    font-size: 23px;
 
     margin-bottom: 8px;
 }
 
-.placeholder p {
-    max-width: 700px;
+.info-box p {
+    max-width: 750px;
 
     margin: auto;
 
     color: #9eafc2;
+
+    font-size: 14px;
 }
 
 
-/* ==============================
-   MEDIA BOX
-============================== */
+/* =========================
+   NAVIGATION
+========================= */
 
-.media-box {
-    background:
-    linear-gradient(
-        145deg,
-        #0c1f32,
-        #091625
-    );
+.navigation {
+    display: flex;
 
-    border:
-    1px solid rgba(99,216,255,0.15);
+    justify-content: center;
 
-    border-radius: 22px;
+    align-items: center;
 
-    padding: 35px;
+    gap: 12px;
 
-    text-align: center;
-}
-
-.media-icon {
-    font-size: 48px;
-
-    margin-bottom: 12px;
-}
-
-.media-box h3 {
-    font-size: 25px;
-
-    margin-bottom: 8px;
-}
-
-.media-box p {
-    max-width: 720px;
-
-    margin:
-    0 auto 18px;
-
-    color: #aebdce;
-}
-
-
-/* ==============================
-   CHAPTER NAVIGATION
-============================== */
-
-.chapter-navigation {
-    max-width: 1150px;
-
-    margin: auto;
+    flex-wrap: wrap;
 
     padding:
-    25px 20px 70px;
-
-    display: grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap: 18px;
+    20px;
 }
 
-.chapter-nav {
-    padding: 20px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 15px;
-
-    transition: 0.3s;
-}
-
-.chapter-nav:hover {
-    border-color:
-    rgba(99,216,255,0.4);
-}
-
-.chapter-nav small {
-    display: block;
-
-    color: #8fa2b7;
-
-    margin-bottom: 5px;
-}
-
-.chapter-nav strong {
-    color: #63d8ff;
-}
-
-.card-button {
+.nav-button {
     display: inline-block;
 
-    margin-top: 5px;
-
     padding:
-    9px 18px;
+    11px 20px;
 
-    border-radius: 9px;
+    border-radius: 12px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.1);
+    1px solid rgba(99,216,255,0.2);
 
     color: #63d8ff;
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.card-button:hover {
+.nav-button:hover {
     background: #63d8ff;
 
     color: #06101d;
+
+    transform: translateY(-2px);
 }
 
 
-/* ==============================
+/* =========================
    FOOTER
-============================== */
+========================= */
 
 footer {
     border-top:
@@ -585,6 +439,8 @@ footer {
     text-align: center;
 
     color: #8191a4;
+
+    margin-top: 40px;
 }
 
 footer strong {
@@ -592,26 +448,43 @@ footer strong {
 }
 
 
-/* ==============================
+/* =========================
    MOBILE
-============================== */
+========================= */
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
 
     .nav {
         flex-direction: column;
     }
 
     .nav-links {
-        gap: 11px;
+        gap: 10px;
 
         font-size: 12px;
     }
 
-    /* کارت‌ها همچنان دو ستونه */
+    .lesson-list {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .lesson-item {
+        padding:
+        15px 12px;
+    }
+
+    .lesson-item h3 {
+        font-size: 13px;
+    }
+
+    .lesson-item p {
+        font-size: 9px;
+    }
 
     .content-grid {
-
         grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
@@ -619,77 +492,45 @@ footer strong {
     }
 
     .content-card {
-
         padding:
-        18px 14px;
+        20px 12px;
 
-        border-radius: 16px;
+        border-radius: 17px;
     }
 
     .card-icon {
-
-        font-size: 32px;
+        font-size: 33px;
     }
 
     .content-card h3 {
-
-        font-size: 17px;
-    }
-
-    .content-card p {
-
-        font-size: 12px;
+        font-size: 15px;
 
         line-height: 1.8;
     }
 
-    .status {
-
+    .content-card p {
         font-size: 10px;
 
-        padding:
-        4px 8px;
+        line-height: 1.8;
     }
 
-    .chapter-navigation {
+    .card-status {
+        font-size: 9px;
 
-        grid-template-columns: 1fr;
+        padding:
+        5px 8px;
+    }
+
+    .nav-button {
+        font-size: 11px;
+
+        padding:
+        9px 14px;
     }
 
     section {
-
         padding:
-        40px 16px;
-    }
-
-}
-
-
-/* ==============================
-   VERY SMALL MOBILE
-============================== */
-
-@media (max-width: 380px) {
-
-    .content-grid {
-
-        gap: 8px;
-    }
-
-    .content-card {
-
-        padding:
-        15px 10px;
-    }
-
-    .content-card h3 {
-
-        font-size: 15px;
-    }
-
-    .content-card p {
-
-        font-size: 11px;
+        35px 15px;
     }
 
 }
@@ -702,42 +543,41 @@ footer strong {
 <body>
 
 
-<!-- HEADER -->
-
 <header>
 
 <nav class="nav">
 
-<a href="index.html"
-   class="logo">
+<a href="./index.html"
+class="logo">
 
 H <span>QUANTUM</span>
 
 </a>
 
+
 <div class="nav-links">
 
-<a href="index.html">
+<a href="./index.html">
 خانه
 </a>
 
-<a href="school.html">
+<a href="./school.html">
 مدرسه فیزیک
 </a>
 
-<a href="physics-10.html">
+<a href="./physics-10.html">
 دهم
 </a>
 
-<a href="physics-11.html">
+<a href="./physics-11.html">
 یازدهم
 </a>
 
-<a href="physics-12.html">
+<a href="./physics-12.html">
 دوازدهم
 </a>
 
-<a href="podcast.html">
+<a href="./podcast.html">
 🎙️ پادکست
 </a>
 
@@ -748,28 +588,32 @@ H <span>QUANTUM</span>
 </header>
 
 
+
 <main>
 
 
-<!-- HERO -->
-
 <section class="hero">
+
 
 <div class="breadcrumb">
 
 مدرسه فیزیک
 /
-دوازدهم تجربی
+فیزیک دوازدهم
+/
+تجربی
 /
 <span>فصل سوم</span>
 
 </div>
 
-<div class="badge">
 
-فیزیک دوازدهم تجربی
+<div class="chapter-badge">
+
+فصل سوم
 
 </div>
+
 
 <h1>
 
@@ -777,134 +621,158 @@ H <span>QUANTUM</span>
 
 </h1>
 
+
 <p class="hero-description">
 
-ساختار آموزشی فصل سوم فیزیک دوازدهم تجربی.
+در این فصل، به سراغ حرکت‌های نوسانی و پدیده‌های موجی
+می‌رویم و بررسی می‌کنیم که چگونه یک نوسان می‌تواند
+در فضا منتشر شود و موج شکل بگیرد.
 
 </p>
 
-<div class="progress-wrapper">
 
-<div class="progress-text">
+</section>
 
-<span>
-وضعیت تکمیل فصل
-</span>
 
-<span>
-۰٪
-</span>
+
+<section>
+
+
+<div class="section-title">
+
+<h2>
+📚 ساختار آموزشی فصل
+</h2>
+
+<p>
+مباحث اصلی فصل برای تولید محتوای آینده آماده شده‌اند.
+</p>
 
 </div>
 
-<div class="progress-bar">
 
-<div class="progress-fill"></div>
+<div class="lesson-list">
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۱
+</div>
+
+<h3>
+حرکت نوسانی
+</h3>
+
+<p>
+آشنایی با مفهوم نوسان و حرکت تناوبی.
+</p>
 
 </div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۲
+</div>
+
+<h3>
+حرکت هماهنگ ساده
+</h3>
+
+<p>
+بررسی ویژگی‌های حرکت هماهنگ ساده و کمیت‌های آن.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۳
+</div>
+
+<h3>
+انرژی در حرکت نوسانی
+</h3>
+
+<p>
+تبدیل انرژی در نوسانگر و ارتباط انرژی با حرکت.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۴
+</div>
+
+<h3>
+موج و ویژگی‌های آن
+</h3>
+
+<p>
+مفهوم موج، دامنه، طول موج، دوره و بسامد.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۵
+</div>
+
+<h3>
+انتشار موج
+</h3>
+
+<p>
+چگونگی انتشار موج و انتقال انرژی در محیط.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۶
+</div>
+
+<h3>
+پدیده‌های موجی
+</h3>
+
+<p>
+بررسی پدیده‌هایی مانند بازتاب، شکست و تداخل موج‌ها.
+</p>
+
+</div>
+
 
 </div>
 
 </section>
 
 
-<!-- TABLE OF CONTENTS -->
 
 <section>
+
 
 <div class="section-title">
 
 <h2>
-📑 فهرست فصل
+🚀 امکانات آموزشی فصل
 </h2>
 
 <p>
-ساختار مطالب فصل
-</p>
-
-</div>
-
-<div class="toc">
-
-<div class="toc-item">
-
-<div class="toc-number">
-۱
-</div>
-
-<div>
-
-<strong>
-بخش اول
-</strong>
-
-<small>
-محتوای این بخش بعداً اضافه می‌شود.
-</small>
-
-</div>
-
-</div>
-
-
-<div class="toc-item">
-
-<div class="toc-number">
-۲
-</div>
-
-<div>
-
-<strong>
-بخش دوم
-</strong>
-
-<small>
-محتوای این بخش بعداً اضافه می‌شود.
-</small>
-
-</div>
-
-</div>
-
-
-<div class="toc-item">
-
-<div class="toc-number">
-۳
-</div>
-
-<div>
-
-<strong>
-بخش سوم
-</strong>
-
-<small>
-محتوای این بخش بعداً اضافه می‌شود.
-</small>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CARDS -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-🧭 بخش‌های آموزشی فصل
-</h2>
-
-<p>
-تمام منابع آموزشی فصل از این قسمت قابل دسترسی خواهند بود.
+تمام محتوای آموزشی آینده از این بخش‌ها قابل دسترسی خواهد بود.
 </p>
 
 </div>
@@ -913,10 +781,11 @@ H <span>QUANTUM</span>
 <div class="content-grid">
 
 
-<article class="content-card">
+<a href="#lesson"
+class="content-card">
 
 <div class="card-icon">
-📚
+📖
 </div>
 
 <h3>
@@ -924,17 +793,19 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-محل درسنامه کامل فصل.
+درسنامهٔ کامل و مفهومی نوسان و امواج.
 </p>
 
-<span class="status">
-در حال آماده‌سازی
+<span class="card-status">
+به‌زودی
 </span>
 
-</article>
+</a>
 
 
-<article class="content-card">
+
+<a href="#podcast"
+class="content-card">
 
 <div class="card-icon">
 🎙️
@@ -945,17 +816,42 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-محل اپیزودهای پادکستی فصل.
+اپیزودهای صوتی مرتبط با نوسان و امواج.
 </p>
 
-<span class="status">
-در حال آماده‌سازی
+<span class="card-status">
+به‌زودی
 </span>
 
-</article>
+</a>
 
 
-<article class="content-card">
+
+<a href="#video"
+class="content-card">
+
+<div class="card-icon">
+🎬
+</div>
+
+<h3>
+ویدئوهای آموزشی
+</h3>
+
+<p>
+آموزش تصویری مفاهیم و حل مسائل فصل.
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</a>
+
+
+
+<a href="#simulator"
+class="content-card">
 
 <div class="card-icon">
 🧪
@@ -966,498 +862,230 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-محل آزمایش‌ها و شبیه‌سازهای فصل.
+محیط تعاملی برای مشاهدهٔ نوسان و انتشار موج.
 </p>
 
-<span class="status">
-در حال آماده‌سازی
+<span class="card-status">
+به‌زودی
 </span>
 
-</article>
+</a>
 
 
-<article class="content-card">
+
+<a href="#problems"
+class="content-card">
 
 <div class="card-icon">
-🎬
-</div>
-
-<h3>
-ویدئو
-</h3>
-
-<p>
-محل ویدئوهای آموزشی.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</article>
-
-
-<article class="content-card">
-
-<div class="card-icon">
-✏️
-</div>
-
-<h3>
-مثال‌های حل‌شده
-</h3>
-
-<p>
-محل مثال‌ها و مسائل حل‌شده.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</article>
-
-
-<article class="content-card">
-
-<div class="card-icon">
-📝
-</div>
-
-<h3>
-تمرین‌ها
-</h3>
-
-<p>
-محل تمرین‌های فصل.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</article>
-
-
-<article class="content-card">
-
-<div class="card-icon">
-💡
-</div>
-
-<h3>
-نکات مفهومی
-</h3>
-
-<p>
-محل نکات مهم و مفهومی.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</article>
-
-
-<article class="content-card">
-
-<div class="card-icon">
-📊
-</div>
-
-<h3>
-نمودارها و تصاویر
-</h3>
-
-<p>
-محل تصاویر و نمودارهای آموزشی.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- LESSON -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-📚 درسنامه
-</h2>
-
-<p>
-محل محتوای اصلی آموزشی
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
-📖
-</div>
-
-<h3>
-محل درسنامه
-</h3>
-
-<p>
-محتوای آموزشی این قسمت در مرحله تولید محتوا اضافه خواهد شد.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- PODCAST -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-🎙️ پادکست فصل
-</h2>
-
-<p>
-اپیزودهای مرتبط با فصل
-</p>
-
-</div>
-
-<div class="media-box">
-
-<div class="media-icon">
-🎧
-</div>
-
-<h3>
-محل پادکست
-</h3>
-
-<p>
-اپیزودهای این فصل در این قسمت قرار خواهند گرفت.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</div>
-
-</section>
-
-
-<!-- SIMULATOR -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-🧪 آزمایشگاه و شبیه‌ساز
-</h2>
-
-<p>
-تجربه تعاملی مفاهیم فصل
-</p>
-
-</div>
-
-<div class="media-box">
-
-<div class="media-icon">
-🔬
-</div>
-
-<h3>
-محل شبیه‌ساز
-</h3>
-
-<p>
-شبیه‌سازهای فصل در این قسمت قرار خواهند گرفت.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</div>
-
-</section>
-
-
-<!-- VIDEO -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-🎬 ویدئوهای آموزشی
-</h2>
-
-<p>
-ویدئوهای مرتبط با فصل
-</p>
-
-</div>
-
-<div class="media-box">
-
-<div class="media-icon">
-▶️
-</div>
-
-<h3>
-محل ویدئو
-</h3>
-
-<p>
-ویدئوهای آموزشی فصل در این قسمت قرار خواهند گرفت.
-</p>
-
-<span class="status">
-در حال آماده‌سازی
-</span>
-
-</div>
-
-</section>
-
-
-<!-- EXAMPLES -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-✏️ مثال‌های حل‌شده
-</h2>
-
-<p>
-تحلیل و حل مسائل فصل
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
 🧮
 </div>
 
 <h3>
-محل مثال‌ها
+مثال و حل مسئله
 </h3>
 
 <p>
-مثال‌های حل‌شده بعداً اضافه خواهند شد.
+مثال‌های مفهومی و محاسباتی با راه‌حل مرحله‌به‌مرحله.
 </p>
 
-</div>
+<span class="card-status">
+به‌زودی
+</span>
 
-</section>
+</a>
 
 
-<!-- EXERCISES -->
 
-<section>
+<a href="#quiz"
+class="content-card">
 
-<div class="section-title">
-
-<h2>
-📝 تمرین‌ها
-</h2>
-
-<p>
-تمرین‌های آموزشی و ارزیابی یادگیری
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
+<div class="card-icon">
 ✏️
 </div>
 
 <h3>
-محل تمرین‌ها
+تمرین و آزمون
 </h3>
 
 <p>
-تمرین‌های فصل بعداً اضافه خواهند شد.
+تمرین‌های طبقه‌بندی‌شده و آزمون‌های فصل.
 </p>
 
-</div>
-
-</section>
-
-
-<!-- CONCEPTS -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-💡 نکات مفهومی
-</h2>
-
-<p>
-مفاهیم کلیدی و نکات مهم فصل
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
-💡
-</div>
-
-<h3>
-محل نکات مفهومی
-</h3>
-
-<p>
-نکات مفهومی بعداً اضافه خواهند شد.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- FIGURES -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-📊 نمودارها و تصاویر
-</h2>
-
-<p>
-منابع بصری فصل
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
-📈
-</div>
-
-<h3>
-محل تصاویر و نمودارها
-</h3>
-
-<p>
-تصاویر و نمودارها بعداً اضافه خواهند شد.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- REFERENCES -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-📖 منابع و مطالعه بیشتر
-</h2>
-
-<p>
-منابع علمی و آموزشی
-</p>
-
-</div>
-
-<div class="placeholder">
-
-<div class="placeholder-icon">
-📚
-</div>
-
-<h3>
-محل منابع
-</h3>
-
-<p>
-منابع فصل بعداً اضافه خواهند شد.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- NAVIGATION -->
-
-<div class="chapter-navigation">
-
-
-<a href="physics-12-experimental-chapter-2.html"
-   class="chapter-nav">
-
-<small>
-فصل قبل
-</small>
-
-<strong>
-← دینامیک
-</strong>
-
-</a>
-
-
-<a href="physics-12-experimental-chapter-4.html"
-   class="chapter-nav"
-   style="text-align:left;">
-
-<small>
-فصل بعد
-</small>
-
-<strong>
-الکتریسیته ساکن →
-</strong>
+<span class="card-status">
+به‌زودی
+</span>
 
 </a>
 
 
 </div>
 
+</section>
 
-<section style="text-align:center;">
 
-<a href="physics-12-experimental.html"
-   class="card-button">
 
-← بازگشت به دوازدهم تجربی
+<section id="lesson">
+
+<div class="info-box">
+
+<div class="info-icon">
+📖
+</div>
+
+<h3>
+درسنامه فصل سوم
+</h3>
+
+<p>
+محل قرارگیری درسنامهٔ کامل فصل نوسان و امواج.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="podcast">
+
+<div class="info-box">
+
+<div class="info-icon">
+🎙️
+</div>
+
+<h3>
+پادکست فصل سوم
+</h3>
+
+<p>
+اپیزودهای پادکست مرتبط با نوسان و امواج.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="video">
+
+<div class="info-box">
+
+<div class="info-icon">
+🎬
+</div>
+
+<h3>
+ویدئوهای آموزشی
+</h3>
+
+<p>
+محل قرارگیری ویدئوهای آموزشی فصل.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="simulator">
+
+<div class="info-box">
+
+<div class="info-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌سازهای تعاملی
+</h3>
+
+<p>
+شبیه‌سازهای مربوط به نوسان، موج و پدیده‌های موجی.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="problems">
+
+<div class="info-box">
+
+<div class="info-icon">
+🧮
+</div>
+
+<h3>
+مثال و حل مسئله
+</h3>
+
+<p>
+مثال‌های آموزشی و مسائل استاندارد نوسان و امواج.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="quiz">
+
+<div class="info-box">
+
+<div class="info-icon">
+✏️
+</div>
+
+<h3>
+تمرین و آزمون
+</h3>
+
+<p>
+تمرین‌های مفهومی، محاسباتی و آزمون‌های فصل.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="navigation">
+
+
+<a href="./physics-12-experimental-chapter-2.html"
+class="nav-button">
+
+← فصل دوم
 
 </a>
+
+
+<a href="./physics-12-experimental.html"
+class="nav-button">
+
+همه فصل‌ها
+
+</a>
+
+
+<a href="./physics-12-experimental-chapter-4.html"
+class="nav-button">
+
+فصل چهارم →
+
+</a>
+
+
+</div>
 
 </section>
 
@@ -1465,7 +1093,6 @@ H <span>QUANTUM</span>
 </main>
 
 
-<!-- FOOTER -->
 
 <footer>
 
@@ -1478,10 +1105,9 @@ H Quantum
 
 </p>
 
+
 <p>
-
 Physics • Science • Wonder
-
 </p>
 
 </footer>
@@ -1489,4 +1115,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+      </html>
