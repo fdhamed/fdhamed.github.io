@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>فیزیک دوازدهم | H Quantum</title>
+
+<meta name="description"
+content="فیزیک دوازدهم H Quantum؛ انتخاب مسیر رشته ریاضی یا تجربی">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #07111f;
+    color: #f4f7fb;
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+    rgba(7,17,31,0.94);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    justify-content:
+    space-between;
+
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #63d8ff;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 18px;
+
+    font-size: 14px;
+
+    color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a {
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #63d8ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding:
+    85px 20px 60px;
+
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+
+    padding:
+    6px 18px;
+
+    border:
+    1px solid rgba(99,216,255,0.35);
+
+    border-radius: 30px;
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size:
+    clamp(40px, 10vw, 70px);
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #63d8ff;
+}
+
+.hero p {
+    max-width: 760px;
+
+    margin: auto;
+
+    color: #aebdce;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding:
+    55px 20px;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #9eafc2;
+}
+
+
+/* =========================
+   STREAMS
+========================= */
+
+.streams {
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.stream {
+    padding: 35px 28px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.stream:hover {
+    transform:
+    translateY(-7px);
+
+    border-color:
+    rgba(99,216,255,0.5);
+}
+
+.stream-icon {
+    font-size: 52px;
+
+    margin-bottom: 15px;
+}
+
+.stream h3 {
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.stream p {
+    color: #aebdce;
+
+    margin-bottom: 25px;
+}
+
+.stream-button {
+    display: inline-block;
+
+    padding:
+    11px 23px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.stream-button:hover {
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info {
+    margin-top: 30px;
+
+    padding: 28px;
+
+    background: #0a1828;
+
+    border:
+    1px solid rgba(99,216,255,0.15);
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.info p {
+    color: #aebdce;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back {
+    text-align: center;
+
+    padding:
+    20px 20px 80px;
+}
+
+.back-button {
+    display: inline-block;
+
+    padding:
+    11px 23px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding:
+    35px 20px;
+
+    text-align: center;
+
+    color: #8191a4;
+}
+
+footer strong {
+    color: #63d8ff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav {
+        flex-direction:
+        column;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        font-size: 12px;
+    }
+
+    .streams {
+        grid-template-columns:
+        1fr;
+    }
+
+    section {
+        padding:
+        45px 16px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="badge">
+
+مدرسه فیزیک H Quantum
+
+</div>
+
+
+<h1>
+
+فیزیک <span>دوازدهم</span>
+
+</h1>
+
+
+<p>
+
+آخرین پایهٔ فیزیک دبیرستان؛
+از حرکت و دینامیک تا نوسان، موج
+و فیزیک اتمی و هسته‌ای.
+
+مسیر یادگیری خود را بر اساس رشتهٔ
+تحصیلی انتخاب کنید.
+
+</p>
+
+</section>
+
+
+
+<!-- STREAM SELECTION -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+
+انتخاب رشته
+
+</h2>
+
+<p>
+
+رشتهٔ تحصیلی خود را انتخاب کنید.
+
+</p>
+
+</div>
+
+
+<div class="streams">
+
+
+<!-- =========================
+     MATH
+========================= -->
+
+<article class="stream">
+
+<div class="stream-icon">
+
+🧮
+
+</div>
+
+
+<h3>
+
+فیزیک دوازدهم ریاضی
+
+</h3>
+
+
+<p>
+
+شش فصل؛ از حرکت بر خط راست،
+دینامیک و حرکت دایره‌ای
+تا نوسان و موج، فیزیک اتمی
+و فیزیک هسته‌ای.
+
+</p>
+
+
+<a href="physics-12-math.html"
+   class="stream-button">
+
+ورود به دوازدهم ریاضی ←
+
+</a>
+
+</article>
+
+
+
+<!-- =========================
+     EXPERIMENTAL
+========================= -->
+
+<article class="stream">
+
+<div class="stream-icon">
+
+🧬
+
+</div>
+
+
+<h3>
+
+فیزیک دوازدهم تجربی
+
+</h3>
+
+
+<p>
+
+چهار فصل؛ از حرکت بر خط راست
+و دینامیک تا نوسان و امواج
+و آشنایی با فیزیک اتمی
+و هسته‌ای.
+
+</p>
+
+
+<a href="physics-12-experimental.html"
+   class="stream-button">
+
+ورود به دوازدهم تجربی ←
+
+</a>
+
+</article>
+
+
+</div>
+
+
+
+<!-- INFO -->
+
+<div class="info">
+
+<p>
+
+پس از انتخاب رشته، فصل‌های همان مسیر
+نمایش داده می‌شوند.
+
+در مراحل بعد، هر فصل به محتوای آموزشی،
+پادکست‌ها، شبیه‌سازهای تعاملی و
+مطالب تکمیلی خود متصل خواهد شد.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- BACK -->
+
+<section class="back">
+
+<a href="school.html"
+   class="back-button">
+
+← بازگشت به مدرسه فیزیک
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
