@@ -11,7 +11,7 @@
 <title>اندازه‌گیری و یکا | فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="بخش دوم فصل اول فیزیک دهم؛ اندازه‌گیری و یکا در H Quantum با متن آموزشی، پادکست، ویدئو و شبیه‌ساز تعاملی.">
+      content="بخش دوم فصل اول فیزیک دهم؛ اندازه‌گیری و یکا در H Quantum.">
 
 <style>
 
@@ -27,8 +27,11 @@ html {
 
 body {
     font-family: Tahoma, Arial, sans-serif;
+
     background: #07111f;
+
     color: #f4f7fb;
+
     line-height: 1.9;
 }
 
@@ -43,8 +46,11 @@ a {
 ========================= */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background:
@@ -58,37 +64,52 @@ header {
 }
 
 .nav {
+
     max-width: 1100px;
+
     margin: auto;
+
     padding: 16px 20px;
 
     display: flex;
-    justify-content: space-between;
+
+    justify-content:
+    space-between;
+
     align-items: center;
 }
 
 .logo {
+
     font-size: 24px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
 .logo span {
+
     color: #63d8ff;
 }
 
 .nav-links {
+
     display: flex;
+
     gap: 20px;
 
     font-size: 14px;
+
     color: #cbd5e1;
 
     flex-wrap: wrap;
+
     justify-content: center;
 }
 
 .nav-links a:hover {
+
     color: #63d8ff;
 }
 
@@ -98,7 +119,9 @@ header {
 ========================= */
 
 .hero {
+
     max-width: 1100px;
+
     margin: auto;
 
     padding: 80px 20px 65px;
@@ -107,6 +130,7 @@ header {
 }
 
 .hero-badge {
+
     display: inline-block;
 
     padding: 7px 18px;
@@ -124,6 +148,7 @@ header {
 }
 
 .hero h1 {
+
     font-size:
     clamp(34px, 8vw, 62px);
 
@@ -133,10 +158,12 @@ header {
 }
 
 .hero h1 span {
+
     color: #63d8ff;
 }
 
 .hero h2 {
+
     font-size:
     clamp(20px, 5vw, 30px);
 
@@ -146,6 +173,7 @@ header {
 }
 
 .hero p {
+
     max-width: 780px;
 
     margin: auto;
@@ -161,6 +189,7 @@ header {
 ========================= */
 
 section {
+
     max-width: 1100px;
 
     margin: auto;
@@ -169,17 +198,23 @@ section {
 }
 
 .section-title {
+
     text-align: center;
+
     margin-bottom: 40px;
 }
 
 .section-title h2 {
+
     font-size: 31px;
+
     margin-bottom: 10px;
 }
 
 .section-title p {
+
     color: #9eafc2;
+
     font-size: 15px;
 }
 
@@ -189,6 +224,7 @@ section {
 ========================= */
 
 .content-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -202,6 +238,7 @@ section {
 }
 
 .content-card {
+
     padding: 30px 25px;
 
     background: #0c1b2c;
@@ -220,6 +257,7 @@ section {
 }
 
 .content-card:hover {
+
     transform:
     translateY(-6px);
 
@@ -231,22 +269,30 @@ section {
 }
 
 .content-icon {
+
     font-size: 42px;
+
     margin-bottom: 12px;
 }
 
 .content-card h3 {
+
     font-size: 23px;
+
     margin-bottom: 12px;
 }
 
 .content-card p {
+
     color: #aebdce;
+
     font-size: 14px;
+
     margin-bottom: 20px;
 }
 
 .content-button {
+
     display: inline-block;
 
     padding: 10px 20px;
@@ -266,144 +312,98 @@ section {
 }
 
 .content-button:hover {
+
     background: #63d8ff;
+
     color: #06101d;
 }
 
+
+/* =========================
+   PREPARING
+========================= */
+
 .preparing {
-    opacity: 0.9;
+
+    opacity: 0.85;
 }
 
 .preparing .content-button {
+
     color: #91a2b5;
+
     cursor: default;
 }
 
 
 /* =========================
-   INTRO
+   SKELETON
 ========================= */
 
-.intro {
+.skeleton {
+
     max-width: 900px;
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding: 35px 30px;
 
     background: #0a1828;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
 
     border-radius: 22px;
 
-    border:
-    1px solid rgba(99,216,255,0.12);
-}
-
-.intro h2 {
-    font-size: 27px;
-
-    margin-bottom: 18px;
-
     text-align: center;
 }
 
-.intro p {
-    color: #b6c4d3;
+.skeleton h2 {
 
-    font-size: 16px;
+    font-size: 27px;
 
-    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.skeleton p {
+
+    color: #9eafc2;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
 }
 
 
 /* =========================
-   CONCEPTS
+   FUTURE ITEMS
 ========================= */
 
-.concepts {
-    display: grid;
+.future-list {
 
-    grid-template-columns:
-    repeat(2, 1fr);
+    display: flex;
 
-    gap: 16px;
+    flex-wrap: wrap;
 
-    max-width: 900px;
+    justify-content: center;
 
-    margin: auto;
+    gap: 10px;
 }
 
-.concept-card {
-    padding: 23px;
+.future-item {
 
-    background: #0a1828;
+    padding: 8px 15px;
+
+    background: #0c1b2c;
 
     border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 16px;
-
-    transition: 0.3s;
-}
-
-.concept-card:hover {
-    border-color:
-    rgba(99,216,255,0.35);
-
-    transform:
-    translateY(-3px);
-}
-
-.concept-number {
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    margin-bottom: 5px;
-}
-
-.concept-card h3 {
-    font-size: 19px;
-
-    margin-bottom: 8px;
-}
-
-.concept-card p {
-    color: #91a2b5;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   KEY IDEA
-========================= */
-
-.key-idea {
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 30px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(99,216,255,0.12);
+    1px solid rgba(255,255,255,0.08);
 
     border-radius: 20px;
 
-    text-align: center;
-}
+    color: #cbd5e1;
 
-.key-idea h2 {
-    font-size: 25px;
-    margin-bottom: 12px;
-}
-
-.key-idea p {
-    color: #aebdce;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
@@ -412,13 +412,16 @@ section {
 ========================= */
 
 .back-section {
+
     text-align: center;
 
     padding-top: 20px;
+
     padding-bottom: 80px;
 }
 
 .back-button {
+
     display: inline-block;
 
     padding: 13px 25px;
@@ -436,6 +439,7 @@ section {
 }
 
 .back-button:hover {
+
     transform:
     translateY(-3px);
 
@@ -449,6 +453,7 @@ section {
 ========================= */
 
 footer {
+
     border-top:
     1px solid rgba(255,255,255,0.08);
 
@@ -460,6 +465,7 @@ footer {
 }
 
 footer strong {
+
     color: #63d8ff;
 }
 
@@ -471,36 +477,41 @@ footer strong {
 @media (max-width: 750px) {
 
     .nav {
+
         flex-direction: column;
+
         gap: 10px;
     }
 
     .nav-links {
+
         gap: 11px;
+
         font-size: 12px;
     }
 
     .hero {
+
         padding-top: 60px;
     }
 
     .hero p {
+
         font-size: 15px;
     }
 
     .content-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .concepts {
         grid-template-columns: 1fr;
     }
 
     section {
+
         padding: 50px 16px;
     }
 
-    .intro {
+    .skeleton {
+
         padding: 30px 20px;
     }
 
@@ -528,6 +539,7 @@ footer strong {
 H <span>QUANTUM</span>
 
 </a>
+
 
 <div class="nav-links">
 
@@ -589,14 +601,10 @@ H <span>QUANTUM</span>
 
 <p>
 
-وقتی یک کمیت فیزیکی را می‌شناسیم،
-هنوز یک سؤال مهم باقی می‌ماند:
-
-چگونه مقدار آن را به شکلی دقیق،
-قابل فهم و قابل مقایسه بیان کنیم؟
-
-پاسخ این سؤال ما را به مفهوم
-اندازه‌گیری و یکا می‌رساند.
+اسکلت آموزشی این بخش آماده شده است.
+محتوای علمی، مثال‌ها، تمرین‌ها و
+فعالیت‌های تعاملی در مرحله تولید
+محتوا اضافه خواهند شد.
 
 </p>
 
@@ -616,7 +624,7 @@ H <span>QUANTUM</span>
 </h2>
 
 <p>
-اندازه‌گیری را از چند مسیر مختلف تجربه کنید.
+هر بخش در آینده از چند مسیر آموزشی مستقل تشکیل خواهد شد.
 </p>
 
 </div>
@@ -624,6 +632,8 @@ H <span>QUANTUM</span>
 
 <div class="content-grid">
 
+
+<!-- PODCAST -->
 
 <article class="content-card preparing">
 
@@ -636,8 +646,10 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-روایتی صوتی دربارهٔ اینکه
-چرا انسان به اندازه‌گیری نیاز دارد.
+
+صفحه و محتوای پادکست این بخش
+در مرحله تولید محتوا اضافه خواهد شد.
+
 </p>
 
 <a href="#podcast"
@@ -650,6 +662,8 @@ H <span>QUANTUM</span>
 </article>
 
 
+<!-- VIDEO -->
+
 <article class="content-card preparing">
 
 <div class="content-icon">
@@ -657,12 +671,14 @@ H <span>QUANTUM</span>
 </div>
 
 <h3>
-ویدئوی آموزشی
+ویدئو
 </h3>
 
 <p>
-توضیح تصویری مفهوم اندازه‌گیری،
-عدد و یکا.
+
+ویدئوی آموزشی این بخش
+در مرحله تولید محتوا اضافه خواهد شد.
+
 </p>
 
 <a href="#video"
@@ -675,7 +691,9 @@ H <span>QUANTUM</span>
 </article>
 
 
-<article class="content-card">
+<!-- TEXT -->
+
+<article class="content-card preparing">
 
 <div class="content-icon">
 📖
@@ -686,19 +704,23 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-مطالعهٔ مفهوم اندازه‌گیری و
-نقش یکا در بیان کمیت‌ها.
+
+متن آموزشی کامل این بخش
+در مرحله تولید محتوا قرار خواهد گرفت.
+
 </p>
 
 <a href="#text"
    class="content-button">
 
-مطالعه متن ←
+به‌زودی
 
 </a>
 
 </article>
 
+
+<!-- SIMULATOR -->
 
 <article class="content-card preparing">
 
@@ -707,12 +729,14 @@ H <span>QUANTUM</span>
 </div>
 
 <h3>
-شبیه‌ساز تعاملی
+شبیه‌ساز
 </h3>
 
 <p>
-فعالیت تعاملی اندازه‌گیری
-در مرحلهٔ بعد اضافه خواهد شد.
+
+فعالیت تعاملی مرتبط با این بخش
+در مرحله توسعه اضافه خواهد شد.
+
 </p>
 
 <a href="#simulator"
@@ -731,62 +755,47 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     INTRODUCTION
+     SKELETON
 ========================= -->
 
 <section id="text">
 
-<div class="intro">
+<div class="skeleton">
 
 <h2>
-اندازه‌گیری چیست؟
+📐 ساختار محتوای آموزشی
 </h2>
 
 <p>
 
-وقتی می‌خواهیم مقدار یک کمیت فیزیکی
-را مشخص کنیم، آن را با یک مقدار
-استاندارد مقایسه می‌کنیم.
-
-برای مثال، اگر بخواهیم طول یک میز
-را مشخص کنیم، می‌توانیم آن را با
-متر مقایسه کنیم.
-
-اگر طول میز برابر با ۲ متر باشد،
-عدد «۲» به ما می‌گوید که طول میز
-دو برابر یک متر است.
-
-بنابراین یک اندازه‌گیری در ساده‌ترین
-شکل خود شامل مقایسهٔ یک کمیت با
-یک مقدار استاندارد است.
-
-اما این مقایسه زمانی برای دیگران
-معنادار خواهد بود که همه بدانند
-مقدار استاندارد مورد استفاده چیست.
-
-اینجاست که مفهوم «یکا» اهمیت پیدا می‌کند.
-
-یکا یا واحد اندازه‌گیری، مقدار
-استانداردی است که برای بیان مقدار
-یک کمیت فیزیکی از آن استفاده می‌کنیم.
-
-برای مثال، متر یکای طول،
-کیلوگرم یکای جرم و ثانیه یکای زمان است.
-
-پس وقتی می‌گوییم طول یک میز
-۲ متر است، در واقع هم مقدار عددی
-«۲» را بیان کرده‌ایم و هم یکای
-«متر» را مشخص کرده‌ایم.
-
-عدد به تنهایی معمولاً کافی نیست.
-
-گفتن اینکه طول میز «۲» است،
-اطلاعات کاملی به ما نمی‌دهد.
-
-اما «۲ متر» یک بیان فیزیکی
-معنادار و قابل مقایسه است.
+این قسمت محل قرارگیری متن آموزشی
+و محتوای اصلی بخش خواهد بود.
 
 </p>
+
+<div class="future-list">
+
+<div class="future-item">
+مفهوم اصلی
+</div>
+
+<div class="future-item">
+مثال‌های آموزشی
+</div>
+
+<div class="future-item">
+تمرین
+</div>
+
+<div class="future-item">
+پرسش مفهومی
+</div>
+
+<div class="future-item">
+نکات مهم
+</div>
+
+</div>
 
 </div>
 
@@ -794,213 +803,51 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     CONCEPTS
+     FUTURE STRUCTURE
 ========================= -->
 
 <section>
 
-<div class="section-title">
+<div class="skeleton">
 
 <h2>
-اجزای یک اندازه‌گیری
-</h2>
-
-<p>
-برای بیان یک اندازه، عدد و یکا در کنار یکدیگر قرار می‌گیرند.
-</p>
-
-</div>
-
-
-<div class="concepts">
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-مفهوم ۱
-</div>
-
-<h3>
-🔢 مقدار عددی
-</h3>
-
-<p>
-
-عدد نشان می‌دهد کمیت مورد نظر
-چند برابر یکای انتخاب‌شده است.
-
-برای مثال در «۳ متر»،
-عدد ۳ مقدار عددی است.
-
-</p>
-
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-مفهوم ۲
-</div>
-
-<h3>
-📏 یکا
-</h3>
-
-<p>
-
-یکا مقدار استانداردی است که
-کمیت مورد نظر با آن مقایسه می‌شود.
-
-در «۳ متر»، متر یکاست.
-
-</p>
-
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-مفهوم ۳
-</div>
-
-<h3>
-⚖️ مقایسه
-</h3>
-
-<p>
-
-اندازه‌گیری در اصل نوعی مقایسه
-بین کمیت مورد نظر و یک مقدار
-استاندارد است.
-
-</p>
-
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-مفهوم ۴
-</div>
-
-<h3>
-🌍 استاندارد بودن
-</h3>
-
-<p>
-
-اگر افراد مختلف از استانداردهای
-متفاوت استفاده کنند، مقایسهٔ
-نتایج دشوار خواهد شد.
-
-به همین دلیل استانداردسازی
-یکاها اهمیت زیادی دارد.
-
-</p>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     EXAMPLE
-========================= -->
-
-<section>
-
-<div class="key-idea">
-
-<h2>
-💡 یک مثال ساده
+🧩 محتوای تکمیلی
 </h2>
 
 <p>
 
-فرض کنید دو نفر طول یک میز را
-اندازه بگیرند.
-
-اگر نفر اول بگوید «طول میز ۴ است»
-و نفر دوم بگوید «طول میز ۶ است»،
-هنوز نمی‌توانیم نتیجه بگیریم
-که اندازه‌گیری یکی از آن‌ها اشتباه است.
-
-ممکن است نفر اول و دوم از
-یکاهای متفاوتی استفاده کرده باشند.
-
-اما اگر هر دو بگویند:
-
-<strong>طول میز = ۲ متر</strong>
-
-نتیجه برای هر دو قابل فهم،
-قابل مقایسه و قابل بررسی است.
-
-این یکی از دلایل اصلی نیاز فیزیک
-به یکاهای استاندارد است.
+این بخش در آینده برای محتوای تکمیلی
+و ابزارهای آموزشی مورد استفاده قرار می‌گیرد.
 
 </p>
 
+<div class="future-list">
+
+<div class="future-item">
+پادکست
 </div>
 
-</section>
-
-
-<!-- =========================
-     KEY IDEA
-========================= -->
-
-<section>
-
-<div class="key-idea">
-
-<h2>
-🔑 ایدهٔ کلیدی
-</h2>
-
-<p>
-
-اندازه‌گیری یعنی مقایسهٔ یک کمیت
-با یک مقدار استاندارد.
-
-و برای اینکه نتیجهٔ اندازه‌گیری
-برای دیگران نیز قابل فهم و قابل
-مقایسه باشد، باید یکای آن را
-مشخص کنیم.
-
-</p>
-
+<div class="future-item">
+ویدئو
 </div>
 
-</section>
+<div class="future-item">
+تمرین تعاملی
+</div>
 
+<div class="future-item">
+شبیه‌ساز
+</div>
 
-<!-- =========================
-     FUTURE
-========================= -->
+<div class="future-item">
+آزمون
+</div>
 
-<section>
+<div class="future-item">
+نکات امتحانی
+</div>
 
-<div class="key-idea">
-
-<h2>
-محتوای تکمیلی این بخش
-</h2>
-
-<p>
-
-در مراحل بعد، مثال‌های بیشتر،
-پادکست، ویدئو، تمرین و شبیه‌ساز
-تعاملی این بخش به همین صفحه
-اضافه خواهند شد.
-
-</p>
+</div>
 
 </div>
 
@@ -1050,4 +897,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
