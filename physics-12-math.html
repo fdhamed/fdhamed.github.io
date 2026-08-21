@@ -11,7 +11,7 @@ content="width=device-width, initial-scale=1.0">
 <title>فیزیک دوازدهم ریاضی | H Quantum</title>
 
 <meta name="description"
-content="فیزیک دوازدهم رشته ریاضی و فیزیک | H Quantum">
+content="مدرسه فیزیک H Quantum | فیزیک دوازدهم رشته ریاضی">
 
 <style>
 
@@ -82,7 +82,6 @@ header {
 
 .nav-links {
     display: flex;
-
     flex-wrap: wrap;
 
     justify-content: center;
@@ -134,7 +133,7 @@ header {
     display: inline-block;
 
     padding:
-    6px 18px;
+    7px 18px;
 
     border:
     1px solid rgba(99,216,255,0.35);
@@ -150,9 +149,9 @@ header {
 
 .hero h1 {
     font-size:
-    clamp(38px, 9vw, 66px);
+    clamp(34px, 8vw, 60px);
 
-    line-height: 1.3;
+    line-height: 1.45;
 
     margin-bottom: 18px;
 }
@@ -182,7 +181,7 @@ section {
     margin: auto;
 
     padding:
-    45px 20px;
+    40px 20px;
 }
 
 .section-title {
@@ -192,7 +191,7 @@ section {
 }
 
 .section-title h2 {
-    font-size: 30px;
+    font-size: 29px;
 
     margin-bottom: 8px;
 }
@@ -200,7 +199,7 @@ section {
 .section-title p {
     color: #9eafc2;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -223,7 +222,7 @@ section {
 ========================= */
 
 .chapter-card {
-    position: relative;
+    display: block;
 
     background: #0c1b2c;
 
@@ -232,55 +231,31 @@ section {
 
     border-radius: 22px;
 
-    padding: 30px;
+    padding: 28px;
 
     min-width: 0;
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .chapter-card:hover {
-    transform:
-    translateY(-5px);
+    transform: translateY(-5px);
 
     border-color:
     rgba(99,216,255,0.4);
+
+    background: #0e2033;
 }
 
 .chapter-number {
-    position: absolute;
-
-    top: 18px;
-
-    left: 18px;
-
-    width: 38px;
-
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #10243a;
-
     color: #63d8ff;
 
-    font-weight: bold;
+    font-size: 13px;
 
-    font-size: 14px;
-}
-
-.chapter-icon {
-    font-size: 44px;
-
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .chapter-card h3 {
@@ -292,42 +267,32 @@ section {
 .chapter-card p {
     color: #aebdce;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .chapter-button {
     display: inline-block;
 
     padding:
-    9px 18px;
+    7px 13px;
 
-    border-radius: 9px;
+    border-radius: 8px;
 
     background: #10243a;
 
-    border:
-    1px solid rgba(255,255,255,0.1);
-
     color: #63d8ff;
 
-    font-size: 13px;
+    font-size: 11px;
 
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.chapter-button:hover {
-    background: #63d8ff;
-
-    color: #06101d;
+    border:
+    1px solid rgba(255,255,255,0.08);
 }
 
 
 /* =========================
-   INFO
+   INFO BOX
 ========================= */
 
 .info-box {
@@ -345,13 +310,13 @@ section {
 }
 
 .info-icon {
-    font-size: 45px;
+    font-size: 44px;
 
     margin-bottom: 10px;
 }
 
 .info-box h3 {
-    font-size: 24px;
+    font-size: 23px;
 
     margin-bottom: 8px;
 }
@@ -364,47 +329,6 @@ section {
     color: #9eafc2;
 
     font-size: 14px;
-}
-
-
-/* =========================
-   BACK
-========================= */
-
-.back-section {
-    text-align: center;
-
-    padding-top: 10px;
-
-    padding-bottom: 65px;
-}
-
-.back-button {
-    display: inline-block;
-
-    padding:
-    10px 20px;
-
-    border-radius: 10px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.1);
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.back-button:hover {
-    background: #63d8ff;
-
-    color: #06101d;
 }
 
 
@@ -422,6 +346,8 @@ footer {
     text-align: center;
 
     color: #8191a4;
+
+    margin-top: 40px;
 }
 
 footer strong {
@@ -441,6 +367,7 @@ footer strong {
 
     .nav-links {
         gap: 10px;
+
         font-size: 12px;
     }
 
@@ -459,39 +386,31 @@ footer strong {
     }
 
     .chapter-number {
-        width: 30px;
-        height: 30px;
-
-        top: 10px;
-        left: 10px;
-
-        font-size: 11px;
-    }
-
-    .chapter-icon {
-        font-size: 34px;
+        font-size: 10px;
     }
 
     .chapter-card h3 {
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: 15px;
+
+        line-height: 1.8;
     }
 
     .chapter-card p {
         font-size: 10px;
+
         line-height: 1.8;
     }
 
     .chapter-button {
-        padding:
-        7px 10px;
+        font-size: 9px;
 
-        font-size: 10px;
+        padding:
+        5px 8px;
     }
 
     section {
         padding:
-        40px 16px;
+        35px 15px;
     }
 
 }
@@ -503,6 +422,10 @@ footer strong {
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -553,6 +476,10 @@ H <span>QUANTUM</span>
 <main>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
 
 
@@ -560,33 +487,31 @@ H <span>QUANTUM</span>
 
 مدرسه فیزیک
 /
-فیزیک دوازدهم
-/
-<span>ریاضی و فیزیک</span>
+<span>فیزیک دوازدهم ریاضی</span>
 
 </div>
 
 
 <div class="badge">
 
-فیزیک دوازدهم ریاضی
+پایه دوازدهم • رشته ریاضی
 
 </div>
 
 
 <h1>
 
-فیزیک دوازدهم
-<span>ریاضی</span>
+فیزیک <span>دوازدهم</span>
 
 </h1>
 
 
 <p class="hero-description">
 
-ساختار کامل فیزیک دوازدهم رشته ریاضی و فیزیک؛
-شش فصل که در ادامه با درسنامه،
-پادکست، شبیه‌ساز، ویدئو، مثال و تمرین تکمیل خواهند شد.
+مسیر کامل یادگیری فیزیک دوازدهم رشته ریاضی؛
+از مفاهیم پایه تا مباحث پیشرفته‌تر فیزیک،
+با امکان دسترسی به درسنامه، پادکست،
+ویدئو، شبیه‌ساز و تمرین.
 
 </p>
 
@@ -594,6 +519,10 @@ H <span>QUANTUM</span>
 </section>
 
 
+
+<!-- =========================
+     CHAPTERS
+========================= -->
 
 <section>
 
@@ -605,7 +534,7 @@ H <span>QUANTUM</span>
 </h2>
 
 <p>
-برای ورود به هر فصل، کارت مربوط به آن را انتخاب کنید.
+شش فصل کتاب در قالب یک ساختار یکپارچه آماده شده‌اند.
 </p>
 
 </div>
@@ -615,189 +544,141 @@ H <span>QUANTUM</span>
 <div class="chapter-grid">
 
 
-<!-- فصل اول -->
-
-<article class="chapter-card">
+<a href="./physics-12-math-chapter-1.html"
+class="chapter-card">
 
 <div class="chapter-number">
-۱
-</div>
-
-<div class="chapter-icon">
-🚆
+فصل اول
 </div>
 
 <h3>
-حرکت بر خط راست
+فصل اول
 </h3>
 
 <p>
-فصل اول فیزیک دوازدهم ریاضی
+محتوای آموزشی فصل اول فیزیک دوازدهم ریاضی.
 </p>
 
-<a href="./physics-12-math-chapter-1.html"
-class="chapter-button">
-
-ورود به فصل
+<span class="chapter-button">
+ورود به فصل ←
+</span>
 
 </a>
 
-</article>
 
-
-
-<!-- فصل دوم -->
-
-<article class="chapter-card">
-
-<div class="chapter-number">
-۲
-</div>
-
-<div class="chapter-icon">
-⚙️
-</div>
-
-<h3>
-دینامیک و حرکت دایره‌ای
-</h3>
-
-<p>
-فصل دوم فیزیک دوازدهم ریاضی
-</p>
 
 <a href="./physics-12-math-chapter-2.html"
-class="chapter-button">
-
-ورود به فصل
-
-</a>
-
-</article>
-
-
-
-<!-- فصل سوم -->
-
-<article class="chapter-card">
+class="chapter-card">
 
 <div class="chapter-number">
-۳
-</div>
-
-<div class="chapter-icon">
-〰️
+فصل دوم
 </div>
 
 <h3>
-نوسان و موج
+فصل دوم
 </h3>
 
 <p>
-فصل سوم فیزیک دوازدهم ریاضی
+محتوای آموزشی فصل دوم فیزیک دوازدهم ریاضی.
 </p>
+
+<span class="chapter-button">
+ورود به فصل ←
+</span>
+
+</a>
+
+
 
 <a href="./physics-12-math-chapter-3.html"
-class="chapter-button">
-
-ورود به فصل
-
-</a>
-
-</article>
-
-
-
-<!-- فصل چهارم -->
-
-<article class="chapter-card">
+class="chapter-card">
 
 <div class="chapter-number">
-۴
-</div>
-
-<div class="chapter-icon">
-🌊
+فصل سوم
 </div>
 
 <h3>
-برهم‌کنش‌های موج
+فصل سوم
 </h3>
 
 <p>
-فصل چهارم فیزیک دوازدهم ریاضی
+محتوای آموزشی فصل سوم فیزیک دوازدهم ریاضی.
 </p>
+
+<span class="chapter-button">
+ورود به فصل ←
+</span>
+
+</a>
+
+
 
 <a href="./physics-12-math-chapter-4.html"
-class="chapter-button">
-
-ورود به فصل
-
-</a>
-
-</article>
-
-
-
-<!-- فصل پنجم -->
-
-<article class="chapter-card">
+class="chapter-card">
 
 <div class="chapter-number">
-۵
-</div>
-
-<div class="chapter-icon">
-⚛️
+فصل چهارم
 </div>
 
 <h3>
-آشنایی با فیزیک اتمی
+فصل چهارم
 </h3>
 
 <p>
-فصل پنجم فیزیک دوازدهم ریاضی
+محتوای آموزشی فصل چهارم فیزیک دوازدهم ریاضی.
 </p>
+
+<span class="chapter-button">
+ورود به فصل ←
+</span>
+
+</a>
+
+
 
 <a href="./physics-12-math-chapter-5.html"
-class="chapter-button">
-
-ورود به فصل
-
-</a>
-
-</article>
-
-
-
-<!-- فصل ششم -->
-
-<article class="chapter-card">
+class="chapter-card">
 
 <div class="chapter-number">
-۶
-</div>
-
-<div class="chapter-icon">
-☢️
+فصل پنجم
 </div>
 
 <h3>
-آشنایی با فیزیک هسته‌ای
+فصل پنجم
 </h3>
 
 <p>
-فصل ششم فیزیک دوازدهم ریاضی
+محتوای آموزشی فصل پنجم فیزیک دوازدهم ریاضی.
 </p>
 
-<a href="./physics-12-math-chapter-6.html"
-class="chapter-button">
-
-ورود به فصل
+<span class="chapter-button">
+ورود به فصل ←
+</span>
 
 </a>
 
-</article>
+
+
+<a href="./physics-12-math-chapter-6.html"
+class="chapter-card">
+
+<div class="chapter-number">
+فصل ششم
+</div>
+
+<h3>
+فصل ششم
+</h3>
+
+<p>
+محتوای آموزشی فصل ششم فیزیک دوازدهم ریاضی.
+</p>
+
+<span class="chapter-button">
+ورود به فصل ←
+</span>
+
+</a>
 
 
 </div>
@@ -805,6 +686,10 @@ class="chapter-button">
 </section>
 
 
+
+<!-- =========================
+     FUTURE CONTENT
+========================= -->
 
 <section>
 
@@ -812,36 +697,23 @@ class="chapter-button">
 <div class="info-box">
 
 <div class="info-icon">
-🏗️
+🚀
 </div>
 
 <h3>
-اسکلت دوازدهم ریاضی
+محتوای آموزشی در حال آماده‌سازی
 </h3>
 
 <p>
 
-ابتدا ساختار شش فصل کامل می‌شود.
-سپس درسنامه، پادکست، شبیه‌ساز،
-ویدئو، مثال و تمرین به هر فصل اضافه خواهد شد.
+اسکلت اصلی دوره آماده است.
+در مرحلهٔ بعد، درسنامه‌ها، پادکست‌ها،
+ویدئوها، شبیه‌سازهای تعاملی،
+مثال‌ها و آزمون‌ها به این ساختار اضافه خواهند شد.
 
 </p>
 
 </div>
-
-
-</section>
-
-
-
-<section class="back-section">
-
-<a href="./physics-12.html"
-class="back-button">
-
-← بازگشت به فیزیک دوازدهم
-
-</a>
 
 </section>
 
@@ -849,6 +721,10 @@ class="back-button">
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -870,4 +746,4 @@ Physics • Science • Wonder
 
 </body>
 
-    </html>
+</html>
