@@ -42,7 +42,9 @@ a {
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
 
@@ -101,6 +103,15 @@ header {
     font-size: 14px;
 
     color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a {
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -109,7 +120,9 @@ header {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
 
@@ -167,7 +180,9 @@ header {
 }
 
 
-/* GENERAL */
+/* =========================
+   GENERAL
+========================= */
 
 section {
 
@@ -198,7 +213,9 @@ section {
 }
 
 
-/* CHAPTERS */
+/* =========================
+   CHAPTERS
+========================= */
 
 .chapters {
 
@@ -212,6 +229,8 @@ section {
 
 .chapter-card {
 
+    display: block;
+
     padding: 30px;
 
     background: #0c1b2c;
@@ -223,7 +242,8 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .chapter-card:hover {
@@ -233,6 +253,9 @@ section {
 
     border-color:
     rgba(99,216,255,0.5);
+
+    background:
+    #0e2033;
 }
 
 .chapter-number {
@@ -287,15 +310,16 @@ section {
     transition: 0.3s;
 }
 
-.chapter-button:hover {
+.chapter-card:hover .chapter-button {
 
-    background: #63d8ff;
-
-    color: #06101d;
+    border-color:
+    rgba(99,216,255,0.4);
 }
 
 
-/* LEARNING */
+/* =========================
+   LEARNING
+========================= */
 
 .learning {
 
@@ -343,7 +367,9 @@ section {
 }
 
 
-/* SHARED CONTENT */
+/* =========================
+   SHARED CONTENT
+========================= */
 
 .shared {
 
@@ -378,7 +404,9 @@ section {
 }
 
 
-/* BACK */
+/* =========================
+   BACK
+========================= */
 
 .back-section {
 
@@ -417,7 +445,9 @@ section {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
 
@@ -437,7 +467,9 @@ footer strong {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -504,7 +536,9 @@ footer strong {
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -543,7 +577,10 @@ H <span>QUANTUM</span>
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <main>
 
@@ -569,45 +606,66 @@ H <span>QUANTUM</span>
 به جهان؛ از اندازه‌گیری و ویژگی‌های مواد
 تا انرژی و گرما.
 
+هر فصل در یک صفحهٔ مستقل قرار گرفته
+و می‌تواند به پادکست، ویدئو، متن آموزشی
+و شبیه‌سازهای تعاملی متصل شود.
+
 </p>
 
 </section>
 
 
-<!-- CHAPTERS -->
+
+<!-- =========================
+     CHAPTERS
+========================= -->
 
 <section>
 
 <div class="section-title">
 
 <h2>
+
 فصل‌های فیزیک دهم تجربی
+
 </h2>
 
 <p>
-مسیر یادگیری را از فصل اول آغاز کنید.
+
+فصل موردنظر خود را انتخاب کنید.
+
 </p>
 
 </div>
 
 
+
 <div class="chapters">
 
 
-<!-- CHAPTER 1 -->
+<!-- =========================
+     CHAPTER 1
+========================= -->
 
-<article class="chapter-card">
+<a href="physics-10-ch1.html"
+   class="chapter-card">
 
 <div class="chapter-number">
+
 فصل اول
+
 </div>
 
 <div class="chapter-icon">
+
 📏
+
 </div>
 
 <h3>
+
 فیزیک و اندازه‌گیری
+
 </h3>
 
 <p>
@@ -618,30 +676,39 @@ H <span>QUANTUM</span>
 
 </p>
 
-<a href="physics-10-ch1.html"
-   class="chapter-button">
+<span class="chapter-button">
 
 ورود به فصل ←
 
+</span>
+
 </a>
 
-</article>
 
 
-<!-- CHAPTER 2 -->
+<!-- =========================
+     CHAPTER 2
+========================= -->
 
-<article class="chapter-card">
+<a href="physics-10-ch2.html"
+   class="chapter-card">
 
 <div class="chapter-number">
+
 فصل دوم
+
 </div>
 
 <div class="chapter-icon">
+
 💧
+
 </div>
 
 <h3>
+
 ویژگی‌های فیزیکی مواد
+
 </h3>
 
 <p>
@@ -652,30 +719,39 @@ H <span>QUANTUM</span>
 
 </p>
 
-<a href="#chapter2"
-   class="chapter-button">
+<span class="chapter-button">
 
 ورود به فصل ←
 
+</span>
+
 </a>
 
-</article>
 
 
-<!-- CHAPTER 3 -->
+<!-- =========================
+     CHAPTER 3
+========================= -->
 
-<article class="chapter-card">
+<a href="physics-10-ch3.html"
+   class="chapter-card">
 
 <div class="chapter-number">
+
 فصل سوم
+
 </div>
 
 <div class="chapter-icon">
+
 ⚡
+
 </div>
 
 <h3>
+
 کار، انرژی و توان
+
 </h3>
 
 <p>
@@ -686,30 +762,39 @@ H <span>QUANTUM</span>
 
 </p>
 
-<a href="#chapter3"
-   class="chapter-button">
+<span class="chapter-button">
 
 ورود به فصل ←
 
+</span>
+
 </a>
 
-</article>
 
 
-<!-- CHAPTER 4 -->
+<!-- =========================
+     CHAPTER 4
+========================= -->
 
-<article class="chapter-card">
+<a href="physics-10-ch4.html"
+   class="chapter-card">
 
 <div class="chapter-number">
+
 فصل چهارم
+
 </div>
 
 <div class="chapter-icon">
+
 🌡️
+
 </div>
 
 <h3>
+
 دما و گرما
+
 </h3>
 
 <p>
@@ -720,14 +805,14 @@ H <span>QUANTUM</span>
 
 </p>
 
-<a href="#chapter4"
-   class="chapter-button">
+<span class="chapter-button">
 
 ورود به فصل ←
 
+</span>
+
 </a>
 
-</article>
 
 
 </div>
@@ -735,21 +820,29 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- LEARNING MODEL -->
+
+<!-- =========================
+     LEARNING MODEL
+========================= -->
 
 <section>
 
 <div class="section-title">
 
 <h2>
+
 هر فصل، چند مسیر یادگیری
+
 </h2>
 
 <p>
+
 در H Quantum یک مفهوم را از چند زاویه تجربه می‌کنیم.
+
 </p>
 
 </div>
+
 
 
 <div class="learning">
@@ -758,66 +851,97 @@ H <span>QUANTUM</span>
 <article class="learning-card">
 
 <div class="icon">
+
 🎙️
+
 </div>
 
 <h3>
+
 پادکست
+
 </h3>
 
 <p>
-مفهوم را بشنوید و با آن همراه شوید.
+
+مفهوم را بشنوید
+و با آن همراه شوید.
+
 </p>
 
 </article>
 
 
+
 <article class="learning-card">
 
 <div class="icon">
+
 🎬
+
 </div>
 
 <h3>
+
 ویدئو
+
 </h3>
 
 <p>
-تدریس تصویری و توضیح مفهومی.
+
+تدریس تصویری
+و توضیح مفهومی.
+
 </p>
 
 </article>
 
 
+
 <article class="learning-card">
 
 <div class="icon">
+
 📖
+
 </div>
 
 <h3>
+
 متن آموزشی
+
 </h3>
 
 <p>
-مطالعه و مرور دقیق مفاهیم.
+
+مطالعه و مرور دقیق
+مفاهیم.
+
 </p>
 
 </article>
+
 
 
 <article class="learning-card">
 
 <div class="icon">
+
 🧪
+
 </div>
 
 <h3>
+
 شبیه‌ساز
+
 </h3>
 
 <p>
-تغییر پارامترها و مشاهده نتیجه.
+
+تغییر پارامترها
+و مشاهده نتیجه.
+
 </p>
 
 </article>
@@ -828,20 +952,30 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- CHAPTER 1 -->
 
-<section id="chapter1">
+<!-- =========================
+     INFORMATION
+========================= -->
+
+<section>
 
 <div class="shared">
 
 <h2>
-📏 فصل اول — فیزیک و اندازه‌گیری
+
+مسیر یادگیری فیزیک دهم تجربی
+
 </h2>
 
 <p>
 
-صفحه اختصاصی این فصل در حال توسعه است.
-برای ورود به محتوای فصل، از مسیر اصلی فصل استفاده کنید.
+پس از انتخاب هر فصل، وارد صفحهٔ اختصاصی
+آن فصل می‌شوید. در صفحهٔ فصل، مسیرهای
+یادگیری شامل پادکست، ویدئو، متن آموزشی
+و شبیه‌ساز قرار می‌گیرند.
+
+به این ترتیب ساختار همهٔ فصل‌ها یکسان
+و قابل توسعه خواهد بود.
 
 </p>
 
@@ -850,70 +984,10 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- CHAPTER 2 -->
 
-<section id="chapter2">
-
-<div class="shared">
-
-<h2>
-💧 فصل دوم — ویژگی‌های فیزیکی مواد
-</h2>
-
-<p>
-
-صفحه اختصاصی فصل دوم در مرحله بعد ساخته خواهد شد.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- CHAPTER 3 -->
-
-<section id="chapter3">
-
-<div class="shared">
-
-<h2>
-⚡ فصل سوم — کار، انرژی و توان
-</h2>
-
-<p>
-
-صفحه اختصاصی فصل سوم در مرحله بعد ساخته خواهد شد.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- CHAPTER 4 -->
-
-<section id="chapter4">
-
-<div class="shared">
-
-<h2>
-🌡️ فصل چهارم — دما و گرما
-</h2>
-
-<p>
-
-صفحه اختصاصی فصل چهارم در مرحله بعد ساخته خواهد شد.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- BACK -->
+<!-- =========================
+     BACK
+========================= -->
 
 <section class="back-section">
 
@@ -930,7 +1004,10 @@ H <span>QUANTUM</span>
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -952,4 +1029,4 @@ Physics • Science • Wonder
 
 </body>
 
-</html>
+      </html>
