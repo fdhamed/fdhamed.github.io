@@ -11,7 +11,7 @@
 <title>فصل سوم فیزیک دهم | کار، انرژی و توان | H Quantum</title>
 
 <meta name="description"
-      content="فصل سوم فیزیک دهم؛ کار، انرژی و توان در H Quantum با پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
+      content="فصل سوم فیزیک دهم؛ کار، انرژی و توان در H Quantum با بخش‌های آموزشی، پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
 
 <style>
 
@@ -107,11 +107,6 @@ header {
     flex-wrap: wrap;
 
     justify-content: center;
-}
-
-.nav-links a {
-
-    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -226,6 +221,45 @@ section {
 
 
 /* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.intro p {
+
+    color: #b6c4d3;
+
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+
+/* =========================
    CONTENT GRID
 ========================= */
 
@@ -238,7 +272,7 @@ section {
 
     gap: 22px;
 
-    max-width: 900px;
+    max-width: 950px;
 
     margin: auto;
 }
@@ -283,7 +317,7 @@ section {
 
 .content-card h3 {
 
-    font-size: 23px;
+    font-size: 22px;
 
     margin-bottom: 12px;
 }
@@ -326,54 +360,16 @@ section {
 
 
 /* =========================
-   SIMULATOR ACTIVE
+   FUTURE
 ========================= */
 
-.simulator {
-
-    border-color:
-    rgba(99,216,255,0.25);
-
-    box-shadow:
-    0 0 25px rgba(99,216,255,0.04);
-}
-
-.simulator .content-button {
-
-    background: #63d8ff;
-
-    color: #06101d;
-}
-
-
-/* =========================
-   PREPARING
-========================= */
-
-.preparing {
-
-    opacity: 0.85;
-}
-
-.preparing .content-button {
-
-    color: #91a2b5;
-
-    cursor: default;
-}
-
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
+.future {
 
     max-width: 900px;
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
@@ -381,163 +377,15 @@ section {
 
     border:
     1px solid rgba(99,216,255,0.12);
-}
-
-.intro h2 {
-
-    font-size: 27px;
-
-    margin-bottom: 18px;
 
     text-align: center;
 }
 
-.intro p {
+.future h2 {
 
-    color: #b6c4d3;
+    font-size: 26px;
 
-    font-size: 16px;
-
-    text-align: justify;
-}
-
-
-/* =========================
-   TOPICS
-========================= */
-
-.topic-grid {
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 16px;
-
-    max-width: 900px;
-
-    margin: auto;
-}
-
-.topic-card {
-
-    padding: 22px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 16px;
-
-    transition: 0.3s;
-
-    position: relative;
-}
-
-.topic-card:hover {
-
-    border-color:
-    rgba(99,216,255,0.35);
-
-    transform:
-    translateY(-3px);
-}
-
-.topic-number {
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    margin-bottom: 5px;
-}
-
-.topic-card h3 {
-
-    font-size: 19px;
-
-    margin-bottom: 8px;
-}
-
-.topic-card p {
-
-    color: #91a2b5;
-
-    font-size: 14px;
-
-    margin-bottom: 16px;
-}
-
-
-/* =========================
-   TOPIC BUTTON
-========================= */
-
-.topic-button {
-
-    display: inline-block;
-
-    padding: 8px 16px;
-
-    border-radius: 8px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(99,216,255,0.25);
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.topic-button:hover {
-
-    background: #63d8ff;
-
-    color: #06101d;
-}
-
-
-/* =========================
-   LOCKED TOPICS
-========================= */
-
-.topic-locked {
-
-    opacity: 0.72;
-}
-
-.topic-locked .topic-button {
-
-    color: #8191a4;
-
-    border-color:
-    rgba(255,255,255,0.08);
-
-    cursor: default;
-
-    background: #0c1b2c;
-}
-
-
-/* =========================
-   FUTURE CONTENT
-========================= */
-
-.future {
-
-    text-align: center;
-
-    max-width: 850px;
-
-    margin: auto;
+    margin-bottom: 12px;
 }
 
 .future p {
@@ -675,48 +523,17 @@ footer strong {
         grid-template-columns: 1fr;
     }
 
-    /*
-       عمداً دو ستونه نگه داشته شده
-       چون کارت‌های فصل در موبایل
-       باید دو ستونه باشند.
-    */
-
-    .topic-grid {
-
-        grid-template-columns:
-        repeat(2, 1fr);
-
-        gap: 12px;
-    }
-
-    .topic-card {
-
-        padding: 18px 14px;
-    }
-
-    .topic-card h3 {
-
-        font-size: 16px;
-    }
-
-    .topic-card p {
-
-        font-size: 12px;
-    }
-
-    .topic-button {
-
-        font-size: 11px;
-
-        padding: 7px 11px;
-    }
-
     section {
 
         padding: 50px 16px;
     }
 
     .intro {
+
+        padding: 30px 20px;
+    }
+
+    .future {
 
         padding: 30px 20px;
     }
@@ -776,7 +593,6 @@ H <span>QUANTUM</span>
 </header>
 
 
-
 <!-- =========================
      HERO
 ========================= -->
@@ -808,176 +624,19 @@ H <span>QUANTUM</span>
 
 <p>
 
-انرژی یکی از بنیادی‌ترین مفاهیم فیزیک است؛
-مفهومی که به ما کمک می‌کند تغییرات جهان
-را نه فقط ببینیم، بلکه اندازه‌گیری و توصیف کنیم.
-
-در این فصل با کار، انرژی و توان آشنا می‌شویم
-و یاد می‌گیریم چگونه انرژی در یک سامانه
-تغییر می‌کند و از شکلی به شکل دیگر منتقل می‌شود.
+در این فصل با مفهوم کار،
+انرژی و توان آشنا می‌شویم
+و بررسی می‌کنیم که چگونه انرژی
+در یک سامانه تغییر می‌کند
+و از شکلی به شکل دیگر منتقل می‌شود.
 
 </p>
 
 </section>
 
 
-
 <!-- =========================
-     LEARNING CONTENT
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-مسیرهای یادگیری فصل
-</h2>
-
-<p>
-
-یک مفهوم را فقط از یک مسیر یاد نمی‌گیریم؛
-آن را می‌خوانیم، می‌شنویم و تجربه می‌کنیم.
-
-</p>
-
-</div>
-
-
-
-<div class="content-grid">
-
-
-<!-- PODCAST -->
-
-<article class="content-card preparing">
-
-<div class="content-icon">
-🎙️
-</div>
-
-<h3>
-پادکست فصل
-</h3>
-
-<p>
-
-اپیزودهای صوتی اختصاصی
-فصل سوم در حال آماده‌سازی هستند.
-
-</p>
-
-<a href="#podcast"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-
-<!-- VIDEO -->
-
-<article class="content-card preparing">
-
-<div class="content-icon">
-🎬
-</div>
-
-<h3>
-ویدئوی آموزشی
-</h3>
-
-<p>
-
-تدریس ویدئویی فصل،
-همراه با توضیح مفهومی و حل مثال‌ها
-در مرحله بعد اضافه خواهد شد.
-
-</p>
-
-<a href="#video"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-
-<!-- TEXT -->
-
-<article class="content-card preparing">
-
-<div class="content-icon">
-📖
-</div>
-
-<h3>
-متن آموزشی
-</h3>
-
-<p>
-
-متن کامل آموزشی فصل،
-مثال‌ها و نکات مهم به‌تدریج
-در این بخش قرار می‌گیرند.
-
-</p>
-
-<a href="#text"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-
-<!-- SIMULATOR -->
-
-<article class="content-card simulator">
-
-<div class="content-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌ساز تعاملی
-</h3>
-
-<p>
-
-با تغییر پارامترها،
-رابطه میان نیرو، جابه‌جایی،
-کار و انرژی را تجربه کنید.
-
-</p>
-
-<a href="simulations.html"
-   class="content-button">
-
-ورود به آزمایشگاه ←
-
-</a>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     INTRODUCTION
+     INTRO
 ========================= -->
 
 <section>
@@ -985,38 +644,21 @@ H <span>QUANTUM</span>
 <div class="intro">
 
 <h2>
-چرا انرژی مهم است؟
+نقشه راه فصل
 </h2>
 
 <p>
 
-در جهان اطراف ما دائماً چیزی در حال تغییر است.
+این فصل از بخش‌های اصلی تشکیل شده است.
+در هر بخش، یکی از مفاهیم اساسی
+کار، انرژی و توان را بررسی می‌کنیم
+و در ادامه می‌توانیم همان مفهوم را
+با متن، پادکست، ویدئو و فعالیت‌های
+تعاملی تجربه کنیم.
 
-توپی که حرکت می‌کند،
-خودرویی که شتاب می‌گیرد،
-سنگی که از ارتفاع پایین می‌آید،
-یا حتی جسمی که در ارتفاعی مشخص قرار گرفته است؛
-همه نمونه‌هایی از سامانه‌هایی هستند
-که در آن‌ها انرژی نقش اساسی دارد.
-
-در فیزیک، انرژی فقط یک واژه برای توضیح
-توانایی انجام تغییر نیست؛
-بلکه کمیتی است که می‌توان آن را اندازه‌گیری کرد
-و تغییرات آن را به‌صورت دقیق بررسی کرد.
-
-یکی از نکات مهم این فصل این است که
-انرژی معمولاً از بین نمی‌رود؛
-بلکه می‌تواند از شکلی به شکل دیگر تبدیل شود
-یا از یک جسم و سامانه به سامانه‌ای دیگر منتقل شود.
-
-برای فهم این موضوع ابتدا باید بدانیم
-«کار» در فیزیک دقیقاً چه معنایی دارد.
-
-از همین‌جا مسیر فصل سوم آغاز می‌شود:
-
-کار،
-انرژی،
-و سپس توان.
+در این مرحله ساختار صفحات آماده شده
+و محتوای علمی در مرحله بعد
+به آن‌ها اضافه خواهد شد.
 
 </p>
 
@@ -1025,9 +667,8 @@ H <span>QUANTUM</span>
 </section>
 
 
-
 <!-- =========================
-     CHAPTER TOPICS
+     CHAPTER SECTIONS
 ========================= -->
 
 <section>
@@ -1035,46 +676,42 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-نقشه مفهومی فصل
+بخش‌های فصل سوم
 </h2>
 
 <p>
-
-موضوعات اصلی فصل در ادامه به درس‌ها،
-پادکست‌ها و محتوای آموزشی متصل خواهند شد.
-
+برای ورود به هر بخش روی گزینه «ورود به بخش» بزنید.
 </p>
 
 </div>
 
 
-
-<div class="topic-grid">
+<div class="content-grid">
 
 
 <!-- =========================
-     TOPIC 1 - ACTIVE
+     SECTION 1
 ========================= -->
 
-<article class="topic-card">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۱
+<div class="content-icon">
+⚡
 </div>
 
 <h3>
-انرژی جنبشی
+بخش اول — انرژی جنبشی
 </h3>
 
 <p>
 
-انرژی وابسته به حرکت جسم
-و ارتباط آن با جرم و تندی.
+آشنایی با انرژی جنبشی
+و ارتباط آن با جرم و تندی جسم.
 
 </p>
 
 <a href="physics-10-ch3-kinetic.html"
-   class="topic-button">
+   class="content-button">
 
 ورود به بخش ←
 
@@ -1083,19 +720,18 @@ H <span>QUANTUM</span>
 </article>
 
 
-
 <!-- =========================
-     TOPIC 2 - ACTIVE
+     SECTION 2
 ========================= -->
 
-<article class="topic-card">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۲
+<div class="content-icon">
+💪
 </div>
 
 <h3>
-کار انجام‌شده توسط نیروی ثابت
+بخش دوم — کار انجام‌شده توسط نیروی ثابت
 </h3>
 
 <p>
@@ -1106,7 +742,7 @@ H <span>QUANTUM</span>
 </p>
 
 <a href="physics-10-ch3-work-force.html"
-   class="topic-button">
+   class="content-button">
 
 ورود به بخش ←
 
@@ -1115,188 +751,126 @@ H <span>QUANTUM</span>
 </article>
 
 
-
 <!-- =========================
-     TOPIC 3
+     SECTION 3
 ========================= -->
 
-<article class="topic-card topic-locked">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۳
+<div class="content-icon">
+🔗
 </div>
 
 <h3>
-کار و انرژی جنبشی
+بخش سوم — کار و انرژی جنبشی
 </h3>
 
 <p>
 
-چگونه کار خالص انجام‌شده روی جسم
-می‌تواند انرژی جنبشی آن را تغییر دهد؟
+بررسی رابطه میان کار خالص
+و تغییر انرژی جنبشی جسم.
 
 </p>
 
-<span class="topic-button">
+<a href="#section3"
+   class="content-button">
 
 به‌زودی
 
-</span>
+</a>
 
 </article>
 
 
-
 <!-- =========================
-     TOPIC 4
+     SECTION 4
 ========================= -->
 
-<article class="topic-card topic-locked">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۴
+<div class="content-icon">
+🏔️
 </div>
 
 <h3>
-کار و انرژی پتانسیل
+بخش چهارم — انرژی پتانسیل
 </h3>
 
 <p>
 
-بررسی انرژی پتانسیل و ارتباط آن
-با موقعیت جسم.
+آشنایی با انرژی پتانسیل
+و ارتباط آن با وضعیت جسم.
 
 </p>
 
-<span class="topic-button">
+<a href="#section4"
+   class="content-button">
 
 به‌زودی
 
-</span>
+</a>
 
 </article>
 
 
-
 <!-- =========================
-     TOPIC 5
+     SECTION 5
 ========================= -->
 
-<article class="topic-card topic-locked">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۵
+<div class="content-icon">
+♻️
 </div>
 
 <h3>
-پایستگی انرژی مکانیکی
+بخش پنجم — پایستگی انرژی
 </h3>
 
 <p>
 
-بررسی تبدیل انرژی جنبشی و پتانسیل
-در یک سامانه.
+بررسی تبدیل انرژی‌ها
+و مفهوم پایستگی انرژی مکانیکی.
 
 </p>
 
-<span class="topic-button">
+<a href="#section5"
+   class="content-button">
 
 به‌زودی
 
-</span>
+</a>
 
 </article>
 
 
-
 <!-- =========================
-     TOPIC 6
+     SECTION 6
 ========================= -->
 
-<article class="topic-card topic-locked">
+<article class="content-card">
 
-<div class="topic-number">
-موضوع ۶
+<div class="content-icon">
+⏱️
 </div>
 
 <h3>
-کار و انرژی درونی
+بخش ششم — توان
 </h3>
 
 <p>
 
-بررسی ارتباط کار، انرژی و
-تغییرات درونی سامانه.
+بررسی مفهوم توان
+و ارتباط کار با زمان.
 
 </p>
 
-<span class="topic-button">
+<a href="#section6"
+   class="content-button">
 
 به‌زودی
 
-</span>
-
-</article>
-
-
-
-<!-- =========================
-     TOPIC 7
-========================= -->
-
-<article class="topic-card topic-locked">
-
-<div class="topic-number">
-موضوع ۷
-</div>
-
-<h3>
-توان
-</h3>
-
-<p>
-
-تفاوت انجام مقدار مشخصی کار
-در زمان‌های متفاوت و مفهوم توان.
-
-</p>
-
-<span class="topic-button">
-
-به‌زودی
-
-</span>
-
-</article>
-
-
-
-<!-- =========================
-     TOPIC 8
-========================= -->
-
-<article class="topic-card topic-locked">
-
-<div class="topic-number">
-موضوع ۸
-</div>
-
-<h3>
-جمع‌بندی فصل
-</h3>
-
-<p>
-
-جمع‌بندی مفاهیم اصلی فصل
-کار، انرژی و توان.
-
-</p>
-
-<span class="topic-button">
-
-به‌زودی
-
-</span>
+</a>
 
 </article>
 
@@ -1306,64 +880,50 @@ H <span>QUANTUM</span>
 </section>
 
 
-
 <!-- =========================
-     FUTURE CONTENT
+     LEARNING MODEL
 ========================= -->
 
 <section>
 
 <div class="future">
 
-<div class="section-title">
-
 <h2>
-محتوای تکمیلی فصل
+🎓 مسیرهای یادگیری فصل
 </h2>
 
 <p>
 
-در مراحل بعد، این فصل به یک محیط آموزشی
-کامل و تعاملی تبدیل خواهد شد.
+پس از آماده شدن محتوای آموزشی،
+هر بخش می‌تواند چند مسیر یادگیری داشته باشد.
 
 </p>
-
-</div>
-
 
 
 <div class="future-list">
 
 <div class="future-item">
-مثال‌های حل‌شده
+🎙️ پادکست
 </div>
 
 <div class="future-item">
-تمرین
+🎬 ویدئو
 </div>
 
 <div class="future-item">
-پرسش‌های مفهومی
+📖 متن آموزشی
 </div>
 
 <div class="future-item">
-آزمایش‌های ساده
+🧪 شبیه‌ساز
 </div>
 
 <div class="future-item">
-نکات امتحانی
+📝 تمرین
 </div>
 
 <div class="future-item">
-واژه‌نامه فیزیک
-</div>
-
-<div class="future-item">
-پادکست
-</div>
-
-<div class="future-item">
-شبیه‌ساز
+❓ پرسش مفهومی
 </div>
 
 </div>
@@ -1371,7 +931,6 @@ H <span>QUANTUM</span>
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1391,7 +950,6 @@ H <span>QUANTUM</span>
 
 
 </main>
-
 
 
 <!-- =========================
