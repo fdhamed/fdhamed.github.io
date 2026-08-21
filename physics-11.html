@@ -11,57 +11,255 @@
 <title>فیزیک یازدهم | H Quantum</title>
 
 <meta name="description"
-      content="فیزیک یازدهم H Quantum؛ انتخاب مسیر رشته ریاضی یا تجربی.">
+content="فیزیک یازدهم H Quantum؛ انتخاب مسیر رشته ریاضی یا تجربی.">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #07111f;
+    color: #f4f7fb;
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7,17,31,0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #63d8ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+    color: #cbd5e1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a:hover {
+    color: #63d8ff;
+}
+
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 20px 60px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid rgba(99,216,255,0.35);
+    border-radius: 30px;
+    color: #63d8ff;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 10vw, 70px);
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #63d8ff;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #aebdce;
+    font-size: 17px;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #9eafc2;
+}
+
+.streams {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.stream {
+    padding: 35px 28px;
+    background: #0c1b2c;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stream:hover {
+    transform: translateY(-7px);
+    border-color: rgba(99,216,255,0.5);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.stream h3 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.stream p {
+    color: #aebdce;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 23px;
+    border-radius: 10px;
+    background: #10243a;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #63d8ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #63d8ff;
+    color: #06101d;
+}
+
+.info {
+    margin-top: 30px;
+    padding: 28px;
+    background: #0a1828;
+    border: 1px solid rgba(99,216,255,0.15);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.info p {
+    color: #aebdce;
+}
+
+.back {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 35px 20px;
+    text-align: center;
+    color: #8191a4;
+}
+
+footer strong {
+    color: #63d8ff;
+}
+
+@media(max-width:700px) {
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+        gap: 12px;
+    }
+
+    .streams {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 45px 16px;
+    }
+
+}
+
+</style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
-<nav>
+<nav class="nav">
 
-<a href="index.html">
-H QUANTUM
+<a href="index.html" class="logo">
+H <span>QUANTUM</span>
 </a>
 
-|
+<div class="nav-links">
 
-<a href="school.html">
-مدرسه فیزیک
-</a>
+<a href="index.html">خانه</a>
 
-|
+<a href="school.html">مدرسه فیزیک</a>
 
-<a href="physics-10.html">
-فیزیک دهم
-</a>
+<a href="physics-10.html">فیزیک دهم</a>
 
-|
+<a href="physics-11.html">فیزیک یازدهم</a>
 
-<a href="physics-11.html">
-فیزیک یازدهم
-</a>
+<a href="podcast.html">🎙️ پادکست</a>
 
-|
-
-<a href="podcast.html">
-🎙️ پادکست
-</a>
-
-|
-
-<a href="books.html">
-📚 کتاب‌ها
-</a>
-
-|
-
-<a href="simulations.html">
-🧪 آزمایشگاه
-</a>
+</div>
 
 </nav>
 
@@ -70,88 +268,119 @@ H QUANTUM
 
 <main>
 
+<section class="hero">
+
+<div class="badge">
+مدرسه فیزیک H Quantum
+</div>
 
 <h1>
-فیزیک یازدهم
+فیزیک <span>یازدهم</span>
 </h1>
 
-
 <p>
-
-مسیر یادگیری فیزیک یازدهم را
-بر اساس رشته تحصیلی خود انتخاب کنید.
-
+مسیر یادگیری خود را بر اساس رشته تحصیلی انتخاب کنید.
+هر دو مسیر از پایه‌های مشترک فیزیک یازدهم آغاز می‌شوند،
+اما در ادامه فصل‌بندی متفاوتی دارند.
 </p>
 
+</section>
 
-<hr>
 
+<section>
+
+<div class="section-title">
 
 <h2>
 انتخاب رشته
 </h2>
 
+<p>
+رشته تحصیلی خود را انتخاب کنید.
+</p>
 
-<!-- تجربی -->
+</div>
 
-<section>
+
+<div class="streams">
+
+
+<article class="stream">
+
+<div class="icon">
+🧬
+</div>
 
 <h3>
 فیزیک یازدهم تجربی
 </h3>
 
 <p>
-
-سه فصل فیزیک یازدهم رشته تجربی.
-
+سه فصل شامل الکتریسیته ساکن،
+جریان الکتریکی و مدارهای جریان مستقیم،
+مغناطیس و القای الکترومغناطیسی.
 </p>
 
-<a href="physics-11-experimental.html">
+<a href="physics-11-experimental.html"
+   class="button">
 
-ورود به فیزیک یازدهم تجربی ←
+ورود به یازدهم تجربی ←
 
 </a>
 
-</section>
+</article>
 
 
-<hr>
+<article class="stream">
 
-
-<!-- ریاضی -->
-
-<section>
+<div class="icon">
+🧮
+</div>
 
 <h3>
 فیزیک یازدهم ریاضی
 </h3>
 
 <p>
-
-چهار فصل فیزیک یازدهم رشته ریاضی.
-
+چهار فصل شامل الکتریسیته ساکن،
+جریان الکتریکی، مغناطیس،
+و القای الکترومغناطیسی و جریان متناوب.
 </p>
 
-<a href="physics-11-math.html">
+<a href="physics-11-math.html"
+   class="button">
 
-ورود به فیزیک یازدهم ریاضی ←
+ورود به یازدهم ریاضی ←
 
 </a>
+
+</article>
+
+
+</div>
+
+
+<div class="info">
+
+<p>
+بعد از انتخاب رشته، فصل‌های همان مسیر
+در اختیار شما قرار می‌گیرد.
+در مراحل بعد، هر فصل به محتوای آموزشی،
+پادکست و شبیه‌سازهای تعاملی متصل خواهد شد.
+</p>
+
+</div>
 
 </section>
 
 
-<hr>
+<section class="back">
 
-
-<section>
-
-<a href="school.html">
+<a href="school.html" class="button">
 ← بازگشت به مدرسه فیزیک
 </a>
 
 </section>
-
 
 </main>
 
@@ -159,11 +388,14 @@ H QUANTUM
 <footer>
 
 <p>
-© 2026 — H Quantum
+© 2026 — <strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
 </p>
 
 </footer>
-
 
 </body>
 
