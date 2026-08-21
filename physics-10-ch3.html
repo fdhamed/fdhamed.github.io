@@ -432,6 +432,8 @@ section {
     border-radius: 16px;
 
     transition: 0.3s;
+
+    position: relative;
 }
 
 .topic-card:hover {
@@ -464,6 +466,64 @@ section {
     color: #91a2b5;
 
     font-size: 14px;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   TOPIC BUTTON
+========================= */
+
+.topic-button {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 8px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(99,216,255,0.25);
+
+    color: #63d8ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.topic-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   LOCKED TOPICS
+========================= */
+
+.topic-locked {
+
+    opacity: 0.72;
+}
+
+.topic-locked .topic-button {
+
+    color: #8191a4;
+
+    border-color:
+    rgba(255,255,255,0.08);
+
+    cursor: default;
+
+    background: #0c1b2c;
 }
 
 
@@ -615,9 +675,40 @@ footer strong {
         grid-template-columns: 1fr;
     }
 
+    /*
+       عمداً دو ستونه نگه داشته شده
+       چون کارت‌های فصل در موبایل
+       باید دو ستونه باشند.
+    */
+
     .topic-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+        repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .topic-card {
+
+        padding: 18px 14px;
+    }
+
+    .topic-card h3 {
+
+        font-size: 16px;
+    }
+
+    .topic-card p {
+
+        font-size: 12px;
+    }
+
+    .topic-button {
+
+        font-size: 11px;
+
+        padding: 7px 11px;
     }
 
     section {
@@ -757,9 +848,7 @@ H <span>QUANTUM</span>
 <div class="content-grid">
 
 
-<!-- =========================
-     PODCAST
-========================= -->
+<!-- PODCAST -->
 
 <article class="content-card preparing">
 
@@ -789,9 +878,7 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     VIDEO
-========================= -->
+<!-- VIDEO -->
 
 <article class="content-card preparing">
 
@@ -822,9 +909,7 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     TEXT
-========================= -->
+<!-- TEXT -->
 
 <article class="content-card preparing">
 
@@ -855,9 +940,7 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     SIMULATOR
-========================= -->
+<!-- SIMULATOR -->
 
 <article class="content-card simulator">
 
@@ -969,58 +1052,14 @@ H <span>QUANTUM</span>
 <div class="topic-grid">
 
 
-<!-- TOPIC 1 -->
+<!-- =========================
+     TOPIC 1 - ACTIVE
+========================= -->
 
 <article class="topic-card">
 
 <div class="topic-number">
 موضوع ۱
-</div>
-
-<h3>
-کار در فیزیک
-</h3>
-
-<p>
-
-کار چیست و چه تفاوتی با معنای روزمره
-این واژه دارد؟
-
-</p>
-
-</article>
-
-
-
-<!-- TOPIC 2 -->
-
-<article class="topic-card">
-
-<div class="topic-number">
-موضوع ۲
-</div>
-
-<h3>
-محاسبه کار
-</h3>
-
-<p>
-
-رابطه میان نیرو، جابه‌جایی
-و کاری که نیرو انجام می‌دهد.
-
-</p>
-
-</article>
-
-
-
-<!-- TOPIC 3 -->
-
-<article class="topic-card">
-
-<div class="topic-number">
-موضوع ۳
 </div>
 
 <h3>
@@ -1030,24 +1069,65 @@ H <span>QUANTUM</span>
 <p>
 
 انرژی وابسته به حرکت جسم
-و ارتباط آن با جرم و سرعت.
+و ارتباط آن با جرم و تندی.
 
 </p>
+
+<a href="physics-10-ch3-kinetic.html"
+   class="topic-button">
+
+ورود به بخش ←
+
+</a>
 
 </article>
 
 
 
-<!-- TOPIC 4 -->
+<!-- =========================
+     TOPIC 2 - ACTIVE
+========================= -->
 
 <article class="topic-card">
 
 <div class="topic-number">
-موضوع ۴
+موضوع ۲
 </div>
 
 <h3>
-قضیه کار و انرژی جنبشی
+کار انجام‌شده توسط نیروی ثابت
+</h3>
+
+<p>
+
+بررسی مفهوم کار و ارتباط
+نیرو، جابه‌جایی و زاویه میان آن‌ها.
+
+</p>
+
+<a href="physics-10-ch3-work-force.html"
+   class="topic-button">
+
+ورود به بخش ←
+
+</a>
+
+</article>
+
+
+
+<!-- =========================
+     TOPIC 3
+========================= -->
+
+<article class="topic-card topic-locked">
+
+<div class="topic-number">
+موضوع ۳
+</div>
+
+<h3>
+کار و انرژی جنبشی
 </h3>
 
 <p>
@@ -1057,86 +1137,117 @@ H <span>QUANTUM</span>
 
 </p>
 
+<span class="topic-button">
+
+به‌زودی
+
+</span>
+
 </article>
 
 
 
-<!-- TOPIC 5 -->
+<!-- =========================
+     TOPIC 4
+========================= -->
 
-<article class="topic-card">
+<article class="topic-card topic-locked">
+
+<div class="topic-number">
+موضوع ۴
+</div>
+
+<h3>
+کار و انرژی پتانسیل
+</h3>
+
+<p>
+
+بررسی انرژی پتانسیل و ارتباط آن
+با موقعیت جسم.
+
+</p>
+
+<span class="topic-button">
+
+به‌زودی
+
+</span>
+
+</article>
+
+
+
+<!-- =========================
+     TOPIC 5
+========================= -->
+
+<article class="topic-card topic-locked">
 
 <div class="topic-number">
 موضوع ۵
 </div>
 
 <h3>
-انرژی پتانسیل گرانشی
+پایستگی انرژی مکانیکی
 </h3>
 
 <p>
 
-انرژی ذخیره‌شده در اثر موقعیت جسم
-در میدان گرانشی.
+بررسی تبدیل انرژی جنبشی و پتانسیل
+در یک سامانه.
 
 </p>
+
+<span class="topic-button">
+
+به‌زودی
+
+</span>
 
 </article>
 
 
 
-<!-- TOPIC 6 -->
+<!-- =========================
+     TOPIC 6
+========================= -->
 
-<article class="topic-card">
+<article class="topic-card topic-locked">
 
 <div class="topic-number">
 موضوع ۶
 </div>
 
 <h3>
-انرژی مکانیکی
+کار و انرژی درونی
 </h3>
 
 <p>
 
-ترکیب انرژی جنبشی و پتانسیل
-و بررسی تغییرات آن.
+بررسی ارتباط کار، انرژی و
+تغییرات درونی سامانه.
 
 </p>
+
+<span class="topic-button">
+
+به‌زودی
+
+</span>
 
 </article>
 
 
 
-<!-- TOPIC 7 -->
+<!-- =========================
+     TOPIC 7
+========================= -->
 
-<article class="topic-card">
+<article class="topic-card topic-locked">
 
 <div class="topic-number">
 موضوع ۷
-</div>
-
-<h3>
-پایستگی انرژی
-</h3>
-
-<p>
-
-چگونه انرژی در یک سامانه
-از شکلی به شکل دیگر تبدیل می‌شود
-بدون آنکه از بین برود؟
-
-</p>
-
-</article>
-
-
-
-<!-- TOPIC 8 -->
-
-<article class="topic-card">
-
-<div class="topic-number">
-موضوع ۸
 </div>
 
 <h3>
@@ -1149,6 +1260,43 @@ H <span>QUANTUM</span>
 در زمان‌های متفاوت و مفهوم توان.
 
 </p>
+
+<span class="topic-button">
+
+به‌زودی
+
+</span>
+
+</article>
+
+
+
+<!-- =========================
+     TOPIC 8
+========================= -->
+
+<article class="topic-card topic-locked">
+
+<div class="topic-number">
+موضوع ۸
+</div>
+
+<h3>
+جمع‌بندی فصل
+</h3>
+
+<p>
+
+جمع‌بندی مفاهیم اصلی فصل
+کار، انرژی و توان.
+
+</p>
+
+<span class="topic-button">
+
+به‌زودی
+
+</span>
 
 </article>
 
