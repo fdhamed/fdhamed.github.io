@@ -8,18 +8,12 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>
-فصل چهارم فیزیک دوازدهم تجربی | H Quantum
-</title>
+<title>فصل چهارم فیزیک دوازدهم تجربی | فیزیک اتمی و هسته‌ای | H Quantum</title>
 
 <meta name="description"
-content="فصل چهارم فیزیک دوازدهم تجربی؛ آشنایی با فیزیک اتمی و هسته‌ای">
+content="فصل چهارم فیزیک دوازدهم تجربی؛ فیزیک اتمی و هسته‌ای | H Quantum">
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 * {
     box-sizing: border-box;
@@ -88,7 +82,6 @@ header {
 
 .nav-links {
     display: flex;
-
     flex-wrap: wrap;
 
     justify-content: center;
@@ -119,7 +112,7 @@ header {
     margin: auto;
 
     padding:
-    70px 20px 50px;
+    75px 20px 55px;
 
     text-align: center;
 }
@@ -179,7 +172,7 @@ header {
 
 
 /* =========================
-   MAIN SECTION
+   SECTION
 ========================= */
 
 section {
@@ -211,11 +204,55 @@ section {
 
 
 /* =========================
+   LESSONS
+========================= */
+
+.lesson-list {
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.lesson-item {
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    padding: 20px;
+}
+
+.lesson-number {
+    color: #63d8ff;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.lesson-item h3 {
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.lesson-item p {
+    color: #9eafc2;
+
+    font-size: 12px;
+}
+
+
+/* =========================
    CONTENT GRID
 ========================= */
 
 .content-grid {
-
     display: grid;
 
     grid-template-columns:
@@ -230,6 +267,7 @@ section {
 ========================= */
 
 .content-card {
+    display: block;
 
     background: #0c1b2c;
 
@@ -244,34 +282,32 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .content-card:hover {
-
-    transform:
-    translateY(-5px);
+    transform: translateY(-5px);
 
     border-color:
     rgba(99,216,255,0.4);
+
+    background: #0e2033;
 }
 
 .card-icon {
-
     font-size: 42px;
 
     margin-bottom: 12px;
 }
 
 .content-card h3 {
-
     font-size: 21px;
 
     margin-bottom: 10px;
 }
 
 .content-card p {
-
     color: #aebdce;
 
     font-size: 13px;
@@ -280,7 +316,6 @@ section {
 }
 
 .card-status {
-
     display: inline-block;
 
     padding:
@@ -300,65 +335,10 @@ section {
 
 
 /* =========================
-   CHAPTER STRUCTURE
-========================= */
-
-.structure-box {
-
-    background: #0a1828;
-
-    border:
-    1px dashed rgba(99,216,255,0.25);
-
-    border-radius: 20px;
-
-    padding:
-    30px 25px;
-
-    margin-top: 20px;
-}
-
-.structure-list {
-
-    list-style: none;
-
-    max-width: 750px;
-
-    margin: auto;
-}
-
-.structure-list li {
-
-    padding:
-    12px 15px;
-
-    margin-bottom: 8px;
-
-    background: #0c1b2c;
-
-    border-radius: 10px;
-
-    color: #cbd5e1;
-
-    font-size: 13px;
-}
-
-.structure-list li span {
-
-    color: #63d8ff;
-
-    font-weight: bold;
-
-    margin-left: 8px;
-}
-
-
-/* =========================
    INFO BOX
 ========================= */
 
 .info-box {
-
     background: #0a1828;
 
     border:
@@ -373,21 +353,18 @@ section {
 }
 
 .info-icon {
-
     font-size: 44px;
 
     margin-bottom: 10px;
 }
 
 .info-box h3 {
-
     font-size: 23px;
 
     margin-bottom: 8px;
 }
 
 .info-box p {
-
     max-width: 750px;
 
     margin: auto;
@@ -403,7 +380,6 @@ section {
 ========================= */
 
 .navigation {
-
     display: flex;
 
     justify-content: center;
@@ -419,22 +395,21 @@ section {
 }
 
 .nav-button {
-
     display: inline-block;
 
     padding:
-    10px 18px;
+    11px 20px;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.1);
+    1px solid rgba(99,216,255,0.2);
 
     color: #63d8ff;
 
-    font-size: 12px;
+    font-size: 13px;
 
     font-weight: bold;
 
@@ -442,10 +417,11 @@ section {
 }
 
 .nav-button:hover {
-
     background: #63d8ff;
 
     color: #06101d;
+
+    transform: translateY(-2px);
 }
 
 
@@ -454,7 +430,6 @@ section {
 ========================= */
 
 footer {
-
     border-top:
     1px solid rgba(255,255,255,0.08);
 
@@ -469,7 +444,6 @@ footer {
 }
 
 footer strong {
-
     color: #63d8ff;
 }
 
@@ -481,19 +455,36 @@ footer strong {
 @media (max-width: 700px) {
 
     .nav {
-
         flex-direction: column;
     }
 
     .nav-links {
-
         gap: 10px;
 
         font-size: 12px;
     }
 
-    .content-grid {
+    .lesson-list {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
+        gap: 10px;
+    }
+
+    .lesson-item {
+        padding:
+        15px 12px;
+    }
+
+    .lesson-item h3 {
+        font-size: 13px;
+    }
+
+    .lesson-item p {
+        font-size: 9px;
+    }
+
+    .content-grid {
         grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
@@ -501,7 +492,6 @@ footer strong {
     }
 
     .content-card {
-
         padding:
         20px 12px;
 
@@ -509,69 +499,38 @@ footer strong {
     }
 
     .card-icon {
-
         font-size: 33px;
     }
 
     .content-card h3 {
+        font-size: 15px;
 
-        font-size: 16px;
-
-        line-height: 1.7;
+        line-height: 1.8;
     }
 
     .content-card p {
-
         font-size: 10px;
 
         line-height: 1.8;
     }
 
     .card-status {
-
         font-size: 9px;
 
         padding:
         5px 8px;
     }
 
-    .structure-box {
+    .nav-button {
+        font-size: 11px;
 
         padding:
-        20px 12px;
-    }
-
-    .structure-list li {
-
-        font-size: 10px;
-
-        padding:
-        10px;
+        9px 14px;
     }
 
     section {
-
         padding:
         35px 15px;
-    }
-
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
-
-@media (max-width: 380px) {
-
-    .content-card h3 {
-
-        font-size: 14px;
-    }
-
-    .content-card p {
-
-        font-size: 9px;
     }
 
 }
@@ -666,18 +625,16 @@ H <span>QUANTUM</span>
 
 <h1>
 
-آشنایی با فیزیک
-<span>اتمی و هسته‌ای</span>
+<span>فیزیک اتمی و هسته‌ای</span>
 
 </h1>
 
 
 <p class="hero-description">
 
-در این فصل با برخی از مهم‌ترین مفاهیم
-فیزیک نوین آشنا می‌شویم؛
-از برهم‌کنش نور و ماده و ساختار اتم
-تا ساختار هسته و پدیده پرتوزایی.
+در این فصل، از دنیای اتم‌ها و کوانتوم
+تا ساختار هسته و پدیده‌های هسته‌ای سفر می‌کنیم
+و با بخشی از جهان فیزیک نوین آشنا می‌شویم.
 
 </p>
 
@@ -687,7 +644,7 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     EDUCATIONAL STRUCTURE
+     LESSON STRUCTURE
 ========================= -->
 
 <section>
@@ -696,64 +653,122 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-📚 ساختار فصل
+📚 ساختار آموزشی فصل
 </h2>
 
 <p>
-شش بخش اصلی این فصل در اسکلت آموزشی سایت
-در نظر گرفته شده‌اند.
+مباحث اصلی فصل برای تولید محتوای آینده آماده شده‌اند.
 </p>
 
 </div>
 
 
-<div class="structure-box">
+<div class="lesson-list">
 
 
-<ul class="structure-list">
+<div class="lesson-item">
 
+<div class="lesson-number">
+درس ۱
+</div>
 
-<li>
-<span>۱</span>
-اثر فوتوالکتریک و فوتون
-</li>
+<h3>
+فیزیک اتمی
+</h3>
 
-
-<li>
-<span>۲</span>
-طیف خطی
-</li>
-
-
-<li>
-<span>۳</span>
-مدل اتم رادرفورد ـ بور
-</li>
-
-
-<li>
-<span>۴</span>
-لیزر
-</li>
-
-
-<li>
-<span>۵</span>
-ساختار هسته
-</li>
-
-
-<li>
-<span>۶</span>
-پرتوزایی طبیعی و نیمه‌عمر
-</li>
-
-
-</ul>
-
+<p>
+آشنایی با ساختار اتم و تحول مدل‌های اتمی.
+</p>
 
 </div>
 
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۲
+</div>
+
+<h3>
+طیف خطی اتم‌ها
+</h3>
+
+<p>
+بررسی طیف‌های گسیلی و ارتباط آن‌ها با ساختار اتم.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۳
+</div>
+
+<h3>
+مدل اتمی بور
+</h3>
+
+<p>
+ترازهای انرژی و مدل بور برای اتم هیدروژن.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۴
+</div>
+
+<h3>
+فوتون و اثر فوتوالکتریک
+</h3>
+
+<p>
+ماهیت کوانتومی نور و گسیل الکترون از فلزات.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۵
+</div>
+
+<h3>
+فیزیک هسته‌ای
+</h3>
+
+<p>
+ساختار هسته، ایزوتوپ‌ها و نیروهای هسته‌ای.
+</p>
+
+</div>
+
+
+<div class="lesson-item">
+
+<div class="lesson-number">
+درس ۶
+</div>
+
+<h3>
+پدیده‌های هسته‌ای
+</h3>
+
+<p>
+واپاشی پرتوزا، نیمه‌عمر، شکافت و همجوشی هسته‌ای.
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -769,105 +784,67 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-🚀 بخش‌های آموزشی فصل
+🚀 امکانات آموزشی فصل
 </h2>
 
 <p>
-این بخش‌ها فعلاً به‌صورت اسکلت طراحی شده‌اند
-و محتوا در مرحله بعد اضافه خواهد شد.
+تمام محتوای آموزشی آینده از این بخش‌ها قابل دسترسی خواهد بود.
 </p>
 
 </div>
 
 
-
 <div class="content-grid">
 
 
-<!-- درسنامه -->
-
-<article class="content-card">
+<a href="#lesson"
+class="content-card">
 
 <div class="card-icon">
 📖
 </div>
 
 <h3>
-درسنامه فصل
+درسنامه
 </h3>
 
 <p>
-
-درسنامه کامل و مفهومی فصل چهارم،
-همراه با توضیح مرحله‌به‌مرحله مفاهیم.
-
+درسنامهٔ کامل و مفهومی فیزیک اتمی و هسته‌ای.
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</article>
+</a>
 
 
 
-<!-- پادکست -->
-
-<article class="content-card">
+<a href="#podcast"
+class="content-card">
 
 <div class="card-icon">
 🎙️
 </div>
 
 <h3>
-پادکست فصل
+پادکست
 </h3>
 
 <p>
-
-روایت صوتی مفاهیم فصل،
-با نگاه مفهومی و داستانی.
-
+اپیزودهای صوتی مرتبط با فیزیک نوین و هسته‌ای.
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</article>
+</a>
 
 
 
-<!-- شبیه ساز -->
-
-<article class="content-card">
-
-<div class="card-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌سازهای تعاملی
-</h3>
-
-<p>
-
-آزمایش‌ها و پدیده‌های فیزیک اتمی
-و هسته‌ای به شکل تعاملی.
-
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</article>
-
-
-
-<!-- ویدئو -->
-
-<article class="content-card">
+<a href="#video"
+class="content-card">
 
 <div class="card-icon">
 🎬
@@ -878,23 +855,42 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-
-آموزش تصویری مفاهیم و حل مسائل
-فصل چهارم.
-
+آموزش تصویری مفاهیم اتمی و هسته‌ای.
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</article>
+</a>
 
 
 
-<!-- مثال -->
+<a href="#simulator"
+class="content-card">
 
-<article class="content-card">
+<div class="card-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌ساز تعاملی
+</h3>
+
+<p>
+شبیه‌سازی ترازهای انرژی، فوتون و پدیده‌های هسته‌ای.
+</p>
+
+<span class="card-status">
+به‌زودی
+</span>
+
+</a>
+
+
+
+<a href="#problems"
+class="content-card">
 
 <div class="card-icon">
 🧮
@@ -905,23 +901,19 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-
-مثال‌های مفهومی و محاسباتی
-از مباحث فصل.
-
+مثال‌های مفهومی و محاسباتی با راه‌حل مرحله‌به‌مرحله.
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</article>
+</a>
 
 
 
-<!-- تمرین -->
-
-<article class="content-card">
+<a href="#quiz"
+class="content-card">
 
 <div class="card-icon">
 ✏️
@@ -932,58 +924,154 @@ H <span>QUANTUM</span>
 </h3>
 
 <p>
-
-تمرین‌های طبقه‌بندی‌شده و آزمون‌های
-مفهومی و محاسباتی.
-
+تمرین‌های طبقه‌بندی‌شده و آزمون‌های فصل.
 </p>
 
 <span class="card-status">
 به‌زودی
 </span>
 
-</article>
+</a>
 
 
 </div>
-
 
 </section>
 
 
 
 <!-- =========================
-     INFO
+     FUTURE CONTENT
 ========================= -->
 
-<section>
-
+<section id="lesson">
 
 <div class="info-box">
 
-
 <div class="info-icon">
-🏗️
+📖
 </div>
-
 
 <h3>
-اسکلت فصل آماده است
+درسنامه فصل چهارم
 </h3>
 
-
 <p>
-
-ساختار اصلی این فصل آماده شده است.
-در مرحله تولید محتوا، هر بخش به
-درسنامه، پادکست، شبیه‌ساز، ویدئو،
-مثال و تمرین متصل خواهد شد.
-
+محل قرارگیری درسنامهٔ کامل فیزیک اتمی و هسته‌ای.
 </p>
-
 
 </div>
 
+</section>
+
+
+
+<section id="podcast">
+
+<div class="info-box">
+
+<div class="info-icon">
+🎙️
+</div>
+
+<h3>
+پادکست فصل چهارم
+</h3>
+
+<p>
+اپیزودهای پادکست مرتبط با فیزیک اتمی و هسته‌ای.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="video">
+
+<div class="info-box">
+
+<div class="info-icon">
+🎬
+</div>
+
+<h3>
+ویدئوهای آموزشی
+</h3>
+
+<p>
+محل قرارگیری ویدئوهای آموزشی فصل.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="simulator">
+
+<div class="info-box">
+
+<div class="info-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌سازهای تعاملی
+</h3>
+
+<p>
+شبیه‌سازهای مربوط به ساختار اتم،
+ترازهای انرژی و پدیده‌های هسته‌ای.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="problems">
+
+<div class="info-box">
+
+<div class="info-icon">
+🧮
+</div>
+
+<h3>
+مثال و حل مسئله
+</h3>
+
+<p>
+مثال‌های آموزشی و مسائل استاندارد فصل.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="quiz">
+
+<div class="info-box">
+
+<div class="info-icon">
+✏️
+</div>
+
+<h3>
+تمرین و آزمون
+</h3>
+
+<p>
+تمرین‌های مفهومی، محاسباتی و آزمون‌های فصل.
+</p>
+
+</div>
 
 </section>
 
@@ -994,7 +1082,6 @@ H <span>QUANTUM</span>
 ========================= -->
 
 <section>
-
 
 <div class="navigation">
 
@@ -1010,21 +1097,12 @@ class="nav-button">
 <a href="./physics-12-experimental.html"
 class="nav-button">
 
-📚 همه فصل‌ها
-
-</a>
-
-
-<a href="./physics-12.html"
-class="nav-button">
-
-فیزیک دوازدهم
+همه فصل‌ها
 
 </a>
 
 
 </div>
-
 
 </section>
 
@@ -1039,7 +1117,6 @@ class="nav-button">
 
 <footer>
 
-
 <p>
 
 © 2026 —
@@ -1051,15 +1128,12 @@ H Quantum
 
 
 <p>
-
 Physics • Science • Wonder
-
 </p>
-
 
 </footer>
 
 
 </body>
 
-  </html>
+   </html>
