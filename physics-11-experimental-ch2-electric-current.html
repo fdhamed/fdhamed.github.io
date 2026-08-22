@@ -8,7 +8,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>بخش اول | جریان الکتریکی | H Quantum</title>
+<title>جریان الکتریکی | فیزیک یازدهم تجربی | H Quantum</title>
 
 <style>
 
@@ -18,15 +18,11 @@
     padding:0;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-    font-family:Tahoma, Arial, sans-serif;
+    font-family:Tahoma,Arial,sans-serif;
     background:#07111f;
     color:#f4f7fb;
-    line-height:1.8;
+    line-height:2;
 }
 
 a{
@@ -34,9 +30,14 @@ a{
     color:inherit;
 }
 
+.container{
+    width:min(1000px,92%);
+    margin:auto;
+}
+
 
 /* =========================
-   HEADER
+HEADER
 ========================= */
 
 header{
@@ -44,27 +45,29 @@ header{
     top:0;
     z-index:1000;
 
-    background:rgba(7,17,31,0.95);
+    background:rgba(7,17,31,.96);
 
     backdrop-filter:blur(12px);
 
     border-bottom:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(255,255,255,.08);
 }
 
 .nav{
-    max-width:1100px;
+    width:min(1100px,92%);
     margin:auto;
 
-    padding:15px 20px;
+    min-height:64px;
 
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
 }
 
 .logo{
-    font-size:24px;
+    font-size:23px;
     font-weight:bold;
     letter-spacing:2px;
 }
@@ -75,18 +78,20 @@ header{
 
 .nav-links{
     display:flex;
+    align-items:center;
+    justify-content:center;
+
     gap:18px;
 
-    font-size:13px;
+    flex-wrap:wrap;
 
     color:#cbd5e1;
 
-    flex-wrap:wrap;
-    justify-content:center;
+    font-size:13px;
 }
 
 .nav-links a{
-    transition:0.3s;
+    transition:.25s;
 }
 
 .nav-links a:hover{
@@ -95,238 +100,126 @@ header{
 
 
 /* =========================
-   HERO
+INTRO
 ========================= */
 
-.hero{
-    max-width:1000px;
-    margin:auto;
-
-    padding:60px 20px 35px;
-
+.intro{
     text-align:center;
+
+    padding:
+    55px 0 35px;
 }
 
-.badge{
-    display:inline-block;
-
-    padding:7px 18px;
-
-    border:
-    1px solid rgba(99,216,255,0.35);
-
-    border-radius:30px;
-
+.eyebrow{
     color:#63d8ff;
 
     font-size:12px;
 
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
-.hero h1{
+.intro h1{
     font-size:
-    clamp(28px,7vw,48px);
+    clamp(30px,7vw,48px);
 
     line-height:1.5;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
-.hero h1 span{
-    color:#63d8ff;
-}
+.intro p{
+    color:#9eafc1;
 
-.hero p{
-    color:#91a3b7;
+    font-size:14px;
 
-    font-size:13px;
+    max-width:760px;
+
+    margin:auto;
 }
 
 
 /* =========================
-   CONTENT
+LEARNING PATHS
 ========================= */
 
-.container{
-    max-width:1050px;
-
-    margin:auto;
-
+.learning{
     padding:
-    15px 20px 60px;
+    10px 0 45px;
 }
 
-.section-title{
+.learning-title{
     text-align:center;
 
     margin-bottom:25px;
 }
 
-.section-title h2{
+.learning-title h2{
     color:#63d8ff;
 
-    font-size:25px;
+    font-size:24px;
 
     margin-bottom:5px;
 }
 
-.section-title p{
+.learning-title p{
     color:#8193a7;
 
     font-size:12px;
 }
 
-
-/* =========================
-   CARDS
-========================= */
-
-.cards{
+.learning-grid{
     display:grid;
 
     grid-template-columns:
-    repeat(3,minmax(0,1fr));
+    repeat(2,minmax(0,1fr));
 
-    gap:18px;
+    gap:16px;
 }
 
-.card{
-    position:relative;
-
-    display:block;
-
-    min-height:185px;
-
-    padding:24px 18px;
-
+.learning-card{
     background:#0a1828;
 
     border:
-    1px solid rgba(99,216,255,0.13);
+    1px solid rgba(99,216,255,.13);
 
-    border-radius:20px;
+    border-radius:18px;
 
-    overflow:hidden;
+    padding:22px;
 
-    transition:
-    transform 0.25s,
-    background 0.25s,
-    border-color 0.25s;
+    transition:.25s;
 }
 
-.card::before{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    right:0;
-
-    width:100%;
-    height:3px;
-
-    background:
-    rgba(99,216,255,0.45);
-}
-
-.card:hover{
-    transform:translateY(-4px);
-
-    background:#0e2034;
+.learning-card:hover{
+    transform:translateY(-3px);
 
     border-color:
-    rgba(99,216,255,0.45);
+    rgba(99,216,255,.4);
+
+    background:#0d2034;
 }
 
+.learning-icon{
+    font-size:29px;
 
-/* =========================
-   ICON
-========================= */
-
-.icon{
-    width:55px;
-    height:55px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    background:#10243a;
-
-    border:
-    1px solid rgba(99,216,255,0.16);
-
-    border-radius:15px;
-
-    font-size:27px;
-
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
+.learning-card h3{
+    font-size:17px;
 
-/* =========================
-   CARD TEXT
-========================= */
-
-.number{
-    display:block;
-
-    color:#63d8ff;
-
-    font-size:10px;
-
-    margin-bottom:4px;
+    margin-bottom:7px;
 }
 
-.card h3{
-    font-size:15px;
+.learning-card p{
+    color:#91a3b7;
 
-    line-height:1.8;
+    font-size:12px;
 
-    margin-bottom:6px;
+    margin-bottom:14px;
 }
 
-.card p{
-    color:#8193a7;
-
-    font-size:10px;
-}
-
-
-/* =========================
-   BOTTOM BUTTONS
-========================= */
-
-.navigation{
-    max-width:1050px;
-
-    margin:auto;
-
-    padding:
-    5px 20px 70px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:12px;
-
-    flex-wrap:wrap;
-}
-
-.button{
+.card-button{
     display:inline-block;
-
-    padding:10px 20px;
-
-    background:#10243a;
-
-    border:
-    1px solid rgba(99,216,255,0.25);
-
-    border-radius:10px;
 
     color:#63d8ff;
 
@@ -335,22 +228,131 @@ header{
     font-weight:bold;
 }
 
-.button:hover{
+
+/* =========================
+PLACEHOLDER CONTENT
+========================= */
+
+.content{
+    padding:
+    10px 0 50px;
+}
+
+.content-box{
+    background:#0a1828;
+
+    border:
+    1px solid rgba(99,216,255,.12);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:18px;
+}
+
+.content-box h2{
+    color:#63d8ff;
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+.content-box p{
+    color:#aebdce;
+
+    font-size:13px;
+}
+
+
+/* =========================
+SUPPLEMENTARY
+========================= */
+
+.extra{
+    margin-top:15px;
+}
+
+.extra h2{
+    color:#63d8ff;
+
+    font-size:21px;
+
+    margin-bottom:12px;
+}
+
+.extra-list{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+    gap:10px;
+}
+
+.extra-item{
+    background:#0a1828;
+
+    border:
+    1px solid rgba(255,255,255,.07);
+
+    border-radius:12px;
+
+    padding:13px 15px;
+
+    color:#aebdce;
+
+    font-size:12px;
+}
+
+
+/* =========================
+BACK BUTTON
+========================= */
+
+.back{
+    text-align:center;
+
+    padding:
+    10px 0 65px;
+}
+
+.back a{
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:#10243a;
+
+    border:
+    1px solid rgba(99,216,255,.25);
+
+    border-radius:10px;
+
+    color:#63d8ff;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.back a:hover{
     background:#15324e;
 }
 
 
 /* =========================
-   FOOTER
+FOOTER
 ========================= */
 
 footer{
     border-top:
-    1px solid rgba(255,255,255,0.08);
-
-    padding:30px 20px;
+    1px solid rgba(255,255,255,.08);
 
     text-align:center;
+
+    padding:30px 15px;
 
     color:#8191a4;
 
@@ -363,125 +365,114 @@ footer strong{
 
 
 /* =========================
-   MOBILE
+MOBILE
 ========================= */
 
-@media(max-width:750px){
+@media(max-width:700px){
 
     .nav{
         flex-direction:column;
-        gap:9px;
+
+        padding:
+        12px 0;
     }
 
     .nav-links{
         gap:10px;
+
         font-size:11px;
     }
 
-    .hero{
+    .intro{
         padding:
-        48px 15px 30px;
+        45px 0 30px;
     }
 
-    .hero h1{
-        font-size:29px;
+    .intro h1{
+        font-size:28px;
     }
 
-    .hero p{
+    .intro p{
         font-size:11px;
-    }
-
-    .container{
-        padding:
-        15px 15px 45px;
-    }
-
-    .section-title h2{
-        font-size:22px;
-    }
-
-    .section-title p{
-        font-size:10px;
     }
 
     /*
-       دو ستونه در موبایل
+       دو ستونه مثل صفحات قبلی
     */
 
-    .cards{
+    .learning-grid{
         grid-template-columns:
         repeat(2,minmax(0,1fr));
 
         gap:10px;
     }
 
-    .card{
-        min-height:165px;
+    .learning-card{
+        padding:17px 13px;
 
-        padding:
-        17px 11px;
-
-        border-radius:17px;
+        border-radius:15px;
     }
 
-    .icon{
-        width:47px;
-        height:47px;
-
-        font-size:23px;
-
-        border-radius:13px;
-
-        margin-bottom:11px;
+    .learning-icon{
+        font-size:24px;
     }
 
-    .number{
-        font-size:8px;
+    .learning-card h3{
+        font-size:13px;
     }
 
-    .card h3{
+    .learning-card p{
+        font-size:9px;
+    }
+
+    .card-button{
+        font-size:9px;
+    }
+
+    .content-box{
+        padding:19px 15px;
+    }
+
+    .content-box h2{
+        font-size:18px;
+    }
+
+    .content-box p{
         font-size:11px;
-
-        line-height:1.8;
     }
 
-    .card p{
-        font-size:8px;
+    .extra-list{
+        grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+    .extra-item{
+        padding:11px 9px;
+
+        font-size:9px;
     }
 
 }
 
 
 /* =========================
-   SMALL MOBILE
+SMALL MOBILE
 ========================= */
 
-@media(max-width:400px){
+@media(max-width:390px){
 
-    .hero h1{
-        font-size:26px;
+    .learning-card{
+        padding:15px 10px;
     }
 
-    .cards{
-        gap:8px;
+    .learning-card h3{
+        font-size:11px;
     }
 
-    .card{
-        min-height:155px;
-
-        padding:
-        15px 9px;
-    }
-
-    .icon{
-        width:43px;
-        height:43px;
-
-        font-size:20px;
-    }
-
-    .card h3{
-        font-size:10px;
+    .learning-card p{
+        font-size:8px;
     }
 
 }
@@ -495,7 +486,7 @@ footer strong{
 
 
 <!-- =========================
-     HEADER
+HEADER
 ========================= -->
 
 <header>
@@ -541,35 +532,32 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     HERO
+INTRO
 ========================= -->
 
 <main>
 
-<section class="hero">
+<div class="container">
 
-<div class="badge">
+<section class="intro">
 
-فیزیک یازدهم • علوم تجربی • فصل دوم
+<div class="eyebrow">
+
+فیزیک یازدهم • فصل دوم • بخش اول
 
 </div>
 
 
 <h1>
-
-بخش اول
-
-<br>
-
-<span>
 جریان الکتریکی
-</span>
-
 </h1>
 
 
 <p>
-مسیر یادگیری این بخش
+
+در این بخش با مفهوم جریان الکتریکی
+و مفاهیم پایه‌ای مرتبط با آن آشنا می‌شویم.
+
 </p>
 
 </section>
@@ -577,177 +565,122 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     CARDS
+LEARNING PATHS
 ========================= -->
 
-<section class="container">
+<section class="learning">
 
 
-<div class="section-title">
+<div class="learning-title">
 
 <h2>
-مطالب این بخش
+مسیرهای یادگیری این بخش
 </h2>
 
 <p>
-برای ورود به هر قسمت روی کارت کلیک کنید.
+یک مفهوم را از چند مسیر تجربه می‌کنیم.
 </p>
 
 </div>
 
 
 
-<div class="cards">
+<div class="learning-grid">
 
 
-<!-- CARD 1 -->
+<!-- PODCAST -->
 
-<a href="#"
-   class="card">
+<div class="learning-card">
 
-<div class="icon">
-⚡
+<div class="learning-icon">
+🎙️
 </div>
 
-<span class="number">
-قسمت ۱
-</span>
-
 <h3>
-مفهوم جریان الکتریکی
+پادکست
 </h3>
 
 <p>
-به‌زودی
+روایت صوتی و مفهومی درباره جریان الکتریکی.
 </p>
 
-</a>
-
-
-
-<!-- CARD 2 -->
-
-<a href="#"
-   class="card">
-
-<div class="icon">
-🔌
-</div>
-
-<span class="number">
-قسمت ۲
+<span class="card-button">
+به‌زودی
 </span>
 
+</div>
+
+
+
+<!-- VIDEO -->
+
+<div class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
 <h3>
-شدت جریان الکتریکی
+ویدئوی آموزشی
 </h3>
 
 <p>
-به‌زودی
+توضیح تصویری و مفهومی جریان الکتریکی.
 </p>
 
-</a>
-
-
-
-<!-- CARD 3 -->
-
-<a href="#"
-   class="card">
-
-<div class="icon">
-🔋
-</div>
-
-<span class="number">
-قسمت ۳
+<span class="card-button">
+به‌زودی
 </span>
 
+</div>
+
+
+
+<!-- TEXT -->
+
+<div class="learning-card">
+
+<div class="learning-icon">
+📖
+</div>
+
 <h3>
-بار الکتریکی و جریان
+متن آموزشی
 </h3>
 
 <p>
-به‌زودی
+مطالعه کامل و مرحله‌به‌مرحله این بخش.
 </p>
 
-</a>
-
-
-
-<!-- CARD 4 -->
-
-<a href="#"
-   class="card">
-
-<div class="icon">
-📐
-</div>
-
-<span class="number">
-قسمت ۴
+<span class="card-button">
+مطالعه متن ←
 </span>
 
+</div>
+
+
+
+<!-- SIMULATOR -->
+
+<div class="learning-card">
+
+<div class="learning-icon">
+🧪
+</div>
+
 <h3>
-رابطه شدت جریان و بار
+شبیه‌ساز تعاملی
 </h3>
 
 <p>
-به‌زودی
+فعالیت‌های تعاملی برای درک بهتر جریان الکتریکی.
 </p>
 
-</a>
-
-
-
-<!-- CARD 5 -->
-
-<a href="#"
-   class="card">
-
-<div class="icon">
-🔄
-</div>
-
-<span class="number">
-قسمت ۵
+<span class="card-button">
+به‌زودی
 </span>
 
-<h3>
-جریان مستقیم
-</h3>
-
-<p>
-به‌زودی
-</p>
-
-</a>
-
-
-
-<!-- CARD 6 -->
-
-<a href="#"
-   class="card">
-
-<div class="icon">
-💡
 </div>
-
-<span class="number">
-قسمت ۶
-</span>
-
-<h3>
-مدار الکتریکی
-</h3>
-
-<p>
-به‌زودی
-</p>
-
-</a>
-
 
 
 </div>
@@ -757,35 +690,144 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     NAVIGATION
+CONTENT PLACEHOLDER
 ========================= -->
 
-<div class="navigation">
+<section class="content">
 
-<a
-href="physics-11-experimental-chapter-2.html"
-class="button">
+
+<div class="content-box">
+
+<h2>
+محتوای آموزشی بخش
+</h2>
+
+<p>
+
+محتوای کامل آموزشی این بخش در مرحله بعد
+در این قسمت قرار خواهد گرفت.
+
+</p>
+
+</div>
+
+
+<div class="content-box">
+
+<h2>
+مثال‌ها و تمرین‌ها
+</h2>
+
+<p>
+
+مثال‌های حل‌شده، تمرین‌های مفهومی و پرسش‌های
+آموزشی در ادامه به این صفحه اضافه خواهند شد.
+
+</p>
+
+</div>
+
+
+<div class="content-box">
+
+<h2>
+نکات مهم
+</h2>
+
+<p>
+
+نکات مفهومی و امتحانی این بخش در نسخه
+کامل آموزشی صفحه قرار خواهند گرفت.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+SUPPLEMENTARY
+========================= -->
+
+<section class="extra">
+
+<h2>
+محتوای تکمیلی این بخش
+</h2>
+
+
+<div class="extra-list">
+
+<div class="extra-item">
+مثال‌های حل‌شده
+</div>
+
+<div class="extra-item">
+تمرین‌های مفهومی
+</div>
+
+<div class="extra-item">
+پرسش‌های چهارگزینه‌ای
+</div>
+
+<div class="extra-item">
+پادکست
+</div>
+
+<div class="extra-item">
+ویدئو
+</div>
+
+<div class="extra-item">
+شبیه‌ساز
+</div>
+
+<div class="extra-item">
+نکات امتحانی
+</div>
+
+<div class="extra-item">
+جمع‌بندی
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+BACK
+========================= -->
+
+<section class="back">
+
+<a href="physics-11-experimental-chapter-2.html">
 
 ← بازگشت به فصل دوم
 
 </a>
 
-</div>
+</section>
 
+
+</div>
 
 </main>
 
 
 
 <!-- =========================
-     FOOTER
+FOOTER
 ========================= -->
 
 <footer>
 
 <p>
-© 2026 —
-<strong>H Quantum</strong>
+© 2026 — <strong>H Quantum</strong>
 </p>
 
 <p>
