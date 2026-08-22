@@ -177,6 +177,8 @@ header {
 
     max-width: 780px;
 
+    min-height: 115px;
+
     margin: auto;
 
     color: #aebdce;
@@ -238,6 +240,8 @@ section {
 
     border:
     1px solid rgba(99,216,255,0.12);
+
+    min-height: 205px;
 }
 
 .intro h2 {
@@ -279,6 +283,8 @@ section {
     1px solid rgba(99,216,255,0.12);
 
     text-align: center;
+
+    min-height: 205px;
 }
 
 .concept-box h2 {
@@ -509,6 +515,8 @@ footer strong {
     .hero p {
 
         font-size: 15px;
+
+        min-height: 145px;
     }
 
     .learning-grid {
@@ -557,11 +565,15 @@ footer strong {
     .intro {
 
         padding: 30px 20px;
+
+        min-height: 250px;
     }
 
     .concept-box {
 
         padding: 30px 20px;
+
+        min-height: 230px;
     }
 
     .formula {
@@ -569,6 +581,32 @@ footer strong {
         font-size: 20px;
 
         padding: 12px 20px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .learning-card h3 {
+
+        font-size: 15px;
+    }
+
+    .learning-card p {
+
+        font-size: 11px;
+    }
+
+    .learning-button {
+
+        font-size: 11px;
+
+        padding: 7px 10px;
     }
 
 }
@@ -627,10 +665,15 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     HERO
+     MAIN
 ========================= -->
 
 <main>
+
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -755,9 +798,7 @@ W = Fd cos(θ)
 <div class="learning-grid">
 
 
-<!-- =========================
-     TEXT
-========================= -->
+<!-- TEXT -->
 
 <article class="learning-card">
 
@@ -786,9 +827,7 @@ W = Fd cos(θ)
 </article>
 
 
-<!-- =========================
-     PODCAST
-========================= -->
+<!-- PODCAST -->
 
 <article class="learning-card">
 
@@ -817,9 +856,7 @@ W = Fd cos(θ)
 </article>
 
 
-<!-- =========================
-     VIDEO
-========================= -->
+<!-- VIDEO -->
 
 <article class="learning-card">
 
@@ -848,9 +885,7 @@ W = Fd cos(θ)
 </article>
 
 
-<!-- =========================
-     SIMULATOR
-========================= -->
+<!-- SIMULATOR -->
 
 <article class="learning-card">
 
@@ -879,9 +914,7 @@ W = Fd cos(θ)
 </article>
 
 
-<!-- =========================
-     EXERCISES
-========================= -->
+<!-- EXERCISES -->
 
 <article class="learning-card">
 
@@ -910,9 +943,7 @@ W = Fd cos(θ)
 </article>
 
 
-<!-- =========================
-     CONCEPT QUESTIONS
-========================= -->
+<!-- QUESTIONS -->
 
 <article class="learning-card">
 
@@ -947,7 +978,7 @@ W = Fd cos(θ)
 
 
 <!-- =========================
-     BACK TO CHAPTER
+     BACK
 ========================= -->
 
 <section class="back-section">
