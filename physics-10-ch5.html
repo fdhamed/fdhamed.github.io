@@ -10,19 +10,12 @@
 
 <title>فصل پنجم فیزیک دهم ریاضی | ترمودینامیک | H Quantum</title>
 
-<meta name="description"
-      content="فصل پنجم فیزیک دهم ریاضی؛ ترمودینامیک در H Quantum">
-
 <style>
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -43,35 +36,23 @@ a {
 ========================= */
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(7,17,31,0.95);
-
-    backdrop-filter: blur(12px);
-
-    border-bottom:
-    1px solid rgba(255,255,255,0.08);
+    background: #081525;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav {
     max-width: 1100px;
     margin: auto;
-
     padding: 16px 20px;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .logo span {
@@ -80,20 +61,10 @@ header {
 
 .nav-links {
     display: flex;
-
     gap: 20px;
-
-    font-size: 14px;
-
-    color: #cbd5e1;
-
     flex-wrap: wrap;
-
-    justify-content: center;
-}
-
-.nav-links a:hover {
-    color: #63d8ff;
+    font-size: 14px;
+    color: #cbd5e1;
 }
 
 
@@ -103,21 +74,19 @@ header {
 
 .hero {
     max-width: 1100px;
-
     margin: auto;
 
-    padding: 80px 20px 65px;
+    padding: 75px 20px 60px;
 
     text-align: center;
 }
 
-.hero-badge {
+.badge {
     display: inline-block;
 
     padding: 7px 18px;
 
-    border:
-    1px solid rgba(99,216,255,0.35);
+    border: 1px solid rgba(99,216,255,0.4);
 
     border-radius: 30px;
 
@@ -129,12 +98,9 @@ header {
 }
 
 .hero h1 {
-    font-size:
-    clamp(34px, 8vw, 62px);
+    font-size: clamp(35px, 8vw, 60px);
 
-    line-height: 1.3;
-
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .hero h1 span {
@@ -142,27 +108,24 @@ header {
 }
 
 .hero h2 {
-    font-size:
-    clamp(20px, 5vw, 30px);
-
+    font-size: 26px;
     font-weight: normal;
 
     margin-bottom: 20px;
 }
 
 .hero p {
-    max-width: 780px;
-
+    max-width: 760px;
     margin: auto;
 
     color: #aebdce;
 
-    font-size: 17px;
+    font-size: 16px;
 }
 
 
 /* =========================
-   GENERAL
+   SECTIONS
 ========================= */
 
 section {
@@ -170,25 +133,23 @@ section {
 
     margin: auto;
 
-    padding: 60px 20px;
+    padding: 55px 20px;
 }
 
-.section-title {
+.title {
     text-align: center;
 
     margin-bottom: 35px;
 }
 
-.section-title h2 {
+.title h2 {
     font-size: 30px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-.section-title p {
+.title p {
     color: #9eafc2;
-
-    font-size: 15px;
 }
 
 
@@ -201,30 +162,27 @@ section {
 
     margin: auto;
 
-    padding: 38px 30px;
+    padding: 35px 28px;
 
     background: #0a1828;
 
     border-radius: 22px;
 
-    border:
-    1px solid rgba(99,216,255,0.12);
+    border: 1px solid rgba(99,216,255,0.12);
 }
 
 .intro h2 {
-    font-size: 27px;
-
-    margin-bottom: 18px;
-
     text-align: center;
+
+    margin-bottom: 15px;
 }
 
 .intro p {
     color: #b6c4d3;
 
-    font-size: 16px;
-
     text-align: justify;
+
+    font-size: 15px;
 }
 
 
@@ -232,59 +190,58 @@ section {
    CARDS
 ========================= */
 
-.chapter-grid {
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 22px;
+.cards {
 
     max-width: 950px;
 
     margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
 }
 
-.chapter-card {
-    padding: 30px 25px;
+.card {
 
     background: #0c1b2c;
 
-    border:
-    1px solid rgba(255,255,255,0.08);
-
     border-radius: 20px;
 
+    padding: 30px 24px;
+
     text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.08);
 
     transition: 0.3s;
 }
 
-.chapter-card:hover {
-    transform: translateY(-6px);
+.card:hover {
+
+    transform: translateY(-5px);
 
     border-color:
-    rgba(99,216,255,0.5);
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
+    rgba(99,216,255,0.45);
 }
 
-.chapter-icon {
-    font-size: 42px;
+.icon {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.card h3 {
+
+    font-size: 20px;
 
     margin-bottom: 12px;
 }
 
-.chapter-card h3 {
-    font-size: 21px;
+.card p {
 
-    line-height: 1.7;
-
-    margin-bottom: 12px;
-}
-
-.chapter-card p {
     color: #aebdce;
 
     font-size: 14px;
@@ -292,24 +249,25 @@ section {
     margin-bottom: 20px;
 }
 
-.chapter-button {
+.button {
+
     display: inline-block;
 
-    padding: 10px 20px;
+    padding: 9px 18px;
 
     border-radius: 9px;
 
     background: #10243a;
 
-    border:
-    1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.12);
 
     color: #63d8ff;
 
     font-weight: bold;
 }
 
-.chapter-button:hover {
+.button:hover {
+
     background: #63d8ff;
 
     color: #06101d;
@@ -317,33 +275,33 @@ section {
 
 
 /* =========================
-   FUTURE BOX
+   FUTURE
 ========================= */
 
 .future {
+
     max-width: 900px;
 
     margin: auto;
 
-    padding: 35px 30px;
+    padding: 30px;
+
+    text-align: center;
 
     background: #0a1828;
 
     border-radius: 22px;
 
-    border:
-    1px solid rgba(99,216,255,0.12);
-
-    text-align: center;
+    border: 1px solid rgba(99,216,255,0.12);
 }
 
 .future h2 {
-    font-size: 26px;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .future p {
+
     color: #aebdce;
 
     font-size: 15px;
@@ -354,27 +312,28 @@ section {
    BACK
 ========================= */
 
-.back-section {
+.back {
+
     text-align: center;
 
-    padding-top: 20px;
+    padding-top: 15px;
 
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
-.back-button {
+.back a {
+
     display: inline-block;
 
-    padding: 13px 25px;
+    padding: 12px 23px;
 
     border-radius: 10px;
 
     background: #10243a;
 
-    border:
-    1px solid rgba(255,255,255,0.15);
-
     color: #63d8ff;
+
+    border: 1px solid rgba(255,255,255,0.12);
 }
 
 
@@ -383,17 +342,18 @@ section {
 ========================= */
 
 footer {
-    border-top:
-    1px solid rgba(255,255,255,0.08);
 
-    padding: 35px 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
 
     text-align: center;
+
+    padding: 30px 20px;
 
     color: #8191a4;
 }
 
 footer strong {
+
     color: #63d8ff;
 }
 
@@ -405,52 +365,72 @@ footer strong {
 @media (max-width: 750px) {
 
     .nav {
+
         flex-direction: column;
+
         gap: 10px;
     }
 
     .nav-links {
-        gap: 11px;
+
+        gap: 10px;
+
         font-size: 12px;
+
+        justify-content: center;
     }
 
     .hero {
-        padding-top: 55px;
+
+        padding-top: 50px;
+    }
+
+    .hero h2 {
+
+        font-size: 21px;
     }
 
     .hero p {
-        font-size: 15px;
+
+        font-size: 14px;
     }
 
-    .chapter-grid {
+    .cards {
+
         grid-template-columns: 1fr 1fr;
+
         gap: 12px;
     }
 
-    .chapter-card {
-        padding: 22px 12px;
+    .card {
+
+        padding: 22px 11px;
     }
 
-    .chapter-icon {
-        font-size: 34px;
+    .icon {
+
+        font-size: 32px;
     }
 
-    .chapter-card h3 {
-        font-size: 17px;
+    .card h3 {
+
+        font-size: 16px;
+
+        line-height: 1.7;
     }
 
-    .chapter-card p {
-        font-size: 12px;
+    .card p {
+
+        font-size: 11px;
+
         line-height: 1.8;
     }
 
-    .chapter-button {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
+    .button {
 
-    section {
-        padding: 50px 16px;
+        padding: 7px 10px;
+
+        font-size: 11px;
     }
 
 }
@@ -463,16 +443,12 @@ footer strong {
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
 
 <nav class="nav">
 
 <a href="index.html"
-   class="logo">
+class="logo">
 
 H <span>QUANTUM</span>
 
@@ -480,25 +456,15 @@ H <span>QUANTUM</span>
 
 <div class="nav-links">
 
-<a href="index.html">
-خانه
-</a>
+<a href="index.html">خانه</a>
 
-<a href="school.html">
-مدرسه فیزیک
-</a>
+<a href="school.html">مدرسه فیزیک</a>
 
-<a href="podcast.html">
-🎙️ پادکست
-</a>
+<a href="podcast.html">🎙️ پادکست</a>
 
-<a href="books.html">
-📚 کتاب‌ها
-</a>
+<a href="books.html">📚 کتاب‌ها</a>
 
-<a href="simulations.html">
-🧪 آزمایشگاه
-</a>
+<a href="simulations.html">🧪 آزمایشگاه</a>
 
 </div>
 
@@ -510,13 +476,9 @@ H <span>QUANTUM</span>
 <main>
 
 
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero">
 
-<div class="hero-badge">
+<div class="badge">
 
 فیزیک دهم • رشته ریاضی • فصل پنجم
 
@@ -536,43 +498,33 @@ H <span>QUANTUM</span>
 
 <p>
 
-در این فصل به دنیای گرما، کار و انرژی
-می‌رویم و بررسی می‌کنیم که چگونه
-دستگاه‌های ترمودینامیکی انرژی را مبادله
-می‌کنند و در فرایندها و چرخه‌های مختلف
-رفتار می‌کنند.
+در این فصل با مفاهیم بنیادی ترمودینامیک،
+گرما، کار، انرژی درونی،
+فرایندهای ترمودینامیکی و ماشین‌های گرمایی آشنا می‌شویم.
 
 </p>
 
 </section>
 
-
-<!-- =========================
-     INTRO
-========================= -->
 
 <section>
 
 <div class="intro">
 
 <h2>
+
 نقشه راه فصل پنجم
+
 </h2>
 
 <p>
 
-فصل پنجم فیزیک دهم رشته ریاضی
-به ترمودینامیک اختصاص دارد.
-
-در این فصل ابتدا با دستگاه ترمودینامیکی،
-متغیرهای حالت و معادله حالت گازها آشنا می‌شویم.
-
-سپس تبادل انرژی به صورت گرما و کار،
-انرژی درونی و قانون اول ترمودینامیک را بررسی می‌کنیم.
-
-در ادامه فرایندها و چرخه‌های ترمودینامیکی،
-ماشین‌های گرمایی، قانون دوم ترمودینامیک
-و عملکرد یخچال‌ها را می‌آموزیم.
+مسیر فصل از شناخت حالت گازها و معادله حالت
+آغاز می‌شود و سپس به تبادل انرژی،
+قانون اول ترمودینامیک،
+فرایندها، چرخه‌ها، ماشین‌های گرمایی،
+قانون دوم ترمودینامیک و در نهایت
+یخچال و پمپ گرمایی می‌رسد.
 
 </p>
 
@@ -581,35 +533,35 @@ H <span>QUANTUM</span>
 </section>
 
 
-<!-- =========================
-     ALL CHAPTERS
-========================= -->
-
 <section>
 
-<div class="section-title">
+<div class="title">
 
 <h2>
+
 بخش‌های فصل پنجم
+
 </h2>
 
 <p>
+
 هشت بخش آموزشی فصل پنجم
+
 </p>
 
 </div>
 
 
-<div class="chapter-grid">
+<div class="cards">
 
 
-<!-- 1 -->
+<!-- =========================
+     1
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-🌡️
-</div>
+<div class="icon">🌡️</div>
 
 <h3>
 بخش اول — معادله حالت گازها
@@ -620,8 +572,8 @@ H <span>QUANTUM</span>
 متغیرهای حالت و معادله حالت گازها.
 </p>
 
-<a href="physics-10-ch5-state-equation.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-state-equation.html">
 
 ورود به بخش ←
 
@@ -630,25 +582,25 @@ class="chapter-button">
 </article>
 
 
-<!-- 2 -->
+<!-- =========================
+     2
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-🔥
-</div>
+<div class="icon">🔥</div>
 
 <h3>
 بخش دوم — تبادل انرژی؛ گرما و کار
 </h3>
 
 <p>
-گرما، کار ترمودینامیکی،
-تبادل انرژی و نمودار فشار ـ حجم.
+گرما، کار ترمودینامیکی
+و نمودار فشار ـ حجم.
 </p>
 
-<a href="physics-10-ch5-energy-exchange.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-energy-exchange.html">
 
 ورود به بخش ←
 
@@ -657,25 +609,24 @@ class="chapter-button">
 </article>
 
 
-<!-- 3 -->
+<!-- =========================
+     3
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-⚡
-</div>
+<div class="icon">⚡</div>
 
 <h3>
 بخش سوم — انرژی درونی و قانون اول
 </h3>
 
 <p>
-انرژی درونی، تغییر انرژی درونی
-و قانون اول ترمودینامیک.
+انرژی درونی و قانون اول ترمودینامیک.
 </p>
 
-<a href="physics-10-ch5-first-law.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-first-law.html">
 
 ورود به بخش ←
 
@@ -684,25 +635,25 @@ class="chapter-button">
 </article>
 
 
-<!-- 4 -->
+<!-- =========================
+     4
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-🔄
-</div>
+<div class="icon">🔄</div>
 
 <h3>
 بخش چهارم — فرایندهای ترمودینامیکی
 </h3>
 
 <p>
-فرایندهای ترمودینامیکی،
-تغییر متغیرهای حالت و نمودار P–V.
+فرایندهای ترمودینامیکی
+و تغییر متغیرهای حالت.
 </p>
 
-<a href="physics-10-ch5-processes.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-processes.html">
 
 ورود به بخش ←
 
@@ -711,25 +662,25 @@ class="chapter-button">
 </article>
 
 
-<!-- 5 -->
+<!-- =========================
+     5
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-♻️
-</div>
+<div class="icon">♻️</div>
 
 <h3>
 بخش پنجم — چرخه‌های ترمودینامیکی
 </h3>
 
 <p>
-چرخه ترمودینامیکی،
-کار خالص و بازگشت دستگاه به حالت اولیه.
+چرخه، کار خالص
+و بازگشت دستگاه به حالت اولیه.
 </p>
 
-<a href="physics-10-ch5-cycles.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-cycles.html">
 
 ورود به بخش ←
 
@@ -738,25 +689,25 @@ class="chapter-button">
 </article>
 
 
-<!-- 6 -->
+<!-- =========================
+     6
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-🚗
-</div>
+<div class="icon">🚗</div>
 
 <h3>
 بخش ششم — ماشین‌های گرمایی
 </h3>
 
 <p>
-ماشین گرمایی،
-تبدیل انرژی گرمایی به کار.
+ماشین گرمایی
+و تبدیل انرژی گرمایی به کار.
 </p>
 
-<a href="physics-10-ch5-heat-engines.html"
-class="chapter-button">
+<a class="button"
+href="physics-10-ch5-heat-engines.html">
 
 ورود به بخش ←
 
@@ -765,13 +716,13 @@ class="chapter-button">
 </article>
 
 
-<!-- 7 -->
+<!-- =========================
+     7
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-📊
-</div>
+<div class="icon">📊</div>
 
 <h3>
 بخش هفتم — قانون دوم ترمودینامیک
@@ -779,11 +730,11 @@ class="chapter-button">
 
 <p>
 جهت طبیعی فرایندها،
-انتقال گرما و محدودیت تبدیل گرما به کار.
+قانون دوم و محدودیت تبدیل گرما به کار.
 </p>
 
-<a href="https://fdhamed.github.io/physics-10-ch5-second-law.html"
-class="chapter-button">
+<a class="button"
+href="https://fdhamed.github.io/physics-10-ch5-second-law.html?v=7">
 
 ورود به بخش ←
 
@@ -792,25 +743,25 @@ class="chapter-button">
 </article>
 
 
-<!-- 8 -->
+<!-- =========================
+     8
+========================= -->
 
-<article class="chapter-card">
+<article class="card">
 
-<div class="chapter-icon">
-❄️
-</div>
+<div class="icon">❄️</div>
 
 <h3>
 بخش هشتم — یخچال و پمپ گرمایی
 </h3>
 
 <p>
-یخچال، پمپ گرمایی،
-انتقال گرما از سرد به گرم و ضریب عملکرد.
+یخچال، پمپ گرمایی
+و ضریب عملکرد.
 </p>
 
-<a href="physics-10-ch5-refrigerators.html"
-class="chapter-button">
+<a class="button"
+href="https://fdhamed.github.io/physics-10-ch5-refrigerators.html?v=8">
 
 ورود به بخش ←
 
@@ -823,10 +774,6 @@ class="chapter-button">
 
 </section>
 
-
-<!-- =========================
-     FUTURE
-========================= -->
 
 <section>
 
@@ -838,9 +785,9 @@ class="chapter-button">
 
 <p>
 
-برای هر بخش در ادامه می‌توان متن آموزشی،
-پادکست، ویدئو، شبیه‌ساز، تمرین
-و پرسش‌های مفهومی اختصاصی اضافه کرد.
+برای هر بخش در ادامه متن آموزشی،
+پادکست، ویدئو، شبیه‌ساز،
+تمرین و پرسش‌های مفهومی اضافه خواهد شد.
 
 </p>
 
@@ -849,14 +796,9 @@ class="chapter-button">
 </section>
 
 
-<!-- =========================
-     BACK
-========================= -->
+<section class="back">
 
-<section class="back-section">
-
-<a href="physics-10-math.html"
-class="back-button">
+<a href="physics-10-math.html">
 
 ← بازگشت به فیزیک دهم ریاضی
 
@@ -868,16 +810,11 @@ class="back-button">
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
 
 <p>
 
-© 2026 —
-<strong>H Quantum</strong>
+© 2026 — <strong>H Quantum</strong>
 
 </p>
 
