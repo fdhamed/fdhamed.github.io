@@ -6,14 +6,18 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
 <title>فیزیک یازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-content="فیزیک یازدهم رشته علوم تجربی؛ سه فصل آموزشی H Quantum">
+      content="فیزیک یازدهم رشته علوم تجربی در H Quantum">
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 * {
     box-sizing: border-box;
@@ -26,9 +30,16 @@ html {
 }
 
 body {
-    font-family: Tahoma, Arial, sans-serif;
+
+    font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
     background: #07111f;
+
     color: #f4f7fb;
+
     line-height: 1.9;
 }
 
@@ -43,8 +54,11 @@ a {
 ========================= */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background:
@@ -58,7 +72,9 @@ header {
 }
 
 .nav {
+
     max-width: 1100px;
+
     margin: auto;
 
     padding: 16px 20px;
@@ -72,8 +88,11 @@ header {
 }
 
 .logo {
+
     font-size: 24px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
@@ -82,6 +101,7 @@ header {
 }
 
 .nav-links {
+
     display: flex;
 
     gap: 18px;
@@ -109,6 +129,7 @@ header {
 ========================= */
 
 .hero {
+
     max-width: 1000px;
 
     margin: auto;
@@ -120,6 +141,7 @@ header {
 }
 
 .badge {
+
     display: inline-block;
 
     padding:
@@ -138,10 +160,11 @@ header {
 }
 
 .hero h1 {
-    font-size:
-    clamp(40px, 10vw, 70px);
 
-    line-height: 1.2;
+    font-size:
+    clamp(36px, 9vw, 64px);
+
+    line-height: 1.3;
 
     margin-bottom: 18px;
 }
@@ -151,6 +174,7 @@ header {
 }
 
 .hero p {
+
     max-width: 760px;
 
     margin: auto;
@@ -162,10 +186,11 @@ header {
 
 
 /* =========================
-   SECTION
+   CHAPTER SECTION
 ========================= */
 
 section {
+
     max-width: 1100px;
 
     margin: auto;
@@ -175,12 +200,14 @@ section {
 }
 
 .section-title {
+
     text-align: center;
 
     margin-bottom: 40px;
 }
 
 .section-title h2 {
+
     font-size: 32px;
 
     margin-bottom: 10px;
@@ -192,19 +219,28 @@ section {
 
 
 /* =========================
-   CHAPTERS
+   CHAPTER GRID
 ========================= */
 
 .chapters {
+
     display: grid;
 
     grid-template-columns:
-    repeat(3, 1fr);
+    repeat(2, 1fr);
 
-    gap: 22px;
+    gap: 24px;
 }
 
+
+/* =========================
+   CHAPTER CARD
+========================= */
+
 .chapter {
+
+    position: relative;
+
     padding: 30px;
 
     background: #0c1b2c;
@@ -216,50 +252,68 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .chapter:hover {
+
     transform:
     translateY(-6px);
 
     border-color:
     rgba(99,216,255,0.5);
+
+    background: #0e2034;
 }
 
 .chapter-number {
+
     color: #63d8ff;
 
     font-size: 14px;
 
-    margin-bottom: 8px;
-}
-
-.chapter-icon {
-    font-size: 40px;
-
     margin-bottom: 10px;
 }
 
-.chapter h3 {
-    font-size: 22px;
+.chapter-icon {
 
-    margin-bottom: 13px;
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.chapter h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
 }
 
 .chapter p {
+
     color: #aebdce;
 
-    font-size: 15px;
+    font-size: 14px;
 
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
+
+/* =========================
+   BUTTON
+========================= */
+
 .chapter-button {
+
     display: inline-block;
 
+    width: 100%;
+
+    text-align: center;
+
     padding:
-    10px 20px;
+    11px 18px;
 
     border-radius: 10px;
 
@@ -276,6 +330,7 @@ section {
 }
 
 .chapter-button:hover {
+
     background: #63d8ff;
 
     color: #06101d;
@@ -283,13 +338,14 @@ section {
 
 
 /* =========================
-   INFORMATION
+   INFO
 ========================= */
 
 .info {
-    margin-top: 30px;
 
-    padding: 27px;
+    margin-top: 35px;
+
+    padding: 28px;
 
     background: #0a1828;
 
@@ -299,6 +355,13 @@ section {
     border-radius: 18px;
 
     text-align: center;
+}
+
+.info h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
 }
 
 .info p {
@@ -311,6 +374,7 @@ section {
 ========================= */
 
 .back {
+
     text-align: center;
 
     padding:
@@ -318,6 +382,7 @@ section {
 }
 
 .back-button {
+
     display: inline-block;
 
     padding:
@@ -338,6 +403,7 @@ section {
 }
 
 .back-button:hover {
+
     background: #63d8ff;
 
     color: #06101d;
@@ -349,6 +415,7 @@ section {
 ========================= */
 
 footer {
+
     border-top:
     1px solid rgba(255,255,255,0.08);
 
@@ -369,18 +436,10 @@ footer strong {
    MOBILE
 ========================= */
 
-@media (max-width: 850px) {
-
-    .chapters {
-        grid-template-columns:
-        repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .nav {
+
         flex-direction:
         column;
 
@@ -388,19 +447,74 @@ footer strong {
     }
 
     .nav-links {
+
         gap: 12px;
 
         font-size: 12px;
     }
 
-    .chapters {
-        grid-template-columns:
-        1fr;
+    .hero {
+
+        padding:
+        65px 16px 45px;
+    }
+
+    .hero p {
+
+        font-size: 15px;
     }
 
     section {
+
         padding:
-        45px 16px;
+        40px 14px;
+    }
+
+    /*
+       دو ستونه در موبایل
+    */
+
+    .chapters {
+
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .chapter {
+
+        padding:
+        18px 14px;
+
+        border-radius: 16px;
+    }
+
+    .chapter-icon {
+
+        font-size: 32px;
+    }
+
+    .chapter h3 {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .chapter p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .chapter-button {
+
+        font-size: 12px;
+
+        padding:
+        9px 6px;
     }
 
 }
@@ -439,12 +553,12 @@ H <span>QUANTUM</span>
 مدرسه فیزیک
 </a>
 
-<a href="physics-11.html">
-یازدهم
+<a href="physics-10.html">
+فیزیک دهم
 </a>
 
-<a href="physics-10.html">
-دهم
+<a href="physics-11.html">
+فیزیک یازدهم
 </a>
 
 <a href="podcast.html">
@@ -476,16 +590,18 @@ H <span>QUANTUM</span>
 
 <h1>
 
-فیزیک یازدهم <span>تجربی</span>
+فیزیک
+<span>
+یازدهم
+</span>
 
 </h1>
 
 
 <p>
 
-سه فصل فیزیک یازدهم رشته علوم تجربی؛
-از الکتریسیته ساکن و مدارهای جریان مستقیم
-تا مغناطیس و القای الکترومغناطیسی.
+مسیر یادگیری فیزیک یازدهم رشته علوم تجربی؛
+از الکتریسیته ساکن تا مغناطیس و القای الکترومغناطیسی.
 
 </p>
 
@@ -502,18 +618,15 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-
-فصل‌های فیزیک یازدهم تجربی
-
+فصل‌های فیزیک یازدهم
 </h2>
 
 <p>
-
-مسیر یادگیری خود را از فصل اول آغاز کنید.
-
+فصل موردنظر خود را انتخاب کنید.
 </p>
 
 </div>
+
 
 
 <div class="chapters">
@@ -525,33 +638,34 @@ H <span>QUANTUM</span>
 
 <article class="chapter">
 
+<div>
+
 <div class="chapter-number">
-
 فصل اول
-
 </div>
 
 <div class="chapter-icon">
-
 ⚡
-
 </div>
 
 <h3>
-
 الکتریسیته ساکن
-
 </h3>
 
 <p>
 
-بار الکتریکی، قانون کولن،
-میدان الکتریکی، پتانسیل الکتریکی،
-خازن و انرژی خازن.
+بار الکتریکی،
+قانون کولن،
+میدان الکتریکی،
+پتانسیل،
+رساناها و خازن.
 
 </p>
 
-<a href="#chapter1"
+</div>
+
+
+<a href="physics-11-experimental-chapter-1.html"
    class="chapter-button">
 
 ورود به فصل ←
@@ -568,36 +682,38 @@ H <span>QUANTUM</span>
 
 <article class="chapter">
 
+<div>
+
 <div class="chapter-number">
-
 فصل دوم
-
 </div>
 
 <div class="chapter-icon">
-
-🔋
-
+🔌
 </div>
 
 <h3>
-
 جریان الکتریکی و مدارهای جریان مستقیم
-
 </h3>
 
 <p>
 
-جریان الکتریکی، مقاومت،
-قانون اهم، نیروی محرکه،
-توان و مدارهای الکتریکی.
+جریان الکتریکی،
+مقاومت،
+قانون اهم،
+مدارهای الکتریکی،
+توان و انرژی الکتریکی.
 
 </p>
 
-<a href="#chapter2"
-   class="chapter-button">
+</div>
 
-ورود به فصل ←
+
+<a href="#"
+   class="chapter-button"
+   onclick="return false;">
+
+به‌زودی
 
 </a>
 
@@ -611,37 +727,37 @@ H <span>QUANTUM</span>
 
 <article class="chapter">
 
+<div>
+
 <div class="chapter-number">
-
 فصل سوم
-
 </div>
 
 <div class="chapter-icon">
-
 🧲
-
 </div>
 
 <h3>
-
 مغناطیس و القای الکترومغناطیسی
-
 </h3>
 
 <p>
 
 میدان مغناطیسی،
 نیروی مغناطیسی،
-القای الکترومغناطیسی،
-قانون فاراده و قانون لنز.
+القای الکترومغناطیسی
+و قانون لنز.
 
 </p>
 
-<a href="#chapter3"
-   class="chapter-button">
+</div>
 
-ورود به فصل ←
+
+<a href="#"
+   class="chapter-button"
+   onclick="return false;">
+
+به‌زودی
 
 </a>
 
@@ -651,95 +767,26 @@ H <span>QUANTUM</span>
 </div>
 
 
-<div class="info">
-
-<p>
-
-در مرحله بعد، هر فصل به صفحه اختصاصی
-خود متصل می‌شود و محتوای آموزشی،
-پادکست‌ها و شبیه‌سازهای مرتبط
-در همان مسیر قرار خواهند گرفت.
-
-</p>
-
-</div>
-
-</section>
-
-
 
 <!-- =========================
-     CHAPTER 1
+     INFO
 ========================= -->
-
-<section id="chapter1">
 
 <div class="info">
 
-<h2>
-
-⚡ فصل اول — الکتریسیته ساکن
-
-</h2>
+<h3>
+🚧 مسیر آموزشی در حال تکمیل است
+</h3>
 
 <p>
 
-صفحه اختصاصی فصل اول
-در مرحله بعد ساخته خواهد شد.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     CHAPTER 2
-========================= -->
-
-<section id="chapter2">
-
-<div class="info">
-
-<h2>
-
-🔋 فصل دوم — جریان الکتریکی و مدارهای جریان مستقیم
-
-</h2>
-
-<p>
-
-صفحه اختصاصی فصل دوم
-در مرحله بعد ساخته خواهد شد.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     CHAPTER 3
-========================= -->
-
-<section id="chapter3">
-
-<div class="info">
-
-<h2>
-
-🧲 فصل سوم — مغناطیس و القای الکترومغناطیسی
-
-</h2>
-
-<p>
-
-صفحه اختصاصی فصل سوم
-در مرحله بعد ساخته خواهد شد.
+ساختار فصل‌ها آماده شده است.
+صفحات مستقل فصل‌ها به‌تدریج ساخته می‌شوند
+و سپس بخش‌های هر فصل،
+درسنامه‌ها،
+پادکست‌ها،
+شبیه‌سازها و آزمون‌ها
+به آنها اضافه خواهند شد.
 
 </p>
 
@@ -758,12 +805,11 @@ H <span>QUANTUM</span>
 <a href="physics-11.html"
    class="back-button">
 
-← بازگشت به انتخاب رشته
+← بازگشت به فیزیک یازدهم
 
 </a>
 
 </section>
-
 
 </main>
 
