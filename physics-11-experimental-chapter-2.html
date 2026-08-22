@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+فصل دوم فیزیک یازدهم تجربی | جریان الکتریکی و مدارهای جریان مستقیم | H Quantum
+</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+
+background:#07111f;
+
+color:#f4f7fb;
+
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+top:0;
+
+z-index:1000;
+
+background:
+rgba(7,17,31,0.94);
+
+backdrop-filter:blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+
+margin:auto;
+
+padding:16px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+
+gap:18px;
+
+font-size:14px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+max-width:950px;
+
+margin:auto;
+
+padding:70px 20px 45px;
+
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+
+padding:7px 18px;
+
+border:
+1px solid rgba(99,216,255,0.35);
+
+border-radius:30px;
+
+color:#63d8ff;
+
+font-size:14px;
+
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:
+clamp(30px,7vw,52px);
+
+line-height:1.5;
+
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero p{
+max-width:720px;
+
+margin:auto;
+
+color:#aebdce;
+
+font-size:15px;
+}
+
+
+/* =========================
+SECTION
+========================= */
+
+section{
+max-width:1050px;
+
+margin:auto;
+
+padding:30px 20px 55px;
+}
+
+.section-title{
+text-align:center;
+
+margin-bottom:30px;
+}
+
+.section-title h2{
+color:#63d8ff;
+
+font-size:28px;
+
+margin-bottom:7px;
+}
+
+.section-title p{
+color:#91a3b7;
+
+font-size:13px;
+}
+
+
+/* =========================
+PART GRID
+========================= */
+
+.parts-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,minmax(0,1fr));
+
+gap:18px;
+}
+
+
+/* =========================
+PART CARD
+========================= */
+
+.part-card{
+display:block;
+
+position:relative;
+
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.12);
+
+border-radius:21px;
+
+padding:24px 18px;
+
+min-height:190px;
+
+transition:
+transform 0.25s,
+border-color 0.25s,
+background 0.25s;
+
+overflow:hidden;
+}
+
+.part-card::before{
+content:"";
+
+position:absolute;
+
+top:0;
+right:0;
+
+width:100%;
+height:3px;
+
+background:
+rgba(99,216,255,0.45);
+}
+
+.part-card:hover{
+transform:translateY(-4px);
+
+background:#0e2034;
+
+border-color:
+rgba(99,216,255,0.45);
+}
+
+
+/* =========================
+ICON
+========================= */
+
+.part-icon{
+width:60px;
+height:60px;
+
+border-radius:16px;
+
+background:#10243a;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:29px;
+
+margin-bottom:15px;
+
+border:
+1px solid rgba(99,216,255,0.16);
+}
+
+
+/* =========================
+NUMBER
+========================= */
+
+.part-number{
+display:block;
+
+font-size:11px;
+
+color:#63d8ff;
+
+margin-bottom:5px;
+}
+
+
+/* =========================
+TITLE
+========================= */
+
+.part-card h3{
+font-size:16px;
+
+line-height:1.8;
+
+margin-bottom:7px;
+}
+
+.part-card p{
+font-size:11px;
+
+color:#8193a7;
+}
+
+
+/* =========================
+BOTTOM
+========================= */
+
+.bottom-navigation{
+max-width:1050px;
+
+margin:auto;
+
+padding:10px 20px 70px;
+
+display:flex;
+
+justify-content:center;
+}
+
+.back-button{
+display:inline-block;
+
+padding:11px 22px;
+
+background:#10243a;
+
+border:
+1px solid rgba(99,216,255,0.25);
+
+border-radius:10px;
+
+color:#63d8ff;
+
+font-size:12px;
+
+font-weight:bold;
+
+text-align:center;
+}
+
+.back-button:hover{
+background:#15324e;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:35px 20px;
+
+text-align:center;
+
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+
+font-size:12px;
+}
+
+.hero{
+padding:
+55px 15px 40px;
+}
+
+.hero p{
+font-size:13px;
+}
+
+section{
+padding:
+25px 15px 40px;
+}
+
+.parts-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:11px;
+}
+
+.part-card{
+padding:
+18px 12px;
+
+min-height:180px;
+
+border-radius:17px;
+}
+
+.part-icon{
+width:48px;
+height:48px;
+
+font-size:23px;
+
+border-radius:13px;
+
+margin-bottom:12px;
+}
+
+.part-number{
+font-size:9px;
+}
+
+.part-card h3{
+font-size:12px;
+
+line-height:1.8;
+}
+
+.part-card p{
+font-size:9px;
+}
+
+.section-title h2{
+font-size:23px;
+}
+
+.section-title p{
+font-size:11px;
+}
+
+}
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:28px;
+}
+
+.parts-grid{
+gap:8px;
+}
+
+.part-card{
+padding:
+16px 9px;
+
+min-height:170px;
+}
+
+.part-icon{
+width:44px;
+height:44px;
+
+font-size:21px;
+}
+
+.part-card h3{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<main>
+
+
+<section class="hero">
+
+
+<div class="badge">
+
+فیزیک یازدهم • رشته علوم تجربی
+
+</div>
+
+
+<h1>
+
+فصل دوم
+
+<br>
+
+<span>
+جریان الکتریکی و مدارهای جریان مستقیم
+</span>
+
+</h1>
+
+
+<p>
+
+شش بخش آموزشی فصل دوم
+فیزیک یازدهم رشته علوم تجربی
+
+</p>
+
+
+</section>
+
+
+
+<!-- =========================
+PARTS
+========================= -->
+
+<section>
+
+
+<div class="section-title">
+
+<h2>
+بخش‌های فصل دوم
+</h2>
+
+<p>
+برای ورود به هر بخش روی کارت آن کلیک کنید.
+</p>
+
+</div>
+
+
+
+<div class="parts-grid">
+
+
+<!-- =========================
+PART 1
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-electric-current.html"
+class="part-card">
+
+<div class="part-icon">
+⚡
+</div>
+
+<span class="part-number">
+بخش ۱
+</span>
+
+<h3>
+جریان الکتریکی
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+
+<!-- =========================
+PART 2
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-resistance-ohm.html"
+class="part-card">
+
+<div class="part-icon">
+🔌
+</div>
+
+<span class="part-number">
+بخش ۲
+</span>
+
+<h3>
+مقاومت الکتریکی و قانون اهم
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+
+<!-- =========================
+PART 3
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-resistance-factors.html"
+class="part-card">
+
+<div class="part-icon">
+📏
+</div>
+
+<span class="part-number">
+بخش ۳
+</span>
+
+<h3>
+عوامل مؤثر بر مقاومت الکتریکی
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+
+<!-- =========================
+PART 4
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-emf-circuits.html"
+class="part-card">
+
+<div class="part-icon">
+🔋
+</div>
+
+<span class="part-number">
+بخش ۴
+</span>
+
+<h3>
+نیروی محرکهٔ الکتریکی و مدارها
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+
+<!-- =========================
+PART 5
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-power.html"
+class="part-card">
+
+<div class="part-icon">
+💡
+</div>
+
+<span class="part-number">
+بخش ۵
+</span>
+
+<h3>
+توان در مدارهای الکتریکی
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+
+<!-- =========================
+PART 6
+========================= -->
+
+<a
+href="physics-11-experimental-ch2-resistors-combination.html"
+class="part-card">
+
+<div class="part-icon">
+🔗
+</div>
+
+<span class="part-number">
+بخش ۶
+</span>
+
+<h3>
+ترکیب مقاومت‌ها
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+BOTTOM NAVIGATION
+========================= -->
+
+<div class="bottom-navigation">
+
+
+<a
+href="physics-11-experimental.html"
+class="back-button">
+
+← بازگشت به فیزیک یازدهم تجربی
+
+</a>
+
+
+</div>
+
+
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
