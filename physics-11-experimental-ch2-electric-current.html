@@ -6,449 +6,483 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
-<title>جریان الکتریکی | فیزیک یازدهم تجربی | H Quantum</title>
+<title>بخش اول | جریان الکتریکی | H Quantum</title>
 
 <style>
 
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Tahoma,Arial,sans-serif;
-background:#07111f;
-color:#f4f7fb;
-line-height:2;
+    font-family:Tahoma, Arial, sans-serif;
+    background:#07111f;
+    color:#f4f7fb;
+    line-height:1.8;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 
 /* =========================
-HEADER
+   HEADER
 ========================= */
 
 header{
-position:sticky;
-top:0;
-z-index:1000;
+    position:sticky;
+    top:0;
+    z-index:1000;
 
-background:rgba(7,17,31,0.94);
+    background:rgba(7,17,31,0.95);
 
-backdrop-filter:blur(12px);
+    backdrop-filter:blur(12px);
 
-border-bottom:
-1px solid rgba(255,255,255,0.08);
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
 }
 
 .nav{
-max-width:1100px;
-margin:auto;
+    max-width:1100px;
+    margin:auto;
 
-padding:16px 20px;
+    padding:15px 20px;
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-font-size:24px;
-font-weight:bold;
-letter-spacing:2px;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 .logo span{
-color:#63d8ff;
+    color:#63d8ff;
 }
 
 .nav-links{
-display:flex;
-gap:18px;
+    display:flex;
+    gap:18px;
 
-font-size:14px;
+    font-size:13px;
 
-color:#cbd5e1;
+    color:#cbd5e1;
 
-flex-wrap:wrap;
-justify-content:center;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .nav-links a{
-transition:0.3s;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
-color:#63d8ff;
+    color:#63d8ff;
 }
 
 
 /* =========================
-HERO
+   HERO
 ========================= */
 
 .hero{
-max-width:900px;
-margin:auto;
+    max-width:1000px;
+    margin:auto;
 
-padding:65px 20px 45px;
+    padding:60px 20px 35px;
 
-text-align:center;
+    text-align:center;
 }
 
 .badge{
-display:inline-block;
+    display:inline-block;
 
-padding:7px 18px;
+    padding:7px 18px;
 
-border:
-1px solid rgba(99,216,255,0.35);
+    border:
+    1px solid rgba(99,216,255,0.35);
 
-border-radius:30px;
+    border-radius:30px;
 
-color:#63d8ff;
+    color:#63d8ff;
 
-font-size:13px;
+    font-size:12px;
 
-margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .hero h1{
-font-size:
-clamp(30px,7vw,52px);
+    font-size:
+    clamp(28px,7vw,48px);
 
-line-height:1.5;
+    line-height:1.5;
 
-margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .hero h1 span{
-color:#63d8ff;
+    color:#63d8ff;
 }
 
 .hero p{
-max-width:720px;
-margin:auto;
+    color:#91a3b7;
 
-color:#aebdce;
-
-font-size:14px;
+    font-size:13px;
 }
 
 
 /* =========================
-CONTENT
+   CONTENT
 ========================= */
 
-main{
-max-width:950px;
-margin:auto;
+.container{
+    max-width:1050px;
+
+    margin:auto;
+
+    padding:
+    15px 20px 60px;
 }
 
-.content{
-padding:25px 20px 60px;
+.section-title{
+    text-align:center;
+
+    margin-bottom:25px;
 }
 
-.content-card{
-background:#0a1828;
+.section-title h2{
+    color:#63d8ff;
 
-border:
-1px solid rgba(99,216,255,0.13);
+    font-size:25px;
 
-border-radius:22px;
-
-padding:30px 25px;
-
-margin-bottom:22px;
+    margin-bottom:5px;
 }
 
-.content-card h2{
-color:#63d8ff;
+.section-title p{
+    color:#8193a7;
 
-font-size:23px;
-
-margin-bottom:15px;
-}
-
-.content-card h3{
-color:#e9f7ff;
-
-font-size:18px;
-
-margin:
-22px 0 10px;
-}
-
-.content-card p{
-color:#c2cfdd;
-
-font-size:14px;
-
-margin-bottom:13px;
-}
-
-.content-card ul{
-padding-right:25px;
-
-color:#c2cfdd;
-
-font-size:14px;
-}
-
-.content-card li{
-margin-bottom:8px;
+    font-size:12px;
 }
 
 
 /* =========================
-FORMULA
+   CARDS
 ========================= */
 
-.formula{
-direction:ltr;
+.cards{
+    display:grid;
 
-text-align:center;
+    grid-template-columns:
+    repeat(3,minmax(0,1fr));
 
-font-family:
-"Times New Roman",
-serif;
+    gap:18px;
+}
 
-font-size:24px;
+.card{
+    position:relative;
 
-color:#63d8ff;
+    display:block;
 
-background:#07111f;
+    min-height:185px;
 
-border:
-1px solid rgba(99,216,255,0.15);
+    padding:24px 18px;
 
-border-radius:14px;
+    background:#0a1828;
 
-padding:15px;
+    border:
+    1px solid rgba(99,216,255,0.13);
 
-margin:18px 0;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:
+    transform 0.25s,
+    background 0.25s,
+    border-color 0.25s;
+}
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:100%;
+    height:3px;
+
+    background:
+    rgba(99,216,255,0.45);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+
+    background:#0e2034;
+
+    border-color:
+    rgba(99,216,255,0.45);
 }
 
 
 /* =========================
-EXAMPLE
+   ICON
 ========================= */
 
-.example{
-border-right:
-4px solid #63d8ff;
+.icon{
+    width:55px;
+    height:55px;
 
-background:#0d2034;
+    display:flex;
 
-border-radius:12px;
+    align-items:center;
+    justify-content:center;
 
-padding:18px;
+    background:#10243a;
 
-margin-top:20px;
-}
+    border:
+    1px solid rgba(99,216,255,0.16);
 
-.example strong{
-color:#63d8ff;
+    border-radius:15px;
+
+    font-size:27px;
+
+    margin-bottom:15px;
 }
 
 
 /* =========================
-KEY POINT
+   CARD TEXT
 ========================= */
 
-.key-point{
-background:#10243a;
+.number{
+    display:block;
 
-border:
-1px solid rgba(99,216,255,0.2);
+    color:#63d8ff;
 
-border-radius:15px;
+    font-size:10px;
 
-padding:20px;
-
-margin-top:20px;
+    margin-bottom:4px;
 }
 
-.key-point strong{
-color:#63d8ff;
+.card h3{
+    font-size:15px;
+
+    line-height:1.8;
+
+    margin-bottom:6px;
+}
+
+.card p{
+    color:#8193a7;
+
+    font-size:10px;
 }
 
 
 /* =========================
-NAVIGATION
+   BOTTOM BUTTONS
 ========================= */
 
-.bottom-navigation{
-display:flex;
+.navigation{
+    max-width:1050px;
 
-justify-content:center;
+    margin:auto;
 
-gap:12px;
+    padding:
+    5px 20px 70px;
 
-flex-wrap:wrap;
+    display:flex;
 
-padding:
-10px 20px 70px;
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
 }
 
-.nav-button{
-display:inline-block;
+.button{
+    display:inline-block;
 
-padding:11px 20px;
+    padding:10px 20px;
 
-background:#10243a;
+    background:#10243a;
 
-border:
-1px solid rgba(99,216,255,0.25);
+    border:
+    1px solid rgba(99,216,255,0.25);
 
-border-radius:10px;
+    border-radius:10px;
 
-color:#63d8ff;
+    color:#63d8ff;
 
-font-size:12px;
+    font-size:11px;
 
-font-weight:bold;
-
-text-align:center;
+    font-weight:bold;
 }
 
-.nav-button:hover{
-background:#15324e;
+.button:hover{
+    background:#15324e;
 }
 
 
 /* =========================
-FOOTER
+   FOOTER
 ========================= */
 
 footer{
-border-top:
-1px solid rgba(255,255,255,0.08);
+    border-top:
+    1px solid rgba(255,255,255,0.08);
 
-padding:35px 20px;
+    padding:30px 20px;
 
-text-align:center;
+    text-align:center;
 
-color:#8191a4;
+    color:#8191a4;
+
+    font-size:11px;
 }
 
 footer strong{
-color:#63d8ff;
+    color:#63d8ff;
 }
 
 
 /* =========================
-MOBILE
+   MOBILE
 ========================= */
 
 @media(max-width:750px){
 
-.nav{
-flex-direction:column;
-gap:10px;
-}
+    .nav{
+        flex-direction:column;
+        gap:9px;
+    }
 
-.nav-links{
-gap:10px;
-font-size:12px;
-}
+    .nav-links{
+        gap:10px;
+        font-size:11px;
+    }
 
-.hero{
-padding:
-50px 15px 35px;
-}
+    .hero{
+        padding:
+        48px 15px 30px;
+    }
 
-.hero h1{
-font-size:30px;
-}
+    .hero h1{
+        font-size:29px;
+    }
 
-.hero p{
-font-size:12px;
-}
+    .hero p{
+        font-size:11px;
+    }
 
-.content{
-padding:
-20px 15px 45px;
-}
+    .container{
+        padding:
+        15px 15px 45px;
+    }
 
-.content-card{
-padding:
-22px 17px;
+    .section-title h2{
+        font-size:22px;
+    }
 
-border-radius:18px;
-}
+    .section-title p{
+        font-size:10px;
+    }
 
-.content-card h2{
-font-size:20px;
-}
+    /*
+       دو ستونه در موبایل
+    */
 
-.content-card h3{
-font-size:16px;
-}
+    .cards{
+        grid-template-columns:
+        repeat(2,minmax(0,1fr));
 
-.content-card p,
-.content-card ul{
-font-size:12px;
-}
+        gap:10px;
+    }
 
-.formula{
-font-size:20px;
-padding:12px;
-}
+    .card{
+        min-height:165px;
 
-.example{
-padding:15px;
-}
+        padding:
+        17px 11px;
 
-.key-point{
-padding:16px;
-}
+        border-radius:17px;
+    }
+
+    .icon{
+        width:47px;
+        height:47px;
+
+        font-size:23px;
+
+        border-radius:13px;
+
+        margin-bottom:11px;
+    }
+
+    .number{
+        font-size:8px;
+    }
+
+    .card h3{
+        font-size:11px;
+
+        line-height:1.8;
+    }
+
+    .card p{
+        font-size:8px;
+    }
 
 }
 
 
 /* =========================
-SMALL MOBILE
+   SMALL MOBILE
 ========================= */
 
 @media(max-width:400px){
 
-.hero h1{
-font-size:27px;
-}
+    .hero h1{
+        font-size:26px;
+    }
 
-.content-card{
-padding:
-20px 14px;
-}
+    .cards{
+        gap:8px;
+    }
 
-.content-card h2{
-font-size:18px;
-}
+    .card{
+        min-height:155px;
 
-.content-card h3{
-font-size:15px;
-}
+        padding:
+        15px 9px;
+    }
 
-.content-card p,
-.content-card ul{
-font-size:11px;
-}
+    .icon{
+        width:43px;
+        height:43px;
 
-.formula{
-font-size:18px;
-}
+        font-size:20px;
+    }
+
+    .card h3{
+        font-size:10px;
+    }
 
 }
 
@@ -461,7 +495,7 @@ font-size:18px;
 
 
 <!-- =========================
-HEADER
+     HEADER
 ========================= -->
 
 <header>
@@ -469,7 +503,7 @@ HEADER
 <nav class="nav">
 
 <a href="index.html"
-class="logo">
+   class="logo">
 
 H <span>QUANTUM</span>
 
@@ -507,36 +541,35 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-HERO
+     HERO
 ========================= -->
 
 <main>
-
 
 <section class="hero">
 
 <div class="badge">
 
-فیزیک یازدهم • رشته علوم تجربی • فصل دوم
+فیزیک یازدهم • علوم تجربی • فصل دوم
 
 </div>
 
 
 <h1>
 
-⚡ جریان
+بخش اول
+
+<br>
+
 <span>
-الکتریکی
+جریان الکتریکی
 </span>
 
 </h1>
 
 
 <p>
-
-بخش اول فصل دوم:
-جریان الکتریکی و مدارهای جریان مستقیم
-
+مسیر یادگیری این بخش
 </p>
 
 </section>
@@ -544,377 +577,200 @@ HERO
 
 
 <!-- =========================
-CONTENT
+     CARDS
 ========================= -->
 
-<section class="content">
+<section class="container">
 
 
-<!-- INTRO -->
-
-<div class="content-card">
+<div class="section-title">
 
 <h2>
-از حرکت بارها تا جریان الکتریکی
+مطالب این بخش
 </h2>
 
 <p>
-
-وقتی دربارهٔ جریان الکتریکی صحبت می‌کنیم،
-در واقع دربارهٔ حرکت جهت‌دار بارهای الکتریکی
-در یک محیط صحبت می‌کنیم.
-
-</p>
-
-<p>
-
-در یک سیم فلزی، الکترون‌های آزاد دائماً
-در حال حرکت‌های نامنظم هستند؛ اما تا زمانی
-که عامل مشخصی باعث ایجاد حرکت جهت‌دار آنها
-نشود، جریان الکتریکی خالصی در سیم نداریم.
-
-</p>
-
-<p>
-
-برای ایجاد جریان الکتریکی باید شرایطی فراهم شود
-که بارهای الکتریکی بتوانند به صورت منظم‌تر
-در یک جهت مشخص جابه‌جا شوند.
-
+برای ورود به هر قسمت روی کارت کلیک کنید.
 </p>
 
 </div>
 
 
 
-<!-- CURRENT -->
-
-<div class="content-card">
-
-<h2>
-جریان الکتریکی چیست؟
-</h2>
-
-<p>
-
-جریان الکتریکی به مقدار باری گفته می‌شود
-که از یک مقطع مشخص از رسانا در واحد زمان
-عبور می‌کند.
-
-</p>
+<div class="cards">
 
 
-<div class="formula">
+<!-- CARD 1 -->
 
-I = Δq / Δt
+<a href="#"
+   class="card">
 
+<div class="icon">
+⚡
 </div>
 
-
-<p>
-
-در این رابطه، <b>I</b> شدت جریان الکتریکی،
-<b>Δq</b> مقدار بار عبوری و <b>Δt</b>
-بازهٔ زمانی عبور این بار است.
-
-</p>
-
+<span class="number">
+قسمت ۱
+</span>
 
 <h3>
-واحد جریان الکتریکی
+مفهوم جریان الکتریکی
 </h3>
 
 <p>
-
-واحد جریان الکتریکی در دستگاه SI،
-<strong>آمپر (A)</strong> است.
-
+به‌زودی
 </p>
 
-<p>
-
-یک آمپر یعنی در هر ثانیه یک کولن بار
-از مقطع مورد نظر عبور کند.
-
-</p>
+</a>
 
 
-<div class="formula">
 
-1 A = 1 C / 1 s
+<!-- CARD 2 -->
 
+<a href="#"
+   class="card">
+
+<div class="icon">
+🔌
 </div>
 
+<span class="number">
+قسمت ۲
+</span>
+
+<h3>
+شدت جریان الکتریکی
+</h3>
+
+<p>
+به‌زودی
+</p>
+
+</a>
+
+
+
+<!-- CARD 3 -->
+
+<a href="#"
+   class="card">
+
+<div class="icon">
+🔋
 </div>
 
+<span class="number">
+قسمت ۳
+</span>
 
-
-<!-- DIRECTION -->
-
-<div class="content-card">
-
-<h2>
-جهت جریان الکتریکی
-</h2>
+<h3>
+بار الکتریکی و جریان
+</h3>
 
 <p>
-
-در مدارهای الکتریکی باید میان دو مفهوم
-«حرکت الکترون‌ها» و «جهت قراردادی جریان»
-تفاوت قائل شویم.
-
+به‌زودی
 </p>
 
-<p>
-
-در فلزها، حامل‌های بار آزاد معمولاً
-الکترون‌ها هستند و حرکت آنها در خلاف
-جهت جریان قراردادی است.
-
-</p>
-
-<p>
-
-جهت قراردادی جریان الکتریکی از ناحیهٔ
-با پتانسیل بالاتر به سمت ناحیهٔ
-با پتانسیل پایین‌تر در نظر گرفته می‌شود.
-
-</p>
+</a>
 
 
-<div class="key-point">
 
-<strong>
-نکته مهم:
-</strong>
+<!-- CARD 4 -->
 
-<p>
+<a href="#"
+   class="card">
 
-جهت جریان قراردادی را با جهت حرکت
-الکترون‌ها یکی نگیریم.
-
-</p>
-
+<div class="icon">
+📐
 </div>
 
-</div>
+<span class="number">
+قسمت ۴
+</span>
 
-
-
-<!-- CHARGE -->
-
-<div class="content-card">
-
-<h2>
-رابطهٔ جریان و مقدار بار
-</h2>
+<h3>
+رابطه شدت جریان و بار
+</h3>
 
 <p>
-
-از رابطهٔ شدت جریان می‌توان مقدار بار
-عبوری را نیز به دست آورد.
-
+به‌زودی
 </p>
 
+</a>
 
-<div class="formula">
 
-Δq = I Δt
 
+<!-- CARD 5 -->
+
+<a href="#"
+   class="card">
+
+<div class="icon">
+🔄
 </div>
 
+<span class="number">
+قسمت ۵
+</span>
 
-<p>
-
-بنابراین اگر جریان ثابت باشد،
-هرچه مدت زمان بیشتری بگذرد،
-مقدار بار بیشتری از مقطع رسانا عبور می‌کند.
-
-</p>
-
-
-<div class="example">
-
-<strong>
-مثال:
-</strong>
-
-<p>
-
-اگر جریان عبوری از یک سیم برابر
-۲ آمپر باشد، در مدت ۵ ثانیه چه مقدار
-بار از یک مقطع سیم عبور می‌کند؟
-
-</p>
-
-
-<div class="formula">
-
-q = It = 2 × 5 = 10 C
-
-</div>
-
-
-<p>
-
-پس ۱۰ کولن بار از مقطع سیم عبور کرده است.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- DC -->
-
-<div class="content-card">
-
-<h2>
+<h3>
 جریان مستقیم
-</h2>
+</h3>
 
 <p>
-
-در برخی مدارها جهت جریان با گذشت زمان
-تغییر نمی‌کند. به چنین جریانی
-<strong>جریان مستقیم</strong> یا
-<strong>DC</strong> گفته می‌شود.
-
+به‌زودی
 </p>
 
-<p>
+</a>
 
-باتری یکی از منابع معمول ایجاد جریان مستقیم
-در مدارهای الکتریکی است.
 
-</p>
 
+<!-- CARD 6 -->
+
+<a href="#"
+   class="card">
+
+<div class="icon">
+💡
 </div>
 
+<span class="number">
+قسمت ۶
+</span>
 
-
-<!-- CIRCUIT -->
-
-<div class="content-card">
-
-<h2>
+<h3>
 مدار الکتریکی
-</h2>
+</h3>
 
 <p>
-
-برای برقرار شدن جریان الکتریکی، معمولاً
-به یک مسیر بسته نیاز داریم.
-
+به‌زودی
 </p>
 
-<p>
-
-یک مدار ساده می‌تواند شامل یک منبع انرژی
-الکتریکی، رسانا و یک مصرف‌کننده باشد.
-
-</p>
-
-<p>
-
-وقتی مسیر مدار بسته باشد، بارهای الکتریکی
-می‌توانند در مدار حرکت کنند و جریان برقرار شود.
-
-</p>
+</a>
 
 
-<div class="key-point">
-
-<strong>
-تصویر ذهنی:
-</strong>
-
-<p>
-
-مدار الکتریکی را می‌توان مانند یک مسیر بسته
-در نظر گرفت که بارهای الکتریکی در آن حرکت می‌کنند.
-منبع انرژی شرایط لازم برای این حرکت را فراهم می‌کند.
-
-</p>
 
 </div>
-
-</div>
-
-
-
-<!-- SUMMARY -->
-
-<div class="content-card">
-
-<h2>
-جمع‌بندی
-</h2>
-
-<ul>
-
-<li>
-جریان الکتریکی به مقدار بار عبوری از یک مقطع در واحد زمان مربوط است.
-</li>
-
-<li>
-رابطهٔ شدت جریان برابر است با:
-I = Δq / Δt
-</li>
-
-<li>
-واحد جریان الکتریکی آمپر است.
-</li>
-
-<li>
-جهت جریان قراردادی با جهت حرکت الکترون‌ها در فلزها مخالف است.
-</li>
-
-<li>
-در جریان مستقیم، جهت جریان با زمان تغییر نمی‌کند.
-</li>
-
-<li>
-برای برقرار شدن جریان پایدار در یک مدار معمولاً مسیر بسته لازم است.
-</li>
-
-</ul>
-
-</div>
-
 
 </section>
 
 
 
 <!-- =========================
-NAVIGATION
+     NAVIGATION
 ========================= -->
 
-<div class="bottom-navigation">
-
+<div class="navigation">
 
 <a
 href="physics-11-experimental-chapter-2.html"
-class="nav-button">
+class="button">
 
 ← بازگشت به فصل دوم
 
 </a>
 
-
-<a
-href="physics-11-experimental-ch2-resistance-ohm.html"
-class="nav-button">
-
-بخش بعدی →
-</a>
-
-
 </div>
-
 
 
 </main>
@@ -922,22 +778,18 @@ class="nav-button">
 
 
 <!-- =========================
-FOOTER
+     FOOTER
 ========================= -->
 
 <footer>
 
 <p>
-
 © 2026 —
 <strong>H Quantum</strong>
-
 </p>
 
 <p>
-
 Physics • Science • Wonder
-
 </p>
 
 </footer>
