@@ -6,482 +6,491 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+content="width=device-width, initial-scale=1.0">
 
 <title>فصل اول فیزیک یازدهم ریاضی | الکتریسیته ساکن | H Quantum</title>
 
 <style>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background: #07111f;
-    color: #f4f7fb;
-    line-height: 1.9;
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(7,17,31,0.94);
-
-    backdrop-filter: blur(12px);
-
-    border-bottom:
-        1px solid rgba(255,255,255,0.08);
-}
-
-.nav {
-    max-width: 1100px;
-    margin: auto;
-    padding: 16px 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo span {
-    color: #63d8ff;
-}
-
-.nav-links {
-    display: flex;
-    gap: 18px;
-
-    font-size: 14px;
-    color: #cbd5e1;
-
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav-links a {
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #63d8ff;
+a{
+text-decoration:none;
+color:inherit;
 }
 
 
 /* =========================
-   HERO
+HEADER
 ========================= */
 
-.hero {
-    max-width: 1000px;
-    margin: auto;
+header{
+position:sticky;
+top:0;
+z-index:1000;
 
-    padding: 80px 20px 60px;
+background:rgba(7,17,31,0.94);
 
-    text-align: center;
+backdrop-filter:blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
 }
 
-.badge {
-    display: inline-block;
+.nav{
+max-width:1100px;
+margin:auto;
 
-    padding: 7px 18px;
+padding:16px 20px;
 
-    border:
-        1px solid rgba(99,216,255,0.35);
+display:flex;
 
-    border-radius: 30px;
-
-    color: #63d8ff;
-
-    font-size: 14px;
-
-    margin-bottom: 22px;
+justify-content:space-between;
+align-items:center;
 }
 
-.hero h1 {
-    font-size:
-        clamp(34px, 8vw, 60px);
-
-    line-height: 1.4;
-
-    margin-bottom: 15px;
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
-.hero h1 span {
-    color: #63d8ff;
+.logo span{
+color:#63d8ff;
 }
 
-.hero p {
-    max-width: 760px;
+.nav-links{
+display:flex;
 
-    margin: auto;
+gap:18px;
 
-    color: #aebdce;
+font-size:14px;
 
-    font-size: 17px;
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
 }
 
 
 /* =========================
-   GENERAL SECTION
+HERO
 ========================= */
 
-section {
-    max-width: 1100px;
-    margin: auto;
+.hero{
+max-width:950px;
 
-    padding: 55px 20px;
+margin:auto;
+
+padding:70px 20px 45px;
+
+text-align:center;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 35px;
+.badge{
+display:inline-block;
+
+padding:7px 18px;
+
+border:
+1px solid rgba(99,216,255,0.35);
+
+border-radius:30px;
+
+color:#63d8ff;
+
+font-size:14px;
+
+margin-bottom:20px;
 }
 
-.section-title h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.hero h1{
+font-size:
+clamp(32px,8vw,55px);
+
+line-height:1.45;
+
+margin-bottom:12px;
 }
 
-.section-title p {
-    color: #9eafc2;
-    font-size: 15px;
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero p{
+max-width:720px;
+
+margin:auto;
+
+color:#aebdce;
+
+font-size:15px;
 }
 
 
 /* =========================
-   INTRO
+SECTION
 ========================= */
 
-.intro {
-    max-width: 900px;
-    margin: auto;
+section{
+max-width:1050px;
 
-    padding: 35px 30px;
+margin:auto;
 
-    background: #0a1828;
-
-    border:
-        1px solid rgba(99,216,255,0.12);
-
-    border-radius: 22px;
-
-    text-align: center;
+padding:30px 20px 55px;
 }
 
-.intro h2 {
-    font-size: 27px;
-    margin-bottom: 15px;
+.section-title{
+text-align:center;
+
+margin-bottom:30px;
 }
 
-.intro p {
-    color: #aebdce;
-    font-size: 15px;
+.section-title h2{
+color:#63d8ff;
+
+font-size:28px;
+
+margin-bottom:7px;
+}
+
+.section-title p{
+color:#91a3b7;
+
+font-size:13px;
 }
 
 
 /* =========================
-   CARDS
+PART GRID
 ========================= */
 
-.section-grid {
-    display: grid;
+.parts-grid{
+display:grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+grid-template-columns:
+repeat(3,minmax(0,1fr));
 
-    gap: 20px;
-
-    max-width: 1000px;
-
-    margin: auto;
-}
-
-.section-card {
-    padding: 28px 20px;
-
-    background: #0c1b2c;
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    transition:
-        transform 0.3s,
-        border-color 0.3s;
-}
-
-.section-card:hover {
-    transform: translateY(-5px);
-
-    border-color:
-        rgba(99,216,255,0.5);
-}
-
-.section-number {
-    color: #8191a4;
-
-    font-size: 13px;
-
-    margin-bottom: 8px;
-}
-
-.icon {
-    font-size: 42px;
-    margin-bottom: 12px;
-}
-
-.section-card h3 {
-    font-size: 18px;
-
-    margin-bottom: 10px;
-
-    line-height: 1.8;
-}
-
-.section-card p {
-    color: #aebdce;
-
-    font-size: 13px;
-
-    margin-bottom: 20px;
-
-    line-height: 1.9;
+gap:18px;
 }
 
 
 /* =========================
-   BUTTON
+PART CARD
 ========================= */
 
-.button {
-    display: inline-block;
+.part-card{
+display:block;
 
-    padding: 9px 18px;
+position:relative;
 
-    border-radius: 9px;
+background:#0a1828;
 
-    background: #10243a;
+border:
+1px solid rgba(99,216,255,0.12);
 
-    border:
-        1px solid rgba(99,216,255,0.25);
+border-radius:21px;
 
-    color: #63d8ff;
+padding:24px 18px;
 
-    font-size: 13px;
+min-height:185px;
 
-    font-weight: bold;
+transition:
+transform 0.25s,
+border-color 0.25s,
+background 0.25s;
 
-    cursor: default;
+overflow:hidden;
+}
+
+.part-card::before{
+content:"";
+
+position:absolute;
+
+top:0;
+right:0;
+
+width:100%;
+height:3px;
+
+background:
+rgba(99,216,255,0.45);
+}
+
+.part-card:hover{
+transform:translateY(-4px);
+
+background:#0e2034;
+
+border-color:
+rgba(99,216,255,0.45);
 }
 
 
 /* =========================
-   DEVELOPMENT
+ICON
 ========================= */
 
-.development {
-    max-width: 900px;
-    margin: auto;
+.part-icon{
+width:58px;
+height:58px;
 
-    padding: 35px 30px;
+border-radius:16px;
 
-    background: #0a1828;
+background:#10243a;
 
-    border:
-        1px solid rgba(99,216,255,0.12);
+display:flex;
 
-    border-radius: 22px;
+align-items:center;
+justify-content:center;
 
-    text-align: center;
-}
+font-size:28px;
 
-.development h2 {
-    font-size: 25px;
-    margin-bottom: 12px;
-}
+margin-bottom:15px;
 
-.development p {
-    color: #aebdce;
-    font-size: 14px;
+border:
+1px solid rgba(99,216,255,0.16);
 }
 
 
 /* =========================
-   BACK
+NUMBER
 ========================= */
 
-.back {
-    text-align: center;
+.part-number{
+display:block;
 
-    padding:
-        20px 20px 80px;
-}
+font-size:11px;
 
-.back-button {
-    display: inline-block;
+color:#63d8ff;
 
-    padding: 12px 25px;
-
-    background: #10243a;
-
-    border:
-        1px solid rgba(255,255,255,0.12);
-
-    border-radius: 10px;
-
-    color: #63d8ff;
-
-    font-weight: bold;
+margin-bottom:5px;
 }
 
 
 /* =========================
-   FOOTER
+TITLE
 ========================= */
 
-footer {
-    border-top:
-        1px solid rgba(255,255,255,0.08);
+.part-card h3{
+font-size:16px;
 
-    padding: 35px 20px;
+line-height:1.8;
 
-    text-align: center;
-
-    color: #8191a4;
+margin-bottom:7px;
 }
 
-footer strong {
-    color: #63d8ff;
+.part-card p{
+font-size:11px;
+
+color:#8193a7;
 }
 
 
 /* =========================
-   MOBILE
+BOTTOM
 ========================= */
 
-@media (max-width: 750px) {
+.bottom-navigation{
+max-width:1050px;
 
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+margin:auto;
 
-    .nav-links {
-        gap: 11px;
-        font-size: 12px;
-    }
+padding:10px 20px 70px;
 
-    .hero {
-        padding:
-            55px 16px 45px;
-    }
+display:flex;
 
-    .hero p {
-        font-size: 14px;
-    }
+justify-content:center;
 
-    .section-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+gap:15px;
+}
 
-        gap: 12px;
-    }
+.back-button{
+display:inline-block;
 
-    .section-card {
-        padding:
-            20px 12px;
+padding:11px 22px;
 
-        border-radius: 16px;
-    }
+background:#10243a;
 
-    .section-number {
-        font-size: 11px;
-    }
+border:
+1px solid rgba(99,216,255,0.25);
 
-    .icon {
-        font-size: 32px;
-    }
+border-radius:10px;
 
-    .section-card h3 {
-        font-size: 13px;
-        line-height: 1.8;
-    }
+color:#63d8ff;
 
-    .section-card p {
-        font-size: 11px;
-        line-height: 1.8;
+font-size:12px;
 
-        margin-bottom: 14px;
-    }
+font-weight:bold;
 
-    .button {
-        font-size: 11px;
-        padding:
-            8px 10px;
-    }
+text-align:center;
+}
 
-    .intro {
-        padding:
-            28px 18px;
-    }
+.back-button:hover{
+background:#15324e;
+}
 
-    .development {
-        padding:
-            28px 18px;
-    }
 
-    .development h2 {
-        font-size: 21px;
-    }
+/* =========================
+FOOTER
+========================= */
 
-    .development p {
-        font-size: 12px;
-    }
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:35px 20px;
+
+text-align:center;
+
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+
+font-size:12px;
+}
+
+.hero{
+padding:
+55px 15px 40px;
+}
+
+.hero p{
+font-size:13px;
+}
+
+section{
+padding:
+25px 15px 40px;
+}
+
+.parts-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:11px;
+}
+
+.part-card{
+padding:
+18px 12px;
+
+min-height:175px;
+
+border-radius:17px;
+}
+
+.part-icon{
+width:48px;
+height:48px;
+
+font-size:23px;
+
+border-radius:13px;
+
+margin-bottom:12px;
+}
+
+.part-number{
+font-size:9px;
+}
+
+.part-card h3{
+font-size:12px;
+
+line-height:1.8;
+}
+
+.part-card p{
+font-size:9px;
+}
+
+.section-title h2{
+font-size:23px;
+}
+
+.section-title p{
+font-size:11px;
+}
 
 }
 
 
 /* =========================
-   SMALL MOBILE
+SMALL MOBILE
 ========================= */
 
-@media (max-width: 400px) {
+@media(max-width:400px){
 
-    .hero h1 {
-        font-size: 30px;
-    }
+.hero h1{
+font-size:29px;
+}
 
-    .section-card h3 {
-        font-size: 12px;
-    }
+.parts-grid{
+gap:8px;
+}
+
+.part-card{
+padding:
+16px 9px;
+
+min-height:165px;
+}
+
+.part-icon{
+width:44px;
+height:44px;
+
+font-size:21px;
+}
+
+.part-card h3{
+font-size:11px;
+}
 
 }
 
@@ -494,7 +503,7 @@ footer strong {
 
 
 <!-- =========================
-     HEADER
+HEADER
 ========================= -->
 
 <header>
@@ -502,7 +511,7 @@ footer strong {
 <nav class="nav">
 
 <a href="index.html"
-   class="logo">
+class="logo">
 
 H <span>QUANTUM</span>
 
@@ -540,14 +549,13 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     HERO
+HERO
 ========================= -->
 
 <main>
 
 
 <section class="hero">
-
 
 <div class="badge">
 
@@ -559,63 +567,28 @@ H <span>QUANTUM</span>
 <h1>
 
 فصل اول
-
 <br>
 
-<span>الکتریسیته ساکن</span>
+<span>
+الکتریسیته ساکن
+</span>
 
 </h1>
 
 
 <p>
 
-فصل اول فیزیک یازدهم ریاضی؛
-از بار الکتریکی و قانون کولن
-تا میدان، پتانسیل، رساناها و خازن.
+دوازده بخش آموزشی فصل اول
+فیزیک یازدهم رشته ریاضی
 
 </p>
-
 
 </section>
 
 
 
 <!-- =========================
-     INTRO
-========================= -->
-
-<section>
-
-
-<div class="intro">
-
-
-<h2>
-
-⚡ مسیر یادگیری فصل اول
-
-</h2>
-
-
-<p>
-
-این فصل شامل ۱۲ بخش آموزشی است.
-در این مرحله فقط اسکلت فصل ساخته شده
-و صفحات آموزشی هر بخش به‌ترتیب ایجاد
-و به این صفحه متصل خواهند شد.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================
-     SECTION CARDS
+PARTS
 ========================= -->
 
 <section>
@@ -623,375 +596,342 @@ H <span>QUANTUM</span>
 
 <div class="section-title">
 
-
 <h2>
-
 بخش‌های فصل اول
-
 </h2>
 
-
 <p>
-
-۱۲ بخش اصلی فصل الکتریسیته ساکن
-
+برای ورود به هر بخش روی کارت آن کلیک کنید.
 </p>
 
-
 </div>
 
 
 
-<div class="section-grid">
+<div class="parts-grid">
 
 
+<!-- =========================
+PART 1
+========================= -->
 
-<!-- 1 -->
+<a href="physics-11-math-ch1-electric-charge.html"
+class="part-card">
 
-<article class="section-card">
-
-<div class="section-number">
-بخش ۱
-</div>
-
-<div class="icon">
+<div class="part-icon">
 ⚡
 </div>
+
+<span class="part-number">
+بخش ۱
+</span>
 
 <h3>
 بار الکتریکی
 </h3>
 
 <p>
-آشنایی با مفهوم بار الکتریکی
-و ویژگی‌های آن.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 2 -->
+<!-- =========================
+PART 2
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-charge-conservation.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+⚖️
+</div>
+
+<span class="part-number">
 بخش ۲
-</div>
-
-<div class="icon">
-⚛️
-</div>
+</span>
 
 <h3>
 پایستگی و کوانتیده بودن بار الکتریکی
 </h3>
 
 <p>
-بررسی دو ویژگی بنیادی
-بار الکتریکی.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 3 -->
+<!-- =========================
+PART 3
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-coulomb-law.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+🧲
+</div>
+
+<span class="part-number">
 بخش ۳
-</div>
-
-<div class="icon">
-↔️
-</div>
+</span>
 
 <h3>
 قانون کولن
 </h3>
 
 <p>
-بررسی نیروی الکتریکی میان
-بارهای نقطه‌ای.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 4 -->
+<!-- =========================
+PART 4
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-electric-field.html"
+class="part-card">
 
-<div class="section-number">
-بخش ۴
-</div>
-
-<div class="icon">
+<div class="part-icon">
 🌐
 </div>
+
+<span class="part-number">
+بخش ۴
+</span>
 
 <h3>
 میدان الکتریکی
 </h3>
 
 <p>
-آشنایی با مفهوم میدان
-الکتریکی و ویژگی‌های آن.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 5 -->
+<!-- =========================
+PART 5
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-electric-field-lines.html"
+class="part-card">
 
-<div class="section-number">
-بخش ۵
-</div>
-
-<div class="icon">
-🔵
-</div>
-
-<h3>
-میدان الکتریکی حاصل از یک ذره باردار
-</h3>
-
-<p>
-بررسی میدان ایجادشده توسط
-یک بار نقطه‌ای.
-</p>
-
-<span class="button">
-به‌زودی
-</span>
-
-</article>
-
-
-
-<!-- 6 -->
-
-<article class="section-card">
-
-<div class="section-number">
-بخش ۶
-</div>
-
-<div class="icon">
+<div class="part-icon">
 〰️
 </div>
+
+<span class="part-number">
+بخش ۵
+</span>
 
 <h3>
 خطوط میدان الکتریکی
 </h3>
 
 <p>
-نمایش هندسی میدان و
-ویژگی خطوط میدان.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
+</a>
+
+
+
+<!-- =========================
+PART 6
+========================= -->
+
+<a href="physics-11-math-ch1-point-charge-field.html"
+class="part-card">
+
+<div class="part-icon">
+🔵
+</div>
+
+<span class="part-number">
+بخش ۶
 </span>
 
-</article>
+<h3>
+میدان الکتریکی حاصل از یک ذره باردار
+</h3>
+
+<p>
+ورود به بخش ←
+</p>
+
+</a>
 
 
 
-<!-- 7 -->
+<!-- =========================
+PART 7
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-electric-potential-energy.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+🔋
+</div>
+
+<span class="part-number">
 بخش ۷
-</div>
-
-<div class="icon">
-⚙️
-</div>
+</span>
 
 <h3>
 انرژی پتانسیل الکتریکی
 </h3>
 
 <p>
-بررسی انرژی پتانسیل
-در برهم‌کنش بارها.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 8 -->
+<!-- =========================
+PART 8
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-electric-potential.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+📈
+</div>
+
+<span class="part-number">
 بخش ۸
-</div>
-
-<div class="icon">
-🔋
-</div>
+</span>
 
 <h3>
 پتانسیل الکتریکی
 </h3>
 
 <p>
-مفهوم پتانسیل و اختلاف
-پتانسیل الکتریکی.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 9 -->
+<!-- =========================
+PART 9
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-electric-field-conductor.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+🔩
+</div>
+
+<span class="part-number">
 بخش ۹
-</div>
-
-<div class="icon">
-🔌
-</div>
+</span>
 
 <h3>
 میدان الکتریکی در داخل رساناها
 </h3>
 
 <p>
-بررسی رفتار میدان و بار
-در رساناهای در تعادل.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 10 -->
+<!-- =========================
+PART 10
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-part-10.html"
+class="part-card">
 
-<div class="section-number">
-بخش ۱۰
-</div>
-
-<div class="icon">
+<div class="part-icon">
 ▣
 </div>
+
+<span class="part-number">
+بخش ۱۰
+</span>
 
 <h3>
 خازن
 </h3>
 
 <p>
-آشنایی با خازن و
-ظرفیت خازن.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 11 -->
+<!-- =========================
+PART 11
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-part-11.html"
+class="part-card">
 
-<div class="section-number">
-بخش ۱۱
-</div>
-
-<div class="icon">
+<div class="part-icon">
 🧱
 </div>
+
+<span class="part-number">
+بخش ۱۱
+</span>
 
 <h3>
 خازن با دی‌الکتریک
 </h3>
 
 <p>
-بررسی اثر دی‌الکتریک
-بر ظرفیت خازن.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
+</a>
 
 
 
-<!-- 12 -->
+<!-- =========================
+PART 12
+========================= -->
 
-<article class="section-card">
+<a href="physics-11-math-ch1-part-12.html"
+class="part-card">
 
-<div class="section-number">
+<div class="part-icon">
+⚡
+</div>
+
+<span class="part-number">
 بخش ۱۲
-</div>
-
-<div class="icon">
-🔋
-</div>
+</span>
 
 <h3>
 انرژی خازن
 </h3>
 
 <p>
-بررسی انرژی ذخیره‌شده
-در خازن.
+ورود به بخش ←
 </p>
 
-<span class="button">
-به‌زودی
-</span>
-
-</article>
-
+</a>
 
 
 </div>
@@ -1001,59 +941,22 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     DEVELOPMENT
+BOTTOM NAVIGATION
 ========================= -->
 
-<section>
-
-
-<div class="development">
-
-
-<h2>
-
-🚧 اسکلت فصل اول آماده است
-
-</h2>
-
-
-<p>
-
-ساختار فصل شامل ۱۲ بخش اصلی
-بر اساس فهرست فصل اول فیزیک یازدهم ریاضی
-در این صفحه قرار گرفته است.
-
-اکنون بخش‌ها را یکی‌یکی می‌سازیم
-و پس از ساخت هر صفحه،
-کارت مربوط به آن را به صفحه واقعی
-متصل می‌کنیم.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-<!-- =========================
-     BACK
-========================= -->
-
-<section class="back">
+<div class="bottom-navigation">
 
 
 <a href="physics-11-math.html"
-   class="back-button">
+class="back-button">
 
 ← بازگشت به فیزیک یازدهم ریاضی
 
 </a>
 
 
-</section>
+</div>
+
 
 
 </main>
@@ -1061,7 +964,7 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     FOOTER
+FOOTER
 ========================= -->
 
 <footer>
@@ -1084,4 +987,4 @@ Physics • Science • Wonder
 
 </body>
 
-</html>
+      </html>
