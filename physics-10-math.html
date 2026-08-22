@@ -11,7 +11,7 @@
 <title>فیزیک دهم ریاضی | H Quantum</title>
 
 <meta name="description"
-      content="فیزیک دهم رشته ریاضی H Quantum؛ پنج فصل فیزیک با پادکست، ویدئو، متن آموزشی و شبیه‌سازهای تعاملی.">
+      content="فیزیک دهم رشته ریاضی در H Quantum؛ دسترسی به فصل‌های کتاب، آموزش، پادکست، ویدئو، شبیه‌ساز و تمرین‌های تعاملی.">
 
 <style>
 
@@ -55,7 +55,7 @@ header {
     z-index: 1000;
 
     background:
-    rgba(7,17,31,0.92);
+    rgba(7,17,31,0.94);
 
     backdrop-filter:
     blur(12px);
@@ -109,11 +109,6 @@ header {
     justify-content: center;
 }
 
-.nav-links a {
-
-    transition: 0.3s;
-}
-
 .nav-links a:hover {
 
     color: #63d8ff;
@@ -130,7 +125,7 @@ header {
 
     margin: auto;
 
-    padding: 80px 20px 60px;
+    padding: 85px 20px 70px;
 
     text-align: center;
 }
@@ -156,9 +151,9 @@ header {
 .hero h1 {
 
     font-size:
-    clamp(38px, 9vw, 70px);
+    clamp(34px, 8vw, 65px);
 
-    line-height: 1.2;
+    line-height: 1.3;
 
     margin-bottom: 18px;
 }
@@ -168,15 +163,25 @@ header {
     color: #63d8ff;
 }
 
+.hero h2 {
+
+    font-size:
+    clamp(21px, 5vw, 32px);
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
 .hero p {
 
-    max-width: 760px;
+    max-width: 780px;
 
     margin: auto;
 
     color: #aebdce;
 
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
@@ -190,7 +195,7 @@ section {
 
     margin: auto;
 
-    padding: 60px 20px;
+    padding: 65px 20px;
 }
 
 .section-title {
@@ -202,7 +207,7 @@ section {
 
 .section-title h2 {
 
-    font-size: 32px;
+    font-size: 31px;
 
     margin-bottom: 10px;
 }
@@ -210,28 +215,71 @@ section {
 .section-title p {
 
     color: #9eafc2;
+
+    font-size: 15px;
 }
 
 
 /* =========================
-   CHAPTERS
+   INTRO
 ========================= */
 
-.chapters {
+.intro {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.intro p {
+
+    color: #b6c4d3;
+
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   CHAPTER GRID
+========================= */
+
+.chapter-grid {
 
     display: grid;
 
     grid-template-columns:
     repeat(2, 1fr);
 
-    gap: 20px;
+    gap: 22px;
+
+    max-width: 950px;
+
+    margin: auto;
 }
 
 .chapter-card {
 
-    display: block;
-
-    padding: 30px;
+    padding: 30px 25px;
 
     background: #0c1b2c;
 
@@ -239,6 +287,8 @@ section {
     1px solid rgba(255,255,255,0.08);
 
     border-radius: 20px;
+
+    text-align: center;
 
     transition:
     transform 0.3s,
@@ -255,37 +305,30 @@ section {
     rgba(99,216,255,0.5);
 
     box-shadow:
-    0 12px 30px rgba(0,0,0,0.2);
-}
-
-.chapter-number {
-
-    color: #63d8ff;
-
-    font-size: 14px;
-
-    margin-bottom: 5px;
+    0 12px 30px rgba(0,0,0,0.18);
 }
 
 .chapter-icon {
 
-    font-size: 36px;
+    font-size: 42px;
 
     margin-bottom: 12px;
 }
 
 .chapter-card h3 {
 
-    font-size: 24px;
+    font-size: 21px;
 
     margin-bottom: 12px;
+
+    line-height: 1.7;
 }
 
 .chapter-card p {
 
     color: #aebdce;
 
-    font-size: 15px;
+    font-size: 14px;
 
     margin-bottom: 20px;
 }
@@ -296,7 +339,7 @@ section {
 
     padding: 10px 20px;
 
-    border-radius: 10px;
+    border-radius: 9px;
 
     background: #10243a;
 
@@ -319,89 +362,112 @@ section {
 
 
 /* =========================
-   LEARNING
+   COMMON CHAPTER
 ========================= */
 
-.learning {
+.common-box {
 
-    display: grid;
+    max-width: 900px;
 
-    grid-template-columns:
-    repeat(4, 1fr);
+    margin: auto;
 
-    gap: 16px;
-}
-
-.learning-card {
-
-    padding: 22px 15px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
-    border:
-    1px solid rgba(255,255,255,0.07);
+    border-radius: 22px;
 
-    border-radius: 16px;
+    border:
+    1px solid rgba(99,216,255,0.12);
 
     text-align: center;
 }
 
-.learning-card .icon {
+.common-box h2 {
 
-    font-size: 30px;
+    font-size: 26px;
 
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
-.learning-card h3 {
+.common-box p {
 
-    font-size: 17px;
+    color: #aebdce;
 
-    margin-bottom: 5px;
+    font-size: 15px;
+
+    margin-bottom: 12px;
 }
 
-.learning-card p {
+.common-box strong {
 
-    color: #91a2b5;
-
-    font-size: 13px;
+    color: #63d8ff;
 }
 
 
 /* =========================
-   SPECIAL
+   FUTURE
 ========================= */
 
-.special {
+.future {
 
-    margin-top: 20px;
+    max-width: 900px;
 
-    padding: 30px;
+    margin: auto;
+
+    padding: 35px 30px;
 
     background: #0a1828;
 
-    border:
-    1px solid rgba(99,216,255,0.18);
+    border-radius: 22px;
 
-    border-radius: 20px;
+    border:
+    1px solid rgba(99,216,255,0.12);
 
     text-align: center;
 }
 
-.special h2 {
+.future h2 {
 
-    font-size: 25px;
+    font-size: 26px;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-.special p {
+.future p {
 
-    color: #aebdce;
+    color: #9eafc2;
 
-    max-width: 750px;
+    font-size: 15px;
 
-    margin: auto;
+    margin-bottom: 25px;
+}
+
+.future-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.future-item {
+
+    padding: 8px 15px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
 }
 
 
@@ -472,7 +538,7 @@ footer strong {
    MOBILE
 ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 
     .nav {
 
@@ -483,13 +549,9 @@ footer strong {
 
     .nav-links {
 
-        gap: 12px;
+        gap: 11px;
 
         font-size: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
     }
 
     .hero {
@@ -499,18 +561,50 @@ footer strong {
 
     .hero p {
 
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    .chapters {
+    /*
+       کارت‌ها در موبایل دو ستونه هستند
+    */
 
-        grid-template-columns: 1fr;
-    }
-
-    .learning {
+    .chapter-grid {
 
         grid-template-columns:
-        repeat(2, 1fr);
+        1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .chapter-card {
+
+        padding: 22px 12px;
+    }
+
+    .chapter-icon {
+
+        font-size: 34px;
+    }
+
+    .chapter-card h3 {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .chapter-card p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .chapter-button {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
     }
 
     section {
@@ -518,13 +612,19 @@ footer strong {
         padding: 50px 16px;
     }
 
-}
+    .intro {
 
-@media (max-width: 450px) {
+        padding: 30px 20px;
+    }
 
-    .learning {
+    .common-box {
 
-        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .future {
+
+        padding: 30px 20px;
     }
 
 }
@@ -560,15 +660,19 @@ H <span>QUANTUM</span>
 </a>
 
 <a href="school.html">
-مدرسه
-</a>
-
-<a href="physics-10.html">
-فیزیک دهم
+مدرسه فیزیک
 </a>
 
 <a href="podcast.html">
 🎙️ پادکست
+</a>
+
+<a href="books.html">
+📚 کتاب‌ها
+</a>
+
+<a href="simulations.html">
+🧪 آزمایشگاه
 </a>
 
 </div>
@@ -584,29 +688,68 @@ H <span>QUANTUM</span>
 
 <main>
 
+
 <section class="hero">
 
 <div class="hero-badge">
 
-مدرسه فیزیک H Quantum
+فیزیک دهم • رشته ریاضی
 
 </div>
 
 
 <h1>
 
-فیزیک دهم <span>ریاضی</span>
+فیزیک <span>دهم</span>
 
 </h1>
 
 
+<h2>
+
+رشته ریاضی و فیزیک
+
+</h2>
+
+
 <p>
 
-پنج فصل برای شناخت جهان فیزیکی؛
-از اندازه‌گیری و ویژگی‌های مواد
-تا انرژی، گرما و ترمودینامیک.
+مسیر یادگیری فیزیک دهم ریاضی؛
+فصل‌به‌فصل، مفهومی و تعاملی.
 
 </p>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+<div class="intro">
+
+<h2>
+نقشه راه فیزیک دهم ریاضی
+</h2>
+
+<p>
+
+در این صفحه می‌توانید وارد فصل‌های
+فیزیک دهم رشته ریاضی شوید.
+
+هر فصل یک صفحه مادر دارد و از آنجا
+می‌توان وارد بخش‌های آموزشی همان فصل شد.
+
+در ساختار فعلی سایت، فصل‌های اول تا چهارم
+از صفحات مشترک استفاده می‌کنند. بنابراین
+فصل سوم نیز برای رشته ریاضی و رشته تجربی
+دارای یک صفحه مادر مشترک است.
+
+</p>
+
+</div>
 
 </section>
 
@@ -620,232 +763,181 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-
 فصل‌های فیزیک دهم ریاضی
-
 </h2>
 
 <p>
-
-مسیر یادگیری را از فصل اول آغاز کنید.
-
+برای ورود به هر فصل روی گزینه «ورود به فصل» بزنید.
 </p>
 
 </div>
 
 
-<div class="chapters">
+<div class="chapter-grid">
 
 
 <!-- =========================
      CHAPTER 1
 ========================= -->
 
-<a href="physics-10-math-ch1.html"
-   class="chapter-card">
-
-<div class="chapter-number">
-
-فصل اول
-
-</div>
+<article class="chapter-card">
 
 <div class="chapter-icon">
-
 📏
-
 </div>
 
 <h3>
-
-فیزیک و اندازه‌گیری
-
+فصل اول — فیزیک و اندازه‌گیری
 </h3>
 
 <p>
 
-از فیزیک به‌عنوان یک دانش بنیادی
-تا کمیت‌های فیزیکی، یکاها،
-اندازه‌گیری و چگالی.
+کمیت‌های فیزیکی، اندازه‌گیری،
+یکاها، دقت، خطا و چگالی.
 
 </p>
 
-<span class="chapter-button">
+<a href="./physics-10-ch1.html"
+   class="chapter-button">
 
 ورود به فصل ←
 
-</span>
-
 </a>
+
+</article>
 
 
 <!-- =========================
      CHAPTER 2
 ========================= -->
 
-<a href="physics-10-math-ch2.html"
-   class="chapter-card">
-
-<div class="chapter-number">
-
-فصل دوم
-
-</div>
+<article class="chapter-card">
 
 <div class="chapter-icon">
-
-💧
-
+🧱
 </div>
 
 <h3>
-
-ویژگی‌های فیزیکی مواد
-
+فصل دوم — ویژگی‌های فیزیکی مواد
 </h3>
 
 <p>
 
-حالت‌های ماده، نیروهای بین مولکولی،
-فشار در شاره‌ها، شناوری و
-شاره در حرکت.
+بررسی ویژگی‌های مواد و مفاهیم
+فیزیکی مرتبط با آن‌ها.
 
 </p>
 
-<span class="chapter-button">
+<a href="./physics-10-ch2.html"
+   class="chapter-button">
 
 ورود به فصل ←
 
-</span>
-
 </a>
+
+</article>
 
 
 <!-- =========================
      CHAPTER 3
 ========================= -->
 
-<a href="physics-10-math-ch3.html"
-   class="chapter-card">
-
-<div class="chapter-number">
-
-فصل سوم
-
-</div>
+<article class="chapter-card">
 
 <div class="chapter-icon">
-
 ⚡
-
 </div>
 
 <h3>
-
-کار، انرژی و توان
-
+فصل سوم — کار، انرژی و توان
 </h3>
 
 <p>
 
 انرژی جنبشی، کار، انرژی پتانسیل،
-پایستگی انرژی مکانیکی،
-انرژی درونی و توان.
+پایستگی انرژی و توان.
 
 </p>
 
-<span class="chapter-button">
+<a href="./physics-10-ch3.html"
+   class="chapter-button">
 
 ورود به فصل ←
 
-</span>
-
 </a>
+
+</article>
 
 
 <!-- =========================
      CHAPTER 4
 ========================= -->
 
-<a href="physics-10-math-ch4.html"
-   class="chapter-card">
-
-<div class="chapter-number">
-
-فصل چهارم
-
-</div>
+<article class="chapter-card">
 
 <div class="chapter-icon">
-
 🌡️
-
 </div>
 
 <h3>
-
-دما و گرما
-
+فصل چهارم — دما و گرما
 </h3>
 
 <p>
 
-دما و دماسنجی، انبساط گرمایی،
-گرما، تغییر حالت، انتقال گرما
-و قوانین گازها.
+دما، گرما، انتقال انرژی گرمایی
+و پدیده‌های مرتبط با آن.
 
 </p>
 
-<span class="chapter-button">
+<a href="./physics-10-ch4.html"
+   class="chapter-button">
 
 ورود به فصل ←
 
-</span>
-
 </a>
+
+</article>
+
+
+</div>
+
+</section>
 
 
 <!-- =========================
-     CHAPTER 5
+     COMMON CHAPTER
 ========================= -->
 
-<a href="physics-10-math-ch5.html"
-   class="chapter-card">
+<section>
 
-<div class="chapter-number">
+<div class="common-box">
 
-فصل پنجم
-
-</div>
-
-<div class="chapter-icon">
-
-♨️
-
-</div>
-
-<h3>
-
-ترمودینامیک
-
-</h3>
+<h2>
+🔗 فصل سوم؛ مشترک بین ریاضی و تجربی
+</h2>
 
 <p>
 
-معادله حالت، فرآیندهای ترمودینامیکی،
-تبادل انرژی، قانون اول و دوم،
-چرخه‌ها، ماشین‌های گرمایی و یخچال‌ها.
+فصل سوم فیزیک دهم در هر دو رشته
+به یک صفحه مشترک متصل است:
 
 </p>
 
-<span class="chapter-button">
+<p>
 
-ورود به فصل ←
+<strong>
+./physics-10-ch3.html
+</strong>
 
-</span>
+</p>
 
-</a>
+<p>
 
+بنابراین مسیر رشته ریاضی و رشته تجربی
+در فصل سوم به یک ساختار واحد می‌رسد.
+
+</p>
 
 </div>
 
@@ -858,121 +950,47 @@ H <span>QUANTUM</span>
 
 <section>
 
-<div class="section-title">
+<div class="future">
 
 <h2>
-
-هر فصل، چند مسیر یادگیری
-
+🎓 مسیرهای یادگیری
 </h2>
 
 <p>
 
-هدف H Quantum این است که یک مفهوم را
-فقط نخوانید، بلکه آن را تجربه کنید.
+در ادامه، محتوای آموزشی هر فصل
+به شکل‌های مختلف در دسترس قرار خواهد گرفت.
 
 </p>
 
+
+<div class="future-list">
+
+<div class="future-item">
+🎙️ پادکست
 </div>
 
-
-<div class="learning">
-
-
-<article class="learning-card">
-
-<div class="icon">
-🎙️
+<div class="future-item">
+🎬 ویدئو
 </div>
 
-<h3>
-پادکست
-</h3>
-
-<p>
-مفهوم را بشنوید و با آن همراه شوید.
-</p>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="icon">
-🎬
+<div class="future-item">
+📖 متن آموزشی
 </div>
 
-<h3>
-ویدئو
-</h3>
-
-<p>
-تدریس تصویری و توضیح مرحله‌به‌مرحله.
-</p>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="icon">
-📖
+<div class="future-item">
+🧪 شبیه‌ساز
 </div>
 
-<h3>
-متن آموزشی
-</h3>
-
-<p>
-مطالعه دقیق و مرور مفاهیم.
-</p>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="icon">
-🧪
+<div class="future-item">
+📝 تمرین
 </div>
 
-<h3>
-شبیه‌ساز
-</h3>
-
-<p>
-پارامترها را تغییر دهید و نتیجه را ببینید.
-</p>
-
-</article>
-
-
+<div class="future-item">
+❓ پرسش مفهومی
 </div>
 
-</section>
-
-
-<!-- =========================
-     CHAPTER 5 NOTE
-========================= -->
-
-<section>
-
-<div class="special">
-
-<h2>
-
-♨️ فصل پنجم — ترمودینامیک
-
-</h2>
-
-<p>
-
-فصل پنجم ویژه رشته ریاضی است.
-برای ورود به صفحه اختصاصی فصل،
-روی «ورود به فصل» کلیک کنید.
-
-</p>
+</div>
 
 </div>
 
