@@ -15,6 +15,10 @@
 
 <style>
 
+/* =========================
+   RESET
+========================= */
+
 * {
     box-sizing: border-box;
 }
@@ -26,6 +30,16 @@ body {
     color: #172033;
     line-height: 1.9;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     background: linear-gradient(135deg, #071a33, #123d68);
@@ -45,8 +59,13 @@ header p {
     font-size: 15px;
 }
 
+
+/* =========================
+   NAV
+========================= */
+
 nav {
-    background: #ffffff;
+    background: white;
     border-bottom: 1px solid #dce3ec;
     padding: 12px 10px;
     text-align: center;
@@ -57,15 +76,24 @@ nav a {
     margin: 4px 7px;
     padding: 7px 12px;
     color: #123d68;
-    text-decoration: none;
     font-size: 14px;
     font-weight: bold;
 }
+
+
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
     width: min(1100px, 94%);
     margin: 30px auto;
 }
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     background: white;
@@ -88,6 +116,11 @@ nav a {
     font-size: 15px;
 }
 
+
+/* =========================
+   SECTION TITLE
+========================= */
+
 .section-title {
     text-align: center;
     color: #123d68;
@@ -95,56 +128,72 @@ nav a {
     font-size: 22px;
 }
 
-.cards {
+
+/* =========================
+   CHAPTER CARDS
+========================= */
+
+.chapters-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
-.card {
+.chapter-card {
     background: white;
     border-radius: 18px;
     padding: 22px 18px;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 7px 22px rgba(20, 50, 90, 0.08);
     border: 1px solid #e4eaf2;
+    box-shadow: 0 7px 22px rgba(20, 50, 90, 0.08);
     transition: transform 0.2s ease,
                 box-shadow 0.2s ease;
+
     display: flex;
     flex-direction: column;
+
     min-height: 205px;
 }
 
-.card:hover {
+.chapter-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(20, 50, 90, 0.14);
 }
 
-.icon {
+.chapter-icon {
     font-size: 38px;
     margin-bottom: 8px;
 }
 
-.card h3 {
+.chapter-number {
+    color: #1677c8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.chapter-card h3 {
     margin: 5px 0 8px;
     color: #123d68;
     font-size: 18px;
 }
 
-.card p {
+.chapter-card p {
     margin: 0;
     color: #596779;
     font-size: 14px;
     flex-grow: 1;
 }
 
-.enter {
+.chapter-link {
     margin-top: 15px;
     color: #1677c8;
     font-weight: bold;
     font-size: 14px;
 }
+
+
+/* =========================
+   LEARNING
+========================= */
 
 .learning {
     background: white;
@@ -196,17 +245,26 @@ nav a {
     font-size: 13px;
 }
 
+
+/* =========================
+   BACK BUTTON
+========================= */
+
 .back {
     display: block;
     width: fit-content;
     margin: 30px auto;
     background: #123d68;
     color: white;
-    text-decoration: none;
     padding: 11px 22px;
     border-radius: 12px;
     font-weight: bold;
 }
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #071a33;
@@ -221,9 +279,14 @@ footer p {
     font-size: 13px;
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 800px) {
 
-    .cards {
+    .chapters-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
@@ -232,23 +295,24 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card {
+    .chapter-card {
         min-height: 200px;
         padding: 18px 14px;
     }
 
-    .card h3 {
+    .chapter-card h3 {
         font-size: 16px;
     }
 
-    .card p {
+    .chapter-card p {
         font-size: 13px;
     }
 
-    .icon {
+    .chapter-icon {
         font-size: 32px;
     }
 }
+
 
 @media (max-width: 480px) {
 
@@ -264,7 +328,7 @@ footer p {
         font-size: 21px;
     }
 
-    .cards {
+    .chapters-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -272,21 +336,21 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card {
+    .chapter-card {
         min-height: 190px;
     }
 
-    .card h3 {
+    .chapter-card h3 {
         font-size: 15px;
         line-height: 1.7;
     }
 
-    .card p {
+    .chapter-card p {
         font-size: 12px;
         line-height: 1.8;
     }
 
-    .enter {
+    .chapter-link {
         font-size: 12px;
     }
 }
@@ -326,10 +390,12 @@ footer p {
 
 <section class="hero">
 
-<h2>الکتریسیتهٔ جاری</h2>
+<h2>
+الکتریسیتهٔ جاری
+</h2>
 
 <p>
-فصل دوم فیزیک یازدهم رشته ریاضی و فیزیک
+فصل دوم فیزیک یازدهم ریاضی و فیزیک
 </p>
 
 <p>
@@ -344,59 +410,94 @@ footer p {
 🧭 نقشه راه فصل
 </h2>
 
+<p style="text-align:center; color:#596779; font-size:14px;">
+این فصل از شش بخش اصلی تشکیل شده است.
+برای ورود به هر بخش روی کارت آن بزنید.
+</p>
 
-<div class="cards">
+
+<div class="chapters-grid">
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-electric-current.html">
+<!-- =========================
+     بخش اول
+========================= -->
 
-<div class="icon">⚡</div>
+<a
+href="physics-11-experimental-ch2-electric-current.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+⚡
+</div>
+
+<div class="chapter-number">
+بخش اول
+</div>
 
 <h3>
-بخش اول<br>
 جریان الکتریکی
 </h3>
 
 <p>
-آشنایی با جریان الکتریکی و مفاهیم پایهٔ مدار
+آشنایی با جریان الکتریکی و مفاهیم پایه مدار
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-resistance-ohm.html">
+<!-- =========================
+     بخش دوم
+========================= -->
 
-<div class="icon">🔌</div>
+<a
+href="physics-11-experimental-ch2-resistance-ohm.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🔌
+</div>
+
+<div class="chapter-number">
+بخش دوم
+</div>
 
 <h3>
-بخش دوم<br>
 مقاومت الکتریکی و قانون اهم
 </h3>
 
 <p>
-بررسی مقاومت الکتریکی و رابطهٔ ولتاژ، جریان و مقاومت
+بررسی مقاومت الکتریکی و رابطه ولتاژ، جریان و مقاومت
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-resistance-factors.html">
+<!-- =========================
+     بخش سوم
+========================= -->
 
-<div class="icon">📏</div>
+<a
+href="physics-11-experimental-ch2-resistance-factors.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+📏
+</div>
+
+<div class="chapter-number">
+بخش سوم
+</div>
 
 <h3>
-بخش سوم<br>
 عوامل مؤثر بر مقاومت الکتریکی
 </h3>
 
@@ -404,41 +505,61 @@ footer p {
 بررسی عوامل مؤثر بر مقدار مقاومت یک رسانا
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-emf-circuits.html">
+<!-- =========================
+     بخش چهارم
+========================= -->
 
-<div class="icon">🔋</div>
+<a
+href="physics-11-experimental-ch2-emf-circuits.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🔋
+</div>
+
+<div class="chapter-number">
+بخش چهارم
+</div>
 
 <h3>
-بخش چهارم<br>
 نیروی محرکهٔ الکتریکی و مدارها
 </h3>
 
 <p>
-آشنایی با منبع الکتریکی، نیروی محرکهٔ الکتریکی و مدار
+آشنایی با منبع الکتریکی، نیروی محرکه و مدار
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-power.html">
+<!-- =========================
+     بخش پنجم
+========================= -->
 
-<div class="icon">💡</div>
+<a
+href="physics-11-experimental-ch2-power.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+💡
+</div>
+
+<div class="chapter-number">
+بخش پنجم
+</div>
 
 <h3>
-بخش پنجم<br>
 توان در مدارهای الکتریکی
 </h3>
 
@@ -446,20 +567,30 @@ footer p {
 بررسی توان الکتریکی و انرژی مصرف‌شده در مدار
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
 
-<a class="card"
-   href="physics-11-experimental-ch2-combination.html">
+<!-- =========================
+     بخش ششم
+========================= -->
 
-<div class="icon">🧩</div>
+<a
+href="physics-11-experimental-ch2-combination.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🧩
+</div>
+
+<div class="chapter-number">
+بخش ششم
+</div>
 
 <h3>
-بخش ششم<br>
 ترکیب مقاومت‌ها
 </h3>
 
@@ -467,9 +598,9 @@ footer p {
 بررسی مقاومت‌های سری، موازی و مقاومت معادل
 </p>
 
-<div class="enter">
-ورود به بخش ←
-</div>
+<span class="chapter-link">
+ورود به بخش →
+</span>
 
 </a>
 
@@ -493,9 +624,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">🎙️</div>
+<div class="big-icon">
+🎙️
+</div>
 
-<h3>پادکست</h3>
+<h3>
+پادکست
+</h3>
 
 <p>
 نسخهٔ شنیداری آموزش‌ها
@@ -506,9 +641,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">🎬</div>
+<div class="big-icon">
+🎬
+</div>
 
-<h3>ویدئو</h3>
+<h3>
+ویدئو
+</h3>
 
 <p>
 آموزش تصویری
@@ -519,9 +658,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">📖</div>
+<div class="big-icon">
+📖
+</div>
 
-<h3>متن آموزشی</h3>
+<h3>
+متن آموزشی
+</h3>
 
 <p>
 درسنامهٔ کامل
@@ -532,9 +675,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">🧪</div>
+<div class="big-icon">
+🧪
+</div>
 
-<h3>شبیه‌ساز</h3>
+<h3>
+شبیه‌ساز
+</h3>
 
 <p>
 فعالیت‌های تعاملی
@@ -545,9 +692,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">📝</div>
+<div class="big-icon">
+📝
+</div>
 
-<h3>تمرین</h3>
+<h3>
+تمرین
+</h3>
 
 <p>
 تمرین‌های آموزشی
@@ -558,9 +709,13 @@ footer p {
 
 <div class="learning-item">
 
-<div class="big-icon">❓</div>
+<div class="big-icon">
+❓
+</div>
 
-<h3>پرسش مفهومی</h3>
+<h3>
+پرسش مفهومی
+</h3>
 
 <p>
 سنجش درک مفاهیم
@@ -574,8 +729,9 @@ footer p {
 </section>
 
 
-<a class="back"
-   href="physics-11-math.html">
+<a
+class="back"
+href="physics-11-math.html">
 
 ← بازگشت به فیزیک یازدهم ریاضی
 
@@ -587,13 +743,17 @@ footer p {
 
 <footer>
 
-<p>© 2026 — H Quantum</p>
+<p>
+© 2026 — H Quantum
+</p>
 
-<p>Physics • Science • Wonder</p>
+<p>
+Physics • Science • Wonder
+</p>
 
 </footer>
 
 
 </body>
 
-</html>
+      </html>
