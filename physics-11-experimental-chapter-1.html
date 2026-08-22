@@ -10,14 +10,7 @@
 
 <title>فصل اول فیزیک یازدهم تجربی | الکتریسیته ساکن | H Quantum</title>
 
-<meta name="description"
-      content="فصل اول فیزیک یازدهم رشته علوم تجربی؛ الکتریسیته ساکن">
-
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 * {
     box-sizing: border-box;
@@ -30,16 +23,9 @@ html {
 }
 
 body {
-
-    font-family:
-    Tahoma,
-    Arial,
-    sans-serif;
-
+    font-family: Tahoma, Arial, sans-serif;
     background: #07111f;
-
     color: #f4f7fb;
-
     line-height: 1.9;
 }
 
@@ -54,25 +40,19 @@ a {
 ========================= */
 
 header {
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 
-    background:
-    rgba(7,17,31,0.94);
+    background: rgba(7,17,31,0.94);
 
-    backdrop-filter:
-    blur(12px);
+    backdrop-filter: blur(12px);
 
     border-bottom:
-    1px solid rgba(255,255,255,0.08);
+        1px solid rgba(255,255,255,0.08);
 }
 
 .nav {
-
     max-width: 1100px;
 
     margin: auto;
@@ -81,14 +61,12 @@ header {
 
     display: flex;
 
-    justify-content:
-    space-between;
+    justify-content: space-between;
 
     align-items: center;
 }
 
 .logo {
-
     font-size: 24px;
 
     font-weight: bold;
@@ -101,7 +79,6 @@ header {
 }
 
 .nav-links {
-
     display: flex;
 
     gap: 18px;
@@ -129,26 +106,22 @@ header {
 ========================= */
 
 .hero {
-
     max-width: 1000px;
 
     margin: auto;
 
-    padding:
-    85px 20px 60px;
+    padding: 80px 20px 60px;
 
     text-align: center;
 }
 
 .badge {
-
     display: inline-block;
 
-    padding:
-    6px 18px;
+    padding: 7px 18px;
 
     border:
-    1px solid rgba(99,216,255,0.35);
+        1px solid rgba(99,216,255,0.35);
 
     border-radius: 30px;
 
@@ -160,13 +133,12 @@ header {
 }
 
 .hero h1 {
-
     font-size:
-    clamp(36px, 9vw, 64px);
+        clamp(34px, 8vw, 60px);
 
-    line-height: 1.3;
+    line-height: 1.4;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .hero h1 span {
@@ -174,7 +146,6 @@ header {
 }
 
 .hero p {
-
     max-width: 760px;
 
     margin: auto;
@@ -190,243 +161,204 @@ header {
 ========================= */
 
 section {
-
     max-width: 1100px;
 
     margin: auto;
 
-    padding:
-    55px 20px;
+    padding: 55px 20px;
 }
 
 .section-title {
-
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .section-title h2 {
-
-    font-size: 32px;
+    font-size: 30px;
 
     margin-bottom: 10px;
 }
 
 .section-title p {
     color: #9eafc2;
+
+    font-size: 15px;
 }
 
 
 /* =========================
-   TOP INFO
+   INTRO
 ========================= */
 
-.chapter-intro {
+.intro {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 35px 30px;
 
     background: #0a1828;
 
     border:
-    1px solid rgba(99,216,255,0.16);
+        1px solid rgba(99,216,255,0.12);
 
-    border-radius: 20px;
-
-    padding: 30px;
-
-    margin-bottom: 40px;
+    border-radius: 22px;
 
     text-align: center;
 }
 
-.chapter-intro h2 {
-
+.intro h2 {
     font-size: 27px;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
-.chapter-intro p {
-
+.intro p {
     color: #aebdce;
 
-    max-width: 850px;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CHAPTER CARDS
+========================= */
+
+.chapter-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
 
     margin: auto;
 }
 
 
 /* =========================
-   TOPIC GRID
+   CARD
 ========================= */
 
-.topics {
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(3, 1fr);
-
-    gap: 22px;
-}
-
-
-/* =========================
-   TOPIC CARD
-========================= */
-
-.topic {
-
-    padding: 27px;
+.chapter-card {
+    padding: 28px 20px;
 
     background: #0c1b2c;
 
     border:
-    1px solid rgba(255,255,255,0.08);
+        1px solid rgba(255,255,255,0.08);
 
     border-radius: 20px;
 
+    text-align: center;
+
     transition:
-    transform 0.3s,
-    border-color 0.3s,
-    background 0.3s;
-
-    min-height: 245px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
+        transform 0.3s,
+        border-color 0.3s;
 }
 
-.topic:hover {
-
-    transform:
-    translateY(-6px);
+.chapter-card:hover {
+    transform: translateY(-5px);
 
     border-color:
-    rgba(99,216,255,0.5);
-
-    background: #0e2034;
+        rgba(99,216,255,0.5);
 }
 
-.topic-number {
+.chapter-number {
+    color: #8191a4;
 
-    color: #63d8ff;
-
-    font-size: 14px;
+    font-size: 13px;
 
     margin-bottom: 8px;
 }
 
-.topic-icon {
-
-    font-size: 36px;
-
-    margin-bottom: 10px;
-}
-
-.topic h3 {
-
-    font-size: 20px;
-
-    line-height: 1.7;
+.icon {
+    font-size: 42px;
 
     margin-bottom: 12px;
 }
 
-.topic p {
+.chapter-card h3 {
+    font-size: 19px;
 
-    color: #aebdce;
+    margin-bottom: 10px;
 
-    font-size: 14px;
-
-    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
+.chapter-card p {
+    color: #aebdce;
 
-/* =========================
-   TOPIC BUTTON
-========================= */
+    font-size: 13px;
 
-.topic-button {
+    margin-bottom: 20px;
 
+    line-height: 1.9;
+}
+
+.button {
     display: inline-block;
 
-    width: 100%;
+    padding: 9px 18px;
 
-    text-align: center;
-
-    padding:
-    10px 16px;
-
-    border-radius: 10px;
+    border-radius: 9px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.12);
+        1px solid rgba(99,216,255,0.25);
 
     color: #63d8ff;
+
+    font-size: 13px;
 
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.topic-button:hover {
+.button:hover {
+    background: #15324e;
 
-    background: #63d8ff;
-
-    color: #06101d;
+    border-color:
+        rgba(99,216,255,0.6);
 }
 
 
 /* =========================
-   STATUS
+   DEVELOPMENT BOX
 ========================= */
 
-.status {
+.development {
+    max-width: 900px;
 
-    display: inline-block;
+    margin: auto;
 
-    margin-top: 10px;
-
-    color: #8191a4;
-
-    font-size: 12px;
-}
-
-
-/* =========================
-   INFORMATION
-========================= */
-
-.info {
-
-    margin-top: 35px;
-
-    padding: 27px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
     border:
-    1px solid rgba(99,216,255,0.15);
+        1px solid rgba(99,216,255,0.12);
 
-    border-radius: 18px;
+    border-radius: 22px;
 
     text-align: center;
 }
 
-.info h3 {
+.development h2 {
+    font-size: 25px;
 
-    margin-bottom: 10px;
-
-    font-size: 22px;
+    margin-bottom: 12px;
 }
 
-.info p {
+.development p {
     color: #aebdce;
+
+    font-size: 14px;
 }
 
 
@@ -435,39 +367,27 @@ section {
 ========================= */
 
 .back {
-
     text-align: center;
 
     padding:
-    20px 20px 80px;
+        20px 20px 80px;
 }
 
 .back-button {
-
     display: inline-block;
 
-    padding:
-    11px 23px;
-
-    border-radius: 10px;
+    padding: 12px 25px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.12);
+        1px solid rgba(255,255,255,0.12);
+
+    border-radius: 10px;
 
     color: #63d8ff;
 
     font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.back-button:hover {
-
-    background: #63d8ff;
-
-    color: #06101d;
 }
 
 
@@ -476,12 +396,10 @@ section {
 ========================= */
 
 footer {
-
     border-top:
-    1px solid rgba(255,255,255,0.08);
+        1px solid rgba(255,255,255,0.08);
 
-    padding:
-    35px 20px;
+    padding: 35px 20px;
 
     text-align: center;
 
@@ -494,121 +412,108 @@ footer strong {
 
 
 /* =========================
-   TABLET
+   MOBILE
 ========================= */
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
 
-    .topics {
+    .nav {
+        flex-direction: column;
 
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 11px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+        padding:
+            55px 16px 45px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .chapter-grid {
         grid-template-columns:
-        repeat(2, 1fr);
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .chapter-card {
+        padding:
+            20px 12px;
+
+        border-radius: 16px;
+    }
+
+    .chapter-number {
+        font-size: 11px;
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+
+    .chapter-card h3 {
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+    .chapter-card p {
+        font-size: 11px;
+
+        line-height: 1.8;
+
+        margin-bottom: 14px;
+    }
+
+    .button {
+        font-size: 11px;
+
+        padding:
+            8px 10px;
+    }
+
+    .intro {
+        padding:
+            28px 18px;
+    }
+
+    .development {
+        padding:
+            28px 18px;
+    }
+
+    .development h2 {
+        font-size: 21px;
+    }
+
+    .development p {
+        font-size: 12px;
     }
 
 }
 
 
 /* =========================
-   MOBILE
+   SMALL MOBILE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
-    .nav {
-
-        flex-direction:
-        column;
-
-        gap: 10px;
-    }
-
-    .nav-links {
-
-        gap: 12px;
-
-        font-size: 12px;
-    }
-
-    /*
-       مهم:
-       کارت‌های بخش‌ها در موبایل
-       همچنان دو ستونه هستند.
-    */
-
-    .topics {
-
-        grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-        gap: 12px;
-    }
-
-    section {
-
-        padding:
-        40px 12px;
-    }
-
-    .hero {
-
-        padding:
-        65px 16px 45px;
-    }
-
-    .hero p {
-
-        font-size: 15px;
-    }
-
-    .chapter-intro {
-
-        padding: 22px 16px;
-    }
-
-    .chapter-intro h2 {
-
-        font-size: 22px;
-    }
-
-    .topic {
-
-        padding: 18px 14px;
-
-        min-height: 250px;
-
-        border-radius: 16px;
-    }
-
-    .topic-icon {
-
+    .hero h1 {
         font-size: 30px;
     }
 
-    .topic h3 {
-
-        font-size: 16px;
-
-        line-height: 1.7;
-    }
-
-    .topic p {
-
-        font-size: 12px;
-
-        line-height: 1.8;
-    }
-
-    .topic-button {
-
-        font-size: 12px;
-
-        padding:
-        9px 6px;
-    }
-
-    .status {
-
-        font-size: 10px;
+    .chapter-card h3 {
+        font-size: 13px;
     }
 
 }
@@ -629,6 +534,7 @@ footer strong {
 
 <nav class="nav">
 
+
 <a href="index.html"
    class="logo">
 
@@ -647,12 +553,12 @@ H <span>QUANTUM</span>
 مدرسه فیزیک
 </a>
 
-<a href="physics-11.html">
-یازدهم
-</a>
-
 <a href="physics-10.html">
 دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
 </a>
 
 <a href="podcast.html">
@@ -673,11 +579,13 @@ H <span>QUANTUM</span>
 
 <main>
 
+
 <section class="hero">
+
 
 <div class="badge">
 
-فیزیک یازدهم ـ رشته علوم تجربی
+فیزیک یازدهم • رشته علوم تجربی
 
 </div>
 
@@ -685,89 +593,106 @@ H <span>QUANTUM</span>
 <h1>
 
 فصل اول
+<br>
 
-<span>
-الکتریسیته ساکن
-</span>
+<span>الکتریسیته ساکن</span>
 
 </h1>
 
 
 <p>
 
-در این فصل با مفهوم بار الکتریکی آغاز می‌کنیم
-و قدم‌به‌قدم به قانون کولن،
-میدان و پتانسیل الکتریکی،
-رساناها و خازن می‌رسیم.
+در این فصل از مفهوم بار الکتریکی
+آغاز می‌کنیم و قدم‌به‌قدم
+به میدان، پتانسیل، خازن و انرژی
+ذخیره‌شده در خازن می‌رسیم.
 
 </p>
+
 
 </section>
 
 
 
 <!-- =========================
-     CHAPTER INTRO
+     INTRO
 ========================= -->
 
 <section>
 
-<div class="chapter-intro">
+
+<div class="intro">
+
 
 <h2>
+
 ⚡ مسیر یادگیری الکتریسیته ساکن
+
 </h2>
+
 
 <p>
 
-این فصل از شناخت بار الکتریکی آغاز می‌شود
-و با رسیدن به مفهوم انرژی ذخیره‌شده در خازن
-به پایان می‌رسد.
-هر بخش در ادامه به یک صفحه آموزشی مستقل
-متصل خواهد شد.
+این فصل در حال حاضر شامل
+۱۰ بخش آموزشی است.
+
+هر بخش صفحه مستقل خود را دارد
+و از همین صفحه می‌توان مستقیماً
+وارد آن شد.
 
 </p>
+
 
 </div>
 
 
+</section>
+
+
 
 <!-- =========================
-     SECTION TITLE
+     CHAPTERS
 ========================= -->
+
+<section>
+
 
 <div class="section-title">
 
+
 <h2>
+
 بخش‌های فصل اول
+
 </h2>
 
+
 <p>
+
 برای شروع، یکی از بخش‌های زیر را انتخاب کنید.
+
 </p>
 
+
 </div>
+
+
+
+<div class="chapter-grid">
 
 
 
 <!-- =========================
-     TOPICS
+     PART 1
 ========================= -->
 
-<div class="topics">
+<article class="chapter-card">
 
-
-<!-- TOPIC 1 -->
-
-<article class="topic">
-
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۱
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 ⚡
 </div>
 
@@ -780,39 +705,28 @@ H <span>QUANTUM</span>
 انواع بار و برهم‌کنش میان بارها.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-electric-charge.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 2 -->
+<!-- =========================
+     PART 2
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۲
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 ⚛️
 </div>
 
@@ -825,39 +739,28 @@ H <span>QUANTUM</span>
 پایستگی و کوانتیده بودن.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-charge-conservation.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 3 -->
+<!-- =========================
+     PART 3
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۳
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 ↔️
 </div>
 
@@ -870,39 +773,28 @@ H <span>QUANTUM</span>
 بارهای نقطه‌ای و عوامل مؤثر بر آن.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-coulomb-law.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 4 -->
+<!-- =========================
+     PART 4
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۴
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 🌐
 </div>
 
@@ -915,39 +807,28 @@ H <span>QUANTUM</span>
 با نیروی وارد بر بار آزمون.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-electric-field.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 5 -->
+<!-- =========================
+     PART 5
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۵
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 🔵
 </div>
 
@@ -960,39 +841,28 @@ H <span>QUANTUM</span>
 به‌وسیله یک بار نقطه‌ای.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-point-charge-field.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 6 -->
+<!-- =========================
+     PART 6
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۶
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 〰️
 </div>
 
@@ -1005,84 +875,28 @@ H <span>QUANTUM</span>
 خطوط میدان الکتریکی.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-electric-field-lines.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 7 -->
+<!-- =========================
+     PART 7
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
+<div class="chapter-number">
 بخش ۷
 </div>
 
-<div class="topic-icon">
-⚙️
-</div>
-
-<h3>
-انرژی پتانسیل الکتریکی
-</h3>
-
-<p>
-بررسی انرژی پتانسیل ناشی از
-برهم‌کنش بارهای الکتریکی.
-</p>
-
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
-
-ورود به بخش ←
-
-</a>
-
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
-</article>
-
-
-
-<!-- TOPIC 8 -->
-
-<article class="topic">
-
-<div>
-
-<div class="topic-number">
-بخش ۸
-</div>
-
-<div class="topic-icon">
+<div class="icon">
 🔋
 </div>
 
@@ -1095,84 +909,62 @@ H <span>QUANTUM</span>
 اختلاف پتانسیل در میدان الکتریکی.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-electric-potential.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 9 -->
+<!-- =========================
+     PART 8
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
-بخش ۹
+<div class="chapter-number">
+بخش ۸
 </div>
 
-<div class="topic-icon">
-🔩
+<div class="icon">
+⚙️
 </div>
 
 <h3>
-توزیع بار الکتریکی در اجسام رسانا
+انرژی پتانسیل الکتریکی
 </h3>
 
 <p>
-بررسی رفتار بارهای الکتریکی
-در اجسام رسانا در حالت تعادل.
+بررسی انرژی پتانسیل ناشی از
+برهم‌کنش بارهای الکتریکی.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-electric-potential-energy.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 10 -->
+<!-- =========================
+     PART 9
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
-بخش ۱۰
+<div class="chapter-number">
+بخش ۹
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 ▣
 </div>
 
@@ -1185,44 +977,33 @@ H <span>QUANTUM</span>
 ظرفیت خازن و کاربردهای آن.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-capacitor.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
 
-<!-- TOPIC 11 -->
+<!-- =========================
+     PART 10
+========================= -->
 
-<article class="topic">
+<article class="chapter-card">
 
-<div>
-
-<div class="topic-number">
-بخش ۱۱
+<div class="chapter-number">
+بخش ۱۰
 </div>
 
-<div class="topic-icon">
+<div class="icon">
 🔋
 </div>
 
 <h3>
-انرژی خازن
+انرژی ذخیره‌شده در خازن
 </h3>
 
 <p>
@@ -1230,55 +1011,55 @@ H <span>QUANTUM</span>
 و رابطه‌های مربوط به آن.
 </p>
 
-</div>
-
-<div>
-
-<a href="#"
-   class="topic-button"
-   onclick="return false;">
+<a href="physics-11-experimental-ch1-capacitor-energy.html"
+   class="button">
 
 ورود به بخش ←
 
 </a>
 
-<span class="status">
-صفحه آموزشی به‌زودی
-</span>
-
-</div>
-
 </article>
 
 
+
 </div>
+
+</section>
 
 
 
 <!-- =========================
-     INFORMATION
+     DEVELOPMENT
 ========================= -->
 
-<div class="info">
+<section>
 
-<h3>
-🚧 این صفحه در حال توسعه است
-</h3>
+
+<div class="development">
+
+
+<h2>
+
+🚧 اسکلت فصل آماده است
+
+</h2>
+
 
 <p>
 
-ساختار فصل آماده شده است.
-در مرحله بعد برای هر بخش،
-صفحه آموزشی مستقل ساخته خواهد شد
-و امکاناتی مانند درسنامه،
-مثال‌های حل‌شده،
-پادکست،
-شبیه‌ساز و آزمون
-به آن اضافه می‌شود.
+ساختار فصل و اتصال هر ۱۰ بخش
+به صفحات مستقل انجام شده است.
+
+در مرحله بعد، محتوای آموزشی،
+درسنامه، مثال‌های حل‌شده،
+پادکست، شبیه‌ساز و آزمون‌ها
+به صفحات اضافه خواهند شد.
 
 </p>
 
+
 </div>
+
 
 </section>
 
@@ -1290,12 +1071,14 @@ H <span>QUANTUM</span>
 
 <section class="back">
 
+
 <a href="physics-11-experimental.html"
    class="back-button">
 
 ← بازگشت به فیزیک یازدهم تجربی
 
 </a>
+
 
 </section>
 
@@ -1310,6 +1093,7 @@ H <span>QUANTUM</span>
 
 <footer>
 
+
 <p>
 
 © 2026 —
@@ -1317,15 +1101,17 @@ H <span>QUANTUM</span>
 
 </p>
 
+
 <p>
 
 Physics • Science • Wonder
 
 </p>
 
+
 </footer>
 
 
 </body>
 
-  </html>
+      </html>
