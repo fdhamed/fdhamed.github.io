@@ -24,13 +24,17 @@ scroll-behavior:smooth;
 
 body{
 font-family:Tahoma,Arial,sans-serif;
+
 background:#07111f;
+
 color:#f4f7fb;
+
 line-height:1.9;
 }
 
 a{
 text-decoration:none;
+
 color:inherit;
 }
 
@@ -41,10 +45,13 @@ HEADER
 
 header{
 position:sticky;
+
 top:0;
+
 z-index:1000;
 
-background:rgba(7,17,31,0.94);
+background:
+rgba(7,17,31,0.94);
 
 backdrop-filter:blur(12px);
 
@@ -54,6 +61,7 @@ border-bottom:
 
 .nav{
 max-width:1100px;
+
 margin:auto;
 
 padding:16px 20px;
@@ -61,12 +69,15 @@ padding:16px 20px;
 display:flex;
 
 justify-content:space-between;
+
 align-items:center;
 }
 
 .logo{
 font-size:24px;
+
 font-weight:bold;
+
 letter-spacing:2px;
 }
 
@@ -102,11 +113,11 @@ HERO
 ========================= */
 
 .hero{
-max-width:1000px;
+max-width:950px;
 
 margin:auto;
 
-padding:75px 20px 50px;
+padding:75px 20px 55px;
 
 text-align:center;
 }
@@ -142,7 +153,7 @@ color:#63d8ff;
 }
 
 .hero p{
-max-width:760px;
+max-width:720px;
 
 margin:auto;
 
@@ -171,17 +182,31 @@ margin-bottom:30px;
 }
 
 .section-title h2{
-color:#63d8ff;
-
 font-size:28px;
+
+color:#63d8ff;
 
 margin-bottom:8px;
 }
 
 .section-title p{
-color:#91a3b7;
-
 font-size:14px;
+
+color:#91a3b7;
+}
+
+
+/* =========================
+CHAPTER GRID
+========================= */
+
+.chapters-grid{
+display:grid;
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:20px;
 }
 
 
@@ -190,38 +215,54 @@ CHAPTER CARD
 ========================= */
 
 .chapter-card{
+display:block;
+
 background:#0a1828;
 
 border:
 1px solid rgba(99,216,255,0.13);
 
-border-radius:24px;
+border-radius:22px;
 
-padding:30px;
+padding:28px 22px;
 
-margin-bottom:25px;
+transition:
+transform 0.25s,
+border-color 0.25s,
+background 0.25s;
 }
 
-.chapter-header{
+.chapter-card:hover{
+transform:translateY(-4px);
+
+background:#0e2034;
+
+border-color:
+rgba(99,216,255,0.45);
+}
+
+.chapter-top{
 display:flex;
 
 align-items:center;
 
-gap:18px;
+gap:16px;
 
-margin-bottom:25px;
+margin-bottom:18px;
 }
 
 .chapter-number{
-min-width:60px;
-height:60px;
+min-width:58px;
+
+height:58px;
 
 display:flex;
 
 align-items:center;
+
 justify-content:center;
 
-border-radius:16px;
+border-radius:15px;
 
 background:#10243a;
 
@@ -233,150 +274,51 @@ font-weight:bold;
 }
 
 .chapter-info h3{
-font-size:23px;
+font-size:19px;
 
-margin-bottom:5px;
+margin-bottom:4px;
 }
 
 .chapter-info p{
-color:#91a3b7;
+font-size:11px;
+
+color:#8193a7;
+}
+
+.chapter-description{
+color:#aebdce;
 
 font-size:13px;
-}
-
-
-/* =========================
-PART GRID
-========================= */
-
-.parts-grid{
-display:grid;
-
-grid-template-columns:
-repeat(3,minmax(0,1fr));
-
-gap:15px;
-}
-
-.part-card{
-display:block;
-
-background:#0c1b2c;
-
-border:
-1px solid rgba(255,255,255,0.07);
-
-border-radius:17px;
-
-padding:20px 15px;
-
-transition:
-transform 0.25s,
-border-color 0.25s,
-background 0.25s;
-}
-
-.part-card:hover{
-transform:translateY(-3px);
-
-background:#10243a;
-
-border-color:
-rgba(99,216,255,0.4);
-}
-
-.part-number{
-display:block;
-
-color:#63d8ff;
-
-font-size:12px;
-
-margin-bottom:7px;
-}
-
-.part-card h4{
-font-size:15px;
-
-line-height:1.8;
-}
-
-.part-card p{
-color:#8193a7;
-
-font-size:10px;
-
-margin-top:5px;
-}
-
-
-/* =========================
-OTHER CHAPTERS
-========================= */
-
-.other-chapters{
-display:grid;
-
-grid-template-columns:
-repeat(3,minmax(0,1fr));
-
-gap:18px;
-}
-
-.other-card{
-background:#0a1828;
-
-border:
-1px solid rgba(255,255,255,0.08);
-
-border-radius:20px;
-
-padding:25px 18px;
-
-text-align:center;
-}
-
-.other-card .icon{
-font-size:34px;
-
-margin-bottom:10px;
-}
-
-.other-card h3{
-font-size:17px;
-
-margin-bottom:8px;
-}
-
-.other-card p{
-font-size:12px;
-
-color:#91a3b7;
 
 margin-bottom:18px;
 }
 
-.disabled-button{
+.enter-button{
 display:inline-block;
 
-padding:8px 16px;
+padding:9px 16px;
+
+background:#10243a;
+
+border:
+1px solid rgba(99,216,255,0.25);
 
 border-radius:9px;
 
-background:#102030;
-
-color:#64778b;
+color:#63d8ff;
 
 font-size:11px;
+
+font-weight:bold;
 }
 
 
 /* =========================
-BOTTOM
+BACK
 ========================= */
 
 .bottom-navigation{
-max-width:1000px;
+max-width:1050px;
 
 margin:auto;
 
@@ -457,16 +399,22 @@ padding:
 25px 15px;
 }
 
-.chapter-card{
-padding:20px 15px;
+.chapters-grid{
+grid-template-columns:
+1fr;
 
-border-radius:19px;
+gap:14px;
 }
 
-.chapter-header{
-gap:12px;
+.chapter-card{
+padding:
+22px 17px;
 
-margin-bottom:20px;
+border-radius:18px;
+}
+
+.chapter-top{
+gap:12px;
 }
 
 .chapter-number{
@@ -474,70 +422,26 @@ min-width:50px;
 
 height:50px;
 
-font-size:18px;
-}
-
-.chapter-info h3{
 font-size:19px;
 }
 
+.chapter-info h3{
+font-size:16px;
+}
+
 .chapter-info p{
-font-size:11px;
-}
-
-.parts-grid{
-grid-template-columns:
-repeat(2,minmax(0,1fr));
-
-gap:10px;
-}
-
-.part-card{
-padding:
-17px 10px;
-}
-
-.part-card h4{
-font-size:12px;
-}
-
-.part-number{
 font-size:10px;
 }
 
-.part-card p{
-font-size:9px;
+.chapter-description{
+font-size:12px;
 }
 
-.other-chapters{
-grid-template-columns:
-1fr 1fr;
-
-gap:10px;
-}
-
-.other-card{
-padding:
-20px 10px;
-}
-
-.other-card .icon{
-font-size:27px;
-}
-
-.other-card h3{
-font-size:13px;
-}
-
-.other-card p{
-font-size:9px;
-}
-
-.disabled-button{
-font-size:9px;
+.enter-button{
+font-size:10px;
 
 padding:
-7px 10px;
+8px 13px;
 }
 
 }
@@ -553,17 +457,13 @@ SMALL MOBILE
 font-size:30px;
 }
 
-.parts-grid{
-gap:8px;
-}
-
-.part-card{
+.chapter-card{
 padding:
-15px 8px;
+20px 14px;
 }
 
-.part-card h4{
-font-size:11px;
+.chapter-info h3{
+font-size:15px;
 }
 
 }
@@ -653,8 +553,7 @@ HERO
 <p>
 
 مسیر یادگیری فیزیک یازدهم رشته ریاضی؛
-از الکتریسیته ساکن تا مغناطیس و
-القای الکترومغناطیسی.
+چهار فصل اصلی کتاب را از اینجا انتخاب کنید.
 
 </p>
 
@@ -664,31 +563,39 @@ HERO
 
 
 <!-- =========================
-CHAPTER 1
+CHAPTERS
 ========================= -->
 
-<section
-id="chapter1">
+<section>
 
 
 <div class="section-title">
 
 <h2>
-فصل اول
+فصل‌های فیزیک یازدهم ریاضی
 </h2>
 
 <p>
-الکتریسیته ساکن
+برای ورود به هر فصل، روی کارت آن کلیک کنید.
 </p>
 
 </div>
 
 
 
-<div class="chapter-card">
+<div class="chapters-grid">
 
 
-<div class="chapter-header">
+<!-- =========================
+CHAPTER 1
+========================= -->
+
+<a
+href="physics-11-math-chapter-1.html"
+class="chapter-card">
+
+
+<div class="chapter-top">
 
 
 <div class="chapter-number">
@@ -703,7 +610,7 @@ id="chapter1">
 </h3>
 
 <p>
-۱۲ بخش آموزشی
+فصل اول
 </p>
 
 </div>
@@ -712,362 +619,179 @@ id="chapter1">
 </div>
 
 
+<p class="chapter-description">
 
-<div class="parts-grid">
+بار الکتریکی، قانون کولن،
+میدان الکتریکی، پتانسیل،
+خازن و انرژی خازن.
 
-
-<!-- PART 1 -->
-
-<a href="physics-11-math-ch1-electric-charge.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۱
-</span>
-
-<h4>
-بار الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
 </p>
 
-</a>
 
+<span class="enter-button">
 
+ورود به فصل ←
 
-<!-- PART 2 -->
-
-<a href="physics-11-math-ch1-charge-conservation.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۲
 </span>
 
-<h4>
-پایستگی و کوانتیده بودن بار الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
 
 </a>
-
-
-
-<!-- PART 3 -->
-
-<a href="physics-11-math-ch1-coulomb-law.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۳
-</span>
-
-<h4>
-قانون کولن
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 4 -->
-
-<a href="physics-11-math-ch1-electric-field.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۴
-</span>
-
-<h4>
-میدان الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 5 -->
-
-<a href="physics-11-math-ch1-electric-field-lines.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۵
-</span>
-
-<h4>
-خطوط میدان الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 6 -->
-
-<a href="physics-11-math-ch1-point-charge-field.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۶
-</span>
-
-<h4>
-میدان الکتریکی حاصل از یک ذره باردار
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 7 -->
-
-<a href="physics-11-math-ch1-electric-potential-energy.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۷
-</span>
-
-<h4>
-انرژی پتانسیل الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 8 -->
-
-<a href="physics-11-math-ch1-electric-potential.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۸
-</span>
-
-<h4>
-پتانسیل الکتریکی
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 9 -->
-
-<a href="physics-11-math-ch1-electric-field-conductor.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۹
-</span>
-
-<h4>
-میدان الکتریکی در داخل رساناها
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 10 -->
-
-<a href="physics-11-math-ch1-part-10.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۱۰
-</span>
-
-<h4>
-خازن
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 11 -->
-
-<a href="physics-11-math-ch1-part-11.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۱۱
-</span>
-
-<h4>
-خازن با دی‌الکتریک
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-
-<!-- PART 12 -->
-
-<a href="physics-11-math-ch1-part-12.html"
-class="part-card">
-
-<span class="part-number">
-بخش ۱۲
-</span>
-
-<h4>
-انرژی خازن
-</h4>
-
-<p>
-ورود به بخش ←
-</p>
-
-</a>
-
-
-</div>
-
-</div>
-
-</section>
 
 
 
 <!-- =========================
-OTHER CHAPTERS
+CHAPTER 2
 ========================= -->
 
-<section>
+<a
+href="physics-11-math-chapter-2.html"
+class="chapter-card">
 
 
-<div class="section-title">
+<div class="chapter-top">
 
-<h2>
-سایر فصل‌ها
-</h2>
 
-<p>
-صفحات این فصل‌ها در مرحله بعد تکمیل می‌شوند.
-</p>
-
+<div class="chapter-number">
+۲
 </div>
 
 
-
-<div class="other-chapters">
-
-
-<!-- CHAPTER 2 -->
-
-<div class="other-card">
-
-<div class="icon">
-🔋
-</div>
+<div class="chapter-info">
 
 <h3>
-فصل دوم
-</h3>
-
-<p>
 جریان الکتریکی و مدارهای جریان مستقیم
-</p>
-
-<span class="disabled-button">
-به‌زودی
-</span>
-
-</div>
-
-
-
-<!-- CHAPTER 3 -->
-
-<div class="other-card">
-
-<div class="icon">
-🧲
-</div>
-
-<h3>
-فصل سوم
 </h3>
 
 <p>
+فصل دوم
+</p>
+
+</div>
+
+</div>
+
+
+<p class="chapter-description">
+
+جریان الکتریکی،
+مدارهای الکتریکی و
+مفاهیم مرتبط با جریان مستقیم.
+
+</p>
+
+
+<span class="enter-button">
+
+ورود به فصل ←
+
+</span>
+
+
+</a>
+
+
+
+<!-- =========================
+CHAPTER 3
+========================= -->
+
+<a
+href="physics-11-math-chapter-3.html"
+class="chapter-card">
+
+
+<div class="chapter-top">
+
+
+<div class="chapter-number">
+۳
+</div>
+
+
+<div class="chapter-info">
+
+<h3>
 مغناطیس
-</p>
-
-<span class="disabled-button">
-به‌زودی
-</span>
-
-</div>
-
-
-
-<!-- CHAPTER 4 -->
-
-<div class="other-card">
-
-<div class="icon">
-🔄
-</div>
-
-<h3>
-فصل چهارم
 </h3>
 
 <p>
-القای الکترومغناطیسی و جریان متناوب
+فصل سوم
 </p>
 
-<span class="disabled-button">
-به‌زودی
-</span>
+</div>
 
 </div>
+
+
+<p class="chapter-description">
+
+میدان مغناطیسی،
+نیروی مغناطیسی و
+اثر جریان الکتریکی بر مغناطیس.
+
+</p>
+
+
+<span class="enter-button">
+
+ورود به فصل ←
+
+</span>
+
+
+</a>
+
+
+
+<!-- =========================
+CHAPTER 4
+========================= -->
+
+<a
+href="physics-11-math-chapter-4.html"
+class="chapter-card">
+
+
+<div class="chapter-top">
+
+
+<div class="chapter-number">
+۴
+</div>
+
+
+<div class="chapter-info">
+
+<h3>
+القای الکترومغناطیسی و جریان متناوب
+</h3>
+
+<p>
+فصل چهارم
+</p>
+
+</div>
+
+</div>
+
+
+<p class="chapter-description">
+
+القای الکترومغناطیسی،
+قانون فاراده، قانون لنز
+و جریان متناوب.
+
+</p>
+
+
+<span class="enter-button">
+
+ورود به فصل ←
+
+</span>
+
+
+</a>
 
 
 </div>
@@ -1077,16 +801,17 @@ OTHER CHAPTERS
 
 
 <!-- =========================
-BOTTOM
+BACK
 ========================= -->
 
 <div class="bottom-navigation">
 
 
-<a href="physics-11.html"
+<a
+href="physics-11.html"
 class="back-button">
 
-← بازگشت به انتخاب رشته یازدهم
+← بازگشت به انتخاب پایه یازدهم
 
 </a>
 
@@ -1126,4 +851,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
