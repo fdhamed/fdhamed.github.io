@@ -11,7 +11,7 @@
 <title>کار | فصل سوم فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="بخش دوم فصل سوم فیزیک دهم؛ کار در فیزیک در H Quantum.">
+      content="بخش دوم فصل سوم فیزیک دهم؛ کار در H Quantum با متن آموزشی، پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش‌های مفهومی.">
 
 <style>
 
@@ -26,9 +26,13 @@ html {
 }
 
 body {
+
     font-family: Tahoma, Arial, sans-serif;
+
     background: #07111f;
+
     color: #f4f7fb;
+
     line-height: 1.9;
 }
 
@@ -43,52 +47,70 @@ a {
 ========================= */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
-    background: rgba(7,17,31,0.94);
+    background:
+    rgba(7,17,31,0.94);
 
-    backdrop-filter: blur(12px);
+    backdrop-filter:
+    blur(12px);
 
     border-bottom:
     1px solid rgba(255,255,255,0.08);
 }
 
 .nav {
+
     max-width: 1100px;
+
     margin: auto;
 
     padding: 16px 20px;
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content:
+    space-between;
+
     align-items: center;
 }
 
 .logo {
+
     font-size: 24px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
 .logo span {
+
     color: #63d8ff;
 }
 
 .nav-links {
+
     display: flex;
+
     gap: 20px;
 
     font-size: 14px;
+
     color: #cbd5e1;
 
     flex-wrap: wrap;
+
     justify-content: center;
 }
 
 .nav-links a:hover {
+
     color: #63d8ff;
 }
 
@@ -98,7 +120,9 @@ header {
 ========================= */
 
 .hero {
+
     max-width: 1100px;
+
     margin: auto;
 
     padding: 80px 20px 65px;
@@ -107,6 +131,7 @@ header {
 }
 
 .hero-badge {
+
     display: inline-block;
 
     padding: 7px 18px;
@@ -124,6 +149,7 @@ header {
 }
 
 .hero h1 {
+
     font-size:
     clamp(34px, 8vw, 62px);
 
@@ -133,10 +159,12 @@ header {
 }
 
 .hero h1 span {
+
     color: #63d8ff;
 }
 
 .hero h2 {
+
     font-size:
     clamp(20px, 5vw, 30px);
 
@@ -146,6 +174,7 @@ header {
 }
 
 .hero p {
+
     max-width: 780px;
 
     margin: auto;
@@ -161,6 +190,7 @@ header {
 ========================= */
 
 section {
+
     max-width: 1100px;
 
     margin: auto;
@@ -169,18 +199,21 @@ section {
 }
 
 .section-title {
+
     text-align: center;
 
     margin-bottom: 35px;
 }
 
 .section-title h2 {
+
     font-size: 30px;
 
     margin-bottom: 10px;
 }
 
 .section-title p {
+
     color: #9eafc2;
 
     font-size: 15px;
@@ -192,6 +225,7 @@ section {
 ========================= */
 
 .intro {
+
     max-width: 900px;
 
     margin: auto;
@@ -207,6 +241,7 @@ section {
 }
 
 .intro h2 {
+
     font-size: 27px;
 
     margin-bottom: 18px;
@@ -215,6 +250,7 @@ section {
 }
 
 .intro p {
+
     color: #b6c4d3;
 
     font-size: 16px;
@@ -224,10 +260,111 @@ section {
 
 
 /* =========================
+   LEARNING GRID
+========================= */
+
+.learning-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 22px;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.learning-card {
+
+    padding: 30px 25px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.learning-card:hover {
+
+    transform:
+    translateY(-6px);
+
+    border-color:
+    rgba(99,216,255,0.5);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.18);
+}
+
+.learning-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+
+    color: #aebdce;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.learning-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 9px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.learning-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
    CONCEPT BOX
 ========================= */
 
 .concept-box {
+
     max-width: 900px;
 
     margin: auto;
@@ -245,12 +382,14 @@ section {
 }
 
 .concept-box h2 {
+
     font-size: 26px;
 
     margin-bottom: 15px;
 }
 
 .concept-box p {
+
     color: #aebdce;
 
     font-size: 15px;
@@ -259,6 +398,7 @@ section {
 }
 
 .formula {
+
     display: inline-block;
 
     padding: 15px 30px;
@@ -279,101 +419,11 @@ section {
 
 
 /* =========================
-   LEARNING GRID
-========================= */
-
-.learning-grid {
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 22px;
-
-    max-width: 950px;
-
-    margin: auto;
-}
-
-.learning-card {
-    padding: 30px 25px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    transition:
-    transform 0.3s,
-    border-color 0.3s,
-    box-shadow 0.3s;
-}
-
-.learning-card:hover {
-    transform: translateY(-6px);
-
-    border-color:
-    rgba(99,216,255,0.5);
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
-}
-
-.learning-icon {
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.learning-card h3 {
-    font-size: 21px;
-
-    margin-bottom: 12px;
-}
-
-.learning-card p {
-    color: #aebdce;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
-}
-
-.learning-button {
-    display: inline-block;
-
-    padding: 10px 20px;
-
-    border-radius: 9px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.12);
-
-    color: #63d8ff;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.learning-button:hover {
-    background: #63d8ff;
-
-    color: #06101d;
-}
-
-
-/* =========================
    BACK
 ========================= */
 
 .back-section {
+
     text-align: center;
 
     padding-top: 20px;
@@ -382,6 +432,7 @@ section {
 }
 
 .back-button {
+
     display: inline-block;
 
     padding: 13px 25px;
@@ -399,9 +450,12 @@ section {
 }
 
 .back-button:hover {
-    transform: translateY(-3px);
 
-    border-color: #63d8ff;
+    transform:
+    translateY(-3px);
+
+    border-color:
+    #63d8ff;
 }
 
 
@@ -410,6 +464,7 @@ section {
 ========================= */
 
 footer {
+
     border-top:
     1px solid rgba(255,255,255,0.08);
 
@@ -421,6 +476,7 @@ footer {
 }
 
 footer strong {
+
     color: #63d8ff;
 }
 
@@ -432,70 +488,84 @@ footer strong {
 @media (max-width: 750px) {
 
     .nav {
+
         flex-direction: column;
 
         gap: 10px;
     }
 
     .nav-links {
+
         gap: 11px;
 
         font-size: 12px;
     }
 
     .hero {
+
         padding-top: 55px;
     }
 
     .hero p {
+
         font-size: 15px;
     }
 
     .learning-grid {
+
         grid-template-columns: 1fr 1fr;
 
         gap: 12px;
     }
 
     .learning-card {
+
         padding: 22px 12px;
     }
 
     .learning-icon {
+
         font-size: 34px;
     }
 
     .learning-card h3 {
+
         font-size: 17px;
 
         line-height: 1.7;
     }
 
     .learning-card p {
+
         font-size: 12px;
 
         line-height: 1.8;
     }
 
     .learning-button {
+
         padding: 8px 12px;
 
         font-size: 12px;
     }
 
     section {
+
         padding: 50px 16px;
     }
 
     .intro {
+
         padding: 30px 20px;
     }
 
     .concept-box {
+
         padding: 30px 20px;
     }
 
     .formula {
+
         font-size: 20px;
 
         padding: 12px 20px;
@@ -511,6 +581,10 @@ footer strong {
 <body>
 
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
 <nav class="nav">
@@ -521,6 +595,7 @@ footer strong {
 H <span>QUANTUM</span>
 
 </a>
+
 
 <div class="nav-links">
 
@@ -551,12 +626,11 @@ H <span>QUANTUM</span>
 </header>
 
 
-<main>
-
-
 <!-- =========================
      HERO
 ========================= -->
+
+<main>
 
 <section class="hero">
 
@@ -566,11 +640,13 @@ H <span>QUANTUM</span>
 
 </div>
 
+
 <h1>
 
-<span>کار</span> در فیزیک
+<span>کار</span>
 
 </h1>
+
 
 <h2>
 
@@ -578,15 +654,17 @@ H <span>QUANTUM</span>
 
 </h2>
 
+
 <p>
 
 در فیزیک، «کار» معنای دقیقی دارد.
 هر نیرویی که به جسم وارد می‌شود
 لزوماً کار انجام نمی‌دهد.
 
-در این بخش بررسی می‌کنیم که نیرو،
-جابه‌جایی و زاویه میان آن‌ها چگونه
-مقدار کار انجام‌شده را تعیین می‌کنند.
+در این بخش می‌خواهیم بفهمیم
+نیرو و جابه‌جایی چگونه با یکدیگر
+ارتباط پیدا می‌کنند و چه زمانی
+یک نیرو روی جسم کار انجام می‌دهد.
 
 </p>
 
@@ -607,16 +685,230 @@ H <span>QUANTUM</span>
 
 <p>
 
-ابتدا مفهوم کار را از معنای روزمره آن
-جدا می‌کنیم. سپس نقش نیرو و جابه‌جایی
-را بررسی می‌کنیم و می‌بینیم که کار یک نیرو
-به زاویه میان نیرو و جابه‌جایی نیز وابسته است.
+در بخش کار، ابتدا مفهوم کار را از معنای
+روزمره آن جدا می‌کنیم. سپس نقش نیرو و
+جابه‌جایی را بررسی می‌کنیم و می‌بینیم
+که مقدار کار به زاویه میان نیرو و
+جابه‌جایی نیز وابسته است.
 
 در ادامه با کار مثبت، کار منفی و کار صفر
 آشنا می‌شویم و رابطه کار یک نیروی ثابت
 را در مسائل فیزیکی به کار می‌بریم.
 
 </p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LEARNING PATHS
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+مسیرهای یادگیری
+</h2>
+
+<p>
+این بخش در ادامه با محتوای کامل آموزشی توسعه پیدا می‌کند.
+</p>
+
+</div>
+
+
+<div class="learning-grid">
+
+
+<!-- =========================
+     TEXT
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📖
+</div>
+
+<h3>
+متن آموزشی
+</h3>
+
+<p>
+
+آموزش مفهومی کار
+از پایه تا حل مسائل.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     PODCAST
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+
+روایت شنیداری مفهوم کار
+و ارتباط آن با نیرو و جابه‌جایی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+
+توضیح تصویری کار
+با مثال‌های ساده و قابل مشاهده.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌ساز تعاملی
+</h3>
+
+<p>
+
+تغییر نیرو، جابه‌جایی و زاویه
+و مشاهده تأثیر آن بر کار.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+
+تمرین‌های محاسباتی و مفهومی
+برای تثبیت یادگیری.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     CONCEPT QUESTIONS
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+
+پرسش‌هایی برای سنجش
+درک عمیق مفهوم کار.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
 
 </div>
 
@@ -639,7 +931,8 @@ H <span>QUANTUM</span>
 
 اگر نیروی ثابت F به جسم وارد شود
 و جسم به اندازه d جابه‌جا شود،
-کار این نیرو از رابطه زیر به دست می‌آید:
+کار این نیرو به زاویه میان نیرو
+و جابه‌جایی وابسته است:
 
 </p>
 
@@ -655,196 +948,7 @@ W = Fd cos(θ)
 
 
 <!-- =========================
-     LEARNING PATHS
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-مسیرهای یادگیری
-</h2>
-
-<p>
-برای یادگیری کامل این بخش، مسیرهای مختلفی در نظر گرفته شده است.
-</p>
-
-</div>
-
-
-<div class="learning-grid">
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-📖
-</div>
-
-<h3>
-متن آموزشی
-</h3>
-
-<p>
-
-آموزش کامل و مفهومی
-کار در فیزیک.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-
-روایت شنیداری مفهوم کار
-و مثال‌های فیزیکی آن.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-🎬
-</div>
-
-<h3>
-ویدئو
-</h3>
-
-<p>
-
-توضیح تصویری نیرو،
-جابه‌جایی و کار.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌ساز تعاملی
-</h3>
-
-<p>
-
-تغییر نیرو، جابه‌جایی و زاویه
-و مشاهده مقدار کار.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-📝
-</div>
-
-<h3>
-تمرین
-</h3>
-
-<p>
-
-تمرین‌های مفهومی و محاسباتی
-برای تثبیت یادگیری.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-❓
-</div>
-
-<h3>
-پرسش مفهومی
-</h3>
-
-<p>
-
-پرسش‌هایی برای بررسی
-درک عمیق مفهوم کار.
-
-</p>
-
-<a href="#"
-   class="learning-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BACK
+     BACK TO CHAPTER
 ========================= -->
 
 <section class="back-section">
@@ -861,6 +965,10 @@ W = Fd cos(θ)
 
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
