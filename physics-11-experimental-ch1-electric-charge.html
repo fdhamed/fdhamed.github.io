@@ -10,9 +10,6 @@
 
 <title>بار الکتریکی | فصل اول فیزیک یازدهم تجربی | H Quantum</title>
 
-<meta name="description"
-      content="بخش اول فصل اول فیزیک یازدهم تجربی؛ بار الکتریکی در H Quantum با متن آموزشی، پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش‌های مفهومی.">
-
 <style>
 
 /* =========================
@@ -105,7 +102,7 @@ header {
 
     display: flex;
 
-    gap: 20px;
+    gap: 18px;
 
     font-size: 14px;
 
@@ -118,8 +115,7 @@ header {
 
 .nav-links a {
 
-    transition:
-    color 0.3s;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -134,17 +130,17 @@ header {
 
 .hero {
 
-    max-width: 1100px;
+    max-width: 1000px;
 
     margin: auto;
 
     padding:
-    80px 20px 65px;
+    80px 20px 60px;
 
     text-align: center;
 }
 
-.hero-badge {
+.badge {
 
     display: inline-block;
 
@@ -160,17 +156,17 @@ header {
 
     font-size: 14px;
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .hero h1 {
 
     font-size:
-    clamp(34px, 8vw, 62px);
+    clamp(36px, 9vw, 62px);
 
     line-height: 1.3;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .hero h1 span {
@@ -190,7 +186,7 @@ header {
 
 .hero p {
 
-    max-width: 780px;
+    max-width: 760px;
 
     margin: auto;
 
@@ -201,7 +197,7 @@ header {
 
 
 /* =========================
-   GENERAL
+   GENERAL SECTION
 ========================= */
 
 section {
@@ -211,7 +207,7 @@ section {
     margin: auto;
 
     padding:
-    60px 20px;
+    55px 20px;
 }
 
 .section-title {
@@ -247,37 +243,35 @@ section {
     margin: auto;
 
     padding:
-    38px 30px;
+    35px 30px;
 
     background: #0a1828;
 
-    border-radius: 22px;
-
     border:
     1px solid rgba(99,216,255,0.12);
+
+    border-radius: 22px;
+
+    text-align: center;
 }
 
 .intro h2 {
 
     font-size: 27px;
 
-    margin-bottom: 18px;
-
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 .intro p {
 
-    color: #b6c4d3;
+    color: #aebdce;
 
-    font-size: 16px;
-
-    text-align: justify;
+    font-size: 15px;
 }
 
 
 /* =========================
-   LEARNING GRID
+   LEARNING PATH
 ========================= */
 
 .learning-grid {
@@ -285,24 +279,24 @@ section {
     display: grid;
 
     grid-template-columns:
-    repeat(2, 1fr);
+    repeat(3, 1fr);
 
-    gap: 22px;
+    gap: 20px;
 
-    max-width: 950px;
+    max-width: 1000px;
 
     margin: auto;
 }
 
 
 /* =========================
-   LEARNING CARD
+   CARD
 ========================= */
 
 .learning-card {
 
     padding:
-    30px 25px;
+    28px 20px;
 
     background: #0c1b2c;
 
@@ -315,23 +309,19 @@ section {
 
     transition:
     transform 0.3s,
-    border-color 0.3s,
-    box-shadow 0.3s;
+    border-color 0.3s;
 }
 
 .learning-card:hover {
 
     transform:
-    translateY(-6px);
+    translateY(-5px);
 
     border-color:
     rgba(99,216,255,0.5);
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
 }
 
-.learning-icon {
+.icon {
 
     font-size: 42px;
 
@@ -340,26 +330,26 @@ section {
 
 .learning-card h3 {
 
-    font-size: 21px;
+    font-size: 20px;
 
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .learning-card p {
 
     color: #aebdce;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
-.learning-button {
+.button {
 
     display: inline-block;
 
     padding:
-    10px 20px;
+    9px 18px;
 
     border-radius: 9px;
 
@@ -370,23 +360,14 @@ section {
 
     color: #63d8ff;
 
+    font-size: 13px;
+
     font-weight: bold;
-
-    transition:
-    background 0.3s,
-    color 0.3s;
-}
-
-.learning-button:hover {
-
-    background: #63d8ff;
-
-    color: #06101d;
 }
 
 
 /* =========================
-   EDUCATIONAL CONTENT
+   CONTENT PLACEHOLDER
 ========================= */
 
 .content-box {
@@ -396,215 +377,78 @@ section {
     margin: auto;
 
     padding:
-    38px 30px;
+    40px 30px;
 
     background: #0a1828;
 
-    border-radius: 22px;
-
     border:
     1px solid rgba(99,216,255,0.12);
+
+    border-radius: 22px;
+
+    text-align: center;
 }
 
 .content-box h2 {
 
-    font-size: 27px;
+    font-size: 28px;
 
-    margin-bottom: 20px;
-
-    text-align: center;
-}
-
-.content-box h3 {
-
-    color: #63d8ff;
-
-    font-size: 21px;
-
-    margin-top: 30px;
-
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .content-box p {
 
-    color: #b6c4d3;
+    color: #aebdce;
 
-    font-size: 16px;
-
-    text-align: justify;
-
-    margin-bottom: 18px;
-}
-
-.content-box ul {
-
-    margin:
-    15px 25px 20px 0;
-
-    color: #b6c4d3;
-}
-
-.content-box li {
-
-    margin-bottom: 8px;
+    font-size: 15px;
 }
 
 
 /* =========================
-   CONCEPT BOX
+   FUTURE SECTIONS
 ========================= */
 
-.concept-box {
+.future-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 20px;
 
     max-width: 900px;
 
     margin: auto;
+}
+
+.future-card {
 
     padding:
-    35px 30px;
-
-    background: #0a1828;
-
-    border-radius: 22px;
-
-    border:
-    1px solid rgba(99,216,255,0.12);
-
-    text-align: center;
-}
-
-.concept-box h2 {
-
-    font-size: 26px;
-
-    margin-bottom: 15px;
-}
-
-.concept-box p {
-
-    color: #aebdce;
-
-    font-size: 15px;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   FORMULA
-========================= */
-
-.formula {
-
-    display: inline-block;
-
-    padding:
-    15px 30px;
-
-    background: #07111f;
-
-    border:
-    1px solid rgba(99,216,255,0.25);
-
-    border-radius: 12px;
-
-    color: #63d8ff;
-
-    font-size: 24px;
-
-    direction: ltr;
-
-    margin:
-    10px 0;
-}
-
-
-/* =========================
-   EXAMPLE BOX
-========================= */
-
-.example-box {
-
-    max-width: 900px;
-
-    margin:
-    35px auto 0;
-
-    padding:
-    30px;
+    25px;
 
     background: #0c1b2c;
 
-    border-radius: 20px;
-
     border:
     1px solid rgba(255,255,255,0.08);
-}
 
-.example-box h3 {
-
-    color: #63d8ff;
-
-    font-size: 22px;
-
-    margin-bottom: 15px;
+    border-radius: 18px;
 
     text-align: center;
 }
 
-.example-box p {
-
-    color: #b6c4d3;
-
-    font-size: 15px;
-
-    text-align: justify;
-
-    margin-bottom: 12px;
-}
-
-
-/* =========================
-   IMPORTANT POINT
-========================= */
-
-.important-box {
-
-    max-width: 900px;
-
-    margin:
-    35px auto;
-
-    padding:
-    28px;
-
-    background: #0a1828;
-
-    border-radius: 20px;
-
-    border:
-    1px solid rgba(99,216,255,0.22);
-}
-
-.important-box h3 {
+.future-card h3 {
 
     color: #63d8ff;
 
-    font-size: 22px;
-
-    margin-bottom: 12px;
-
-    text-align: center;
+    margin-bottom: 8px;
 }
 
-.important-box p {
+.future-card p {
 
-    color: #b6c4d3;
+    color: #8191a4;
 
-    font-size: 15px;
-
-    text-align: justify;
+    font-size: 13px;
 }
 
 
@@ -612,7 +456,7 @@ section {
    NAVIGATION
 ========================= */
 
-.navigation-grid {
+.navigation {
 
     max-width: 900px;
 
@@ -626,9 +470,7 @@ section {
     gap: 20px;
 }
 
-.navigation-card {
-
-    display: block;
+.nav-card {
 
     padding:
     20px;
@@ -644,21 +486,19 @@ section {
 
     color: #63d8ff;
 
-    transition:
-    transform 0.3s,
-    border-color 0.3s;
+    transition: 0.3s;
 }
 
-.navigation-card:hover {
-
-    transform:
-    translateY(-5px);
+.nav-card:hover {
 
     border-color:
     rgba(99,216,255,0.5);
+
+    transform:
+    translateY(-4px);
 }
 
-.navigation-card small {
+.nav-card small {
 
     display: block;
 
@@ -674,13 +514,12 @@ section {
    BACK
 ========================= */
 
-.back-section {
+.back {
 
     text-align: center;
 
-    padding-top: 20px;
-
-    padding-bottom: 80px;
+    padding:
+    20px 20px 80px;
 }
 
 .back-button {
@@ -688,29 +527,18 @@ section {
     display: inline-block;
 
     padding:
-    13px 25px;
-
-    border-radius: 10px;
+    12px 25px;
 
     background: #10243a;
 
     border:
-    1px solid rgba(255,255,255,0.15);
+    1px solid rgba(255,255,255,0.12);
+
+    border-radius: 10px;
 
     color: #63d8ff;
 
-    transition:
-    transform 0.3s,
-    border-color 0.3s;
-}
-
-.back-button:hover {
-
-    transform:
-    translateY(-3px);
-
-    border-color:
-    #63d8ff;
+    font-weight: bold;
 }
 
 
@@ -760,24 +588,30 @@ footer strong {
 
     .hero {
 
-        padding-top:
-        55px;
+        padding:
+        55px 16px 45px;
     }
 
     .hero p {
 
-        font-size: 15px;
+        font-size: 14px;
     }
 
+    section {
+
+        padding:
+        45px 14px;
+    }
+
+
     /*
-       کارت‌های آموزشی در موبایل
-       همچنان دو ستونه هستند.
+       کارت‌ها در موبایل دو ستونه
     */
 
     .learning-grid {
 
         grid-template-columns:
-        1fr 1fr;
+        repeat(2, minmax(0, 1fr));
 
         gap: 12px;
     }
@@ -785,101 +619,88 @@ footer strong {
     .learning-card {
 
         padding:
-        22px 12px;
+        20px 12px;
+
+        border-radius: 16px;
     }
 
-    .learning-icon {
+    .icon {
 
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .learning-card h3 {
 
-        font-size: 17px;
+        font-size: 15px;
 
         line-height: 1.7;
     }
 
     .learning-card p {
 
-        font-size: 12px;
+        font-size: 11px;
 
         line-height: 1.8;
     }
 
-    .learning-button {
+    .button {
+
+        font-size: 11px;
 
         padding:
-        8px 12px;
-
-        font-size: 12px;
-    }
-
-    section {
-
-        padding:
-        50px 16px;
+        8px 10px;
     }
 
     .intro {
 
         padding:
-        30px 20px;
+        28px 18px;
     }
 
     .content-box {
 
         padding:
-        30px 20px;
+        30px 18px;
     }
 
-    .content-box p {
-
-        font-size: 14px;
-
-        text-align: right;
-    }
-
-    .concept-box {
-
-        padding:
-        30px 20px;
-    }
-
-    .formula {
-
-        font-size: 20px;
-
-        padding:
-        12px 20px;
-    }
-
-    .example-box {
-
-        padding:
-        22px 18px;
-    }
-
-    .important-box {
-
-        padding:
-        22px 18px;
-    }
-
-    .navigation-grid {
+    .future-grid {
 
         grid-template-columns:
-        1fr 1fr;
+        repeat(2, 1fr);
 
         gap: 12px;
     }
 
-    .navigation-card {
+    .future-card {
 
         padding:
-        16px 10px;
+        18px 10px;
+    }
 
-        font-size: 13px;
+    .future-card h3 {
+
+        font-size: 14px;
+    }
+
+    .future-card p {
+
+        font-size: 11px;
+    }
+
+    .navigation {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .nav-card {
+
+        padding:
+        16px 8px;
+
+        font-size: 12px;
     }
 
 }
@@ -898,22 +719,12 @@ footer strong {
 
     .hero h2 {
 
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .learning-card h3 {
 
-        font-size: 15px;
-    }
-
-    .learning-card p {
-
-        font-size: 11px;
-    }
-
-    .navigation-card {
-
-        font-size: 12px;
+        font-size: 14px;
     }
 
 }
@@ -952,16 +763,16 @@ H <span>QUANTUM</span>
 مدرسه فیزیک
 </a>
 
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
 <a href="podcast.html">
 🎙️ پادکست
-</a>
-
-<a href="books.html">
-📚 کتاب‌ها
-</a>
-
-<a href="simulations.html">
-🧪 آزمایشگاه
 </a>
 
 </div>
@@ -980,7 +791,7 @@ H <span>QUANTUM</span>
 
 <section class="hero">
 
-<div class="hero-badge">
+<div class="badge">
 
 فیزیک یازدهم تجربی • فصل اول • بخش اول
 
@@ -996,19 +807,17 @@ H <span>QUANTUM</span>
 
 <h2>
 
-آغاز سفر به دنیای الکتریسیتهٔ ساکن
+بخش اول فصل اول — الکتریسیته ساکن
 
 </h2>
 
 
 <p>
 
-در این بخش با یکی از بنیادی‌ترین مفاهیم
-فیزیک، یعنی بار الکتریکی، آشنا می‌شویم.
-می‌بینیم چرا بعضی اجسام یکدیگر را جذب
-و بعضی یکدیگر را دفع می‌کنند و چگونه
-این رفتار ساده، ما را به یکی از بنیادی‌ترین
-ویژگی‌های ماده می‌رساند.
+صفحه آموزشی بخش اول در حال آماده‌سازی است.
+
+ساختار آموزشی این صفحه آماده شده و
+محتوای علمی در مرحله بعد اضافه خواهد شد.
 
 </p>
 
@@ -1026,30 +835,17 @@ H <span>QUANTUM</span>
 
 <h2>
 
-در این بخش چه می‌آموزیم؟
+📚 نقشه راه این بخش
 
 </h2>
 
-
 <p>
 
-وقتی یک شانهٔ پلاستیکی را به موهایمان
-نزدیک می‌کنیم و تکه‌های کوچک کاغذ را
-جذب می‌کند، با پدیده‌ای روبه‌رو شده‌ایم
-که ریشهٔ آن در بار الکتریکی است.
+در این صفحه مسیرهای مختلف یادگیری
+این بخش قرار خواهند گرفت.
 
-در این بخش ابتدا با مفهوم بار الکتریکی
-آشنا می‌شویم. سپس دو نوع بار الکتریکی
-را بررسی می‌کنیم و درمی‌یابیم که بارهای
-هم‌نام یکدیگر را دفع و بارهای ناهم‌نام
-یکدیگر را جذب می‌کنند.
-
-در ادامه با واحد اندازه‌گیری بار، مقدار
-بار الکتریکی و مفهوم بار بنیادی آشنا
-می‌شویم و در نهایت دو ویژگی مهم بار
-الکتریکی، یعنی پایستگی و کوانتیده بودن
-آن، زمینه‌ای برای ادامهٔ فصل فراهم
-می‌کنند.
+فعلاً فقط اسکلت صفحه ساخته شده است
+و محتوای آموزشی بعداً اضافه می‌شود.
 
 </p>
 
@@ -1069,14 +865,14 @@ H <span>QUANTUM</span>
 
 <h2>
 
-مسیرهای یادگیری
+🎓 مسیرهای یادگیری
 
 </h2>
 
 <p>
 
-این بخش با چند مسیر آموزشی مکمل
-در H Quantum توسعه پیدا خواهد کرد.
+برای یادگیری این بخش می‌توان از
+مسیرهای مختلف استفاده کرد.
 
 </p>
 
@@ -1087,36 +883,27 @@ H <span>QUANTUM</span>
 <div class="learning-grid">
 
 
-<!-- =========================
-     TEXT
-========================= -->
+<!-- TEXT -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 📖
-
 </div>
 
 <h3>
-
 متن آموزشی
-
 </h3>
 
 <p>
-
-آموزش مفهومی بار الکتریکی،
-انواع بار، واحد بار و ویژگی‌های
-بنیادی آن.
-
+درسنامه کامل این بخش
 </p>
 
-<a href="#lesson"
-   class="learning-button">
+<a href="#"
+   class="button"
+   onclick="return false;">
 
-مطالعه درس ↓
+به‌زودی
 
 </a>
 
@@ -1124,34 +911,24 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     PODCAST
-========================= -->
+<!-- PODCAST -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 🎙️
-
 </div>
 
 <h3>
-
 پادکست
-
 </h3>
 
 <p>
-
-روایت شنیداری مفهوم بار الکتریکی
-و داستان شکل‌گیری نگاه فیزیکی
-به الکتریسیته.
-
+نسخه شنیداری این بخش
 </p>
 
 <a href="#"
-   class="learning-button"
+   class="button"
    onclick="return false;">
 
 به‌زودی
@@ -1162,34 +939,24 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     VIDEO
-========================= -->
+<!-- VIDEO -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 🎬
-
 </div>
 
 <h3>
-
 ویدئو
-
 </h3>
 
 <p>
-
-توضیح تصویری رفتار بارهای
-الکتریکی و آزمایش‌های ساده
-الکتریسیتهٔ ساکن.
-
+آموزش تصویری این بخش
 </p>
 
 <a href="#"
-   class="learning-button"
+   class="button"
    onclick="return false;">
 
 به‌زودی
@@ -1200,33 +967,24 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     SIMULATOR
-========================= -->
+<!-- SIMULATOR -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 🧪
-
 </div>
 
 <h3>
-
-شبیه‌ساز تعاملی
-
+شبیه‌ساز
 </h3>
 
 <p>
-
-بررسی جذب و دفع بارهای الکتریکی
-با تغییر مقدار و علامت بارها.
-
+آزمایش و شبیه‌سازی تعاملی
 </p>
 
 <a href="#"
-   class="learning-button"
+   class="button"
    onclick="return false;">
 
 به‌زودی
@@ -1237,33 +995,24 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     EXERCISES
-========================= -->
+<!-- EXERCISE -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 📝
-
 </div>
 
 <h3>
-
 تمرین
-
 </h3>
 
 <p>
-
-تمرین‌های مفهومی و محاسباتی
-برای تثبیت مفهوم بار الکتریکی.
-
+تمرین‌های این بخش
 </p>
 
 <a href="#"
-   class="learning-button"
+   class="button"
    onclick="return false;">
 
 به‌زودی
@@ -1274,33 +1023,24 @@ H <span>QUANTUM</span>
 
 
 
-<!-- =========================
-     CONCEPT QUESTIONS
-========================= -->
+<!-- QUESTIONS -->
 
 <article class="learning-card">
 
-<div class="learning-icon">
-
+<div class="icon">
 ❓
-
 </div>
 
 <h3>
-
 پرسش مفهومی
-
 </h3>
 
 <p>
-
-پرسش‌هایی برای بررسی درک عمیق
-از رفتار بارهای الکتریکی.
-
+پرسش‌های مفهومی
 </p>
 
 <a href="#"
-   class="learning-button"
+   class="button"
    onclick="return false;">
 
 به‌زودی
@@ -1317,452 +1057,43 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     LESSON
+     MAIN CONTENT PLACEHOLDER
 ========================= -->
 
-<section id="lesson">
+<section>
 
 <div class="section-title">
 
 <h2>
 
-درسنامهٔ مفهومی
+📖 محتوای آموزشی
 
 </h2>
 
 <p>
 
-بار الکتریکی؛ ویژگی‌ای بنیادی در ماده
+این قسمت در مرحله تولید محتوا تکمیل خواهد شد.
 
 </p>
 
 </div>
 
-
-
-<div class="content-box">
-
-
-<h2>
-
-بار الکتریکی چیست؟
-
-</h2>
-
-
-<p>
-
-اگر یک بادکنک را به لباس پشمی بمالیم،
-ممکن است پس از آن بتواند تکه‌های کوچک
-کاغذ را به سوی خود بکشد. این اتفاق در نگاه
-اول عجیب به نظر می‌رسد؛ زیرا بادکنک
-و کاغذ هیچ تماسی با یکدیگر ندارند.
-
-اما در مقیاس اتمی، ماده ساختاری پیچیده‌تر
-دارد. اتم‌ها از ذراتی مانند پروتون و
-الکترون تشکیل شده‌اند و بعضی از این ذرات
-دارای ویژگی‌ای هستند که آن را
-«بار الکتریکی» می‌نامیم.
-
-بار الکتریکی یکی از ویژگی‌های بنیادی
-ماده است و منشأ بسیاری از پدیده‌های
-الکتریکی محسوب می‌شود.
-
-</p>
-
-
-
-<h3>
-
-دو نوع بار الکتریکی
-
-</h3>
-
-
-<p>
-
-بار الکتریکی به دو نوع اصلی تقسیم می‌شود:
-
-</p>
-
-
-<ul>
-
-<li>
-
-بار مثبت
-
-</li>
-
-<li>
-
-بار منفی
-
-</li>
-
-</ul>
-
-
-<p>
-
-پروتون دارای بار مثبت و الکترون دارای
-بار منفی است. نوترون از نظر بار الکتریکی
-خنثی است.
-
-این نام‌گذاری صرفاً یک قرارداد نیست؛
-علامت مثبت و منفی به ما کمک می‌کند
-نوع برهم‌کنش میان بارها را مشخص کنیم.
-
-</p>
-
-
-
-<h3>
-
-جذب و دفع بارها
-
-</h3>
-
-
-<p>
-
-دو بار الکتریکی هم‌نام یکدیگر را دفع
-می‌کنند، در حالی که دو بار ناهم‌نام
-یکدیگر را جذب می‌کنند.
-
-بنابراین:
-
-</p>
-
-
-<ul>
-
-<li>
-
-مثبت و مثبت → دفع
-
-</li>
-
-<li>
-
-منفی و منفی → دفع
-
-</li>
-
-<li>
-
-مثبت و منفی → جذب
-
-</li>
-
-</ul>
-
-
-<p>
-
-این قاعده ساده یکی از پایه‌های اصلی
-الکتریسیتهٔ ساکن است و در ادامهٔ فصل
-به شکل دقیق‌تری با قانون کولن بررسی
-خواهد شد.
-
-</p>
-
-
-
-<h3>
-
-واحد بار الکتریکی
-
-</h3>
-
-
-<p>
-
-در دستگاه بین‌المللی SI، واحد اندازه‌گیری
-بار الکتریکی «کولن» است که با نماد
-C نمایش داده می‌شود.
-
-بار یک الکترون از نظر علامت منفی است
-و مقدار آن برابر با بار بنیادی است.
-
-</p>
-
-
-<div class="formula">
-
-e ≈ 1.602 × 10⁻¹⁹ C
-
-</div>
-
-
-<p>
-
-بنابراین بار الکترون برابر با
-
-−e
-
-و بار پروتون برابر با
-
-+e
-
-است.
-
-</p>
-
-
-
-<h3>
-
-بار بنیادی
-
-</h3>
-
-
-<p>
-
-کوچک‌ترین مقدار بار آزاد که به‌طور معمول
-در ذرات بنیادی مشاهده می‌کنیم، قدرمطلق
-بار بنیادی است.
-
-الکترون و پروتون هر دو دارای قدرمطلق
-برابر برای بار هستند، اما علامت بار
-آنها مخالف یکدیگر است.
-
-</p>
-
-
-
-<h3>
-
-بار کل یک جسم
-
-</h3>
-
-
-<p>
-
-اگر در یک جسم تعداد پروتون‌ها و
-الکترون‌ها برابر باشد، بار خالص جسم
-صفر است و جسم را از نظر الکتریکی
-خنثی می‌نامیم.
-
-اما اگر تعداد الکترون‌ها و پروتون‌ها
-برابر نباشد، جسم دارای بار خالص خواهد
-بود.
-
-برای نمونه، اگر جسمی تعدادی الکترون
-اضافی دریافت کند، بار خالص آن منفی
-می‌شود.
-
-اگر جسم تعدادی الکترون از دست بدهد،
-بار خالص آن مثبت می‌شود.
-
-</p>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     QUANTIZATION
-========================= -->
-
-<section>
-
-<div class="concept-box">
-
-<h2>
-
-کوانتیده بودن بار الکتریکی
-
-</h2>
-
-
-<p>
-
-بار الکتریکی در بسیاری از شرایط به صورت
-مضرب صحیحی از بار بنیادی ظاهر می‌شود.
-بنابراین می‌توان بار خالص را به صورت زیر
-نوشت:
-
-</p>
-
-
-<div class="formula">
-
-q = n e
-
-</div>
-
-
-<p>
-
-که در آن q بار خالص، n یک عدد صحیح
-و e مقدار بار بنیادی است.
-
-اگر بار جسم منفی باشد، علامت منفی
-در مقدار q ظاهر می‌شود.
-
-</p>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     CONSERVATION
-========================= -->
-
-<section>
 
 <div class="content-box">
 
 <h2>
 
-پایستگی بار الکتریکی
+بار الکتریکی
 
 </h2>
 
-
 <p>
 
-یکی از ویژگی‌های بنیادی بار الکتریکی،
-پایستگی آن است.
+🚧 اسکلت صفحه آماده است.
 
-در یک سامانهٔ منزوی، بار الکتریکی
-نه از هیچ به وجود می‌آید و نه از بین
-می‌رود؛ بلکه می‌تواند از جسمی به جسم
-دیگر منتقل شود.
-
-به همین دلیل، هنگام باردار شدن دو جسم
-بر اثر مالش یا تماس، در واقع بار از
-جسمی به جسم دیگر منتقل می‌شود.
-
-</p>
-
-
-<div class="important-box">
-
-<h3>
-
-نکتهٔ مهم
-
-</h3>
-
-
-<p>
-
-«باردار شدن» یک جسم به معنای ایجاد
-بار از هیچ نیست. در فرایندهای معمول
-الکتریسیتهٔ ساکن، الکترون‌ها میان اجسام
-جابجا می‌شوند و در نتیجه بار خالص
-آنها تغییر می‌کند.
-
-</p>
-
-</div>
-
-
-<h3>
-
-چرا الکترون‌ها جابه‌جا می‌شوند؟
-
-</h3>
-
-
-<p>
-
-در بسیاری از مواد، به‌ویژه در پدیده‌های
-الکتریسیتهٔ ساکن، ذراتی که جابه‌جایی
-آنها میان اجسام اهمیت دارد الکترون‌ها
-هستند.
-
-پروتون‌ها درون هستهٔ اتم قرار دارند
-و معمولاً در فرایندهای معمول باردار
-شدن اجسام از جسمی به جسم دیگر منتقل
-نمی‌شوند.
-
-بنابراین وقتی یک جسم را با مالش
-باردار می‌کنیم، معمولاً صحبت از
-انتقال الکترون است.
-
-</p>
-
-
-<h3>
-
-خنثی بودن به چه معناست؟
-
-</h3>
-
-
-<p>
-
-وقتی می‌گوییم جسمی خنثی است، منظورمان
-این نیست که هیچ بار الکتریکی در آن
-وجود ندارد.
-
-یک جسم خنثی می‌تواند از تعداد بسیار
-زیادی پروتون و الکترون تشکیل شده باشد؛
-اما مجموع بار مثبت و منفی آن صفر باشد.
-
-پس «خنثی» یعنی بار خالص صفر است.
-
-</p>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     EXAMPLE
-========================= -->
-
-<section>
-
-<div class="example-box">
-
-<h3>
-
-مثال مفهومی
-
-</h3>
-
-
-<p>
-
-فرض کنید جسمی تعدادی الکترون اضافی
-دریافت کند. آیا این جسم مثبت می‌شود
-یا منفی؟
-
-</p>
-
-
-<p>
-
-از آنجا که هر الکترون دارای بار منفی
-است، افزایش تعداد الکترون‌ها باعث
-افزایش مقدار بار منفی جسم می‌شود.
-بنابراین جسم دارای بار خالص منفی
-خواهد شد.
-
-</p>
-
-
-<p>
-
-برعکس، اگر جسم تعدادی الکترون از دست
-بدهد، بخشی از بار منفی آن حذف می‌شود
-و بار خالص جسم مثبت خواهد شد.
+محتوای علمی، مثال‌ها، فرمول‌ها و
+فعالیت‌های آموزشی در مرحله بعد
+اضافه خواهند شد.
 
 </p>
 
@@ -1773,7 +1104,7 @@ q = n e
 
 
 <!-- =========================
-     CONCEPT QUESTIONS
+     FUTURE CONTENT
 ========================= -->
 
 <section>
@@ -1782,14 +1113,13 @@ q = n e
 
 <h2>
 
-چند پرسش برای فکر کردن
+بخش‌های آموزشی صفحه
 
 </h2>
 
 <p>
 
-قبل از ادامهٔ فصل، خودت به این پرسش‌ها
-فکر کن.
+محل قرارگیری اجزای آموزشی آینده
 
 </p>
 
@@ -1797,138 +1127,59 @@ q = n e
 
 
 
-<div class="learning-grid">
+<div class="future-grid">
 
 
-<article class="learning-card">
-
-<div class="learning-icon">
-
-❓
-
-</div>
+<div class="future-card">
 
 <h3>
-
-جسم خنثی
-
+مفاهیم اصلی
 </h3>
 
 <p>
-
-آیا یک جسم خنثی می‌تواند
-الکترون داشته باشد؟
-
+به‌زودی
 </p>
-
-<a href="#"
-   class="learning-button"
-   onclick="return false;">
-
-پاسخ در ادامه
-
-</a>
-
-</article>
-
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-
-❓
 
 </div>
 
+
+<div class="future-card">
+
 <h3>
-
-باردار شدن
-
+فرمول‌ها
 </h3>
 
 <p>
-
-وقتی یک جسم با مالش باردار می‌شود،
-آیا بار جدیدی ایجاد شده است؟
-
+به‌زودی
 </p>
-
-<a href="#"
-   class="learning-button"
-   onclick="return false;">
-
-پاسخ در ادامه
-
-</a>
-
-</article>
-
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-
-❓
 
 </div>
 
+
+<div class="future-card">
+
 <h3>
-
-دو بار منفی
-
+مثال‌های حل‌شده
 </h3>
 
 <p>
-
-اگر دو جسم هر دو بار منفی داشته
-باشند، یکدیگر را جذب می‌کنند یا دفع؟
-
+به‌زودی
 </p>
-
-<a href="#"
-   class="learning-button"
-   onclick="return false;">
-
-پاسخ در ادامه
-
-</a>
-
-</article>
-
-
-
-<article class="learning-card">
-
-<div class="learning-icon">
-
-❓
 
 </div>
 
+
+<div class="future-card">
+
 <h3>
-
-بار بنیادی
-
+نکات مهم
 </h3>
 
 <p>
-
-چرا بار پروتون و الکترون از نظر
-مقدار برابر اما از نظر علامت مخالف است؟
-
+به‌زودی
 </p>
 
-<a href="#"
-   class="learning-button"
-   onclick="return false;">
-
-پاسخ در ادامه
-
-</a>
-
-</article>
+</div>
 
 
 </div>
@@ -1938,85 +1189,7 @@ q = n e
 
 
 <!-- =========================
-     SUMMARY
-========================= -->
-
-<section>
-
-<div class="concept-box">
-
-<h2>
-
-جمع‌بندی بخش
-
-</h2>
-
-
-<p>
-
-بار الکتریکی یکی از ویژگی‌های بنیادی
-ماده است و به دو نوع مثبت و منفی تقسیم
-می‌شود.
-
-</p>
-
-
-<p>
-
-بارهای هم‌نام یکدیگر را دفع و بارهای
-ناهم‌نام یکدیگر را جذب می‌کنند.
-
-</p>
-
-
-<p>
-
-واحد بار در دستگاه SI کولن است و
-مقدار بار بنیادی تقریباً برابر است با:
-
-</p>
-
-
-<div class="formula">
-
-e ≈ 1.602 × 10⁻¹⁹ C
-
-</div>
-
-
-<p>
-
-بار الکتریکی پایسته است و در بسیاری
-از شرایط به صورت مضرب صحیحی از بار
-بنیادی ظاهر می‌شود:
-
-</p>
-
-
-<div class="formula">
-
-q = n e
-
-</div>
-
-
-<p>
-
-در ادامهٔ فصل، همین مفهوم بار را
-به نیرویی که میان بارها ایجاد می‌شود
-پیوند می‌دهیم و به قانون کولن خواهیم
-رسید.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     NAVIGATION
+     PAGE NAVIGATION
 ========================= -->
 
 <section>
@@ -2025,14 +1198,13 @@ q = n e
 
 <h2>
 
-ادامهٔ مسیر یادگیری
+ادامه مسیر فصل
 
 </h2>
 
 <p>
 
-از اینجا می‌توانی به بخش‌های دیگر
-فصل بروی.
+حرکت میان بخش‌های فصل اول
 
 </p>
 
@@ -2040,35 +1212,35 @@ q = n e
 
 
 
-<div class="navigation-grid">
+<div class="navigation">
 
+
+<!-- PREVIOUS -->
 
 <a href="physics-11-experimental-chapter-1.html"
-   class="navigation-card">
+   class="nav-card">
 
 <small>
-
 بازگشت
-
 </small>
 
-← صفحهٔ فصل اول
+← صفحه فصل اول
 
 </a>
 
 
 
+<!-- NEXT -->
+
 <a href="#"
-   class="navigation-card"
+   class="nav-card"
    onclick="return false;">
 
 <small>
-
 بخش بعدی
-
 </small>
 
-قانون کولن →
+پایستگی و کوانتیده بودن بار →
 
 </a>
 
@@ -2080,15 +1252,16 @@ q = n e
 
 
 <!-- =========================
-     BACK TO CHAPTER
+     BACK
 ========================= -->
 
-<section class="back-section">
+<section class="back">
 
 <a href="physics-11-experimental-chapter-1.html"
    class="back-button">
 
-← بازگشت به فصل اول: الکتریسیتهٔ ساکن
+← بازگشت به فصل اول
+الکتریسیته ساکن
 
 </a>
 
@@ -2112,7 +1285,6 @@ q = n e
 
 </p>
 
-
 <p>
 
 Physics • Science • Wonder
@@ -2124,4 +1296,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
