@@ -8,10 +8,10 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>پایستگی انرژی | فیزیک دهم | H Quantum</title>
+<title>پایستگی انرژی | فصل سوم فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="بخش پنجم فصل سوم فیزیک دهم؛ پایستگی انرژی در H Quantum.">
+      content="بخش پنجم فصل سوم فیزیک دهم؛ پایستگی انرژی در H Quantum با متن آموزشی، پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش‌های مفهومی.">
 
 <style>
 
@@ -125,7 +125,7 @@ header {
 
     margin: auto;
 
-    padding: 85px 20px 70px;
+    padding: 80px 20px 65px;
 
     text-align: center;
 }
@@ -151,7 +151,7 @@ header {
 .hero h1 {
 
     font-size:
-    clamp(34px, 8vw, 65px);
+    clamp(34px, 8vw, 62px);
 
     line-height: 1.3;
 
@@ -166,7 +166,7 @@ header {
 .hero h2 {
 
     font-size:
-    clamp(21px, 5vw, 32px);
+    clamp(20px, 5vw, 30px);
 
     font-weight: normal;
 
@@ -195,19 +195,19 @@ section {
 
     margin: auto;
 
-    padding: 65px 20px;
+    padding: 60px 20px;
 }
 
 .section-title {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .section-title h2 {
 
-    font-size: 31px;
+    font-size: 30px;
 
     margin-bottom: 10px;
 }
@@ -221,10 +221,49 @@ section {
 
 
 /* =========================
-   CONTENT GRID
+   INTRO
 ========================= */
 
-.content-grid {
+.intro {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 38px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.intro p {
+
+    color: #b6c4d3;
+
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   LEARNING GRID
+========================= */
+
+.learning-grid {
 
     display: grid;
 
@@ -238,7 +277,7 @@ section {
     margin: auto;
 }
 
-.content-card {
+.learning-card {
 
     padding: 30px 25px;
 
@@ -257,7 +296,7 @@ section {
     box-shadow 0.3s;
 }
 
-.content-card:hover {
+.learning-card:hover {
 
     transform:
     translateY(-6px);
@@ -269,21 +308,21 @@ section {
     0 12px 30px rgba(0,0,0,0.18);
 }
 
-.content-icon {
+.learning-icon {
 
     font-size: 42px;
 
     margin-bottom: 12px;
 }
 
-.content-card h3 {
+.learning-card h3 {
 
-    font-size: 22px;
+    font-size: 21px;
 
     margin-bottom: 12px;
 }
 
-.content-card p {
+.learning-card p {
 
     color: #aebdce;
 
@@ -292,7 +331,7 @@ section {
     margin-bottom: 20px;
 }
 
-.content-button {
+.learning-button {
 
     display: inline-block;
 
@@ -312,7 +351,7 @@ section {
     transition: 0.3s;
 }
 
-.content-button:hover {
+.learning-button:hover {
 
     background: #63d8ff;
 
@@ -321,16 +360,16 @@ section {
 
 
 /* =========================
-   SKELETON
+   CONCEPT BOX
 ========================= */
 
-.skeleton {
+.concept-box {
 
     max-width: 900px;
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
@@ -342,81 +381,40 @@ section {
     text-align: center;
 }
 
-.skeleton h2 {
+.concept-box h2 {
 
-    font-size: 27px;
+    font-size: 26px;
 
     margin-bottom: 15px;
 }
 
-.skeleton p {
+.concept-box p {
 
-    color: #b6c4d3;
+    color: #aebdce;
 
-    font-size: 16px;
+    font-size: 15px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
+.formula {
 
-/* =========================
-   FUTURE LIST
-========================= */
+    display: inline-block;
 
-.future-list {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 10px;
-}
-
-.future-item {
-
-    padding: 8px 15px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    color: #cbd5e1;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   FORMULA
-========================= */
-
-.formula-box {
-
-    max-width: 600px;
-
-    margin: 25px auto 0;
-
-    padding: 20px;
+    padding: 15px 30px;
 
     background: #07111f;
 
     border:
-    1px solid rgba(99,216,255,0.18);
+    1px solid rgba(99,216,255,0.25);
 
-    border-radius: 15px;
-
-    direction: ltr;
-
-    text-align: center;
+    border-radius: 12px;
 
     color: #63d8ff;
 
     font-size: 24px;
+
+    direction: ltr;
 }
 
 
@@ -505,7 +503,7 @@ footer strong {
 
     .hero {
 
-        padding-top: 60px;
+        padding-top: 55px;
     }
 
     .hero p {
@@ -513,9 +511,42 @@ footer strong {
         font-size: 15px;
     }
 
-    .content-grid {
+    .learning-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .learning-card {
+
+        padding: 22px 12px;
+    }
+
+    .learning-icon {
+
+        font-size: 34px;
+    }
+
+    .learning-card h3 {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .learning-card p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .learning-button {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
     }
 
     section {
@@ -523,9 +554,21 @@ footer strong {
         padding: 50px 16px;
     }
 
-    .skeleton {
+    .intro {
 
         padding: 30px 20px;
+    }
+
+    .concept-box {
+
+        padding: 30px 20px;
+    }
+
+    .formula {
+
+        font-size: 20px;
+
+        padding: 12px 20px;
     }
 
 }
@@ -607,19 +650,60 @@ H <span>QUANTUM</span>
 
 <h2>
 
-بخش پنجم فصل «کار، انرژی و توان»
+بخش پنجم فصل سوم فیزیک دهم
 
 </h2>
 
 
 <p>
 
-اسکلت آموزشی این بخش آماده شده است.
-محتوای علمی، مثال‌ها، تمرین‌ها و
-فعالیت‌های تعاملی در مرحله تولید محتوا
-اضافه خواهند شد.
+انرژی می‌تواند از شکلی به شکل دیگر
+تبدیل شود، اما در یک سامانه بسته
+مقدار کل انرژی ثابت می‌ماند.
+
+در این بخش می‌خواهیم ببینیم
+انرژی چگونه میان شکل‌های مختلف
+تبادل و تبدیل می‌شود و چگونه می‌توان
+از قانون پایستگی انرژی برای بررسی
+حرکت اجسام استفاده کرد.
 
 </p>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+<div class="intro">
+
+<h2>
+در این بخش چه می‌آموزیم؟
+</h2>
+
+<p>
+
+در بخش پایستگی انرژی، ابتدا مفهوم
+پایستگی انرژی را بررسی می‌کنیم و سپس
+تبدیل انرژی جنبشی و انرژی پتانسیل را
+در یک سامانه دنبال می‌کنیم.
+
+می‌بینیم که کاهش یک نوع انرژی می‌تواند
+با افزایش نوع دیگری از انرژی همراه باشد.
+همچنین یاد می‌گیریم چگونه با استفاده از
+قانون پایستگی انرژی، مسائل فیزیکی را
+بدون بررسی جزئیات همه نیروها تحلیل کنیم.
+
+در ادامه، نقش اصطکاک و تبدیل بخشی از
+انرژی مکانیکی به انرژی درونی را نیز
+بررسی خواهیم کرد.
+
+</p>
+
+</div>
 
 </section>
 
@@ -633,85 +717,26 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-مسیرهای یادگیری این بخش
+مسیرهای یادگیری
 </h2>
 
 <p>
-
-در مراحل بعد، این مفهوم از مسیرهای
-مختلف آموزشی در دسترس خواهد بود.
-
+این بخش در ادامه با محتوای کامل آموزشی توسعه پیدا می‌کند.
 </p>
 
 </div>
 
 
-<div class="content-grid">
+<div class="learning-grid">
 
 
-<!-- PODCAST -->
+<!-- =========================
+     TEXT
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-
-اپیزود صوتی مربوط به
-پایستگی انرژی.
-
-</p>
-
-<a href="#podcast"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- VIDEO -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🎬
-</div>
-
-<h3>
-ویدئوی آموزشی
-</h3>
-
-<p>
-
-توضیح مفهومی و حل مثال‌های
-مربوط به پایستگی انرژی.
-
-</p>
-
-<a href="#video"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- TEXT -->
-
-<article class="content-card">
-
-<div class="content-icon">
+<div class="learning-icon">
 📖
 </div>
 
@@ -721,13 +746,13 @@ H <span>QUANTUM</span>
 
 <p>
 
-متن کامل درس، روابط،
-مثال‌ها و نکات آموزشی.
+آموزش مفهومی قانون پایستگی انرژی
+و تبدیل شکل‌های مختلف انرژی.
 
 </p>
 
-<a href="#text"
-   class="content-button">
+<a href="#"
+   class="learning-button">
 
 به‌زودی
 
@@ -736,11 +761,75 @@ H <span>QUANTUM</span>
 </article>
 
 
-<!-- SIMULATOR -->
+<!-- =========================
+     PODCAST
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+
+روایت شنیداری داستان تبدیل انرژی
+از یک شکل به شکل دیگر.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+
+توضیح تصویری پایستگی انرژی
+با مثال‌های فیزیکی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
 🧪
 </div>
 
@@ -750,13 +839,75 @@ H <span>QUANTUM</span>
 
 <p>
 
-بررسی تبدیل انرژی و تغییرات
-انرژی مکانیکی در یک سامانه.
+مشاهده تبدیل انرژی پتانسیل
+و جنبشی در یک سامانه.
 
 </p>
 
-<a href="#simulator"
-   class="content-button">
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+
+تمرین‌های محاسباتی و مفهومی
+برای تثبیت قانون پایستگی انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     CONCEPT QUESTIONS
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+
+پرسش‌هایی برای سنجش
+درک عمیق پایستگی انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
 
 به‌زودی
 
@@ -771,112 +922,33 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     MAIN CONTENT
-========================= -->
-
-<section id="text">
-
-<div class="skeleton">
-
-<h2>
-📖 محتوای آموزشی
-</h2>
-
-<p>
-
-این قسمت محل قرارگیری محتوای اصلی
-بخش «پایستگی انرژی» خواهد بود.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-اصل پایستگی انرژی
-</div>
-
-<div class="future-item">
-تبدیل انرژی
-</div>
-
-<div class="future-item">
-انرژی مکانیکی
-</div>
-
-<div class="future-item">
-پایستگی انرژی مکانیکی
-</div>
-
-<div class="future-item">
-کار نیروهای غیرمحافظه‌کار
-</div>
-
-<div class="future-item">
-مثال‌های آموزشی
-</div>
-
-<div class="future-item">
-تمرین‌ها
-</div>
-
-</div>
-
-
-<div class="formula-box">
-
-E = constant
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONCEPTUAL STRUCTURE
+     CONCEPT
 ========================= -->
 
 <section>
 
-<div class="skeleton">
+<div class="concept-box">
 
 <h2>
-♻️ تبدیل و پایستگی انرژی
+قانون پایستگی انرژی
 </h2>
 
 <p>
 
-در محتوای نهایی بررسی خواهیم کرد
-که انرژی چگونه می‌تواند از شکلی به شکل دیگر
-تبدیل شود، بدون آنکه مقدار کل انرژی
-از بین برود.
+در یک سامانه بسته، انرژی نه ایجاد
+و نه نابود می‌شود؛ بلکه می‌تواند
+از شکلی به شکل دیگر تبدیل شود.
+
+برای انرژی مکانیکی، در حالتی که
+اتلاف ناشی از نیروهای غیرمحافظه‌کار
+وجود نداشته باشد، مجموع انرژی جنبشی
+و پتانسیل ثابت می‌ماند:
 
 </p>
 
+<div class="formula">
 
-<div class="future-list">
-
-<div class="future-item">
-انرژی جنبشی
-</div>
-
-<div class="future-item">
-انرژی پتانسیل
-</div>
-
-<div class="future-item">
-انرژی مکانیکی
-</div>
-
-<div class="future-item">
-تبدیل انرژی
-</div>
-
-<div class="future-item">
-پایستگی انرژی
-</div>
+E = K + U = constant
 
 </div>
 
@@ -886,122 +958,7 @@ E = constant
 
 
 <!-- =========================
-     SIMULATOR
-========================= -->
-
-<section id="simulator">
-
-<div class="skeleton">
-
-<h2>
-🧪 آزمایشگاه تعاملی
-</h2>
-
-<p>
-
-در مرحله بعد، این بخش به یک شبیه‌ساز
-برای بررسی تبدیل و پایستگی انرژی
-متصل خواهد شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-جرم
-</div>
-
-<div class="future-item">
-ارتفاع
-</div>
-
-<div class="future-item">
-سرعت
-</div>
-
-<div class="future-item">
-انرژی جنبشی
-</div>
-
-<div class="future-item">
-انرژی پتانسیل
-</div>
-
-<div class="future-item">
-انرژی مکانیکی
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     EXTRA CONTENT
-========================= -->
-
-<section>
-
-<div class="skeleton">
-
-<h2>
-🧩 محتوای تکمیلی
-</h2>
-
-<p>
-
-امکانات آموزشی این بخش در مرحله تولید
-محتوا به‌تدریج اضافه خواهند شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-مثال‌های حل‌شده
-</div>
-
-<div class="future-item">
-تمرین
-</div>
-
-<div class="future-item">
-پرسش مفهومی
-</div>
-
-<div class="future-item">
-فعالیت
-</div>
-
-<div class="future-item">
-آزمایش
-</div>
-
-<div class="future-item">
-پادکست
-</div>
-
-<div class="future-item">
-ویدئو
-</div>
-
-<div class="future-item">
-شبیه‌ساز
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BACK
+     BACK TO CHAPTER
 ========================= -->
 
 <section class="back-section">
