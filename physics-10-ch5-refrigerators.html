@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>یخچال و پمپ گرمایی | فصل پنجم فیزیک دهم | H Quantum</title>
+
+<meta name="description"
+      content="بخش هشتم فصل پنجم فیزیک دهم ریاضی؛ یخچال، پمپ گرمایی و انتقال گرما برخلاف جهت طبیعی در H Quantum.">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: Tahoma, Arial, sans-serif;
+
+    background: #07111f;
+
+    color: #f4f7fb;
+
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+    rgba(7,17,31,0.94);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    justify-content:
+    space-between;
+
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.logo span {
+
+    color: #63d8ff;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    font-size: 14px;
+
+    color: #cbd5e1;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.nav-links a:hover {
+
+    color: #63d8ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 20px 65px;
+
+    text-align: center;
+}
+
+.hero-badge {
+
+    display: inline-block;
+
+    padding: 7px 18px;
+
+    border:
+    1px solid rgba(99,216,255,0.35);
+
+    border-radius: 30px;
+
+    color: #63d8ff;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+
+    font-size:
+    clamp(34px, 8vw, 62px);
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+
+    color: #63d8ff;
+}
+
+.hero h2 {
+
+    font-size:
+    clamp(20px, 5vw, 30px);
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+
+    max-width: 780px;
+
+    margin: auto;
+
+    color: #aebdce;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+
+    color: #9eafc2;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 38px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.intro p {
+
+    color: #b6c4d3;
+
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   CONCEPT BOX
+========================= */
+
+.concept-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 35px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+
+    text-align: center;
+}
+
+.concept-box h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.concept-box p {
+
+    color: #aebdce;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.formula {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #07111f;
+
+    border:
+    1px solid rgba(99,216,255,0.25);
+
+    border-radius: 12px;
+
+    color: #63d8ff;
+
+    font-size: 24px;
+
+    direction: ltr;
+}
+
+
+/* =========================
+   LEARNING GRID
+========================= */
+
+.learning-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 22px;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.learning-card {
+
+    padding: 30px 25px;
+
+    background: #0c1b2c;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition:
+    transform 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.learning-card:hover {
+
+    transform:
+    translateY(-6px);
+
+    border-color:
+    rgba(99,216,255,0.5);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.18);
+}
+
+.learning-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+
+    color: #aebdce;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.learning-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 9px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color: #63d8ff;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.learning-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
+}
+
+
+/* =========================
+   NOTE BOX
+========================= */
+
+.note-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 35px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+
+    text-align: center;
+}
+
+.note-box h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.note-box p {
+
+    color: #aebdce;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back-section {
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    padding-bottom: 80px;
+}
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 10px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.15);
+
+    color: #63d8ff;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+
+    transform:
+    translateY(-3px);
+
+    border-color:
+    #63d8ff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: #8191a4;
+}
+
+footer strong {
+
+    color: #63d8ff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+
+        gap: 11px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+
+        padding-top: 55px;
+    }
+
+    .hero p {
+
+        font-size: 15px;
+    }
+
+    .learning-grid {
+
+        grid-template-columns:
+        1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .learning-card {
+
+        padding: 22px 12px;
+    }
+
+    .learning-icon {
+
+        font-size: 34px;
+    }
+
+    .learning-card h3 {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .learning-card p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .learning-button {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+    section {
+
+        padding: 50px 16px;
+    }
+
+    .intro {
+
+        padding: 30px 20px;
+    }
+
+    .concept-box {
+
+        padding: 30px 20px;
+    }
+
+    .note-box {
+
+        padding: 30px 20px;
+    }
+
+    .formula {
+
+        font-size: 20px;
+
+        padding: 12px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+<a href="books.html">
+📚 کتاب‌ها
+</a>
+
+<a href="simulations.html">
+🧪 آزمایشگاه
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-badge">
+
+فیزیک دهم ریاضی • فصل پنجم • بخش هشتم
+
+</div>
+
+
+<h1>
+
+یخچال و <span>پمپ گرمایی</span>
+
+</h1>
+
+
+<h2>
+
+انتقال گرما برخلاف جهت طبیعی
+
+</h2>
+
+
+<p>
+
+در طبیعت گرما به صورت خودبه‌خودی از جسم گرم
+به جسم سرد منتقل می‌شود. اما یخچال می‌تواند
+با مصرف انرژی، گرما را از محیط سرد دریافت کند
+و به محیط گرم‌تر منتقل کند.
+در این بخش می‌بینیم این فرایند چگونه امکان‌پذیر است.
+
+</p>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+<div class="intro">
+
+<h2>
+در این بخش چه می‌آموزیم؟
+</h2>
+
+<p>
+
+در این بخش با عملکرد یخچال و پمپ گرمایی
+آشنا می‌شویم. ابتدا می‌بینیم که برای انتقال
+گرما از یک ناحیه سرد به ناحیه گرم، باید انرژی
+از بیرون به دستگاه داده شود.
+
+در یک یخچال، دستگاه گرما را از فضای داخلی
+که باید سرد بماند دریافت می‌کند و مقدار بیشتری
+از انرژی را در قالب گرما به محیط بیرون منتقل
+می‌کند.
+
+سپس مفهوم ضریب عملکرد دستگاه‌های سرمایشی
+را بررسی می‌کنیم و تفاوت آن را با بازده
+ماشین‌های گرمایی می‌شناسیم.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONCEPT
+========================= -->
+
+<section>
+
+<div class="concept-box">
+
+<h2>
+اصل عملکرد یخچال
+</h2>
+
+<p>
+
+یخچال برای انتقال گرما از محیط سرد
+به محیط گرم، کار خارجی دریافت می‌کند:
+
+</p>
+
+<div class="formula">
+
+Q<sub>c</sub> + W = Q<sub>h</sub>
+
+</div>
+
+<p style="margin-top:20px;">
+
+که در آن Q<sub>c</sub> گرمای گرفته‌شده از محیط سرد،
+W کار انجام‌شده روی دستگاه و Q<sub>h</sub>
+گرمای دفع‌شده به محیط گرم است.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LEARNING PATHS
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+مسیرهای یادگیری
+</h2>
+
+<p>
+این بخش در ادامه با محتوای کامل آموزشی توسعه پیدا می‌کند.
+</p>
+
+</div>
+
+
+<div class="learning-grid">
+
+
+<!-- =========================
+     TEXT
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📖
+</div>
+
+<h3>
+متن آموزشی
+</h3>
+
+<p>
+
+آموزش مفهومی یخچال و پمپ گرمایی
+و مسیر انتقال انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     PODCAST
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+
+روایت شنیداری سازوکار یخچال
+و انتقال گرما برخلاف جهت طبیعی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+
+توضیح تصویری چرخه سرمایش
+و مسیر حرکت انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌ساز تعاملی
+</h3>
+
+<p>
+
+تغییر گرمای گرفته‌شده و کار مصرفی
+و مشاهده اثر آن بر عملکرد یخچال.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+
+تمرین‌های محاسباتی درباره انتقال گرما
+و ضریب عملکرد یخچال.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     CONCEPT QUESTIONS
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+
+پرسش‌هایی برای درک عمیق سازوکار
+یخچال و پمپ گرمایی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     NOTE
+========================= -->
+
+<section>
+
+<div class="note-box">
+
+<h2>
+💡 یک نکته مهم
+</h2>
+
+<p>
+
+یخچال گرما را «از هیچ» تولید نمی‌کند.
+بلکه با مصرف انرژی، گرما را از ناحیه سرد
+می‌گیرد و همراه با کار انجام‌شده،
+گرمای بیشتری را به محیط گرم منتقل می‌کند.
+
+به همین دلیل پشت یک یخچال معمولاً گرم است.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BACK
+========================= -->
+
+<section class="back-section">
+
+<a href="physics-10-ch5.html"
+   class="back-button">
+
+← بازگشت به فصل پنجم
+
+</a>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
