@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>فصل دوم فیزیک یازدهم ریاضی | H Quantum</title>
+
+<meta name="description"
+      content="فصل دوم فیزیک یازدهم رشته ریاضی و فیزیک | الکتریسیته جاری">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.9;
+}
+
+header {
+    background: linear-gradient(135deg, #071a33, #123d68);
+    color: white;
+    padding: 28px 18px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #dce3ec;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 7px;
+    padding: 7px 12px;
+    color: #123d68;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container {
+    width: min(1100px, 94%);
+    margin: 30px auto;
+}
+
+.hero {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 22px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(20, 50, 90, 0.08);
+    text-align: center;
+}
+
+.hero h2 {
+    margin-top: 0;
+    color: #123d68;
+    font-size: 25px;
+}
+
+.hero p {
+    margin-bottom: 0;
+    color: #526174;
+    font-size: 15px;
+}
+
+.section-title {
+    text-align: center;
+    color: #123d68;
+    margin: 30px 0 18px;
+    font-size: 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 22px 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 7px 22px rgba(20, 50, 90, 0.08);
+    border: 1px solid #e4eaf2;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 205px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(20, 50, 90, 0.14);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    margin: 5px 0 8px;
+    color: #123d68;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    color: #596779;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.enter {
+    margin-top: 15px;
+    color: #1677c8;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.learning {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 25px rgba(20, 50, 90, 0.08);
+}
+
+.learning h2 {
+    text-align: center;
+    color: #123d68;
+    margin-top: 0;
+}
+
+.learning-intro {
+    text-align: center;
+    color: #596779;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.learning-item {
+    border: 1px solid #e4eaf2;
+    border-radius: 15px;
+    padding: 18px;
+    text-align: center;
+}
+
+.learning-item .big-icon {
+    font-size: 30px;
+}
+
+.learning-item h3 {
+    margin: 8px 0 4px;
+    color: #123d68;
+    font-size: 16px;
+}
+
+.learning-item p {
+    margin: 0;
+    color: #687587;
+    font-size: 13px;
+}
+
+.back {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: #123d68;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+footer {
+    background: #071a33;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 3px 0;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        min-height: 200px;
+        padding: 18px 14px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .hero {
+        padding: 22px 16px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        min-height: 190px;
+    }
+
+    .card h3 {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .card p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .enter {
+        font-size: 12px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>H QUANTUM</h1>
+
+<p>فیزیک یازدهم ریاضی و فیزیک</p>
+
+</header>
+
+
+<nav>
+
+<a href="index.html">خانه</a>
+
+<a href="physics-11-math.html">یازدهم</a>
+
+<a href="physics-10-math.html">دهم</a>
+
+<a href="podcast.html">🎙️ پادکست</a>
+
+</nav>
+
+
+<main class="container">
+
+
+<section class="hero">
+
+<h2>الکتریسیتهٔ جاری</h2>
+
+<p>
+فصل دوم فیزیک یازدهم رشته ریاضی و فیزیک
+</p>
+
+<p>
+در این فصل با جریان الکتریکی، مقاومت،
+مدارهای الکتریکی و مفاهیم اساسی مربوط به آن‌ها آشنا می‌شویم.
+</p>
+
+</section>
+
+
+<h2 class="section-title">
+🧭 نقشه راه فصل
+</h2>
+
+
+<div class="cards">
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-electric-current.html">
+
+<div class="icon">⚡</div>
+
+<h3>
+بخش اول<br>
+جریان الکتریکی
+</h3>
+
+<p>
+آشنایی با جریان الکتریکی و مفاهیم پایهٔ مدار
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-resistance-ohm.html">
+
+<div class="icon">🔌</div>
+
+<h3>
+بخش دوم<br>
+مقاومت الکتریکی و قانون اهم
+</h3>
+
+<p>
+بررسی مقاومت الکتریکی و رابطهٔ ولتاژ، جریان و مقاومت
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-resistance-factors.html">
+
+<div class="icon">📏</div>
+
+<h3>
+بخش سوم<br>
+عوامل مؤثر بر مقاومت الکتریکی
+</h3>
+
+<p>
+بررسی عوامل مؤثر بر مقدار مقاومت یک رسانا
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-emf-circuits.html">
+
+<div class="icon">🔋</div>
+
+<h3>
+بخش چهارم<br>
+نیروی محرکهٔ الکتریکی و مدارها
+</h3>
+
+<p>
+آشنایی با منبع الکتریکی، نیروی محرکهٔ الکتریکی و مدار
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-power.html">
+
+<div class="icon">💡</div>
+
+<h3>
+بخش پنجم<br>
+توان در مدارهای الکتریکی
+</h3>
+
+<p>
+بررسی توان الکتریکی و انرژی مصرف‌شده در مدار
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+<a class="card"
+   href="physics-11-experimental-ch2-combination.html">
+
+<div class="icon">🧩</div>
+
+<h3>
+بخش ششم<br>
+ترکیب مقاومت‌ها
+</h3>
+
+<p>
+بررسی مقاومت‌های سری، موازی و مقاومت معادل
+</p>
+
+<div class="enter">
+ورود به بخش ←
+</div>
+
+</a>
+
+
+</div>
+
+
+<section class="learning">
+
+<h2>
+🎓 مسیرهای یادگیری فصل
+</h2>
+
+<p class="learning-intro">
+هر بخش در آینده می‌تواند با چند مسیر یادگیری مختلف تکمیل شود.
+</p>
+
+
+<div class="learning-grid">
+
+
+<div class="learning-item">
+
+<div class="big-icon">🎙️</div>
+
+<h3>پادکست</h3>
+
+<p>
+نسخهٔ شنیداری آموزش‌ها
+</p>
+
+</div>
+
+
+<div class="learning-item">
+
+<div class="big-icon">🎬</div>
+
+<h3>ویدئو</h3>
+
+<p>
+آموزش تصویری
+</p>
+
+</div>
+
+
+<div class="learning-item">
+
+<div class="big-icon">📖</div>
+
+<h3>متن آموزشی</h3>
+
+<p>
+درسنامهٔ کامل
+</p>
+
+</div>
+
+
+<div class="learning-item">
+
+<div class="big-icon">🧪</div>
+
+<h3>شبیه‌ساز</h3>
+
+<p>
+فعالیت‌های تعاملی
+</p>
+
+</div>
+
+
+<div class="learning-item">
+
+<div class="big-icon">📝</div>
+
+<h3>تمرین</h3>
+
+<p>
+تمرین‌های آموزشی
+</p>
+
+</div>
+
+
+<div class="learning-item">
+
+<div class="big-icon">❓</div>
+
+<h3>پرسش مفهومی</h3>
+
+<p>
+سنجش درک مفاهیم
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<a class="back"
+   href="physics-11-math.html">
+
+← بازگشت به فیزیک یازدهم ریاضی
+
+</a>
+
+
+</main>
+
+
+<footer>
+
+<p>© 2026 — H Quantum</p>
+
+<p>Physics • Science • Wonder</p>
+
+</footer>
+
+
+</body>
+
+</html>
