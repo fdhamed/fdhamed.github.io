@@ -8,10 +8,10 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>کار و انرژی جنبشی | فیزیک دهم | H Quantum</title>
+<title>کار و انرژی | فصل سوم فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="بخش سوم فصل سوم فیزیک دهم؛ کار و انرژی جنبشی در H Quantum.">
+      content="بخش سوم فصل سوم فیزیک دهم؛ کار و انرژی در H Quantum با متن آموزشی، پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش‌های مفهومی.">
 
 <style>
 
@@ -125,7 +125,7 @@ header {
 
     margin: auto;
 
-    padding: 85px 20px 70px;
+    padding: 80px 20px 65px;
 
     text-align: center;
 }
@@ -151,7 +151,7 @@ header {
 .hero h1 {
 
     font-size:
-    clamp(34px, 8vw, 65px);
+    clamp(34px, 8vw, 62px);
 
     line-height: 1.3;
 
@@ -166,7 +166,7 @@ header {
 .hero h2 {
 
     font-size:
-    clamp(21px, 5vw, 32px);
+    clamp(20px, 5vw, 30px);
 
     font-weight: normal;
 
@@ -195,19 +195,19 @@ section {
 
     margin: auto;
 
-    padding: 65px 20px;
+    padding: 60px 20px;
 }
 
 .section-title {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .section-title h2 {
 
-    font-size: 31px;
+    font-size: 30px;
 
     margin-bottom: 10px;
 }
@@ -221,10 +221,49 @@ section {
 
 
 /* =========================
-   CONTENT GRID
+   INTRO
 ========================= */
 
-.content-grid {
+.intro {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 38px 30px;
+
+    background: #0a1828;
+
+    border-radius: 22px;
+
+    border:
+    1px solid rgba(99,216,255,0.12);
+}
+
+.intro h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.intro p {
+
+    color: #b6c4d3;
+
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   LEARNING GRID
+========================= */
+
+.learning-grid {
 
     display: grid;
 
@@ -238,7 +277,7 @@ section {
     margin: auto;
 }
 
-.content-card {
+.learning-card {
 
     padding: 30px 25px;
 
@@ -257,7 +296,7 @@ section {
     box-shadow 0.3s;
 }
 
-.content-card:hover {
+.learning-card:hover {
 
     transform:
     translateY(-6px);
@@ -269,21 +308,21 @@ section {
     0 12px 30px rgba(0,0,0,0.18);
 }
 
-.content-icon {
+.learning-icon {
 
     font-size: 42px;
 
     margin-bottom: 12px;
 }
 
-.content-card h3 {
+.learning-card h3 {
 
-    font-size: 22px;
+    font-size: 21px;
 
     margin-bottom: 12px;
 }
 
-.content-card p {
+.learning-card p {
 
     color: #aebdce;
 
@@ -292,7 +331,7 @@ section {
     margin-bottom: 20px;
 }
 
-.content-button {
+.learning-button {
 
     display: inline-block;
 
@@ -312,7 +351,7 @@ section {
     transition: 0.3s;
 }
 
-.content-button:hover {
+.learning-button:hover {
 
     background: #63d8ff;
 
@@ -321,16 +360,16 @@ section {
 
 
 /* =========================
-   SKELETON
+   CONCEPT BOX
 ========================= */
 
-.skeleton {
+.concept-box {
 
     max-width: 900px;
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding: 35px 30px;
 
     background: #0a1828;
 
@@ -342,81 +381,40 @@ section {
     text-align: center;
 }
 
-.skeleton h2 {
+.concept-box h2 {
 
-    font-size: 27px;
+    font-size: 26px;
 
     margin-bottom: 15px;
 }
 
-.skeleton p {
+.concept-box p {
 
-    color: #b6c4d3;
+    color: #aebdce;
 
-    font-size: 16px;
+    font-size: 15px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
+.formula {
 
-/* =========================
-   FUTURE LIST
-========================= */
+    display: inline-block;
 
-.future-list {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 10px;
-}
-
-.future-item {
-
-    padding: 8px 15px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    color: #cbd5e1;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   FORMULA
-========================= */
-
-.formula-box {
-
-    max-width: 600px;
-
-    margin: 25px auto 0;
-
-    padding: 20px;
+    padding: 15px 30px;
 
     background: #07111f;
 
     border:
-    1px solid rgba(99,216,255,0.18);
+    1px solid rgba(99,216,255,0.25);
 
-    border-radius: 15px;
-
-    direction: ltr;
-
-    text-align: center;
+    border-radius: 12px;
 
     color: #63d8ff;
 
     font-size: 24px;
+
+    direction: ltr;
 }
 
 
@@ -505,7 +503,7 @@ footer strong {
 
     .hero {
 
-        padding-top: 60px;
+        padding-top: 55px;
     }
 
     .hero p {
@@ -513,9 +511,42 @@ footer strong {
         font-size: 15px;
     }
 
-    .content-grid {
+    .learning-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .learning-card {
+
+        padding: 22px 12px;
+    }
+
+    .learning-icon {
+
+        font-size: 34px;
+    }
+
+    .learning-card h3 {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .learning-card p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .learning-button {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
     }
 
     section {
@@ -523,9 +554,21 @@ footer strong {
         padding: 50px 16px;
     }
 
-    .skeleton {
+    .intro {
 
         padding: 30px 20px;
+    }
+
+    .concept-box {
+
+        padding: 30px 20px;
+    }
+
+    .formula {
+
+        font-size: 20px;
+
+        padding: 12px 20px;
     }
 
 }
@@ -600,26 +643,59 @@ H <span>QUANTUM</span>
 
 <h1>
 
-کار و <span>انرژی جنبشی</span>
+کار و <span>انرژی</span>
 
 </h1>
 
 
 <h2>
 
-بخش سوم فصل «کار، انرژی و توان»
+بخش سوم فصل سوم فیزیک دهم
 
 </h2>
 
 
 <p>
 
-اسکلت آموزشی این بخش آماده شده است.
-محتوای علمی، مثال‌ها، تمرین‌ها و
-فعالیت‌های تعاملی در مرحله تولید محتوا
-اضافه خواهند شد.
+کار و انرژی دو مفهوم اساسی در فیزیک‌اند
+که ارتباط عمیقی با یکدیگر دارند.
+
+در این بخش می‌خواهیم ببینیم انجام کار
+چگونه می‌تواند انرژی یک جسم را تغییر دهد
+و چگونه می‌توان تغییرات انرژی را با زبان
+فیزیک توصیف کرد.
 
 </p>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+<div class="intro">
+
+<h2>
+در این بخش چه می‌آموزیم؟
+</h2>
+
+<p>
+
+در این بخش ارتباط میان کار و تغییر انرژی
+جنبشی را بررسی می‌کنیم. می‌بینیم که وقتی
+نیرویی روی جسم کار انجام می‌دهد، انرژی
+جنبشی جسم می‌تواند تغییر کند.
+
+سپس مفهوم قضیه کار و انرژی جنبشی را بررسی
+می‌کنیم و یاد می‌گیریم چگونه از این رابطه
+برای تحلیل حرکت و حل مسائل فیزیکی استفاده کنیم.
+
+</p>
+
+</div>
 
 </section>
 
@@ -633,85 +709,26 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-مسیرهای یادگیری این بخش
+مسیرهای یادگیری
 </h2>
 
 <p>
-
-در مراحل بعد، این مفهوم از مسیرهای
-مختلف آموزشی در دسترس خواهد بود.
-
+این بخش در ادامه با محتوای کامل آموزشی توسعه پیدا می‌کند.
 </p>
 
 </div>
 
 
-<div class="content-grid">
+<div class="learning-grid">
 
 
-<!-- PODCAST -->
+<!-- =========================
+     TEXT
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-
-اپیزود صوتی مربوط به
-کار و انرژی جنبشی.
-
-</p>
-
-<a href="#podcast"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- VIDEO -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🎬
-</div>
-
-<h3>
-ویدئوی آموزشی
-</h3>
-
-<p>
-
-توضیح مفهومی و حل مثال‌های
-مربوط به این بخش.
-
-</p>
-
-<a href="#video"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- TEXT -->
-
-<article class="content-card">
-
-<div class="content-icon">
+<div class="learning-icon">
 📖
 </div>
 
@@ -721,13 +738,13 @@ H <span>QUANTUM</span>
 
 <p>
 
-متن کامل درس، روابط،
-مثال‌ها و نکات آموزشی.
+آموزش مفهومی ارتباط کار
+و تغییر انرژی جنبشی.
 
 </p>
 
-<a href="#text"
-   class="content-button">
+<a href="#"
+   class="learning-button">
 
 به‌زودی
 
@@ -736,11 +753,75 @@ H <span>QUANTUM</span>
 </article>
 
 
-<!-- SIMULATOR -->
+<!-- =========================
+     PODCAST
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+
+روایت شنیداری ارتباط میان
+کار و انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+
+توضیح تصویری قضیه کار و انرژی
+با مثال‌های ساده.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
 🧪
 </div>
 
@@ -750,13 +831,75 @@ H <span>QUANTUM</span>
 
 <p>
 
-بررسی تعاملی رابطه میان
-کار و تغییر انرژی جنبشی.
+مشاهده تغییر انرژی جنبشی
+در اثر انجام کار.
 
 </p>
 
-<a href="#simulator"
-   class="content-button">
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+
+تمرین‌های محاسباتی و مفهومی
+برای تثبیت یادگیری.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     CONCEPT QUESTIONS
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+
+پرسش‌هایی برای بررسی
+درک عمیق رابطه کار و انرژی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
 
 به‌زودی
 
@@ -771,59 +914,25 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     MAIN CONTENT SKELETON
+     CONCEPT
 ========================= -->
 
-<section id="text">
+<section>
 
-<div class="skeleton">
+<div class="concept-box">
 
 <h2>
-📖 محتوای آموزشی
+قضیه کار و انرژی جنبشی
 </h2>
 
 <p>
 
-این قسمت محل قرارگیری محتوای اصلی
-بخش «کار و انرژی جنبشی» خواهد بود.
+کار خالص انجام‌شده روی یک جسم
+برابر با تغییر انرژی جنبشی آن جسم است:
 
 </p>
 
-
-<div class="future-list">
-
-<div class="future-item">
-مفهوم کار
-</div>
-
-<div class="future-item">
-انرژی جنبشی
-</div>
-
-<div class="future-item">
-کار خالص
-</div>
-
-<div class="future-item">
-تغییر انرژی جنبشی
-</div>
-
-<div class="future-item">
-قضیه کار و انرژی جنبشی
-</div>
-
-<div class="future-item">
-مثال‌های آموزشی
-</div>
-
-<div class="future-item">
-تمرین‌ها
-</div>
-
-</div>
-
-
-<div class="formula-box">
+<div class="formula">
 
 W<sub>net</sub> = ΔK
 
@@ -835,176 +944,7 @@ W<sub>net</sub> = ΔK
 
 
 <!-- =========================
-     CONCEPTUAL STRUCTURE
-========================= -->
-
-<section>
-
-<div class="skeleton">
-
-<h2>
-🔗 ارتباط کار و انرژی جنبشی
-</h2>
-
-<p>
-
-در محتوای نهایی، بررسی خواهیم کرد
-که چگونه کار خالص انجام‌شده روی یک جسم
-باعث تغییر انرژی جنبشی آن می‌شود.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-کار خالص
-</div>
-
-<div class="future-item">
-انرژی جنبشی اولیه
-</div>
-
-<div class="future-item">
-انرژی جنبشی نهایی
-</div>
-
-<div class="future-item">
-تغییر تندی
-</div>
-
-<div class="future-item">
-جرم جسم
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     SIMULATOR
-========================= -->
-
-<section id="simulator">
-
-<div class="skeleton">
-
-<h2>
-🧪 آزمایشگاه تعاملی
-</h2>
-
-<p>
-
-در مرحله بعد، این بخش به یک شبیه‌ساز
-برای بررسی رابطه کار و انرژی جنبشی
-متصل خواهد شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-نیرو
-</div>
-
-<div class="future-item">
-جابه‌جایی
-</div>
-
-<div class="future-item">
-جرم
-</div>
-
-<div class="future-item">
-تندی اولیه
-</div>
-
-<div class="future-item">
-تندی نهایی
-</div>
-
-<div class="future-item">
-کار خالص
-</div>
-
-<div class="future-item">
-تغییر انرژی جنبشی
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     EXTRA CONTENT
-========================= -->
-
-<section>
-
-<div class="skeleton">
-
-<h2>
-🧩 محتوای تکمیلی
-</h2>
-
-<p>
-
-امکانات آموزشی این بخش در مرحله تولید
-محتوا به‌تدریج اضافه خواهند شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-مثال‌های حل‌شده
-</div>
-
-<div class="future-item">
-تمرین
-</div>
-
-<div class="future-item">
-پرسش مفهومی
-</div>
-
-<div class="future-item">
-فعالیت
-</div>
-
-<div class="future-item">
-آزمایش
-</div>
-
-<div class="future-item">
-پادکست
-</div>
-
-<div class="future-item">
-ویدئو
-</div>
-
-<div class="future-item">
-شبیه‌ساز
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BACK
+     BACK TO CHAPTER
 ========================= -->
 
 <section class="back-section">
@@ -1046,4 +986,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
