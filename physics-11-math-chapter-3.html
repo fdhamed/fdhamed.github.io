@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>فصل سوم فیزیک یازدهم ریاضی | H Quantum</title>
+
+<meta name="description"
+content="فصل سوم فیزیک یازدهم رشته ریاضی؛ مغناطیس">
+
+<style>
+
+/* =========================
+RESET
+========================= */
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:
+Tahoma,
+Arial,
+sans-serif;
+
+background:#07111f;
+
+color:#f4f7fb;
+
+line-height:2;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:
+rgba(7,17,31,0.95);
+
+backdrop-filter:
+blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+
+margin:auto;
+
+padding:15px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+
+gap:18px;
+
+font-size:13px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+
+/* =========================
+MAIN
+========================= */
+
+.container{
+max-width:1000px;
+
+margin:auto;
+
+padding:0 20px;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+text-align:center;
+
+padding:
+60px 0 40px;
+}
+
+.eyebrow{
+color:#63d8ff;
+
+font-size:12px;
+
+margin-bottom:10px;
+}
+
+.hero h1{
+font-size:
+clamp(28px,7vw,46px);
+
+line-height:1.5;
+
+margin-bottom:10px;
+}
+
+.hero h2{
+color:#dce8f3;
+
+font-size:
+clamp(15px,3vw,21px);
+
+font-weight:normal;
+
+margin-bottom:15px;
+}
+
+.hero p{
+color:#9eafc1;
+
+font-size:13px;
+
+max-width:760px;
+
+margin:auto;
+}
+
+
+/* =========================
+ROADMAP
+========================= */
+
+.roadmap{
+margin:
+10px 0 45px;
+}
+
+.section-title{
+text-align:center;
+
+margin-bottom:24px;
+}
+
+.section-title h2{
+color:#63d8ff;
+
+font-size:24px;
+
+margin-bottom:6px;
+}
+
+.section-title p{
+color:#8193a7;
+
+font-size:12px;
+}
+
+
+/* =========================
+CHAPTER CARDS
+========================= */
+
+.chapters-grid{
+display:grid;
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:16px;
+}
+
+.chapter-card{
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.13);
+
+border-radius:18px;
+
+padding:22px 20px;
+
+transition:
+transform .25s,
+border-color .25s,
+background .25s;
+}
+
+.chapter-card:hover{
+transform:
+translateY(-4px);
+
+background:#0e2034;
+
+border-color:
+rgba(99,216,255,0.4);
+}
+
+.chapter-icon{
+font-size:30px;
+
+margin-bottom:9px;
+}
+
+.chapter-number{
+color:#63d8ff;
+
+font-size:11px;
+
+margin-bottom:3px;
+}
+
+.chapter-card h3{
+font-size:17px;
+
+margin-bottom:7px;
+}
+
+.chapter-card p{
+color:#91a3b7;
+
+font-size:11px;
+
+margin-bottom:11px;
+}
+
+.chapter-link{
+color:#63d8ff;
+
+font-size:10px;
+
+font-weight:bold;
+}
+
+
+/* =========================
+LEARNING PATH
+========================= */
+
+.learning-section{
+margin-top:20px;
+
+margin-bottom:45px;
+}
+
+.learning-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,minmax(0,1fr));
+
+gap:14px;
+}
+
+.learning-card{
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.10);
+
+border-radius:16px;
+
+padding:19px;
+
+text-align:center;
+}
+
+.learning-icon{
+font-size:27px;
+
+margin-bottom:7px;
+}
+
+.learning-card h3{
+font-size:14px;
+
+margin-bottom:4px;
+}
+
+.learning-card p{
+color:#8193a7;
+
+font-size:10px;
+}
+
+
+/* =========================
+BACK
+========================= */
+
+.back-section{
+text-align:center;
+
+margin-bottom:45px;
+}
+
+.button{
+display:inline-block;
+
+padding:
+10px 20px;
+
+background:#10243a;
+
+border:
+1px solid rgba(99,216,255,0.25);
+
+border-radius:10px;
+
+color:#63d8ff;
+
+font-size:11px;
+
+font-weight:bold;
+
+margin:4px;
+}
+
+.button:hover{
+background:#15324e;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:
+30px 20px;
+
+text-align:center;
+
+color:#8191a4;
+
+font-size:11px;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:700px){
+
+.nav{
+flex-direction:column;
+
+gap:9px;
+}
+
+.nav-links{
+gap:10px;
+
+font-size:11px;
+}
+
+.container{
+padding:0 15px;
+}
+
+.hero{
+padding:
+45px 0 30px;
+}
+
+.hero h1{
+font-size:27px;
+}
+
+.hero h2{
+font-size:15px;
+}
+
+.hero p{
+font-size:11px;
+}
+
+
+/* کارت‌ها در موبایل دو ستونه */
+
+.chapters-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:10px;
+}
+
+.chapter-card{
+padding:
+17px 12px;
+
+border-radius:15px;
+}
+
+.chapter-icon{
+font-size:24px;
+}
+
+.chapter-number{
+font-size:9px;
+}
+
+.chapter-card h3{
+font-size:12px;
+
+line-height:1.8;
+}
+
+.chapter-card p{
+font-size:9px;
+
+line-height:1.8;
+}
+
+.chapter-link{
+font-size:8px;
+}
+
+
+.section-title h2{
+font-size:21px;
+}
+
+.section-title p{
+font-size:10px;
+}
+
+
+/* مسیرهای یادگیری */
+
+.learning-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:9px;
+}
+
+.learning-card{
+padding:
+15px 10px;
+}
+
+.learning-icon{
+font-size:23px;
+}
+
+.learning-card h3{
+font-size:11px;
+}
+
+.learning-card p{
+font-size:8px;
+}
+
+}
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:390px){
+
+.chapter-card{
+padding:
+15px 9px;
+}
+
+.chapter-card h3{
+font-size:11px;
+}
+
+.chapter-card p{
+font-size:8px;
+}
+
+.learning-card{
+padding:
+13px 8px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-11-math.html">
+یازدهم
+</a>
+
+<a href="physics-10-math.html">
+دهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+MAIN
+========================= -->
+
+<main>
+
+<div class="container">
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="eyebrow">
+
+فیزیک یازدهم ریاضی • فصل سوم
+
+</div>
+
+
+<h1>
+
+مغناطیس
+
+</h1>
+
+
+<h2>
+
+فصل سوم فیزیک یازدهم رشته ریاضی
+
+</h2>
+
+
+<p>
+
+در این فصل با مغناطیس،
+میدان مغناطیسی،
+نیروهای مغناطیسی،
+میدان حاصل از جریان الکتریکی
+و ویژگی‌های مغناطیسی مواد آشنا می‌شویم.
+
+</p>
+
+</section>
+
+
+
+<!-- =========================
+ROADMAP
+========================= -->
+
+<section class="roadmap">
+
+<div class="section-title">
+
+<h2>
+
+🧭 نقشه راه فصل
+
+</h2>
+
+<p>
+
+این فصل از شش بخش اصلی تشکیل شده است.
+برای ورود به هر بخش روی کارت آن بزنید.
+
+</p>
+
+</div>
+
+
+
+<div class="chapters-grid">
+
+
+<!-- =========================
+بخش اول
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-magnetism-poles.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🧲
+</div>
+
+<div class="chapter-number">
+بخش اول
+</div>
+
+<h3>
+مغناطیس و قطب‌های مغناطیسی
+</h3>
+
+<p>
+آشنایی با آهنربا،
+قطب‌های مغناطیسی
+و ویژگی‌های آن‌ها
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+
+<!-- =========================
+بخش دوم
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-magnetic-field.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🌐
+</div>
+
+<div class="chapter-number">
+بخش دوم
+</div>
+
+<h3>
+میدان مغناطیسی
+</h3>
+
+<p>
+آشنایی با میدان مغناطیسی
+و نمایش آن با خطوط میدان
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+
+<!-- =========================
+بخش سوم
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-magnetic-force-charge.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+⚛️
+</div>
+
+<div class="chapter-number">
+بخش سوم
+</div>
+
+<h3>
+نیروی مغناطیسی وارد بر ذرهٔ باردار متحرک در میدان مغناطیسی
+</h3>
+
+<p>
+بررسی نیروی مغناطیسی
+و حرکت ذرات باردار
+در میدان مغناطیسی
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+
+<!-- =========================
+بخش چهارم
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-magnetic-force-wire.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+〰️
+</div>
+
+<div class="chapter-number">
+بخش چهارم
+</div>
+
+<h3>
+نیروی مغناطیسی وارد بر سیم حامل جریان
+</h3>
+
+<p>
+بررسی اثر میدان مغناطیسی
+بر سیم حامل جریان
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+
+<!-- =========================
+بخش پنجم
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-field-current.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🌀
+</div>
+
+<div class="chapter-number">
+بخش پنجم
+</div>
+
+<h3>
+میدان مغناطیسی حاصل از جریان الکتریکی
+</h3>
+
+<p>
+بررسی میدان مغناطیسی
+ایجادشده توسط جریان الکتریکی
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+
+<!-- =========================
+بخش ششم
+========================= -->
+
+<a
+href="physics-11-experimental-ch3-magnetic-materials.html"
+class="chapter-card">
+
+<div class="chapter-icon">
+🧱
+</div>
+
+<div class="chapter-number">
+بخش ششم
+</div>
+
+<h3>
+ویژگی‌های مغناطیسی مواد
+</h3>
+
+<p>
+بررسی رفتار مغناطیسی
+مواد مختلف
+</p>
+
+<span class="chapter-link">
+ورود به بخش ←
+</span>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+LEARNING PATH
+========================= -->
+
+<section class="learning-section">
+
+<div class="section-title">
+
+<h2>
+
+🎓 مسیرهای یادگیری فصل
+
+</h2>
+
+<p>
+
+هر بخش در آینده می‌تواند با چند مسیر
+یادگیری مختلف تکمیل شود.
+
+</p>
+
+</div>
+
+
+
+<div class="learning-grid">
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+نسخهٔ شنیداری آموزش‌ها
+</p>
+
+</div>
+
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+آموزش تصویری
+</p>
+
+</div>
+
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+📖
+</div>
+
+<h3>
+متن آموزشی
+</h3>
+
+<p>
+درسنامهٔ کامل
+</p>
+
+</div>
+
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+🧪
+</div>
+
+<h3>
+شبیه‌ساز
+</h3>
+
+<p>
+فعالیت‌های تعاملی
+</p>
+
+</div>
+
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+تمرین‌های آموزشی
+</p>
+
+</div>
+
+
+
+<div class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+سنجش درک مفاهیم
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+BACK
+========================= -->
+
+<section class="back-section">
+
+<a
+href="physics-11-math.html"
+class="button">
+
+← بازگشت به فیزیک یازدهم ریاضی
+
+</a>
+
+</section>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
