@@ -8,10 +8,10 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>بخش ششم فصل سوم فیزیک دهم | توان | H Quantum</title>
+<title>توان | فصل سوم فیزیک دهم | H Quantum</title>
 
 <meta name="description"
-      content="بخش ششم فصل سوم فیزیک دهم؛ توان در H Quantum با مسیرهای آموزشی، پادکست، ویدئو، متن آموزشی و شبیه‌ساز.">
+      content="بخش ششم فصل سوم فیزیک دهم؛ توان در H Quantum با متن آموزشی، پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش‌های مفهومی.">
 
 <style>
 
@@ -109,11 +109,6 @@ header {
     justify-content: center;
 }
 
-.nav-links a {
-
-    transition: 0.3s;
-}
-
 .nav-links a:hover {
 
     color: #63d8ff;
@@ -130,7 +125,7 @@ header {
 
     margin: auto;
 
-    padding: 85px 20px 70px;
+    padding: 80px 20px 65px;
 
     text-align: center;
 }
@@ -156,7 +151,7 @@ header {
 .hero h1 {
 
     font-size:
-    clamp(34px, 8vw, 65px);
+    clamp(34px, 8vw, 62px);
 
     line-height: 1.3;
 
@@ -171,7 +166,7 @@ header {
 .hero h2 {
 
     font-size:
-    clamp(21px, 5vw, 32px);
+    clamp(20px, 5vw, 30px);
 
     font-weight: normal;
 
@@ -200,19 +195,19 @@ section {
 
     margin: auto;
 
-    padding: 65px 20px;
+    padding: 60px 20px;
 }
 
 .section-title {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .section-title h2 {
 
-    font-size: 31px;
+    font-size: 30px;
 
     margin-bottom: 10px;
 }
@@ -226,107 +221,7 @@ section {
 
 
 /* =========================
-   CONTENT GRID
-========================= */
-
-.content-grid {
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 22px;
-
-    max-width: 950px;
-
-    margin: auto;
-}
-
-.content-card {
-
-    padding: 30px 25px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    transition:
-    transform 0.3s,
-    border-color 0.3s,
-    box-shadow 0.3s;
-}
-
-.content-card:hover {
-
-    transform:
-    translateY(-6px);
-
-    border-color:
-    rgba(99,216,255,0.5);
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
-}
-
-.content-icon {
-
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.content-card h3 {
-
-    font-size: 22px;
-
-    margin-bottom: 12px;
-}
-
-.content-card p {
-
-    color: #aebdce;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
-}
-
-.content-button {
-
-    display: inline-block;
-
-    padding: 10px 20px;
-
-    border-radius: 9px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.12);
-
-    color: #63d8ff;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.content-button:hover {
-
-    background: #63d8ff;
-
-    color: #06101d;
-}
-
-
-/* =========================
-   INTRO / CONTENT
+   INTRO
 ========================= */
 
 .intro {
@@ -335,7 +230,7 @@ section {
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding: 38px 30px;
 
     background: #0a1828;
 
@@ -365,41 +260,110 @@ section {
 
 
 /* =========================
-   FORMULA
+   LEARNING GRID
 ========================= */
 
-.formula-box {
+.learning-grid {
 
-    max-width: 600px;
+    display: grid;
 
-    margin: 25px auto 0;
+    grid-template-columns:
+    repeat(2, 1fr);
 
-    padding: 20px;
+    gap: 22px;
 
-    background: #07111f;
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.learning-card {
+
+    padding: 30px 25px;
+
+    background: #0c1b2c;
 
     border:
-    1px solid rgba(99,216,255,0.18);
+    1px solid rgba(255,255,255,0.08);
 
-    border-radius: 15px;
-
-    direction: ltr;
+    border-radius: 20px;
 
     text-align: center;
 
+    transition:
+    transform 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.learning-card:hover {
+
+    transform:
+    translateY(-6px);
+
+    border-color:
+    rgba(99,216,255,0.5);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.18);
+}
+
+.learning-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+
+    color: #aebdce;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.learning-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 9px;
+
+    background: #10243a;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
     color: #63d8ff;
 
-    font-size: 25px;
+    font-weight: bold;
 
-    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.learning-button:hover {
+
+    background: #63d8ff;
+
+    color: #06101d;
 }
 
 
 /* =========================
-   FUTURE
+   CONCEPT BOX
 ========================= */
 
-.future {
+.concept-box {
 
     max-width: 900px;
 
@@ -417,47 +381,40 @@ section {
     text-align: center;
 }
 
-.future h2 {
+.concept-box h2 {
 
     font-size: 26px;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
-.future p {
+.concept-box p {
 
-    color: #9eafc2;
+    color: #aebdce;
 
     font-size: 15px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.future-list {
+.formula {
 
-    display: flex;
+    display: inline-block;
 
-    flex-wrap: wrap;
+    padding: 15px 30px;
 
-    justify-content: center;
-
-    gap: 10px;
-}
-
-.future-item {
-
-    padding: 8px 15px;
-
-    background: #0c1b2c;
+    background: #07111f;
 
     border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(99,216,255,0.25);
 
-    border-radius: 20px;
+    border-radius: 12px;
 
-    color: #cbd5e1;
+    color: #63d8ff;
 
-    font-size: 13px;
+    font-size: 24px;
+
+    direction: ltr;
 }
 
 
@@ -546,7 +503,7 @@ footer strong {
 
     .hero {
 
-        padding-top: 60px;
+        padding-top: 55px;
     }
 
     .hero p {
@@ -554,9 +511,42 @@ footer strong {
         font-size: 15px;
     }
 
-    .content-grid {
+    .learning-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .learning-card {
+
+        padding: 22px 12px;
+    }
+
+    .learning-icon {
+
+        font-size: 34px;
+    }
+
+    .learning-card h3 {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .learning-card p {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .learning-button {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
     }
 
     section {
@@ -569,9 +559,16 @@ footer strong {
         padding: 30px 20px;
     }
 
-    .future {
+    .concept-box {
 
         padding: 30px 20px;
+    }
+
+    .formula {
+
+        font-size: 20px;
+
+        padding: 12px 20px;
     }
 
 }
@@ -653,17 +650,23 @@ H <span>QUANTUM</span>
 
 <h2>
 
-بخش ششم فصل «کار، انرژی و توان»
+بخش ششم فصل سوم فیزیک دهم
 
 </h2>
 
 
 <p>
 
-توان به ما می‌گوید یک کار
-با چه سرعتی انجام می‌شود.
-در این بخش با مفهوم توان
-و ارتباط آن با کار و زمان آشنا می‌شویم.
+گاهی فقط دانستن مقدار کاری که انجام شده
+کافی نیست.
+
+دو دستگاه ممکن است کار یکسانی انجام دهند،
+اما یکی این کار را در مدت زمان بسیار کوتاه‌تر
+انجام دهد.
+
+در این بخش با مفهوم توان آشنا می‌شویم؛
+کمیتی که نشان می‌دهد کار با چه سرعتی
+انجام می‌شود.
 
 </p>
 
@@ -679,30 +682,26 @@ H <span>QUANTUM</span>
 <div class="intro">
 
 <h2>
-توان چیست؟
+در این بخش چه می‌آموزیم؟
 </h2>
 
 <p>
 
-فرض کنید دو نفر مقدار یکسانی کار انجام می‌دهند،
-اما یکی از آن‌ها این کار را در زمان بسیار کوتاه‌تری
-انجام می‌دهد.
+در بخش توان، ابتدا مفهوم توان را به عنوان
+نرخ انجام کار بررسی می‌کنیم. سپس رابطه میان
+توان، کار و زمان را به دست می‌آوریم و با
+یکای توان در دستگاه SI آشنا می‌شویم.
 
-در فیزیک فقط مقدار کار اهمیت ندارد؛
-مدت زمانی که برای انجام آن کار صرف می‌شود
-نیز اهمیت دارد.
+در ادامه مفهوم توان متوسط را بررسی می‌کنیم
+و می‌بینیم که در بسیاری از مسائل فیزیکی،
+مقایسه توان دستگاه‌ها و انسان‌ها اهمیت
+بسیاری دارد.
 
-کمیتی که سرعت انجام کار را توصیف می‌کند،
-«توان» نام دارد.
+همچنین با مفهوم وات و ارتباط آن با ژول و
+ثانیه آشنا می‌شویم و یاد می‌گیریم چگونه
+توان را در مسائل مختلف محاسبه کنیم.
 
 </p>
-
-
-<div class="formula-box">
-
-P = W / Δt
-
-</div>
 
 </div>
 
@@ -718,85 +717,26 @@ P = W / Δt
 <div class="section-title">
 
 <h2>
-مسیرهای یادگیری این بخش
+مسیرهای یادگیری
 </h2>
 
 <p>
-
-این مفهوم را می‌توان از مسیرهای مختلف
-آموزشی یاد گرفت و تجربه کرد.
-
+این بخش در ادامه با محتوای کامل آموزشی توسعه پیدا می‌کند.
 </p>
 
 </div>
 
 
-<div class="content-grid">
+<div class="learning-grid">
 
 
-<!-- PODCAST -->
+<!-- =========================
+     TEXT
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-
-اپیزود صوتی مربوط به مفهوم توان
-و کاربردهای آن.
-
-</p>
-
-<a href="#podcast"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- VIDEO -->
-
-<article class="content-card">
-
-<div class="content-icon">
-🎬
-</div>
-
-<h3>
-ویدئوی آموزشی
-</h3>
-
-<p>
-
-توضیح مفهومی توان و حل مثال‌های
-آموزشی.
-
-</p>
-
-<a href="#video"
-   class="content-button">
-
-به‌زودی
-
-</a>
-
-</article>
-
-
-<!-- TEXT -->
-
-<article class="content-card">
-
-<div class="content-icon">
+<div class="learning-icon">
 📖
 </div>
 
@@ -806,26 +746,90 @@ P = W / Δt
 
 <p>
 
-درس کامل، روابط، مثال‌ها
-و نکات مهم مربوط به توان.
+آموزش مفهومی توان،
+کار و زمان.
 
 </p>
 
-<a href="#text"
-   class="content-button">
+<a href="#"
+   class="learning-button">
 
-ورود به متن ←
+به‌زودی
 
 </a>
 
 </article>
 
 
-<!-- SIMULATOR -->
+<!-- =========================
+     PODCAST
+========================= -->
 
-<article class="content-card">
+<article class="learning-card">
 
-<div class="content-icon">
+<div class="learning-icon">
+🎙️
+</div>
+
+<h3>
+پادکست
+</h3>
+
+<p>
+
+روایت شنیداری مفهوم توان
+و کاربرد آن در زندگی روزمره.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+🎬
+</div>
+
+<h3>
+ویدئو
+</h3>
+
+<p>
+
+توضیح تصویری توان
+با مثال‌های واقعی و فیزیکی.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     SIMULATOR
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
 🧪
 </div>
 
@@ -835,13 +839,75 @@ P = W / Δt
 
 <p>
 
-بررسی رابطه میان کار،
-زمان و توان با تغییر پارامترها.
+تغییر مقدار کار و زمان
+و مشاهده تأثیر آن بر توان.
 
 </p>
 
-<a href="#simulator"
-   class="content-button">
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     EXERCISES
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+📝
+</div>
+
+<h3>
+تمرین
+</h3>
+
+<p>
+
+تمرین‌های محاسباتی و مفهومی
+برای تثبیت مفهوم توان.
+
+</p>
+
+<a href="#"
+   class="learning-button">
+
+به‌زودی
+
+</a>
+
+</article>
+
+
+<!-- =========================
+     CONCEPT QUESTIONS
+========================= -->
+
+<article class="learning-card">
+
+<div class="learning-icon">
+❓
+</div>
+
+<h3>
+پرسش مفهومی
+</h3>
+
+<p>
+
+پرسش‌هایی برای سنجش
+درک عمیق مفهوم توان.
+
+</p>
+
+<a href="#"
+   class="learning-button">
 
 به‌زودی
 
@@ -856,63 +922,26 @@ P = W / Δt
 
 
 <!-- =========================
-     MAIN CONCEPTS
+     CONCEPT
 ========================= -->
 
-<section id="text">
+<section>
 
-<div class="future">
+<div class="concept-box">
 
 <h2>
-📖 مفاهیم اصلی
+رابطه توان
 </h2>
 
 <p>
 
-در محتوای کامل این بخش، مفاهیم زیر
-به‌صورت مرحله‌به‌مرحله بررسی خواهند شد.
+توان متوسط برابر است با مقدار کاری
+که در یک بازه زمانی انجام می‌شود،
+تقسیم بر مدت زمان انجام آن کار:
 
 </p>
 
-
-<div class="future-list">
-
-<div class="future-item">
-کار
-</div>
-
-<div class="future-item">
-زمان
-</div>
-
-<div class="future-item">
-توان
-</div>
-
-<div class="future-item">
-واحد توان
-</div>
-
-<div class="future-item">
-وات
-</div>
-
-<div class="future-item">
-توان متوسط
-</div>
-
-<div class="future-item">
-مثال‌های کاربردی
-</div>
-
-<div class="future-item">
-تمرین‌ها
-</div>
-
-</div>
-
-
-<div class="formula-box">
+<div class="formula">
 
 P = W / Δt
 
@@ -924,161 +953,7 @@ P = W / Δt
 
 
 <!-- =========================
-     APPLICATION
-========================= -->
-
-<section>
-
-<div class="future">
-
-<h2>
-⚡ توان در زندگی روزمره
-</h2>
-
-<p>
-
-توان فقط یک رابطه ریاضی نیست.
-از مفهوم توان می‌توان برای مقایسه
-سرعت انجام کار در ماشین‌ها،
-موتورها و دستگاه‌های مختلف استفاده کرد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-موتور خودرو
-</div>
-
-<div class="future-item">
-آسانسور
-</div>
-
-<div class="future-item">
-جرثقیل
-</div>
-
-<div class="future-item">
-وسایل برقی
-</div>
-
-<div class="future-item">
-ماشین‌آلات
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     SIMULATOR
-========================= -->
-
-<section id="simulator">
-
-<div class="future">
-
-<h2>
-🧪 آزمایشگاه تعاملی
-</h2>
-
-<p>
-
-در مرحله بعد، یک شبیه‌ساز تعاملی
-برای بررسی رابطه کار، زمان و توان
-به این صفحه متصل خواهد شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-کار
-</div>
-
-<div class="future-item">
-زمان
-</div>
-
-<div class="future-item">
-توان
-</div>
-
-<div class="future-item">
-تغییر پارامترها
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     EXTRA CONTENT
-========================= -->
-
-<section>
-
-<div class="future">
-
-<h2>
-🧩 محتوای تکمیلی
-</h2>
-
-<p>
-
-امکانات آموزشی این بخش به‌تدریج
-تکمیل خواهند شد.
-
-</p>
-
-
-<div class="future-list">
-
-<div class="future-item">
-مثال‌های حل‌شده
-</div>
-
-<div class="future-item">
-تمرین
-</div>
-
-<div class="future-item">
-پرسش مفهومی
-</div>
-
-<div class="future-item">
-آزمایش
-</div>
-
-<div class="future-item">
-پادکست
-</div>
-
-<div class="future-item">
-ویدئو
-</div>
-
-<div class="future-item">
-شبیه‌ساز
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BACK
+     BACK TO CHAPTER
 ========================= -->
 
 <section class="back-section">
@@ -1120,4 +995,4 @@ Physics • Science • Wonder
 
 </body>
 
-  </html>
+</html>
