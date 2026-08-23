@@ -11,7 +11,7 @@
 <title>فصل دوم فیزیک دوازدهم تجربی | دینامیک | H Quantum</title>
 
 <meta name="description"
-      content="فصل دوم فیزیک دوازدهم تجربی: دینامیک، قوانین حرکت نیوتون، نیروهای خاص، تکانه و قانون دوم نیوتون و نیروی گرانشی در H Quantum">
+      content="فصل دوم فیزیک دوازدهم تجربی، دینامیک؛ قوانین حرکت نیوتون، نیروهای خاص، تکانه و قانون دوم نیوتون و نیروی گرانشی.">
 
 <style>
 
@@ -32,7 +32,8 @@
 
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background: #f4f7fb;
+    direction: rtl;
+    background: #f5f7fa;
     color: #172033;
     line-height: 1.9;
 }
@@ -43,38 +44,40 @@ body {
 ========================= */
 
 header {
-    background: linear-gradient(135deg, #071a35, #123c69);
+    background: #0b1f33;
     color: white;
-    padding: 35px 20px;
-    text-align: center;
+    padding: 18px 20px;
 }
 
-header h1 {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-header p {
-    font-size: 16px;
-    color: #dbeafe;
-}
-
-
-/* =========================
-   BREADCRUMB
-========================= */
-
-.breadcrumb {
+.header-inner {
     max-width: 1100px;
-    margin: 20px auto 0;
-    padding: 0 20px;
-    color: #64748b;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #dbe7f3;
+    text-decoration: none;
     font-size: 14px;
 }
 
-.breadcrumb a {
-    color: #2563eb;
-    text-decoration: none;
+nav a:hover {
+    color: white;
 }
 
 
@@ -83,9 +86,32 @@ header p {
 ========================= */
 
 main {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 25px 20px 50px;
+    padding: 45px 20px 60px;
+}
+
+
+/* =========================
+   COURSE TITLE
+========================= */
+
+.course-title {
+    color: #55708c;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    color: #0b1f33;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #55708c;
+    font-size: 17px;
+    margin-bottom: 25px;
 }
 
 
@@ -95,42 +121,62 @@ main {
 
 .intro {
     background: white;
-    border-radius: 18px;
+    border-radius: 14px;
     padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 35px;
 }
 
 .intro h2 {
-    color: #123c69;
-    margin-bottom: 12px;
-    font-size: 23px;
+    color: #0b1f33;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .intro p {
-    color: #475569;
+    color: #4b5f73;
     font-size: 15px;
 }
 
 
 /* =========================
-   SECTION TITLE
+   ROADMAP
 ========================= */
 
-.section-title {
-    text-align: center;
-    margin: 35px 0 20px;
+.roadmap {
+    margin-bottom: 35px;
 }
 
-.section-title h2 {
-    color: #071a35;
-    font-size: 24px;
+.roadmap h2 {
+    color: #0b1f33;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.section-title p {
-    color: #64748b;
+.roadmap p {
+    color: #55708c;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.sections {
+    margin-top: 30px;
+}
+
+.sections h2 {
+    color: #0b1f33;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.sections-intro {
+    color: #55708c;
     font-size: 14px;
-    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -141,65 +187,113 @@ main {
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
-
 
 .card {
-    background: white;
-    border-radius: 18px;
-    padding: 25px 20px;
+    display: block;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-    border: 1px solid #e2e8f0;
-    transition: 0.25s;
-    display: flex;
-    flex-direction: column;
-    min-height: 210px;
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 14px;
+    padding: 22px;
+    transition: 0.2s ease;
 }
-
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+    border-color: #b9c8d8;
 }
 
-
-.card-number {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #e8f1ff;
-    color: #123c69;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.card-icon {
+    font-size: 27px;
+    margin-bottom: 8px;
 }
-
 
 .card h3 {
-    font-size: 19px;
-    color: #123c69;
+    color: #0b1f33;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #60758a;
+    font-size: 13px;
     margin-bottom: 10px;
 }
 
-
-.card p {
-    font-size: 14px;
-    color: #64748b;
-    flex-grow: 1;
+.card span {
+    color: #285f8f;
+    font-size: 13px;
 }
 
 
-.card-button {
-    margin-top: 15px;
-    color: #2563eb;
+/* =========================
+   LEARNING PATHS
+========================= */
+
+.learning {
+    margin-top: 50px;
+}
+
+.learning h2 {
+    color: #0b1f33;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.learning > p {
+    color: #55708c;
     font-size: 14px;
-    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.learning-card {
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+.learning-card .icon {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.learning-card h3 {
+    color: #0b1f33;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.learning-card p {
+    color: #60758a;
+    font-size: 12px;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back {
+    display: inline-block;
+    margin-top: 40px;
+    color: #285f8f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 
@@ -208,15 +302,20 @@ main {
 ========================= */
 
 footer {
-    background: #071a35;
-    color: #cbd5e1;
+    background: #0b1f33;
+    color: #b8c7d6;
     text-align: center;
-    padding: 25px 15px;
-    margin-top: 30px;
+    padding: 22px 15px;
+    font-size: 13px;
 }
 
 footer strong {
     color: white;
+}
+
+footer p:last-child {
+    margin-top: 4px;
+    color: #7f93a8;
 }
 
 
@@ -227,75 +326,104 @@ footer strong {
 @media (max-width: 700px) {
 
     header {
-        padding: 28px 15px;
+        padding: 16px 15px;
     }
 
-    header h1 {
-        font-size: 23px;
+    .header-inner {
+        display: block;
     }
 
-    header p {
-        font-size: 14px;
+    .logo {
+        margin-bottom: 12px;
+    }
+
+    nav {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 
     main {
-        padding: 20px 14px 40px;
+        padding: 30px 15px 45px;
     }
 
-    .breadcrumb {
-        padding: 0 14px;
-        font-size: 13px;
+    h1 {
+        font-size: 27px;
+    }
+
+    .subtitle {
+        font-size: 15px;
     }
 
     .intro {
         padding: 20px;
     }
 
-    .intro h2 {
-        font-size: 20px;
+    .intro h2,
+    .roadmap h2,
+    .sections h2,
+    .learning h2 {
+        font-size: 19px;
     }
 
-    .intro p {
+    .intro p,
+    .roadmap p {
         font-size: 14px;
     }
 
-    /* دو ستونه در موبایل، مطابق قالب نهایی H Quantum */
+    /* کارت‌های بخش‌ها در موبایل دو ستونه */
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 10px;
     }
 
     .card {
-        padding: 17px 13px;
-        min-height: 210px;
-        border-radius: 15px;
+        padding: 15px;
+        border-radius: 12px;
     }
 
-    .card-number {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
-        margin-bottom: 10px;
+    .card-icon {
+        font-size: 22px;
     }
 
     .card h3 {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.7;
     }
 
     .card p {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.8;
     }
 
-    .card-button {
-        font-size: 12px;
-        margin-top: 10px;
+    .card span {
+        font-size: 11px;
     }
 
-    .section-title h2 {
-        font-size: 20px;
+    /* مسیرهای یادگیری */
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .learning-card {
+        padding: 15px 10px;
+    }
+
+    .learning-card .icon {
+        font-size: 22px;
+    }
+
+    .learning-card h3 {
+        font-size: 14px;
+    }
+
+    .learning-card p {
+        font-size: 11px;
     }
 
 }
@@ -314,36 +442,32 @@ footer strong {
 
 <header>
 
-    <h1>فصل دوم فیزیک دوازدهم تجربی</h1>
+    <div class="header-inner">
 
-    <p>دینامیک</p>
+        <div class="logo">
+            H QUANTUM
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+
+            <a href="school.html">مدرسه فیزیک</a>
+
+            <a href="physics-10.html">دهم</a>
+
+            <a href="physics-11.html">یازدهم</a>
+
+            <a href="physics-12.html">دوازدهم</a>
+
+            <a href="#">🎙️ پادکست</a>
+
+        </nav>
+
+    </div>
 
 </header>
 
-
-<!-- =========================
-     BREADCRUMB
-========================= -->
-
-<div class="breadcrumb">
-
-    <a href="index.html">H Quantum</a>
-
-    &nbsp; / &nbsp;
-
-    <a href="school.html">مدرسه فیزیک</a>
-
-    &nbsp; / &nbsp;
-
-    <a href="physics-12-experimental.html">
-        فیزیک دوازدهم تجربی
-    </a>
-
-    &nbsp; / &nbsp;
-
-    فصل دوم: دینامیک
-
-</div>
 
 
 <!-- =========================
@@ -353,149 +477,322 @@ footer strong {
 <main>
 
 
-    <!-- INTRO -->
-
-    <section class="intro">
-
-        <h2>فصل دوم: دینامیک</h2>
-
-        <p>
-            در این فصل از فیزیک دوازدهم تجربی، از توصیف حرکت
-            یک قدم جلوتر می‌رویم و بررسی می‌کنیم چه چیزی باعث
-            تغییر حرکت یک جسم می‌شود. با قوانین حرکت نیوتون،
-            نیروهای مختلف، تکانه و قانون دوم نیوتون و سرانجام
-            نیروی گرانشی آشنا می‌شویم.
-        </p>
-
-    </section>
+    <div class="course-title">
+        فیزیک دوازدهم تجربی • فصل دوم
+    </div>
 
 
+    <h1>
+        دینامیک
+    </h1>
 
-    <!-- SECTION TITLE -->
 
-    <div class="section-title">
-
-        <h2>بخش‌های فصل دوم</h2>
-
-        <p>
-            برای ورود به هر بخش، روی کارت مربوط به آن کلیک کنید.
-        </p>
-
+    <div class="subtitle">
+        فصل دوم فیزیک دوازدهم رشته علوم تجربی
     </div>
 
 
 
-    <!-- =========================
-         CARDS
-    ========================= -->
+    <!-- INTRO -->
 
-    <section class="cards">
+    <section class="intro">
 
+        <h2>
+            درباره این فصل
+        </h2>
 
-        <!-- بخش اول -->
-
-        <a class="card"
-           href="physics-12-experimental-chapter-2-section-1.html">
-
-            <div class="card-number">
-                ۱
-            </div>
-
-            <h3>
-                قوانین حرکت نیوتون
-            </h3>
-
-            <p>
-                بررسی قانون اول، قانون دوم و قانون سوم نیوتون
-                و ارتباط نیرو، جرم و شتاب.
-            </p>
-
-            <div class="card-button">
-                ورود به بخش ←
-            </div>
-
-        </a>
-
-
-
-        <!-- بخش دوم -->
-
-        <a class="card"
-           href="physics-12-experimental-chapter-2-section-2.html">
-
-            <div class="card-number">
-                ۲
-            </div>
-
-            <h3>
-                معرفی برخی از نیروهای خاص
-            </h3>
-
-            <p>
-                بررسی نیروهایی مانند وزن، نیروی عمودی سطح،
-                اصطکاک، کشش و سایر نیروهای مهم در مسائل دینامیک.
-            </p>
-
-            <div class="card-button">
-                ورود به بخش ←
-            </div>
-
-        </a>
-
-
-
-        <!-- بخش سوم -->
-
-        <a class="card"
-           href="physics-12-experimental-chapter-2-section-3.html">
-
-            <div class="card-number">
-                ۳
-            </div>
-
-            <h3>
-                تکانه و قانون دوم نیوتون
-            </h3>
-
-            <p>
-                آشنایی با مفهوم تکانه و بیان قانون دوم نیوتون
-                بر اساس تغییر تکانه.
-            </p>
-
-            <div class="card-button">
-                ورود به بخش ←
-            </div>
-
-        </a>
-
-
-
-        <!-- بخش چهارم -->
-
-        <a class="card"
-           href="physics-12-experimental-chapter-2-section-4.html">
-
-            <div class="card-number">
-                ۴
-            </div>
-
-            <h3>
-                نیروی گرانشی
-            </h3>
-
-            <p>
-                بررسی نیروی گرانشی میان جرم‌ها و ارتباط آن
-                با حرکت اجرام و وزن اجسام.
-            </p>
-
-            <div class="card-button">
-                ورود به بخش ←
-            </div>
-
-        </a>
-
+        <p>
+            در این فصل بررسی می‌کنیم که نیرو چگونه می‌تواند
+            حرکت یک جسم را تغییر دهد. با قوانین حرکت نیوتون،
+            نیروهای مختلف، تکانه و قانون دوم نیوتون و نیروی
+            گرانشی آشنا می‌شویم و ارتباط میان نیرو و حرکت را
+            عمیق‌تر بررسی می‌کنیم.
+        </p>
 
     </section>
+
+
+
+    <!-- ROADMAP -->
+
+    <section class="roadmap">
+
+        <h2>
+            🗺️ نقشه راه فصل
+        </h2>
+
+        <p>
+            فصل دوم فیزیک دوازدهم تجربی از چهار بخش اصلی تشکیل
+            شده است. هر بخش مسیر آموزشی مستقل خود را دارد.
+        </p>
+
+    </section>
+
+
+
+    <!-- SECTIONS -->
+
+    <section class="sections">
+
+        <h2>
+            🧭 بخش‌های فصل دوم
+        </h2>
+
+        <p class="sections-intro">
+            برای ورود به هر بخش روی کارت آن بزنید.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- SECTION 1 -->
+
+            <a class="card"
+               href="physics-12-experimental-chapter-2-section-1.html">
+
+                <div class="card-icon">
+                    ⚖️
+                </div>
+
+                <h3>
+                    بخش اول قوانین حرکت نیوتون
+                </h3>
+
+                <p>
+                    قانون اول، قانون دوم و قانون سوم نیوتون
+                    و ارتباط نیرو، جرم و شتاب
+                </p>
+
+                <span>
+                    ورود به بخش ←
+                </span>
+
+            </a>
+
+
+
+            <!-- SECTION 2 -->
+
+            <a class="card"
+               href="physics-12-experimental-chapter-2-section-2.html">
+
+                <div class="card-icon">
+                    🧲
+                </div>
+
+                <h3>
+                    بخش دوم معرفی برخی از نیروهای خاص
+                </h3>
+
+                <p>
+                    بررسی نیروهای مهم مانند وزن، نیروی عمودی سطح،
+                    اصطکاک و کشش
+                </p>
+
+                <span>
+                    ورود به بخش ←
+                </span>
+
+            </a>
+
+
+
+            <!-- SECTION 3 -->
+
+            <a class="card"
+               href="physics-12-experimental-chapter-2-section-3.html">
+
+                <div class="card-icon">
+                    💥
+                </div>
+
+                <h3>
+                    بخش سوم تکانه و قانون دوم نیوتون
+                </h3>
+
+                <p>
+                    مفهوم تکانه و بیان قانون دوم نیوتون
+                    بر اساس تغییر تکانه
+                </p>
+
+                <span>
+                    ورود به بخش ←
+                </span>
+
+            </a>
+
+
+
+            <!-- SECTION 4 -->
+
+            <a class="card"
+               href="physics-12-experimental-chapter-2-section-4.html">
+
+                <div class="card-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    بخش چهارم نیروی گرانشی
+                </h3>
+
+                <p>
+                    بررسی نیروی گرانشی میان جرم‌ها و
+                    ارتباط آن با حرکت اجرام
+                </p>
+
+                <span>
+                    ورود به بخش ←
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LEARNING PATHS -->
+
+    <section class="learning">
+
+        <h2>
+            🎓 مسیرهای یادگیری فصل
+        </h2>
+
+        <p>
+            هر بخش در آینده می‌تواند با مسیرهای یادگیری مختلف
+            تکمیل شود.
+        </p>
+
+
+        <div class="learning-grid">
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    🎙️
+                </div>
+
+                <h3>
+                    پادکست
+                </h3>
+
+                <p>
+                    نسخه شنیداری آموزش‌ها
+                </p>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    🎬
+                </div>
+
+                <h3>
+                    ویدئو
+                </h3>
+
+                <p>
+                    آموزش تصویری
+                </p>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    📖
+                </div>
+
+                <h3>
+                    متن آموزشی
+                </h3>
+
+                <p>
+                    درسنامه کامل
+                </p>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    🧪
+                </div>
+
+                <h3>
+                    شبیه‌ساز
+                </h3>
+
+                <p>
+                    فعالیت‌های تعاملی
+                </p>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    📝
+                </div>
+
+                <h3>
+                    تمرین
+                </h3>
+
+                <p>
+                    تمرین‌های آموزشی
+                </p>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="icon">
+                    ❓
+                </div>
+
+                <h3>
+                    پرسش مفهومی
+                </h3>
+
+                <p>
+                    سنجش درک مفاهیم
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BACK -->
+
+    <a class="back"
+       href="physics-12-experimental.html">
+
+        ← بازگشت به فیزیک دوازدهم تجربی
+
+    </a>
 
 
 </main>
@@ -509,8 +806,11 @@ footer strong {
 <footer>
 
     <p>
-        <strong>H Quantum</strong>
-        | مدرسه‌ای برای دیدن جهان از دریچه فیزیک
+        © 2026 — <strong>H Quantum</strong>
+    </p>
+
+    <p>
+        Physics • Science • Wonder
     </p>
 
 </footer>
