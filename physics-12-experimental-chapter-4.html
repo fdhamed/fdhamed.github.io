@@ -6,532 +6,567 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
-<title>فصل چهارم فیزیک دوازدهم تجربی | فیزیک اتمی و هسته‌ای | H Quantum</title>
+<title>فیزیک دوازدهم تجربی | فصل چهارم | H Quantum</title>
 
 <meta name="description"
-content="فصل چهارم فیزیک دوازدهم تجربی؛ فیزیک اتمی و هسته‌ای | H Quantum">
+      content="فصل چهارم فیزیک دوازدهم رشته علوم تجربی؛ آشنایی با فیزیک اتمی و هسته‌ای در H Quantum.">
 
 <style>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background: #07111f;
-    color: #f4f7fb;
-    line-height: 1.9;
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(7,17,31,0.95);
-
-    backdrop-filter: blur(12px);
-
-    border-bottom:
-    1px solid rgba(255,255,255,0.08);
-}
-
-.nav {
-    max-width: 1150px;
-    margin: auto;
-
-    padding: 15px 20px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 20px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo span {
-    color: #63d8ff;
-}
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    font-size: 13px;
-
-    color: #cbd5e1;
-}
-
-.nav-links a {
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #63d8ff;
+a{
+text-decoration:none;
+color:inherit;
 }
 
 
 /* =========================
-   HERO
+HEADER
 ========================= */
 
-.hero {
-    max-width: 1050px;
+header{
+position:sticky;
+top:0;
+z-index:1000;
 
-    margin: auto;
+background:rgba(7,17,31,0.94);
 
-    padding:
-    75px 20px 55px;
+backdrop-filter:blur(12px);
 
-    text-align: center;
+border-bottom:
+1px solid rgba(255,255,255,0.08);
 }
 
-.breadcrumb {
-    color: #8fa2b7;
+.nav{
+max-width:1100px;
+margin:auto;
 
-    font-size: 13px;
+padding:16px 20px;
 
-    margin-bottom: 20px;
+display:flex;
+
+justify-content:space-between;
+align-items:center;
 }
 
-.breadcrumb span {
-    color: #63d8ff;
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
-.chapter-badge {
-    display: inline-block;
-
-    padding:
-    7px 18px;
-
-    border:
-    1px solid rgba(99,216,255,0.35);
-
-    border-radius: 30px;
-
-    color: #63d8ff;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
+.logo span{
+color:#63d8ff;
 }
 
-.hero h1 {
-    font-size:
-    clamp(34px, 8vw, 60px);
+.nav-links{
+display:flex;
 
-    line-height: 1.45;
+gap:18px;
 
-    margin-bottom: 18px;
+font-size:14px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
 }
 
-.hero h1 span {
-    color: #63d8ff;
+.nav-links a{
+transition:0.3s;
 }
 
-.hero-description {
-    max-width: 780px;
-
-    margin: auto;
-
-    color: #aebdce;
-
-    font-size: 17px;
+.nav-links a:hover{
+color:#63d8ff;
 }
 
 
 /* =========================
-   SECTION
+HERO
 ========================= */
 
-section {
-    max-width: 1150px;
+.hero{
+max-width:1000px;
 
-    margin: auto;
+margin:auto;
 
-    padding:
-    40px 20px;
+padding:80px 20px 60px;
+
+text-align:center;
 }
 
-.section-title {
-    text-align: center;
+.badge{
+display:inline-block;
 
-    margin-bottom: 30px;
+padding:7px 18px;
+
+border:
+1px solid rgba(99,216,255,0.35);
+
+border-radius:30px;
+
+color:#63d8ff;
+
+font-size:14px;
+
+margin-bottom:22px;
 }
 
-.section-title h2 {
-    font-size: 29px;
+.hero h1{
+font-size:clamp(34px,8vw,60px);
 
-    margin-bottom: 8px;
+line-height:1.4;
+
+margin-bottom:15px;
 }
 
-.section-title p {
-    color: #9eafc2;
+.hero h1 span{
+color:#63d8ff;
+}
 
-    font-size: 14px;
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+
+font-weight:normal;
+
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+
+margin:auto;
+
+color:#aebdce;
+
+font-size:17px;
 }
 
 
 /* =========================
-   LESSONS
+GENERAL SECTION
 ========================= */
 
-.lesson-list {
-    display: grid;
+section{
+max-width:1100px;
 
-    grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+margin:auto;
 
-    gap: 15px;
+padding:55px 20px;
 }
 
-.lesson-item {
-    background: #0c1b2c;
+.section-title{
+text-align:center;
 
-    border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 16px;
-
-    padding: 20px;
+margin-bottom:35px;
 }
 
-.lesson-number {
-    color: #63d8ff;
+.section-title h2{
+font-size:30px;
 
-    font-size: 12px;
-
-    margin-bottom: 5px;
+margin-bottom:10px;
 }
 
-.lesson-item h3 {
-    font-size: 17px;
+.section-title p{
+color:#9eafc2;
 
-    margin-bottom: 6px;
-}
-
-.lesson-item p {
-    color: #9eafc2;
-
-    font-size: 12px;
+font-size:15px;
 }
 
 
 /* =========================
-   CONTENT GRID
+INTRO
 ========================= */
 
-.content-grid {
-    display: grid;
+.intro{
+max-width:900px;
 
-    grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+margin:auto;
 
-    gap: 20px;
+padding:35px 30px;
+
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.12);
+
+border-radius:22px;
+
+text-align:center;
+}
+
+.intro h2{
+font-size:27px;
+
+margin-bottom:15px;
+}
+
+.intro p{
+color:#aebdce;
+
+font-size:15px;
 }
 
 
 /* =========================
-   CONTENT CARD
+CHAPTER PARTS
 ========================= */
 
-.content-card {
-    display: block;
+.learning-grid{
+display:grid;
 
-    background: #0c1b2c;
+grid-template-columns:
+repeat(3,1fr);
 
-    border:
-    1px solid rgba(255,255,255,0.08);
+gap:20px;
 
-    border-radius: 22px;
+max-width:1000px;
 
-    padding: 28px;
-
-    min-width: 0;
-
-    transition:
-    transform 0.3s,
-    border-color 0.3s,
-    background 0.3s;
-}
-
-.content-card:hover {
-    transform: translateY(-5px);
-
-    border-color:
-    rgba(99,216,255,0.4);
-
-    background: #0e2033;
-}
-
-.card-icon {
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.content-card h3 {
-    font-size: 21px;
-
-    margin-bottom: 10px;
-}
-
-.content-card p {
-    color: #aebdce;
-
-    font-size: 13px;
-
-    margin-bottom: 18px;
-}
-
-.card-status {
-    display: inline-block;
-
-    padding:
-    6px 12px;
-
-    border-radius: 8px;
-
-    background: #10243a;
-
-    color: #63d8ff;
-
-    font-size: 11px;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
+margin:auto;
 }
 
 
 /* =========================
-   INFO BOX
+CARD
 ========================= */
 
-.info-box {
-    background: #0a1828;
+.learning-card{
+padding:28px 20px;
 
-    border:
-    1px dashed rgba(99,216,255,0.25);
+background:#0c1b2c;
 
-    border-radius: 20px;
+border:
+1px solid rgba(255,255,255,0.08);
 
-    padding:
-    35px 25px;
+border-radius:20px;
 
-    text-align: center;
+text-align:center;
+
+transition:
+transform 0.3s,
+border-color 0.3s;
 }
 
-.info-icon {
-    font-size: 44px;
+.learning-card:hover{
+transform:translateY(-5px);
 
-    margin-bottom: 10px;
+border-color:
+rgba(99,216,255,0.5);
 }
 
-.info-box h3 {
-    font-size: 23px;
+.icon{
+font-size:42px;
 
-    margin-bottom: 8px;
+margin-bottom:12px;
 }
 
-.info-box p {
-    max-width: 750px;
+.learning-card h3{
+font-size:20px;
 
-    margin: auto;
+margin-bottom:10px;
+}
 
-    color: #9eafc2;
+.learning-card p{
+color:#aebdce;
 
-    font-size: 14px;
+font-size:13px;
+
+margin-bottom:18px;
+}
+
+.button{
+display:inline-block;
+
+padding:9px 18px;
+
+border-radius:9px;
+
+background:#10243a;
+
+border:
+1px solid rgba(255,255,255,0.12);
+
+color:#63d8ff;
+
+font-size:13px;
+
+font-weight:bold;
+}
+
+.button:hover{
+background:#15324e;
 }
 
 
 /* =========================
-   NAVIGATION
+CONTENT
 ========================= */
 
-.navigation {
-    display: flex;
+.content-box{
+max-width:950px;
 
-    justify-content: center;
+margin:auto;
 
-    align-items: center;
+padding:40px 30px;
 
-    gap: 12px;
+background:#0a1828;
 
-    flex-wrap: wrap;
+border:
+1px solid rgba(99,216,255,0.12);
 
-    padding:
-    20px;
+border-radius:22px;
+
+text-align:center;
 }
 
-.nav-button {
-    display: inline-block;
+.content-box h2{
+font-size:28px;
 
-    padding:
-    11px 20px;
-
-    border-radius: 12px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(99,216,255,0.2);
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
+margin-bottom:15px;
 }
 
-.nav-button:hover {
-    background: #63d8ff;
+.content-box p{
+color:#aebdce;
 
-    color: #06101d;
-
-    transform: translateY(-2px);
+font-size:15px;
 }
 
 
 /* =========================
-   FOOTER
+NAVIGATION
 ========================= */
 
-footer {
-    border-top:
-    1px solid rgba(255,255,255,0.08);
+.navigation{
+max-width:900px;
 
-    padding:
-    35px 20px;
+margin:auto;
 
-    text-align: center;
+display:grid;
 
-    color: #8191a4;
+grid-template-columns:
+repeat(2,1fr);
 
-    margin-top: 40px;
+gap:20px;
 }
 
-footer strong {
-    color: #63d8ff;
+.nav-card{
+padding:20px;
+
+background:#0c1b2c;
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:18px;
+
+text-align:center;
+
+color:#63d8ff;
+
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:
+rgba(99,216,255,0.5);
+
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+
+color:#8191a4;
+
+font-size:12px;
+
+margin-bottom:5px;
 }
 
 
 /* =========================
-   MOBILE
+BACK
 ========================= */
 
-@media (max-width: 700px) {
+.back{
+text-align:center;
 
-    .nav {
-        flex-direction: column;
-    }
+padding:
+20px 20px 80px;
+}
 
-    .nav-links {
-        gap: 10px;
+.back-button{
+display:inline-block;
 
-        font-size: 12px;
-    }
+padding:12px 25px;
 
-    .lesson-list {
-        grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+background:#10243a;
 
-        gap: 10px;
-    }
+border:
+1px solid rgba(255,255,255,0.12);
 
-    .lesson-item {
-        padding:
-        15px 12px;
-    }
+border-radius:10px;
 
-    .lesson-item h3 {
-        font-size: 13px;
-    }
+color:#63d8ff;
 
-    .lesson-item p {
-        font-size: 9px;
-    }
+font-weight:bold;
+}
 
-    .content-grid {
-        grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+.back-button:hover{
+border-color:#63d8ff;
+}
 
-        gap: 10px;
-    }
 
-    .content-card {
-        padding:
-        20px 12px;
+/* =========================
+FOOTER
+========================= */
 
-        border-radius: 17px;
-    }
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
 
-    .card-icon {
-        font-size: 33px;
-    }
+padding:35px 20px;
 
-    .content-card h3 {
-        font-size: 15px;
+text-align:center;
 
-        line-height: 1.8;
-    }
+color:#8191a4;
+}
 
-    .content-card p {
-        font-size: 10px;
+footer strong{
+color:#63d8ff;
+}
 
-        line-height: 1.8;
-    }
 
-    .card-status {
-        font-size: 9px;
+/* =========================
+MOBILE
+========================= */
 
-        padding:
-        5px 8px;
-    }
+@media(max-width:750px){
 
-    .nav-button {
-        font-size: 11px;
+.nav{
+flex-direction:column;
 
-        padding:
-        9px 14px;
-    }
+gap:10px;
+}
 
-    section {
-        padding:
-        35px 15px;
-    }
+.nav-links{
+gap:11px;
+
+font-size:12px;
+}
+
+.hero{
+padding:
+55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+
+/* کارت‌ها در موبایل دو ستونه */
+
+.learning-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:12px;
+}
+
+.learning-card{
+padding:
+20px 12px;
+
+border-radius:16px;
+}
+
+.icon{
+font-size:32px;
+}
+
+.learning-card h3{
+font-size:15px;
+
+line-height:1.7;
+}
+
+.learning-card p{
+font-size:11px;
+
+line-height:1.8;
+}
+
+.button{
+font-size:11px;
+
+padding:
+8px 10px;
+}
+
+.intro{
+padding:
+28px 18px;
+}
+
+.content-box{
+padding:
+30px 18px;
+}
+
+.navigation{
+grid-template-columns:
+repeat(2,1fr);
+
+gap:12px;
+}
+
+.nav-card{
+padding:
+16px 8px;
+
+font-size:12px;
+}
+
+}
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.learning-card h3{
+font-size:14px;
+}
 
 }
 
@@ -544,15 +579,15 @@ footer strong {
 
 
 <!-- =========================
-     HEADER
+HEADER
 ========================= -->
 
 <header>
 
 <nav class="nav">
 
-<a href="./index.html"
-class="logo">
+<a href="index.html"
+   class="logo">
 
 H <span>QUANTUM</span>
 
@@ -561,27 +596,27 @@ H <span>QUANTUM</span>
 
 <div class="nav-links">
 
-<a href="./index.html">
+<a href="index.html">
 خانه
 </a>
 
-<a href="./school.html">
+<a href="school.html">
 مدرسه فیزیک
 </a>
 
-<a href="./physics-10.html">
+<a href="physics-10.html">
 دهم
 </a>
 
-<a href="./physics-11.html">
+<a href="physics-11.html">
 یازدهم
 </a>
 
-<a href="./physics-12.html">
+<a href="physics-12.html">
 دوازدهم
 </a>
 
-<a href="./podcast.html">
+<a href="podcast.html">
 🎙️ پادکست
 </a>
 
@@ -593,48 +628,44 @@ H <span>QUANTUM</span>
 
 
 
-<main>
-
-
 <!-- =========================
-     HERO
+HERO
 ========================= -->
+
+<main>
 
 <section class="hero">
 
 
-<div class="breadcrumb">
+<div class="badge">
 
-مدرسه فیزیک
-/
-فیزیک دوازدهم
-/
-تجربی
-/
-<span>فصل چهارم</span>
-
-</div>
-
-
-<div class="chapter-badge">
-
-فصل چهارم
+فیزیک دوازدهم تجربی • فصل چهارم
 
 </div>
 
 
 <h1>
 
-<span>فیزیک اتمی و هسته‌ای</span>
+<span>آشنایی با فیزیک اتمی و هسته‌ای</span>
 
 </h1>
 
 
-<p class="hero-description">
+<h2>
 
-در این فصل، از دنیای اتم‌ها و کوانتوم
-تا ساختار هسته و پدیده‌های هسته‌ای سفر می‌کنیم
-و با بخشی از جهان فیزیک نوین آشنا می‌شویم.
+فصل چهارم فیزیک دوازدهم رشته علوم تجربی
+
+</h2>
+
+
+<p>
+
+در این فصل از جهان کوانتومی اتم‌ها آغاز می‌کنیم،
+اثر فوتوالکتریک و ماهیت فوتونی نور را بررسی می‌کنیم،
+سپس به سراغ طیف‌های خطی و مدل اتم رادرفورد ـ بور
+می‌رویم و با لیزر آشنا می‌شویم.
+در ادامه ساختار هسته، پرتوزایی طبیعی
+و مفهوم نیمه‌عمر را بررسی خواهیم کرد.
 
 </p>
 
@@ -644,7 +675,37 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     LESSON STRUCTURE
+INTRO
+========================= -->
+
+<section>
+
+<div class="intro">
+
+<h2>
+
+📚 نقشه راه فصل
+
+</h2>
+
+<p>
+
+فصل چهارم در شش بخش آموزشی تنظیم شده است.
+مسیر یادگیری از اثر فوتوالکتریک و فوتون آغاز می‌شود،
+به طیف خطی و مدل اتم رادرفورد ـ بور می‌رسد،
+سپس لیزر را بررسی می‌کنیم و در ادامه
+ساختار هسته، پرتوزایی طبیعی و نیمه‌عمر را می‌آموزیم.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+PARTS
 ========================= -->
 
 <section>
@@ -653,119 +714,219 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-📚 ساختار آموزشی فصل
+
+📖 بخش‌های فصل چهارم
+
 </h2>
 
 <p>
-مباحث اصلی فصل برای تولید محتوای آینده آماده شده‌اند.
+
+برای ورود به هر بخش روی کارت آن کلیک کنید.
+
 </p>
 
 </div>
 
 
-<div class="lesson-list">
+
+<div class="learning-grid">
 
 
-<div class="lesson-item">
+<!-- =========================
+PART 1
+========================= -->
 
-<div class="lesson-number">
-درس ۱
+<a href="physics-12-experimental-chapter-4-photoelectric-effect.html"
+   class="learning-card">
+
+<div class="icon">
+💡
 </div>
 
 <h3>
-فیزیک اتمی
+
+بخش اول
+
 </h3>
 
 <p>
-آشنایی با ساختار اتم و تحول مدل‌های اتمی.
+
+اثر فوتوالکتریک و فوتون
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
-<div class="lesson-item">
 
-<div class="lesson-number">
-درس ۲
+<!-- =========================
+PART 2
+========================= -->
+
+<a href="physics-12-experimental-chapter-4-line-spectra.html"
+   class="learning-card">
+
+<div class="icon">
+🌈
 </div>
 
 <h3>
-طیف خطی اتم‌ها
+
+بخش دوم
+
 </h3>
 
 <p>
-بررسی طیف‌های گسیلی و ارتباط آن‌ها با ساختار اتم.
+
+طیف خطی
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
-<div class="lesson-item">
 
-<div class="lesson-number">
-درس ۳
+<!-- =========================
+PART 3
+========================= -->
+
+<a href="physics-12-experimental-chapter-4-rutherford-bohr.html"
+   class="learning-card">
+
+<div class="icon">
+⚛️
 </div>
 
 <h3>
-مدل اتمی بور
+
+بخش سوم
+
 </h3>
 
 <p>
-ترازهای انرژی و مدل بور برای اتم هیدروژن.
+
+مدل اتم رادرفورد ـ بور
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
-<div class="lesson-item">
 
-<div class="lesson-number">
-درس ۴
+<!-- =========================
+PART 4
+========================= -->
+
+<a href="physics-12-experimental-chapter-4-laser.html"
+   class="learning-card">
+
+<div class="icon">
+🔴
 </div>
 
 <h3>
-فوتون و اثر فوتوالکتریک
+
+بخش چهارم
+
 </h3>
 
 <p>
-ماهیت کوانتومی نور و گسیل الکترون از فلزات.
+
+لیزر
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
-<div class="lesson-item">
 
-<div class="lesson-number">
-درس ۵
+<!-- =========================
+PART 5
+========================= -->
+
+<a href="physics-12-experimental-chapter-4-nuclear-structure.html"
+   class="learning-card">
+
+<div class="icon">
+☢️
 </div>
 
 <h3>
-فیزیک هسته‌ای
+
+بخش پنجم
+
 </h3>
 
 <p>
-ساختار هسته، ایزوتوپ‌ها و نیروهای هسته‌ای.
+
+ساختار هسته
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
-<div class="lesson-item">
 
-<div class="lesson-number">
-درس ۶
+<!-- =========================
+PART 6
+========================= -->
+
+<a href="physics-12-experimental-chapter-4-radioactivity-half-life.html"
+   class="learning-card">
+
+<div class="icon">
+⏳
 </div>
 
 <h3>
-پدیده‌های هسته‌ای
+
+بخش ششم
+
 </h3>
 
 <p>
-واپاشی پرتوزا، نیمه‌عمر، شکافت و همجوشی هسته‌ای.
+
+پرتوزایی طبیعی و نیمه‌عمر
+
 </p>
 
-</div>
+<span class="button">
+
+ورود به بخش
+
+</span>
+
+</a>
 
 
 </div>
@@ -775,7 +936,7 @@ H <span>QUANTUM</span>
 
 
 <!-- =========================
-     RESOURCES
+CONTENT
 ========================= -->
 
 <section>
@@ -784,291 +945,40 @@ H <span>QUANTUM</span>
 <div class="section-title">
 
 <h2>
-🚀 امکانات آموزشی فصل
+
+🎓 مسیر یادگیری
+
 </h2>
 
 <p>
-تمام محتوای آموزشی آینده از این بخش‌ها قابل دسترسی خواهد بود.
+
+از فوتون تا هسته
+
 </p>
 
 </div>
 
 
-<div class="content-grid">
 
+<div class="content-box">
 
-<a href="#lesson"
-class="content-card">
+<h2>
 
-<div class="card-icon">
-📖
-</div>
+از جهان کوانتومی تا ساختار هسته
 
-<h3>
-درسنامه
-</h3>
+</h2>
 
 <p>
-درسنامهٔ کامل و مفهومی فیزیک اتمی و هسته‌ای.
-</p>
 
-<span class="card-status">
-به‌زودی
-</span>
+در این فصل ابتدا با اثر فوتوالکتریک
+و مفهوم فوتون آشنا می‌شویم.
+سپس طیف‌های خطی و مدل اتم رادرفورد ـ بور
+را بررسی می‌کنیم و می‌بینیم چگونه شناخت
+ما از ساختار اتم به فناوری لیزر منجر شده است.
+در نیمه دوم فصل از مقیاس اتم به درون هسته می‌رویم
+و ساختار هسته، پرتوزایی طبیعی و نیمه‌عمر
+را مطالعه می‌کنیم.
 
-</a>
-
-
-
-<a href="#podcast"
-class="content-card">
-
-<div class="card-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
-
-<p>
-اپیزودهای صوتی مرتبط با فیزیک نوین و هسته‌ای.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#video"
-class="content-card">
-
-<div class="card-icon">
-🎬
-</div>
-
-<h3>
-ویدئوهای آموزشی
-</h3>
-
-<p>
-آموزش تصویری مفاهیم اتمی و هسته‌ای.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#simulator"
-class="content-card">
-
-<div class="card-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌ساز تعاملی
-</h3>
-
-<p>
-شبیه‌سازی ترازهای انرژی، فوتون و پدیده‌های هسته‌ای.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#problems"
-class="content-card">
-
-<div class="card-icon">
-🧮
-</div>
-
-<h3>
-مثال و حل مسئله
-</h3>
-
-<p>
-مثال‌های مفهومی و محاسباتی با راه‌حل مرحله‌به‌مرحله.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-
-<a href="#quiz"
-class="content-card">
-
-<div class="card-icon">
-✏️
-</div>
-
-<h3>
-تمرین و آزمون
-</h3>
-
-<p>
-تمرین‌های طبقه‌بندی‌شده و آزمون‌های فصل.
-</p>
-
-<span class="card-status">
-به‌زودی
-</span>
-
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     FUTURE CONTENT
-========================= -->
-
-<section id="lesson">
-
-<div class="info-box">
-
-<div class="info-icon">
-📖
-</div>
-
-<h3>
-درسنامه فصل چهارم
-</h3>
-
-<p>
-محل قرارگیری درسنامهٔ کامل فیزیک اتمی و هسته‌ای.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="podcast">
-
-<div class="info-box">
-
-<div class="info-icon">
-🎙️
-</div>
-
-<h3>
-پادکست فصل چهارم
-</h3>
-
-<p>
-اپیزودهای پادکست مرتبط با فیزیک اتمی و هسته‌ای.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="video">
-
-<div class="info-box">
-
-<div class="info-icon">
-🎬
-</div>
-
-<h3>
-ویدئوهای آموزشی
-</h3>
-
-<p>
-محل قرارگیری ویدئوهای آموزشی فصل.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="simulator">
-
-<div class="info-box">
-
-<div class="info-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌سازهای تعاملی
-</h3>
-
-<p>
-شبیه‌سازهای مربوط به ساختار اتم،
-ترازهای انرژی و پدیده‌های هسته‌ای.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="problems">
-
-<div class="info-box">
-
-<div class="info-icon">
-🧮
-</div>
-
-<h3>
-مثال و حل مسئله
-</h3>
-
-<p>
-مثال‌های آموزشی و مسائل استاندارد فصل.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="quiz">
-
-<div class="info-box">
-
-<div class="info-icon">
-✏️
-</div>
-
-<h3>
-تمرین و آزمون
-</h3>
-
-<p>
-تمرین‌های مفهومی، محاسباتی و آزمون‌های فصل.
 </p>
 
 </div>
@@ -1078,31 +988,80 @@ class="content-card">
 
 
 <!-- =========================
-     NAVIGATION
+NAVIGATION
 ========================= -->
 
 <section>
+
+
+<div class="section-title">
+
+<h2>
+
+ادامه مسیر
+
+</h2>
+
+<p>
+
+حرکت میان پایه‌ها و فصل‌های فیزیک
+
+</p>
+
+</div>
+
+
 
 <div class="navigation">
 
 
-<a href="./physics-12-experimental-chapter-3.html"
-class="nav-button">
+<a href="physics-12-experimental-chapter-3.html"
+   class="nav-card">
 
-← فصل سوم
+<small>
+
+فصل قبلی
+
+</small>
+
+← فصل سوم: نوسان و امواج
 
 </a>
 
 
-<a href="./physics-12-experimental.html"
-class="nav-button">
 
-همه فصل‌ها
+<a href="physics-12-experimental.html"
+   class="nav-card">
+
+<small>
+
+بازگشت
+
+</small>
+
+فیزیک دوازدهم تجربی →
 
 </a>
 
 
 </div>
+
+</section>
+
+
+
+<!-- =========================
+BACK
+========================= -->
+
+<section class="back">
+
+<a href="physics-12-experimental.html"
+   class="back-button">
+
+← بازگشت به فیزیک دوازدهم تجربی
+
+</a>
 
 </section>
 
@@ -1112,7 +1071,7 @@ class="nav-button">
 
 
 <!-- =========================
-     FOOTER
+FOOTER
 ========================= -->
 
 <footer>
@@ -1120,15 +1079,14 @@ class="nav-button">
 <p>
 
 © 2026 —
-<strong>
-H Quantum
-</strong>
+<strong>H Quantum</strong>
 
 </p>
 
-
 <p>
+
 Physics • Science • Wonder
+
 </p>
 
 </footer>
@@ -1136,4 +1094,4 @@ Physics • Science • Wonder
 
 </body>
 
-   </html>
+</html>
