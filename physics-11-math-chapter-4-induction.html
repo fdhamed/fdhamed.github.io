@@ -10,7 +10,14 @@
 
 <title>پدیده القای الکترومغناطیسی | فیزیک یازدهم ریاضی | H Quantum</title>
 
+<meta name="description"
+      content="بخش اول فصل چهارم فیزیک یازدهم رشته ریاضی؛ پدیده القای الکترومغناطیسی در H Quantum.">
+
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 * {
     box-sizing: border-box;
@@ -43,17 +50,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(7,17,31,0.94);
+
+    background:
+    rgba(7,17,31,0.94);
+
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
 }
 
 .nav {
     max-width: 1100px;
     margin: auto;
+
     padding: 16px 20px;
 
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 }
@@ -70,11 +84,15 @@ header {
 
 .nav-links {
     display: flex;
+
     gap: 18px;
+
     font-size: 14px;
+
     color: #cbd5e1;
 
     flex-wrap: wrap;
+
     justify-content: center;
 }
 
@@ -93,9 +111,11 @@ header {
 
 .hero {
     max-width: 1000px;
+
     margin: auto;
 
-    padding: 80px 20px 60px;
+    padding:
+    80px 20px 60px;
 
     text-align: center;
 }
@@ -103,9 +123,11 @@ header {
 .badge {
     display: inline-block;
 
-    padding: 7px 18px;
+    padding:
+    7px 18px;
 
-    border: 1px solid rgba(99,216,255,0.35);
+    border:
+    1px solid rgba(99,216,255,0.35);
 
     border-radius: 30px;
 
@@ -117,7 +139,8 @@ header {
 }
 
 .hero h1 {
-    font-size: clamp(34px, 8vw, 60px);
+    font-size:
+    clamp(34px, 8vw, 60px);
 
     line-height: 1.4;
 
@@ -129,7 +152,8 @@ header {
 }
 
 .hero h2 {
-    font-size: clamp(19px, 5vw, 30px);
+    font-size:
+    clamp(19px, 5vw, 30px);
 
     font-weight: normal;
 
@@ -156,7 +180,8 @@ section {
 
     margin: auto;
 
-    padding: 55px 20px;
+    padding:
+    55px 20px;
 }
 
 .section-title {
@@ -187,11 +212,13 @@ section {
 
     margin: auto;
 
-    padding: 35px 30px;
+    padding:
+    35px 30px;
 
     background: #0a1828;
 
-    border: 1px solid rgba(99,216,255,0.12);
+    border:
+    1px solid rgba(99,216,255,0.12);
 
     border-radius: 22px;
 
@@ -219,7 +246,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+    repeat(3, 1fr);
 
     gap: 20px;
 
@@ -230,31 +257,33 @@ section {
 
 
 /* =========================
-   CARD
+   LEARNING CARD
 ========================= */
 
 .learning-card {
-    padding: 28px 20px;
+    padding:
+    28px 20px;
 
     background: #0c1b2c;
 
-    border: 1px solid
-        rgba(255,255,255,0.08);
+    border:
+    1px solid rgba(255,255,255,0.08);
 
     border-radius: 20px;
 
     text-align: center;
 
     transition:
-        transform 0.3s,
-        border-color 0.3s;
+    transform 0.3s,
+    border-color 0.3s;
 }
 
 .learning-card:hover {
-    transform: translateY(-5px);
+    transform:
+    translateY(-5px);
 
     border-color:
-        rgba(99,216,255,0.5);
+    rgba(99,216,255,0.5);
 }
 
 .icon {
@@ -280,25 +309,34 @@ section {
 .button {
     display: inline-block;
 
-    padding: 9px 18px;
+    padding:
+    9px 18px;
 
     border-radius: 9px;
 
     background: #10243a;
 
-    border: 1px solid
-        rgba(255,255,255,0.12);
+    border:
+    1px solid rgba(255,255,255,0.12);
 
     color: #63d8ff;
 
     font-size: 13px;
 
     font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #63d8ff;
+
+    color: #06101d;
 }
 
 
 /* =========================
-   CONTENT PLACEHOLDER
+   CONTENT BOX
 ========================= */
 
 .content-box {
@@ -306,12 +344,13 @@ section {
 
     margin: auto;
 
-    padding: 40px 30px;
+    padding:
+    40px 30px;
 
     background: #0a1828;
 
-    border: 1px solid
-        rgba(99,216,255,0.12);
+    border:
+    1px solid rgba(99,216,255,0.12);
 
     border-radius: 22px;
 
@@ -332,14 +371,14 @@ section {
 
 
 /* =========================
-   FUTURE SECTIONS
+   FUTURE CONTENT
 ========================= */
 
 .future-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+    repeat(2, 1fr);
 
     gap: 20px;
 
@@ -353,8 +392,8 @@ section {
 
     background: #0c1b2c;
 
-    border: 1px solid
-        rgba(255,255,255,0.08);
+    border:
+    1px solid rgba(255,255,255,0.08);
 
     border-radius: 18px;
 
@@ -386,7 +425,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+    repeat(2, 1fr);
 
     gap: 20px;
 }
@@ -396,8 +435,8 @@ section {
 
     background: #0c1b2c;
 
-    border: 1px solid
-        rgba(255,255,255,0.08);
+    border:
+    1px solid rgba(255,255,255,0.08);
 
     border-radius: 18px;
 
@@ -410,9 +449,10 @@ section {
 
 .nav-card:hover {
     border-color:
-        rgba(99,216,255,0.5);
+    rgba(99,216,255,0.5);
 
-    transform: translateY(-4px);
+    transform:
+    translateY(-4px);
 }
 
 .nav-card small {
@@ -434,24 +474,33 @@ section {
     text-align: center;
 
     padding:
-        20px 20px 80px;
+    20px 20px 80px;
 }
 
 .back-button {
     display: inline-block;
 
-    padding: 12px 25px;
+    padding:
+    12px 25px;
 
     background: #10243a;
 
-    border: 1px solid
-        rgba(255,255,255,0.12);
+    border:
+    1px solid rgba(255,255,255,0.12);
 
     border-radius: 10px;
 
     color: #63d8ff;
 
     font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #63d8ff;
+
+    color: #06101d;
 }
 
 
@@ -461,9 +510,10 @@ section {
 
 footer {
     border-top:
-        1px solid rgba(255,255,255,0.08);
+    1px solid rgba(255,255,255,0.08);
 
-    padding: 35px 20px;
+    padding:
+    35px 20px;
 
     text-align: center;
 
@@ -495,23 +545,27 @@ footer strong {
 
     .hero {
         padding:
-            55px 16px 45px;
+        55px 16px 45px;
     }
 
     .hero p {
         font-size: 14px;
     }
 
+    /*
+       دو ستونه در موبایل
+    */
+
     .learning-grid {
         grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+        repeat(2, minmax(0, 1fr));
 
         gap: 12px;
     }
 
     .learning-card {
         padding:
-            20px 12px;
+        20px 12px;
 
         border-radius: 16px;
     }
@@ -536,29 +590,34 @@ footer strong {
         font-size: 11px;
 
         padding:
-            8px 10px;
+        8px 10px;
+    }
+
+    section {
+        padding:
+        45px 14px;
     }
 
     .intro {
         padding:
-            28px 18px;
+        28px 18px;
     }
 
     .content-box {
         padding:
-            30px 18px;
+        30px 18px;
     }
 
     .future-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+        repeat(2, 1fr);
 
         gap: 12px;
     }
 
     .future-card {
         padding:
-            18px 10px;
+        18px 10px;
     }
 
     .future-card h3 {
@@ -571,14 +630,14 @@ footer strong {
 
     .navigation {
         grid-template-columns:
-            repeat(2, 1fr);
+        repeat(2, 1fr);
 
         gap: 12px;
     }
 
     .nav-card {
         padding:
-            16px 8px;
+        16px 8px;
 
         font-size: 12px;
     }
@@ -700,7 +759,7 @@ H <span>QUANTUM</span>
 
 <p>
 
-در این بخش با مفهوم القای الکترومغناطیسی
+در این بخش با پدیدهٔ القای الکترومغناطیسی
 آشنا می‌شویم و بررسی می‌کنیم چگونه تغییر
 شار مغناطیسی می‌تواند باعث ایجاد نیروی
 محرکهٔ الکتریکی القایی شود.
@@ -795,7 +854,7 @@ H <span>QUANTUM</span>
 
 
 <p>
-درسنامه کامل القای الکترومغناطیسی
+درسنامه کامل این بخش
 </p>
 
 
@@ -1027,8 +1086,8 @@ H <span>QUANTUM</span>
 
 در مرحلهٔ تولید محتوا، درسنامهٔ کامل،
 شکل‌ها، آزمایش‌ها، مثال‌ها، روابط و
-فعالیت‌های آموزشی این بخش در این قسمت
-قرار خواهند گرفت.
+فعالیت‌های آموزشی این بخش
+در این قسمت قرار خواهند گرفت.
 
 </p>
 
@@ -1164,7 +1223,7 @@ H <span>QUANTUM</span>
 <div class="navigation">
 
 
-<!-- PREVIOUS -->
+<!-- BACK TO CHAPTER -->
 
 <a href="physics-11-math-chapter-4.html"
    class="nav-card">
@@ -1184,7 +1243,7 @@ H <span>QUANTUM</span>
 
 <!-- NEXT -->
 
-<a href="physics-11-math-ch4-faraday.html"
+<a href="physics-11-math-chapter-4-faraday.html"
    class="nav-card">
 
 
