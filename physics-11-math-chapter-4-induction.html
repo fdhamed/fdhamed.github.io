@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>پدیده القای الکترومغناطیسی | فیزیک یازدهم ریاضی | H Quantum</title>
+
+<meta name="description"
+      content="بخش اول فصل چهارم فیزیک یازدهم ریاضی؛ پدیده القای الکترومغناطیسی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+
+background:#07111f;
+
+color:#f4f7fb;
+
+line-height:2;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+
+background:
+rgba(7,17,31,0.95);
+
+backdrop-filter:blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+
+padding:15px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+
+gap:18px;
+
+font-size:13px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+
+/* =========================
+MAIN
+========================= */
+
+.container{
+max-width:1000px;
+
+margin:auto;
+
+padding:0 20px;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+text-align:center;
+
+padding:
+60px 0 40px;
+}
+
+.eyebrow{
+color:#63d8ff;
+
+font-size:12px;
+
+margin-bottom:10px;
+}
+
+.hero h1{
+font-size:
+clamp(28px,7vw,46px);
+
+line-height:1.5;
+
+margin-bottom:10px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+color:#dce8f3;
+
+font-size:
+clamp(15px,3vw,21px);
+
+font-weight:normal;
+
+margin-bottom:15px;
+}
+
+.hero p{
+color:#9eafc1;
+
+font-size:13px;
+
+max-width:760px;
+
+margin:auto;
+}
+
+
+/* =========================
+CONTENT
+========================= */
+
+.content{
+max-width:900px;
+
+margin:auto;
+
+padding-bottom:30px;
+}
+
+.content-card{
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.13);
+
+border-radius:20px;
+
+padding:28px 24px;
+
+margin-bottom:18px;
+}
+
+.content-card h2{
+color:#63d8ff;
+
+font-size:22px;
+
+margin-bottom:12px;
+}
+
+.content-card h3{
+color:#dce8f3;
+
+font-size:18px;
+
+margin-top:20px;
+
+margin-bottom:8px;
+}
+
+.content-card p{
+color:#aebdce;
+
+font-size:14px;
+
+margin-bottom:12px;
+}
+
+.content-card ul{
+padding-right:22px;
+
+color:#aebdce;
+
+font-size:14px;
+}
+
+.content-card li{
+margin-bottom:7px;
+}
+
+
+/* =========================
+FORMULA
+========================= */
+
+.formula{
+direction:ltr;
+
+text-align:center;
+
+font-family:
+"Times New Roman",
+serif;
+
+font-size:24px;
+
+color:#63d8ff;
+
+background:#071522;
+
+border:
+1px solid rgba(99,216,255,0.15);
+
+border-radius:12px;
+
+padding:18px;
+
+margin:18px 0;
+}
+
+
+/* =========================
+NOTE
+========================= */
+
+.note{
+background:#10243a;
+
+border-right:
+4px solid #63d8ff;
+
+border-radius:10px;
+
+padding:15px 18px;
+
+margin-top:18px;
+
+color:#cbd5e1;
+
+font-size:13px;
+}
+
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navigation{
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+padding:
+30px 0 65px;
+}
+
+.button{
+display:inline-block;
+
+padding:10px 18px;
+
+background:#10243a;
+
+border:
+1px solid rgba(99,216,255,0.25);
+
+border-radius:10px;
+
+color:#63d8ff;
+
+font-size:11px;
+
+font-weight:bold;
+
+transition:0.3s;
+}
+
+.button:hover{
+background:#15324e;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:30px 20px;
+
+text-align:center;
+
+color:#8191a4;
+
+font-size:11px;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:700px){
+
+.nav{
+flex-direction:column;
+
+gap:9px;
+}
+
+.nav-links{
+gap:10px;
+
+font-size:11px;
+}
+
+.container{
+padding:0 15px;
+}
+
+.hero{
+padding:
+45px 0 30px;
+}
+
+.hero h1{
+font-size:27px;
+}
+
+.hero h2{
+font-size:15px;
+}
+
+.hero p{
+font-size:11px;
+}
+
+.content-card{
+padding:
+20px 15px;
+
+border-radius:16px;
+}
+
+.content-card h2{
+font-size:19px;
+}
+
+.content-card h3{
+font-size:15px;
+}
+
+.content-card p,
+.content-card ul{
+font-size:11px;
+}
+
+.formula{
+font-size:20px;
+
+padding:14px 8px;
+}
+
+.note{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+MAIN
+========================= -->
+
+<main>
+
+<div class="container">
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="eyebrow">
+
+فیزیک یازدهم ریاضی • فصل چهارم • بخش اول
+
+</div>
+
+
+<h1>
+
+پدیدهٔ
+<span>
+القای الکترومغناطیسی
+</span>
+
+</h1>
+
+
+<h2>
+
+از تغییر میدان مغناطیسی تا ایجاد جریان الکتریکی
+
+</h2>
+
+
+<p>
+
+در این بخش با ایدهٔ اصلی القای الکترومغناطیسی
+آشنا می‌شویم و می‌بینیم چگونه تغییر شرایط
+مغناطیسی می‌تواند باعث ایجاد نیروی محرکهٔ
+الکتریکی و جریان القایی شود.
+
+</p>
+
+</section>
+
+
+<!-- =========================
+CONTENT
+========================= -->
+
+<section class="content">
+
+
+<div class="content-card">
+
+<h2>
+۱. یک مشاهدهٔ ساده
+</h2>
+
+<p>
+
+تصور کنید یک آهنربا را به یک سیم‌پیچ نزدیک
+می‌کنیم. ممکن است انتظار داشته باشیم چون
+آهنربا فقط یک جسم مغناطیسی است، اتفاق خاصی
+در مدار الکتریکی رخ ندهد.
+
+اما اگر سیم‌پیچ به یک گالوانومتر متصل باشد،
+با حرکت آهنربا عقربهٔ گالوانومتر منحرف می‌شود.
+
+</p>
+
+<p>
+
+اگر آهنربا را متوقف کنیم، انحراف عقربه نیز
+از بین می‌رود. اگر جهت حرکت آهنربا را عوض کنیم،
+جهت انحراف عقربه نیز تغییر می‌کند.
+
+</p>
+
+<div class="note">
+
+نکتهٔ کلیدی: آنچه باعث ایجاد جریان القایی می‌شود،
+صرفاً وجود میدان مغناطیسی نیست؛ بلکه
+<strong>تغییر وضعیت مغناطیسی مدار</strong> اهمیت دارد.
+
+</div>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۲. القای الکترومغناطیسی چیست؟
+</h2>
+
+<p>
+
+به پدیده‌ای که در آن بر اثر تغییر شار مغناطیسی
+عبوری از یک مدار، نیروی محرکهٔ الکتریکی
+در مدار ایجاد می‌شود، <strong>القای الکترومغناطیسی</strong>
+می‌گوییم.
+
+</p>
+
+<p>
+
+اگر مدار بسته باشد، این نیروی محرکهٔ القایی
+می‌تواند جریان الکتریکی ایجاد کند.
+
+</p>
+
+<div class="note">
+
+القای الکترومغناطیسی پلی میان دو پدیدهٔ مهم
+فیزیکی است: <strong>مغناطیس و الکتریسیته</strong>.
+
+</div>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۳. شار مغناطیسی
+</h2>
+
+<p>
+
+برای توصیف مقدار میدان مغناطیسی عبوری از یک
+سطح، از کمیتی به نام <strong>شار مغناطیسی</strong>
+استفاده می‌کنیم.
+
+</p>
+
+<p>
+
+برای یک میدان مغناطیسی یکنواخت و سطح تخت داریم:
+
+</p>
+
+
+<div class="formula">
+
+Φ = B A cos θ
+
+</div>
+
+
+<p>
+
+در این رابطه:
+
+</p>
+
+<ul>
+
+<li>
+Φ شار مغناطیسی است.
+</li>
+
+<li>
+B بزرگی میدان مغناطیسی است.
+</li>
+
+<li>
+A مساحت سطح است.
+</li>
+
+<li>
+θ زاویهٔ بین میدان مغناطیسی و بردار عمود بر سطح است.
+</li>
+
+</ul>
+
+
+<div class="note">
+
+واحد شار مغناطیسی در SI، <strong>وبر (Wb)</strong>
+است.
+
+</div>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۴. چگونه شار مغناطیسی تغییر می‌کند؟
+</h2>
+
+<p>
+
+برای ایجاد القای الکترومغناطیسی باید شار
+مغناطیسی تغییر کند. این تغییر می‌تواند
+به روش‌های مختلفی ایجاد شود.
+
+</p>
+
+<ul>
+
+<li>
+تغییر بزرگی میدان مغناطیسی B
+</li>
+
+<li>
+تغییر مساحت سطح A
+</li>
+
+<li>
+تغییر زاویهٔ θ بین میدان و سطح
+</li>
+
+<li>
+حرکت نسبی آهنربا و مدار
+</li>
+
+</ul>
+
+<p>
+
+بنابراین ممکن است میدان مغناطیسی در یک نقطه
+وجود داشته باشد، اما تا زمانی که شار مغناطیسی
+تغییر نکند، الزاماً جریان القایی ایجاد نمی‌شود.
+
+</p>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۵. آزمایش آهنربا و سیم‌پیچ
+</h2>
+
+<p>
+
+یک سیم‌پیچ را به گالوانومتر متصل کنید و
+آهنربایی را به سمت سیم‌پیچ حرکت دهید.
+
+</p>
+
+<p>
+
+هنگام حرکت آهنربا، عقربهٔ گالوانومتر منحرف
+می‌شود. اگر آهنربا را متوقف کنیم، انحراف
+از بین می‌رود.
+
+</p>
+
+<p>
+
+حال آهنربا را از سیم‌پیچ دور کنید. عقربه
+در جهت مخالف منحرف خواهد شد.
+
+</p>
+
+<div class="note">
+
+نتیجهٔ آزمایش:
+
+<strong>
+تغییر شار مغناطیسی → نیروی محرکهٔ القایی
+→ جریان القایی در مدار بسته
+</strong>
+
+</div>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۶. نکتهٔ مهم مفهومی
+</h2>
+
+<p>
+
+یکی از مهم‌ترین نکات این بخش این است که
+«وجود میدان مغناطیسی» و «تغییر شار مغناطیسی»
+دو مفهوم یکسان نیستند.
+
+</p>
+
+<p>
+
+ممکن است یک سیم‌پیچ درون میدان مغناطیسی
+قرار داشته باشد و هیچ جریان القایی در آن
+وجود نداشته باشد؛ اگر شار مغناطیسی عبوری
+از سیم‌پیچ ثابت بماند.
+
+</p>
+
+<p>
+
+در مقابل، با تغییر شار، حتی اگر بزرگی میدان
+در یک نقطه ثابت باشد، می‌توان شرایطی ایجاد کرد
+که نیروی محرکهٔ القایی به وجود آید.
+
+</p>
+
+</div>
+
+
+
+<div class="content-card">
+
+<h2>
+۷. جمع‌بندی بخش اول
+</h2>
+
+<p>
+
+در این بخش دیدیم که تغییر شار مغناطیسی
+می‌تواند باعث ایجاد نیروی محرکهٔ الکتریکی
+در یک مدار شود. اگر مدار بسته باشد،
+جریان القایی نیز شکل می‌گیرد.
+
+</p>
+
+<p>
+
+برای محاسبهٔ دقیق این نیروی محرکهٔ القایی،
+باید به قانون مهمی برسیم که این پدیده را
+به‌صورت ریاضی بیان می‌کند.
+
+</p>
+
+<div class="note">
+
+در بخش بعدی وارد
+<strong>قانون القای الکترومغناطیسی فاراده</strong>
+می‌شویم.
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+NAVIGATION
+========================= -->
+
+<div class="navigation">
+
+<a
+href="physics-11-math-chapter-4.html"
+class="button">
+
+← بازگشت به فصل چهارم
+
+</a>
+
+
+<a
+href="physics-11-math-chapter-4-faraday.html"
+class="button">
+
+بخش بعدی →
+</a>
+
+</div>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
