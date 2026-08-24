@@ -1,1 +1,951 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>پرسش‌های مفهومی | کمیت‌های فیزیکی | فیزیک دهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="پرسش‌های مفهومی بخش اول فصل اول فیزیک دهم رشته علوم تجربی؛ کمیت‌های فیزیکی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.intro{
+max-width:900px;
+margin:auto;
+padding:35px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:center;
+}
+
+.intro h2{
+font-size:27px;
+margin-bottom:15px;
+}
+
+.intro p{
+color:#aebdce;
+font-size:15px;
+}
+
+.question-list{
+max-width:950px;
+margin:auto;
+display:grid;
+gap:20px;
+}
+
+.question-card{
+padding:28px 25px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:20px;
+}
+
+.question-number{
+display:inline-block;
+padding:5px 12px;
+margin-bottom:15px;
+background:#10243a;
+border:1px solid rgba(99,216,255,0.2);
+border-radius:20px;
+color:#63d8ff;
+font-size:12px;
+}
+
+.question-card h3{
+font-size:19px;
+margin-bottom:15px;
+color:#f4f7fb;
+}
+
+.question-card p{
+color:#cbd5e1;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.options{
+margin:18px 0;
+display:grid;
+gap:10px;
+}
+
+.option{
+padding:12px 15px;
+background:#07111f;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:12px;
+color:#cbd5e1;
+font-size:14px;
+}
+
+.answer-box{
+margin-top:18px;
+padding:18px;
+background:#07111f;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.answer-box summary{
+cursor:pointer;
+color:#63d8ff;
+font-weight:bold;
+font-size:13px;
+}
+
+.answer-box p{
+margin-top:15px;
+margin-bottom:0;
+color:#aebdce;
+}
+
+.concept-box{
+max-width:950px;
+margin:auto;
+padding:35px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:right;
+}
+
+.concept-box h2{
+font-size:27px;
+margin-bottom:18px;
+color:#63d8ff;
+}
+
+.concept-box p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.note{
+padding:20px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:12px;
+color:#aebdce;
+font-size:14px;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.intro{
+padding:28px 18px;
+}
+
+.question-card{
+padding:22px 16px;
+}
+
+.question-card h3{
+font-size:16px;
+}
+
+.question-card p{
+font-size:13px;
+}
+
+.option{
+font-size:12px;
+padding:10px 12px;
+}
+
+.concept-box{
+padding:30px 18px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="badge">
+فیزیک دهم تجربی • فصل اول • بخش اول
+</div>
+
+<h1>
+<span>پرسش‌های مفهومی</span>
+</h1>
+
+<h2>
+کمیت‌های فیزیکی
+</h2>
+
+<p>
+در این صفحه با پرسش‌هایی روبه‌رو می‌شویم که هدفشان
+فقط رسیدن به یک عدد نیست؛ بلکه می‌خواهند میزان درک ما
+از مفهوم کمیت فیزیکی، اندازه‌گیری، مقدار و یکا را بررسی کنند.
+</p>
+
+</section>
+
+<section>
+
+<div class="intro">
+
+<h2>
+❓ چگونه پاسخ بدهیم؟
+</h2>
+
+<p>
+پیش از باز کردن پاسخ، ابتدا خودتان درباره سؤال فکر کنید.
+تلاش کنید دلیل پاسخ خود را توضیح دهید؛ زیرا در پرسش‌های
+مفهومی، «چرا» معمولاً از خود پاسخ مهم‌تر است.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>
+🧠 پرسش‌های مفهومی
+</h2>
+
+<p>
+سؤال‌هایی برای عمیق‌تر فکر کردن به مفاهیم
+</p>
+
+</div>
+
+<div class="question-list">
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۱
+</span>
+
+<h3>
+چرا در فیزیک نمی‌توان فقط گفت «طول این میز ۵ است»؟
+</h3>
+
+<p>
+اگر شخصی چنین جمله‌ای بگوید، چه اطلاعاتی برای کامل شدن
+نتیجه اندازه‌گیری لازم است؟
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+باید یکای اندازه‌گیری مشخص شود. عدد ۵ به تنهایی مشخص نمی‌کند
+طول میز ۵ متر، ۵ سانتی‌متر یا مقدار دیگری است.
+یک نتیجه اندازه‌گیری باید همراه با یکای مناسب بیان شود.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۲
+</span>
+
+<h3>
+آیا هر ویژگی یک جسم را می‌توان کمیت فیزیکی نامید؟
+</h3>
+
+<p>
+برای پاسخ، تفاوت میان یک توصیف کیفی و یک ویژگی قابل اندازه‌گیری
+را در نظر بگیرید.
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+خیر. یک کمیت فیزیکی باید ویژگی‌ای باشد که بتوان مقدار آن را
+با اندازه‌گیری مشخص کرد. مثلاً طول و جرم کمیت فیزیکی هستند،
+اما ویژگی‌هایی مانند زیبایی یا رنگ به این معنا کمیت فیزیکی نیستند.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۳
+</span>
+
+<h3>
+دو دانش‌آموز می‌گویند طول یک میز به ترتیب «۲» و «۲۰۰» است.
+آیا حتماً یکی از آن‌ها اشتباه کرده است؟
+</h3>
+
+<p>
+بدون دانستن یکاها، درباره این دو اندازه‌گیری چه می‌توان گفت؟
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+خیر. ممکن است دانش‌آموز اول طول را ۲ متر و دانش‌آموز دوم
+همان طول را ۲۰۰ سانتی‌متر بیان کرده باشد. بنابراین قبل از
+مقایسه اعداد باید یکاهای اندازه‌گیری را نیز بررسی کنیم.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۴
+</span>
+
+<h3>
+چرا اندازه‌گیری در فیزیک اهمیت زیادی دارد؟
+</h3>
+
+<p>
+فکر کنید اگر فقط از واژه‌هایی مانند «بزرگ»، «کوچک»، «سریع»
+یا «گرم» استفاده کنیم، چه مشکلی در مقایسه نتایج به وجود می‌آید؟
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+توصیف‌های کیفی معمولاً دقت کافی برای مقایسه علمی ندارند.
+اندازه‌گیری به ما اجازه می‌دهد ویژگی‌های فیزیکی را به صورت
+کمّی بیان کنیم و نتایج آزمایش‌ها را دقیق‌تر با یکدیگر مقایسه کنیم.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۵
+</span>
+
+<h3>
+آیا ممکن است دو اندازه‌گیری دارای عدد یکسان باشند
+اما بیانگر دو کمیت متفاوت باشند؟
+</h3>
+
+<div class="options">
+
+<div class="option">
+الف) بله
+</div>
+
+<div class="option">
+ب) خیر
+</div>
+
+</div>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+گزینه <strong>الف</strong> درست است.
+مثلاً ممکن است طول جسمی ۵ متر و جرم آن ۵ کیلوگرم باشد.
+عدد هر دو برابر ۵ است، اما کمیت‌ها و یکاهای آن‌ها متفاوت‌اند.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۶
+</span>
+
+<h3>
+اگر یک جسم را با دو ابزار مختلف اندازه‌گیری کنیم،
+آیا الزاماً دو نتیجه متفاوت به دست می‌آوریم؟
+</h3>
+
+<p>
+به مفهوم دقت اندازه‌گیری و روش اندازه‌گیری فکر کنید.
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+خیر، الزاماً چنین نیست. اگر ابزارها به اندازه کافی دقیق باشند
+و روش اندازه‌گیری درست انجام شود، می‌توانند نتایج یکسان یا
+بسیار نزدیک به هم بدهند. اختلاف احتمالی می‌تواند ناشی از
+دقت ابزار یا خطاهای اندازه‌گیری باشد.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۷
+</span>
+
+<h3>
+چرا هنگام بیان یک کمیت فیزیکی باید به یکا توجه کنیم؟
+</h3>
+
+<p>
+آیا عدد به تنهایی می‌تواند مقدار یک کمیت را به طور کامل مشخص کند؟
+</p>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+خیر. یکا مشخص می‌کند عدد مورد نظر به چه مقیاس اندازه‌گیری
+مربوط است. برای مثال ۲ متر و ۲ سانتی‌متر از نظر مقدار فیزیکی
+برابر نیستند، هرچند عدد آن‌ها یکسان است.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+پرسش ۸
+</span>
+
+<h3>
+دانش‌آموزی می‌گوید «زمان یک مسابقه زیاد بود».
+چگونه می‌توان این جمله را به یک بیان فیزیکی دقیق‌تر تبدیل کرد؟
+</h3>
+
+<details class="answer-box">
+
+<summary>
+مشاهده پاسخ و توضیح
+</summary>
+
+<p>
+باید مقدار زمان را اندازه‌گیری و همراه با یکای آن بیان کنیم.
+مثلاً اگر زمان مسابقه ۹۰ دقیقه بوده باشد، می‌توان گفت:
+زمان مسابقه ۹۰ دقیقه است.
+</p>
+
+</details>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+🎯 پرسش‌های عمیق‌تر
+</h2>
+
+<p>
+برای فکر کردن فراتر از تعریف‌ها
+</p>
+
+</div>
+
+<div class="question-list">
+
+<article class="question-card">
+
+<span class="question-number">
+چالش ۱
+</span>
+
+<h3>
+اگر هیچ واحد استانداردی برای اندازه‌گیری طول وجود نداشت،
+آیا می‌توانستیم نتایج اندازه‌گیری افراد مختلف را به‌سادگی
+با یکدیگر مقایسه کنیم؟
+</h3>
+
+<details class="answer-box">
+
+<summary>
+راهنمای فکر کردن
+</summary>
+
+<p>
+به این فکر کنید که اگر هر شخص از یک معیار متفاوت برای
+اندازه‌گیری استفاده کند، چگونه می‌توان نتایج را با هم مقایسه کرد.
+استاندارد بودن یکاها امکان ارتباط دقیق میان اندازه‌گیری‌های
+افراد و آزمایشگاه‌های مختلف را فراهم می‌کند.
+</p>
+
+</details>
+
+</article>
+
+
+<article class="question-card">
+
+<span class="question-number">
+چالش ۲
+</span>
+
+<h3>
+چرا فیزیک برای توصیف پدیده‌های طبیعی به زبان کمّی نیاز دارد؟
+</h3>
+
+<details class="answer-box">
+
+<summary>
+راهنمای فکر کردن
+</summary>
+
+<p>
+به قابلیت اندازه‌گیری، مقایسه، تکرار آزمایش‌ها و بیان دقیق
+نتایج فکر کنید. زبان کمّی به فیزیک اجازه می‌دهد پدیده‌ها را
+با دقت بیشتری توصیف و روابط میان آن‌ها را بررسی کند.
+</p>
+
+</details>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="concept-box">
+
+<h2>
+💡 جمع‌بندی مفهومی
+</h2>
+
+<p>
+کمیت فیزیکی ویژگی‌ای از یک جسم یا پدیده است که می‌توان
+مقدار آن را اندازه‌گیری و با یکای مناسب بیان کرد.
+</p>
+
+<p>
+در هنگام پاسخ دادن به پرسش‌های این بخش، همیشه سه چیز را
+در ذهن داشته باشید:
+<strong>کمیت، مقدار عددی و یکا.</strong>
+</p>
+
+<div class="note">
+
+اگر بتوانید برای هر پاسخ خود «دلیل فیزیکی» ارائه کنید،
+یعنی مفهوم را فهمیده‌اید، نه اینکه فقط یک تعریف را حفظ کرده‌اید.
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان بخش‌های فصل اول
+</p>
+
+</div>
+
+<div class="navigation">
+
+<a href="physics-10-ch1-quantities.html"
+   class="nav-card">
+
+<small>
+بازگشت
+</small>
+
+← کمیت‌های فیزیکی
+
+</a>
+
+<a href="physics-10-ch1-measurement.html"
+   class="nav-card">
+
+<small>
+بخش بعدی
+</small>
+
+بخش دوم: اندازه‌گیری و یکا →
+
+</a>
+
+</div>
+
+</section>
+
+
+<section class="back">
+
+<a href="physics-10-experimental.html"
+   class="back-button">
+
+← بازگشت به فیزیک دهم تجربی
+
+</a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 —
+<strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
+</p>
+
+</footer>
+
+</body>
+
+</html>
