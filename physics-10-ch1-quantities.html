@@ -8,630 +8,396 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>کمیت‌های فیزیکی | فیزیک دهم | H Quantum</title>
+<title>کمیت‌های فیزیکی | فیزیک دهم تجربی | H Quantum</title>
 
 <meta name="description"
-      content="بخش اول فصل اول فیزیک دهم؛ کمیت‌های فیزیکی در H Quantum با متن آموزشی، پادکست، ویدئو، تمرین و شبیه‌ساز تعاملی.">
+      content="بخش اول فصل اول فیزیک دهم رشته علوم تجربی؛ آشنایی با کمیت‌های فیزیکی در H Quantum.">
 
 <style>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    font-family: Tahoma, Arial, sans-serif;
-
-    background: #07111f;
-
-    color: #f4f7fb;
-
-    line-height: 1.9;
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+text-decoration:none;
+color:inherit;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 1000;
-
-    background:
-    rgba(7,17,31,0.94);
-
-    backdrop-filter:
-    blur(12px);
-
-    border-bottom:
-    1px solid rgba(255,255,255,0.08);
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-.nav {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    padding: 16px 20px;
-
-    display: flex;
-
-    justify-content:
-    space-between;
-
-    align-items: center;
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.logo {
-
-    font-size: 24px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
-.logo span {
-
-    color: #63d8ff;
+.logo span{
+color:#63d8ff;
 }
 
-.nav-links {
-
-    display: flex;
-
-    gap: 20px;
-
-    font-size: 14px;
-
-    color: #cbd5e1;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.nav-links a:hover {
-
-    color: #63d8ff;
+.nav-links a{
+transition:0.3s;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    padding: 80px 20px 65px;
-
-    text-align: center;
+.nav-links a:hover{
+color:#63d8ff;
 }
 
-.hero-badge {
-
-    display: inline-block;
-
-    padding: 7px 18px;
-
-    border:
-    1px solid rgba(99,216,255,0.35);
-
-    border-radius: 30px;
-
-    color: #63d8ff;
-
-    font-size: 14px;
-
-    margin-bottom: 25px;
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
 }
 
-.hero h1 {
-
-    font-size:
-    clamp(34px, 8vw, 62px);
-
-    line-height: 1.3;
-
-    margin-bottom: 18px;
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
 }
 
-.hero h1 span {
-
-    color: #63d8ff;
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
 }
 
-.hero h2 {
-
-    font-size:
-    clamp(20px, 5vw, 30px);
-
-    font-weight: normal;
-
-    margin-bottom: 20px;
+.hero h1 span{
+color:#63d8ff;
 }
 
-.hero p {
-
-    max-width: 780px;
-
-    margin: auto;
-
-    color: #aebdce;
-
-    font-size: 17px;
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
 }
 
-
-/* =========================
-   GENERAL
-========================= */
-
-section {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    padding: 60px 20px;
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
 }
 
-.section-title {
-
-    text-align: center;
-
-    margin-bottom: 40px;
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
 }
 
-.section-title h2 {
-
-    font-size: 31px;
-
-    margin-bottom: 10px;
+.section-title{
+text-align:center;
+margin-bottom:35px;
 }
 
-.section-title p {
-
-    color: #9eafc2;
-
-    font-size: 15px;
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
 }
 
-
-/* =========================
-   CONTENT GRID
-========================= */
-
-.content-grid {
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 22px;
-
-    max-width: 900px;
-
-    margin: auto;
+.section-title p{
+color:#9eafc2;
+font-size:15px;
 }
 
-.content-card {
-
-    padding: 30px 25px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    transition:
-    transform 0.3s,
-    border-color 0.3s,
-    box-shadow 0.3s;
+.intro{
+max-width:900px;
+margin:auto;
+padding:35px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:center;
 }
 
-.content-card:hover {
-
-    transform:
-    translateY(-6px);
-
-    border-color:
-    rgba(99,216,255,0.5);
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
+.intro h2{
+font-size:27px;
+margin-bottom:15px;
 }
 
-.content-icon {
-
-    font-size: 42px;
-
-    margin-bottom: 12px;
+.intro p{
+color:#aebdce;
+font-size:15px;
 }
 
-.content-card h3 {
-
-    font-size: 23px;
-
-    margin-bottom: 12px;
+.learning-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1000px;
+margin:auto;
 }
 
-.content-card p {
-
-    color: #aebdce;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
+.learning-card{
+padding:28px 20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:20px;
+text-align:center;
+transition:transform 0.3s,border-color 0.3s;
 }
 
-.content-button {
-
-    display: inline-block;
-
-    padding: 10px 20px;
-
-    border-radius: 9px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.12);
-
-    color: #63d8ff;
-
-    font-weight: bold;
-
-    transition: 0.3s;
+.learning-card:hover{
+transform:translateY(-5px);
+border-color:rgba(99,216,255,0.5);
 }
 
-.content-button:hover {
-
-    background: #63d8ff;
-
-    color: #06101d;
+.icon{
+font-size:42px;
+margin-bottom:12px;
 }
 
-
-/* =========================
-   PREPARING
-========================= */
-
-.preparing {
-
-    opacity: 0.9;
+.learning-card h3{
+font-size:20px;
+margin-bottom:10px;
 }
 
-.preparing .content-button {
-
-    color: #91a2b5;
-
-    cursor: default;
+.learning-card p{
+color:#aebdce;
+font-size:13px;
+margin-bottom:18px;
 }
 
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
-
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 40px 30px;
-
-    background: #0a1828;
-
-    border-radius: 22px;
-
-    border:
-    1px solid rgba(99,216,255,0.12);
+.button{
+display:inline-block;
+padding:9px 18px;
+border-radius:9px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+color:#63d8ff;
+font-size:13px;
+font-weight:bold;
 }
 
-.intro h2 {
-
-    font-size: 27px;
-
-    margin-bottom: 18px;
-
-    text-align: center;
+.button:hover{
+background:#15324e;
 }
 
-.intro p {
-
-    color: #b6c4d3;
-
-    font-size: 16px;
-
-    text-align: justify;
+.content-box{
+max-width:950px;
+margin:auto;
+padding:40px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:right;
 }
 
-
-/* =========================
-   CONCEPTS
-========================= */
-
-.concepts {
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap: 16px;
-
-    max-width: 900px;
-
-    margin: auto;
+.content-box h2{
+font-size:28px;
+margin-bottom:18px;
+color:#63d8ff;
 }
 
-.concept-card {
-
-    padding: 23px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(255,255,255,0.07);
-
-    border-radius: 16px;
-
-    transition: 0.3s;
+.content-box p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:20px;
 }
 
-.concept-card:hover {
-
-    border-color:
-    rgba(99,216,255,0.35);
-
-    transform:
-    translateY(-3px);
+.example-box{
+margin:25px 0;
+padding:22px;
+background:#07111f;
+border:1px solid rgba(99,216,255,0.18);
+border-radius:15px;
 }
 
-.concept-number {
-
-    color: #63d8ff;
-
-    font-size: 13px;
-
-    margin-bottom: 5px;
+.example-box h3{
+color:#63d8ff;
+font-size:19px;
+margin-bottom:10px;
 }
 
-.concept-card h3 {
-
-    font-size: 19px;
-
-    margin-bottom: 8px;
+.example-box p{
+margin-bottom:0;
 }
 
-.concept-card p {
-
-    color: #91a2b5;
-
-    font-size: 14px;
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
 }
 
-
-/* =========================
-   KEY IDEA
-========================= */
-
-.key-idea {
-
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 30px;
-
-    background: #0a1828;
-
-    border:
-    1px solid rgba(99,216,255,0.12);
-
-    border-radius: 20px;
-
-    text-align: center;
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
 }
 
-.key-idea h2 {
-
-    font-size: 25px;
-
-    margin-bottom: 12px;
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
 }
 
-.key-idea p {
-
-    color: #aebdce;
-
-    font-size: 15px;
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
 }
 
-
-/* =========================
-   FUTURE CONTENT
-========================= */
-
-.future {
-
-    max-width: 900px;
-
-    margin: auto;
-
-    text-align: center;
+.back{
+text-align:center;
+padding:20px 20px 80px;
 }
 
-.future-list {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    margin-top: 20px;
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
 }
 
-.future-item {
-
-    padding: 8px 15px;
-
-    background: #0c1b2c;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    color: #cbd5e1;
-
-    font-size: 13px;
+.back-button:hover{
+border-color:#63d8ff;
 }
 
-
-/* =========================
-   BACK
-========================= */
-
-.back-section {
-
-    text-align: center;
-
-    padding-top: 20px;
-
-    padding-bottom: 80px;
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
 }
 
-.back-button {
-
-    display: inline-block;
-
-    padding: 13px 25px;
-
-    border-radius: 10px;
-
-    background: #10243a;
-
-    border:
-    1px solid rgba(255,255,255,0.15);
-
-    color: #63d8ff;
-
-    transition: 0.3s;
+footer strong{
+color:#63d8ff;
 }
 
-.back-button:hover {
+@media(max-width:750px){
 
-    transform:
-    translateY(-3px);
-
-    border-color:
-    #63d8ff;
+.nav{
+flex-direction:column;
+gap:10px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-
-    border-top:
-    1px solid rgba(255,255,255,0.08);
-
-    padding: 35px 20px;
-
-    text-align: center;
-
-    color: #8191a4;
+.nav-links{
+gap:11px;
+font-size:12px;
 }
 
-footer strong {
-
-    color: #63d8ff;
+.hero{
+padding:55px 16px 45px;
 }
 
+.hero p{
+font-size:14px;
+}
 
-/* =========================
-   MOBILE
-========================= */
+.learning-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px;
+}
 
-@media (max-width: 750px) {
+.learning-card{
+padding:20px 12px;
+border-radius:16px;
+}
 
-    .nav {
+.icon{
+font-size:32px;
+}
 
-        flex-direction: column;
+.learning-card h3{
+font-size:15px;
+line-height:1.7;
+}
 
-        gap: 10px;
-    }
+.learning-card p{
+font-size:11px;
+line-height:1.8;
+}
 
-    .nav-links {
+.button{
+font-size:11px;
+padding:8px 10px;
+}
 
-        gap: 11px;
+.intro{
+padding:28px 18px;
+}
 
-        font-size: 12px;
-    }
+.content-box{
+padding:30px 18px;
+}
 
-    .hero {
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
 
-        padding-top: 60px;
-    }
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
 
-    .hero p {
+}
 
-        font-size: 15px;
-    }
+@media(max-width:400px){
 
-    .content-grid {
+.hero h1{
+font-size:30px;
+}
 
-        grid-template-columns: 1fr;
-    }
+.hero h2{
+font-size:18px;
+}
 
-    .concepts {
-
-        grid-template-columns: 1fr;
-    }
-
-    section {
-
-        padding: 50px 16px;
-    }
-
-    .intro {
-
-        padding: 30px 20px;
-    }
+.learning-card h3{
+font-size:14px;
+}
 
 }
 
@@ -639,47 +405,29 @@ footer strong {
 
 </head>
 
-
 <body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
 <nav class="nav">
 
-<a href="index.html"
-   class="logo">
-
+<a href="index.html" class="logo">
 H <span>QUANTUM</span>
-
 </a>
-
 
 <div class="nav-links">
 
-<a href="index.html">
-خانه
-</a>
+<a href="index.html">خانه</a>
 
-<a href="school.html">
-مدرسه فیزیک
-</a>
+<a href="school.html">مدرسه فیزیک</a>
 
-<a href="podcast.html">
-🎙️ پادکست
-</a>
+<a href="physics-10.html">دهم</a>
 
-<a href="books.html">
-📚 کتاب‌ها
-</a>
+<a href="physics-11.html">یازدهم</a>
 
-<a href="simulations.html">
-🧪 آزمایشگاه
-</a>
+<a href="physics-12.html">دوازدهم</a>
+
+<a href="podcast.html">🎙️ پادکست</a>
 
 </div>
 
@@ -687,543 +435,382 @@ H <span>QUANTUM</span>
 
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
 <main>
 
 <section class="hero">
 
-<div class="hero-badge">
-
-فیزیک دهم • فصل اول • بخش اول
-
+<div class="badge">
+فیزیک دهم تجربی • فصل اول • بخش اول
 </div>
 
-
 <h1>
-
-<span>کمیت‌های</span> فیزیکی
-
+<span>کمیت‌های فیزیکی</span>
 </h1>
 
-
 <h2>
-
-بخش اول فصل «فیزیک و اندازه‌گیری»
-
+فصل اول فیزیک دهم رشته علوم تجربی
 </h2>
 
-
 <p>
-
-برای اینکه بتوانیم دربارهٔ جهان
-به زبان فیزیک صحبت کنیم، باید
-ویژگی‌های قابل اندازه‌گیری آن را
-به شکل دقیق بیان کنیم.
-
-اینجا با مفهوم کمیت فیزیکی
-آشنا می‌شویم.
-
+برای اینکه بتوانیم درباره جهان به زبان فیزیک صحبت کنیم،
+باید ویژگی‌های قابل اندازه‌گیری آن را به شکل دقیق بیان کنیم.
+در این بخش با مفهوم کمیت فیزیکی آشنا می‌شویم و می‌بینیم
+چرا کمیت‌ها یکی از پایه‌های زبان فیزیک هستند.
 </p>
 
 </section>
 
+<section>
 
-<!-- =========================
-     LEARNING PATHS
-========================= -->
+<div class="intro">
+
+<h2>
+📚 نقشه راه این بخش
+</h2>
+
+<p>
+ابتدا مفهوم کمیت فیزیکی را بررسی می‌کنیم،
+سپس با چند نمونه از کمیت‌های فیزیکی مانند طول،
+جرم، زمان و دما آشنا می‌شویم و در پایان
+ارتباط میان کمیت و اندازه‌گیری را بررسی می‌کنیم.
+</p>
+
+</div>
+
+</section>
 
 <section>
 
 <div class="section-title">
 
 <h2>
-مسیرهای یادگیری این بخش
+🎓 مسیرهای یادگیری
 </h2>
 
 <p>
-یک مفهوم را از چند مسیر تجربه می‌کنیم.
+روش‌های مختلف یادگیری کمیت‌های فیزیکی
 </p>
 
 </div>
 
+<div class="learning-grid">
 
-<div class="content-grid">
+<article class="learning-card">
 
+<div class="icon">📖</div>
 
-<!-- PODCAST -->
-
-<article class="content-card preparing">
-
-<div class="content-icon">
-🎙️
-</div>
-
-<h3>
-پادکست
-</h3>
+<h3>متن آموزشی</h3>
 
 <p>
-
-روایت صوتی دربارهٔ اینکه
-چگونه جهان را به زبان کمیت‌ها
-توصیف می‌کنیم.
-
+درسنامه کامل کمیت‌های فیزیکی
 </p>
 
-<a href="#podcast"
-   class="content-button">
-
+<a href="#" class="button" onclick="return false;">
 به‌زودی
-
 </a>
 
 </article>
 
+<article class="learning-card">
 
-<!-- VIDEO -->
+<div class="icon">🎙️</div>
 
-<article class="content-card preparing">
-
-<div class="content-icon">
-🎬
-</div>
-
-<h3>
-ویدئوی آموزشی
-</h3>
+<h3>پادکست</h3>
 
 <p>
-
-توضیح تصویری مفهوم کمیت،
-اندازه‌گیری و نمونه‌های ساده.
-
+روایت صوتی مفهوم کمیت‌های فیزیکی
 </p>
 
-<a href="#video"
-   class="content-button">
-
+<a href="#" class="button" onclick="return false;">
 به‌زودی
-
 </a>
 
 </article>
 
+<article class="learning-card">
 
-<!-- TEXT -->
+<div class="icon">🎬</div>
 
-<article class="content-card">
-
-<div class="content-icon">
-📖
-</div>
-
-<h3>
-متن آموزشی
-</h3>
+<h3>ویدئو</h3>
 
 <p>
-
-مطالعهٔ مفهوم کمیت‌های فیزیکی
-و تفاوت آن‌ها با توصیف‌های
-غیرکمّی.
-
+آموزش تصویری کمیت و اندازه‌گیری
 </p>
 
-<a href="#text"
-   class="content-button">
-
-مطالعه متن ←
-
-</a>
-
-</article>
-
-
-<!-- SIMULATOR -->
-
-<article class="content-card preparing">
-
-<div class="content-icon">
-🧪
-</div>
-
-<h3>
-شبیه‌ساز تعاملی
-</h3>
-
-<p>
-
-فعالیت‌های تعاملی برای مشاهدهٔ
-کمیت‌های مختلف در آینده اضافه
-خواهند شد.
-
-</p>
-
-<a href="#simulator"
-   class="content-button">
-
+<a href="#" class="button" onclick="return false;">
 به‌زودی
-
 </a>
 
 </article>
 
+<article class="learning-card">
+
+<div class="icon">🧪</div>
+
+<h3>شبیه‌ساز</h3>
+
+<p>
+فعالیت تعاملی برای بررسی کمیت‌های فیزیکی
+</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">📝</div>
+
+<h3>تمرین</h3>
+
+<p>
+تمرین‌های مفهومی و محاسباتی
+</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">❓</div>
+
+<h3>پرسش مفهومی</h3>
+
+<p>
+پرسش‌های مفهومی کمیت‌های فیزیکی
+</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
 
 </div>
 
 </section>
 
+<section>
 
-<!-- =========================
-     TEXT
-========================= -->
+<div class="section-title">
 
-<section id="text">
+<h2>
+📖 محتوای آموزشی
+</h2>
 
-<div class="intro">
+<p>
+کمیت‌های فیزیکی
+</p>
+
+</div>
+
+<div class="content-box">
 
 <h2>
 کمیت فیزیکی چیست؟
 </h2>
 
 <p>
-
-در زندگی روزمره، برای توصیف جهان
-از واژه‌های مختلفی استفاده می‌کنیم.
-
-ممکن است بگوییم یک جسم بزرگ است،
-یک اتاق گرم است یا یک خودرو سریع
-حرکت می‌کند.
-
-اما در فیزیک معمولاً به توصیف‌هایی
-نیاز داریم که بتوان آن‌ها را
-اندازه‌گیری و با یکدیگر مقایسه کرد.
-
-به ویژگی‌هایی از یک جسم یا پدیده
-که بتوان مقدار آن‌ها را با
-اندازه‌گیری مشخص کرد، کمیت فیزیکی
-می‌گوییم.
-
-برای مثال، طول یک میز، جرم یک جسم،
-زمان یک رویداد و دمای یک جسم
-می‌توانند به صورت کمّی بیان شوند.
-
-وقتی می‌گوییم طول یک میز
-۲ متر است، دیگر فقط دربارهٔ
-«بلند بودن» آن صحبت نمی‌کنیم؛
-بلکه مقدار طول را نیز مشخص کرده‌ایم.
-
-همین ویژگی است که زبان فیزیک را
-از بسیاری از توصیف‌های معمولی
-دقیق‌تر می‌کند.
-
-فیزیک تلاش می‌کند پدیده‌های طبیعی
-را با کمیت‌هایی توصیف کند که
-قابل اندازه‌گیری، مقایسه و بررسی
-باشند.
-
+در زندگی روزمره، برای توصیف جهان از واژه‌های مختلفی
+استفاده می‌کنیم. ممکن است بگوییم یک جسم بزرگ است،
+یک اتاق گرم است یا یک خودرو سریع حرکت می‌کند.
+اما در فیزیک معمولاً به توصیف‌هایی نیاز داریم که بتوان
+آن‌ها را اندازه‌گیری و با یکدیگر مقایسه کرد.
 </p>
 
-</div>
+<p>
+به ویژگی‌هایی از یک جسم یا پدیده که بتوان مقدار آن‌ها
+را با اندازه‌گیری مشخص کرد، کمیت فیزیکی می‌گوییم.
+برای مثال، طول یک میز، جرم یک جسم، زمان یک رویداد
+و دمای یک جسم می‌توانند به صورت کمّی بیان شوند.
+</p>
 
-</section>
+<h2>
+اهمیت کمیت‌های فیزیکی
+</h2>
 
+<p>
+وقتی می‌گوییم طول یک میز ۲ متر است، دیگر فقط درباره
+«بلند بودن» آن صحبت نمی‌کنیم؛ بلکه مقدار طول را نیز
+مشخص کرده‌ایم. همین ویژگی است که زبان فیزیک را از
+بسیاری از توصیف‌های معمولی دقیق‌تر می‌کند.
+</p>
 
-<!-- =========================
-     EXAMPLES
-========================= -->
-
-<section>
-
-<div class="section-title">
+<p>
+فیزیک تلاش می‌کند پدیده‌های طبیعی را با کمیت‌هایی
+توصیف کند که قابل اندازه‌گیری، مقایسه و بررسی باشند.
+به این ترتیب می‌توان نتایج آزمایش‌ها و اندازه‌گیری‌ها
+را با دقت بیشتری با یکدیگر مقایسه کرد.
+</p>
 
 <h2>
 چند نمونه از کمیت‌های فیزیکی
 </h2>
 
-<p>
-کمیت‌های مختلف، جنبه‌های متفاوتی از جهان فیزیکی را توصیف می‌کنند.
-</p>
-
-</div>
-
-
-<div class="concepts">
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-نمونه ۱
-</div>
+<div class="example-box">
 
 <h3>
 📏 طول
 </h3>
 
 <p>
-
-طول برای توصیف فاصله یا
-اندازهٔ یک جسم در یک راستا
-به کار می‌رود.
-
+طول برای توصیف فاصله یا اندازه یک جسم در یک راستا
+به کار می‌رود. برای بیان مقدار طول معمولاً از یکاهای
+مناسب مانند متر استفاده می‌کنیم.
 </p>
 
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-نمونه ۲
 </div>
+
+<div class="example-box">
 
 <h3>
 ⚖️ جرم
 </h3>
 
 <p>
-
-جرم یکی از کمیت‌های بنیادی
-فیزیکی است که در توصیف ماده
-نقش مهمی دارد.
-
+جرم یکی از کمیت‌های مهم فیزیکی است که در توصیف
+ماده نقش اساسی دارد و مقدار آن را می‌توان با اندازه‌گیری
+مشخص کرد.
 </p>
 
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-نمونه ۳
 </div>
+
+<div class="example-box">
 
 <h3>
 ⏱️ زمان
 </h3>
 
 <p>
-
-زمان برای توصیف ترتیب و فاصلهٔ
-زمانی میان رویدادها به کار می‌رود.
-
+زمان برای توصیف ترتیب رویدادها و فاصله زمانی میان
+آن‌ها به کار می‌رود. اندازه‌گیری زمان یکی از پایه‌های
+بسیاری از آزمایش‌های فیزیکی است.
 </p>
 
-</article>
-
-
-<article class="concept-card">
-
-<div class="concept-number">
-🌡️ دما
 </div>
 
+<div class="example-box">
+
 <h3>
-دما
+🌡️ دما
 </h3>
 
 <p>
-
-دما کمیتی فیزیکی است که
-وضعیت گرمایی یک جسم یا سامانه
-را توصیف می‌کند.
-
+دما کمیتی فیزیکی است که وضعیت گرمایی یک جسم یا
+سامانه را توصیف می‌کند و می‌توان آن را با ابزار مناسب
+اندازه‌گیری کرد.
 </p>
-
-</article>
-
 
 </div>
 
-</section>
-
-
-<!-- =========================
-     QUANTITATIVE LANGUAGE
-========================= -->
-
-<section>
-
-<div class="key-idea">
-
 <h2>
-🔑 چرا کمیت‌های فیزیکی مهم‌اند؟
+چرا کمیت‌های فیزیکی مهم‌اند؟
 </h2>
 
 <p>
-
-اگر فقط بگوییم «این میز بلند است»،
-اطلاعات ما محدود است.
-
-اما اگر بگوییم:
-
-<strong>
-طول میز ۲ متر است
-</strong>
-
-یک توصیف کمّی در اختیار داریم.
-
-به این ترتیب می‌توانیم اندازهٔ میز
-را با میز دیگری مقایسه کنیم،
-اندازه‌گیری را تکرار کنیم و نتیجه
-را با دیگران به اشتراک بگذاریم.
-
-این دقت و قابلیت مقایسه،
-یکی از پایه‌های فیزیک است.
-
+اگر فقط بگوییم «این میز بلند است»، اطلاعات ما محدود است.
+اما اگر بگوییم «طول میز ۲ متر است»، یک توصیف کمّی
+در اختیار داریم.
 </p>
 
-</div>
-
-</section>
-
-
-<!-- =========================
-     QUANTITY AND MEASUREMENT
-========================= -->
-
-<section>
-
-<div class="intro">
+<p>
+به این ترتیب می‌توانیم اندازه میز را با میز دیگری مقایسه کنیم،
+اندازه‌گیری را تکرار کنیم و نتیجه را با دیگران به اشتراک بگذاریم.
+این دقت و قابلیت مقایسه، یکی از پایه‌های فیزیک است.
+</p>
 
 <h2>
 کمیت و اندازه‌گیری
 </h2>
 
 <p>
+شناخت یک کمیت فیزیکی به تنهایی برای بیان مقدار آن کافی نیست.
+وقتی می‌خواهیم مقدار یک کمیت را مشخص کنیم، باید آن را اندازه‌گیری کنیم.
+</p>
 
-شناخت یک کمیت فیزیکی به تنهایی
-برای بیان مقدار آن کافی نیست.
-
-وقتی می‌خواهیم مقدار یک کمیت
-را مشخص کنیم، باید آن را
-اندازه‌گیری کنیم.
-
-اندازه‌گیری یعنی مقایسهٔ کمیت
-مورد نظر با یک مقدار استاندارد.
-
-در نتیجه، مفهوم «کمیت فیزیکی»
-ما را به مفهوم «اندازه‌گیری»
-می‌رساند.
-
-در بخش بعدی فصل، دقیقاً به
-همین موضوع می‌پردازیم:
-
+<p>
+اندازه‌گیری یعنی مقایسه کمیت مورد نظر با یک مقدار استاندارد.
+در نتیجه، مفهوم «کمیت فیزیکی» ما را به مفهوم «اندازه‌گیری» می‌رساند.
+در بخش بعدی فصل، دقیقاً به همین موضوع می‌پردازیم:
 اندازه‌گیری و یکا.
-
 </p>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     FUTURE CONTENT
-========================= -->
-
 <section>
-
-<div class="future">
 
 <div class="section-title">
 
 <h2>
-محتوای تکمیلی این بخش
+ادامه مسیر
 </h2>
 
 <p>
-
-این صفحه در ادامه به یک محیط
-آموزشی کامل تبدیل خواهد شد.
-
+حرکت میان بخش‌های فصل اول
 </p>
 
 </div>
 
+<div class="navigation">
 
-<div class="future-list">
+<a href="physics-10-experimental-chapter-1.html"
+   class="nav-card">
 
-<div class="future-item">
-مثال‌های حل‌شده
-</div>
+<small>
+بازگشت به فصل
+</small>
 
-<div class="future-item">
-تمرین‌های مفهومی
-</div>
+← فصل اول
 
-<div class="future-item">
-پرسش‌های چهارگزینه‌ای
-</div>
+</a>
 
-<div class="future-item">
-پادکست
-</div>
+<a href="physics-10-ch1-measurement.html"
+   class="nav-card">
 
-<div class="future-item">
-ویدئو
-</div>
+<small>
+بخش بعدی
+</small>
 
-<div class="future-item">
-شبیه‌ساز
-</div>
+بخش دوم: اندازه‌گیری و یکا →
 
-<div class="future-item">
-نکات امتحانی
-</div>
-
-</div>
+</a>
 
 </div>
 
 </section>
 
+<section class="back">
 
-<!-- =========================
-     BACK
-========================= -->
-
-<section class="back-section">
-
-<a href="physics-10-ch1.html"
+<a href="physics-10-experimental.html"
    class="back-button">
 
-← بازگشت به فصل اول
+← بازگشت به فیزیک دهم تجربی
 
 </a>
 
 </section>
 
-
 </main>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
 <p>
-
 © 2026 —
 <strong>H Quantum</strong>
-
 </p>
 
 <p>
-
 Physics • Science • Wonder
-
 </p>
 
 </footer>
-
 
 </body>
 
