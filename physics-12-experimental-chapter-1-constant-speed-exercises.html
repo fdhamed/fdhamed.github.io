@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>تمرین | حرکت با سرعت ثابت | فیزیک دوازدهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="تمرین‌های آموزشی حرکت با سرعت ثابت، بخش دوم فصل اول فیزیک دوازدهم تجربی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.exercise-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+}
+
+.exercise{
+padding:25px 0;
+border-bottom:1px solid rgba(255,255,255,0.07);
+}
+
+.exercise:last-child{
+border-bottom:none;
+}
+
+.exercise h3{
+color:#63d8ff;
+font-size:20px;
+margin-bottom:15px;
+}
+
+.exercise p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:15px;
+}
+
+.answer{
+margin-top:15px;
+padding:16px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:10px;
+color:#aebdce;
+font-size:14px;
+}
+
+.answer strong{
+color:#63d8ff;
+}
+
+.formula{
+direction:ltr;
+text-align:center;
+font-family:Arial,sans-serif;
+font-size:20px;
+color:#63d8ff;
+padding:12px;
+margin:15px 0;
+}
+
+.info-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+}
+
+.info-row{
+padding:14px 0;
+border-bottom:1px solid rgba(255,255,255,0.06);
+color:#cbd5e1;
+}
+
+.info-row:last-child{
+border-bottom:none;
+}
+
+.info-row strong{
+color:#63d8ff;
+}
+
+.note{
+margin:25px 0;
+padding:20px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:12px;
+color:#aebdce;
+font-size:14px;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.exercise-box{
+padding:20px 18px;
+}
+
+.exercise h3{
+font-size:18px;
+}
+
+.exercise p{
+font-size:14px;
+}
+
+.info-box{
+padding:25px 18px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="badge">
+
+فیزیک دوازدهم تجربی • فصل اول • بخش دوم
+
+</div>
+
+<h1>
+
+<span>تمرین</span>
+
+</h1>
+
+<h2>
+
+حرکت با سرعت ثابت
+
+</h2>
+
+<p>
+
+در این بخش با مجموعه‌ای از تمرین‌های
+مفهومی و محاسباتی، مفهوم حرکت با سرعت ثابت
+را تمرین می‌کنیم.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+📝 تمرین‌های آموزشی
+</h2>
+
+<p>
+از ساده تا محاسباتی
+</p>
+
+</div>
+
+
+<div class="exercise-box">
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۱ — محاسبه مکان
+</h3>
+
+<p>
+
+جسمی از مکان صفر با سرعت ثابت
+۵ متر بر ثانیه حرکت می‌کند.
+مکان جسم پس از ۸ ثانیه چقدر است؟
+
+</p>
+
+<div class="formula">
+
+x = x₀ + vt
+
+</div>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+چون x₀ = 0 است:
+
+<br>
+
+x = 5 × 8 = 40 m
+
+</div>
+
+</div>
+
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۲ — محاسبه سرعت
+</h3>
+
+<p>
+
+جسمی در مدت ۱۰ ثانیه،
+مسافت ۷۰ متر را در مسیر مستقیم طی می‌کند.
+اگر حرکت با سرعت ثابت باشد،
+سرعت جسم چقدر است؟
+
+</p>
+
+<div class="formula">
+
+v = Δx / Δt
+
+</div>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+v = 70 / 10 = 7 m/s
+
+</div>
+
+</div>
+
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۳ — محاسبه زمان
+</h3>
+
+<p>
+
+خودرویی با سرعت ثابت ۲۰ متر بر ثانیه حرکت می‌کند.
+چقدر زمان لازم است تا ۱۰۰ متر جابه‌جا شود؟
+
+</p>
+
+<div class="formula">
+
+t = Δx / v
+
+</div>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+t = 100 / 20 = 5 s
+
+</div>
+
+</div>
+
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۴ — مفهوم نمودار
+</h3>
+
+<p>
+
+در نمودار مکان ـ زمان یک جسم که با سرعت ثابت
+حرکت می‌کند، چه چیزی نشان‌دهنده سرعت جسم است؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+شیب نمودار مکان ـ زمان برابر با سرعت جسم است.
+
+</div>
+
+</div>
+
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۵ — تشخیص حرکت با سرعت ثابت
+</h3>
+
+<p>
+
+جسمی در هر ۲ ثانیه،
+۱۰ متر جابه‌جا می‌شود.
+آیا می‌توان گفت جسم با سرعت ثابت حرکت می‌کند؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+اگر این جابه‌جایی‌های مساوی در بازه‌های زمانی مساوی
+با جهت ثابت انجام شوند، حرکت دارای سرعت ثابت است.
+
+</div>
+
+</div>
+
+
+
+<div class="exercise">
+
+<h3>
+تمرین ۶ — ترکیبی
+</h3>
+
+<p>
+
+جسمی از مکان ۲۰ متر با سرعت ثابت
+۴ متر بر ثانیه در جهت مثبت محور حرکت می‌کند.
+مکان جسم پس از ۱۵ ثانیه چقدر خواهد بود؟
+
+</p>
+
+<div class="formula">
+
+x = x₀ + vt
+
+</div>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+x = 20 + (4 × 15)
+
+<br>
+
+x = 80 m
+
+</div>
+
+</div>
+
+
+
+<div class="note">
+
+💡 پیشنهاد:
+
+ابتدا هر تمرین را بدون نگاه کردن به پاسخ حل کنید،
+سپس روش حل خود را با پاسخ مقایسه کنید.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+📊 اطلاعات بخش
+</h2>
+
+<p>
+مشخصات تمرین‌ها
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+
+<div class="info-row">
+
+<strong>عنوان:</strong>
+
+حرکت با سرعت ثابت
+
+</div>
+
+
+<div class="info-row">
+
+<strong>درس:</strong>
+
+فیزیک دوازدهم رشته علوم تجربی
+
+</div>
+
+
+<div class="info-row">
+
+<strong>فصل:</strong>
+
+فصل اول — حرکت بر خط راست
+
+</div>
+
+
+<div class="info-row">
+
+<strong>بخش:</strong>
+
+بخش دوم — حرکت با سرعت ثابت
+
+</div>
+
+
+<div class="info-row">
+
+<strong>تعداد تمرین‌ها:</strong>
+
+۶ تمرین آموزشی
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان بخش‌های آموزشی
+</p>
+
+</div>
+
+
+<div class="navigation">
+
+
+<a href="physics-12-experimental-chapter-1-constant-speed-simulator.html"
+   class="nav-card">
+
+<small>
+بخش قبلی
+</small>
+
+🧪 شبیه‌ساز ←
+
+</a>
+
+
+<a href="physics-12-experimental-chapter-1-constant-speed-conceptual.html"
+   class="nav-card">
+
+<small>
+مسیر بعدی
+</small>
+
+❓ پرسش مفهومی →
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<section class="back">
+
+<a href="physics-12-experimental-chapter-1-constant-speed.html"
+   class="back-button">
+
+← بازگشت به حرکت با سرعت ثابت
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 —
+<strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
