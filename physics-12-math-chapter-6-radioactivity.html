@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>پرتوزایی طبیعی و نیمه‌عمر | فیزیک دوازدهم ریاضی | H Quantum</title>
+
+<meta name="description"
+      content="بخش دوم فصل ششم فیزیک دوازدهم رشته ریاضی؛ پرتوزایی طبیعی و نیمه‌عمر در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.intro{
+max-width:900px;
+margin:auto;
+padding:35px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:center;
+}
+
+.intro h2{
+font-size:27px;
+margin-bottom:15px;
+}
+
+.intro p{
+color:#aebdce;
+font-size:15px;
+}
+
+.learning-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.learning-card{
+padding:28px 20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:20px;
+text-align:center;
+transition:transform 0.3s,border-color 0.3s;
+}
+
+.learning-card:hover{
+transform:translateY(-5px);
+border-color:rgba(99,216,255,0.5);
+}
+
+.icon{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.learning-card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.learning-card p{
+color:#aebdce;
+font-size:13px;
+margin-bottom:18px;
+}
+
+.button{
+display:inline-block;
+padding:9px 18px;
+border-radius:9px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+color:#63d8ff;
+font-size:13px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#15324e;
+}
+
+.content-box{
+max-width:950px;
+margin:auto;
+padding:40px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:right;
+}
+
+.content-box h2{
+font-size:28px;
+margin-bottom:18px;
+color:#63d8ff;
+}
+
+.content-box p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.formula{
+direction:ltr;
+text-align:center;
+padding:18px;
+margin:25px 0;
+background:#07111f;
+border:1px solid rgba(99,216,255,0.18);
+border-radius:15px;
+font-size:22px;
+color:#63d8ff;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.learning-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px;
+}
+
+.learning-card{
+padding:20px 12px;
+border-radius:16px;
+}
+
+.icon{
+font-size:32px;
+}
+
+.learning-card h3{
+font-size:15px;
+line-height:1.7;
+}
+
+.learning-card p{
+font-size:11px;
+line-height:1.8;
+}
+
+.button{
+font-size:11px;
+padding:8px 10px;
+}
+
+.intro{
+padding:28px 18px;
+}
+
+.content-box{
+padding:30px 18px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.learning-card h3{
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html" class="logo">
+H <span>QUANTUM</span>
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">خانه</a>
+
+<a href="school.html">مدرسه فیزیک</a>
+
+<a href="physics-10.html">دهم</a>
+
+<a href="physics-11.html">یازدهم</a>
+
+<a href="physics-12.html">دوازدهم</a>
+
+<a href="podcast.html">🎙️ پادکست</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="badge">
+فیزیک دوازدهم ریاضی • فصل ششم • بخش دوم
+</div>
+
+<h1>
+<span>پرتوزایی طبیعی و نیمه‌عمر</span>
+</h1>
+
+<h2>
+فصل ششم فیزیک دوازدهم رشته ریاضی
+</h2>
+
+<p>
+در این بخش با پدیده پرتوزایی طبیعی آشنا می‌شویم،
+ویژگی‌های پرتوهای آلفا، بتا و گاما را بررسی می‌کنیم
+و سپس با مفهوم نیمه‌عمر و قانون کاهش هسته‌های پرتوزا
+آشنا می‌شویم.
+</p>
+
+</section>
+
+<section>
+
+<div class="intro">
+
+<h2>
+📚 نقشه راه این بخش
+</h2>
+
+<p>
+ابتدا مفهوم پرتوزایی و هسته‌های ناپایدار را بررسی می‌کنیم،
+سپس انواع واپاشی پرتوزا را می‌شناسیم و در ادامه
+به قانون واپاشی و مفهوم نیمه‌عمر می‌رسیم.
+در پایان کاربردهای پرتوزایی را بررسی خواهیم کرد.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>
+🎓 مسیرهای یادگیری
+</h2>
+
+<p>
+روش‌های مختلف یادگیری پرتوزایی طبیعی و نیمه‌عمر
+</p>
+
+</div>
+
+<div class="learning-grid">
+
+<article class="learning-card">
+
+<div class="icon">📖</div>
+
+<h3>متن آموزشی</h3>
+
+<p>درسنامه کامل پرتوزایی طبیعی و نیمه‌عمر</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">🎙️</div>
+
+<h3>پادکست</h3>
+
+<p>نسخه شنیداری این بخش</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">🎬</div>
+
+<h3>ویدئو</h3>
+
+<p>آموزش تصویری پرتوزایی و نیمه‌عمر</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">🧪</div>
+
+<h3>شبیه‌ساز</h3>
+
+<p>شبیه‌سازی واپاشی پرتوزا و نیمه‌عمر</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">📝</div>
+
+<h3>تمرین</h3>
+
+<p>تمرین‌های مفهومی و محاسباتی</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+<article class="learning-card">
+
+<div class="icon">❓</div>
+
+<h3>پرسش مفهومی</h3>
+
+<p>پرسش‌های مفهومی پرتوزایی و نیمه‌عمر</p>
+
+<a href="#" class="button" onclick="return false;">
+به‌زودی
+</a>
+
+</article>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>
+📖 محتوای آموزشی
+</h2>
+
+<p>
+پرتوزایی طبیعی و نیمه‌عمر
+</p>
+
+</div>
+
+<div class="content-box">
+
+<h2>
+پرتوزایی طبیعی
+</h2>
+
+<p>
+برخی هسته‌های اتمی ناپایدارند و به طور خودبه‌خودی
+به هسته‌های دیگر تبدیل می‌شوند. این فرایند را پرتوزایی
+یا واپاشی پرتوزا می‌نامیم. در هنگام واپاشی، ممکن است
+ذرات یا تابش‌هایی از هسته گسیل شود و هسته به حالت
+پایدارتر نزدیک شود.
+</p>
+
+<h2>
+پرتو آلفا
+</h2>
+
+<p>
+در واپاشی آلفا، هسته یک ذره آلفا گسیل می‌کند.
+ذره آلفا از دو پروتون و دو نوترون تشکیل شده است
+و بنابراین از نظر ساختار همان هسته اتم هلیم است.
+در نتیجه با گسیل یک ذره آلفا، عدد جرمی هسته چهار واحد
+و عدد اتمی آن دو واحد کاهش می‌یابد.
+</p>
+
+<div class="formula">
+⁴₂He
+</div>
+
+<h2>
+پرتو بتا
+</h2>
+
+<p>
+در واپاشی بتا، یکی از نوکلئون‌های هسته به شکل دیگری
+تبدیل می‌شود و ذره بتا گسیل می‌شود. در واپاشی بتای منفی،
+یک نوترون به پروتون تبدیل شده و یک الکترون و یک پادنوترینو
+گسیل می‌شوند. در این فرایند عدد جرمی ثابت می‌ماند،
+اما عدد اتمی یک واحد افزایش می‌یابد.
+</p>
+
+<h2>
+پرتو گاما
+</h2>
+
+<p>
+پرتو گاما تابشی الکترومغناطیسی با انرژی زیاد است.
+در گسیل گاما، هسته از یک حالت انرژی بالاتر به حالت
+انرژی پایین‌تر می‌رود، بدون آنکه تعداد پروتون‌ها و
+نوترون‌های آن تغییر کند.
+</p>
+
+<div class="formula">
+E = hf
+</div>
+
+<h2>
+قانون واپاشی پرتوزا
+</h2>
+
+<p>
+اگر در یک نمونه تعداد زیادی هسته پرتوزا وجود داشته باشد،
+تعداد هسته‌های باقی‌مانده با گذشت زمان کاهش می‌یابد.
+این کاهش از یک قانون نمایی پیروی می‌کند.
+</p>
+
+<div class="formula">
+N = N₀ e<sup>−λt</sup>
+</div>
+
+<p>
+در این رابطه N تعداد هسته‌های باقی‌مانده در زمان t،
+N₀ تعداد اولیه هسته‌ها و λ ثابت واپاشی است.
+هرچه ثابت واپاشی بزرگ‌تر باشد، هسته‌ها سریع‌تر واپاشی می‌کنند.
+</p>
+
+<h2>
+نیمه‌عمر
+</h2>
+
+<p>
+نیمه‌عمر یک ماده پرتوزا مدت زمانی است که طی آن،
+تعداد هسته‌های پرتوزای موجود در نمونه به نصف مقدار اولیه
+خود کاهش می‌یابد. نیمه‌عمر یکی از ویژگی‌های مشخص هر
+هسته پرتوزاست.
+</p>
+
+<div class="formula">
+T<sub>1/2</sub> = ln(2) / λ
+</div>
+
+<p>
+پس از یک نیمه‌عمر، نیمی از هسته‌ها باقی می‌مانند.
+پس از دو نیمه‌عمر، یک‌چهارم و پس از سه نیمه‌عمر،
+یک‌هشتم هسته‌های اولیه باقی خواهد ماند.
+</p>
+
+<h2>
+کاربردهای پرتوزایی
+</h2>
+
+<p>
+پرتوزایی تنها یک پدیده طبیعی نیست، بلکه در علوم و فناوری
+نیز کاربردهای فراوانی دارد. از رادیوداروها در پزشکی،
+از مواد پرتوزا در تعیین سن برخی نمونه‌ها و از تابش‌های
+هسته‌ای در کاربردهای صنعتی و علمی استفاده می‌شود.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان بخش‌های فصل ششم
+</p>
+
+</div>
+
+<div class="navigation">
+
+<a href="physics-12-math-chapter-6-nucleus.html"
+   class="nav-card">
+
+<small>
+بخش قبلی
+</small>
+
+← بخش اول: ساختار هسته
+
+</a>
+
+<a href="physics-12-math-chapter-6-fission.html"
+   class="nav-card">
+
+<small>
+بخش بعدی
+</small>
+
+بخش سوم: شکافت هسته‌ای →
+
+</a>
+
+</div>
+
+</section>
+
+<section class="back">
+
+<a href="physics-12-math-chapter-6.html"
+   class="back-button">
+
+← بازگشت به فصل ششم
+
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 —
+<strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
+</p>
+
+</footer>
+
+</body>
+
+  </html>
