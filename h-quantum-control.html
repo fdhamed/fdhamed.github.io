@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>مرکز مدیریت H Quantum</title>
+
+<meta name="robots"
+      content="noindex,nofollow">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+
+background:rgba(7,17,31,0.95);
+
+backdrop-filter:blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+
+padding:16px 20px;
+
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+
+gap:15px;
+
+font-size:13px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+max-width:1000px;
+
+margin:auto;
+
+padding:65px 20px 45px;
+
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+
+padding:7px 18px;
+
+border:
+1px solid rgba(99,216,255,0.35);
+
+border-radius:30px;
+
+color:#63d8ff;
+
+font-size:13px;
+
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:clamp(32px,8vw,55px);
+
+line-height:1.4;
+
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero p{
+max-width:760px;
+
+margin:auto;
+
+color:#aebdce;
+
+font-size:15px;
+}
+
+
+/* =========================
+SECTION
+========================= */
+
+section{
+max-width:1100px;
+
+margin:auto;
+
+padding:35px 20px;
+}
+
+.section-title{
+text-align:center;
+
+margin-bottom:28px;
+}
+
+.section-title h2{
+font-size:28px;
+
+margin-bottom:8px;
+}
+
+.section-title p{
+color:#9eafc2;
+
+font-size:14px;
+}
+
+
+/* =========================
+BOOK GRID
+========================= */
+
+.book-grid{
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:18px;
+
+max-width:950px;
+
+margin:auto;
+}
+
+.book-card{
+padding:25px 20px;
+
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.12);
+
+border-radius:20px;
+
+text-align:center;
+
+transition:0.3s;
+}
+
+.book-card:hover{
+transform:translateY(-4px);
+
+border-color:
+rgba(99,216,255,0.5);
+}
+
+.book-icon{
+font-size:40px;
+
+margin-bottom:10px;
+}
+
+.book-card h3{
+font-size:20px;
+
+margin-bottom:8px;
+}
+
+.book-card p{
+color:#aebdce;
+
+font-size:13px;
+
+margin-bottom:18px;
+}
+
+.button{
+display:inline-block;
+
+padding:9px 18px;
+
+border-radius:9px;
+
+background:#10243a;
+
+border:
+1px solid rgba(255,255,255,0.12);
+
+color:#63d8ff;
+
+font-size:12px;
+
+font-weight:bold;
+}
+
+.button:hover{
+background:#15324e;
+}
+
+
+/* =========================
+CHAPTER
+========================= */
+
+.chapter{
+max-width:1000px;
+
+margin:25px auto;
+
+background:#0a1828;
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:20px;
+
+overflow:hidden;
+}
+
+.chapter-header{
+padding:20px;
+
+background:#0c1b2c;
+
+border-bottom:
+1px solid rgba(255,255,255,0.07);
+}
+
+.chapter-header h3{
+font-size:21px;
+}
+
+.chapter-header p{
+color:#9eafc2;
+
+font-size:13px;
+
+margin-top:4px;
+}
+
+.chapter-body{
+padding:20px;
+}
+
+
+/* =========================
+PARTS
+========================= */
+
+.part{
+margin-bottom:18px;
+
+padding:18px;
+
+background:#07111f;
+
+border:
+1px solid rgba(255,255,255,0.07);
+
+border-radius:16px;
+}
+
+.part:last-child{
+margin-bottom:0;
+}
+
+.part-title{
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:12px;
+}
+
+.part-title h4{
+font-size:17px;
+
+color:#63d8ff;
+}
+
+.part-title span{
+font-size:11px;
+
+color:#8191a4;
+}
+
+.part-links{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:8px;
+}
+
+.part-link{
+padding:9px 6px;
+
+background:#0c1b2c;
+
+border:
+1px solid rgba(255,255,255,0.07);
+
+border-radius:9px;
+
+text-align:center;
+
+font-size:11px;
+
+color:#aebdce;
+
+transition:0.3s;
+}
+
+.part-link:hover{
+color:#63d8ff;
+
+border-color:
+rgba(99,216,255,0.4);
+}
+
+
+/* =========================
+STATUS
+========================= */
+
+.status{
+margin-top:35px;
+
+max-width:950px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+padding:25px;
+
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.12);
+
+border-radius:20px;
+
+text-align:center;
+}
+
+.status h2{
+font-size:23px;
+
+margin-bottom:15px;
+}
+
+.status p{
+color:#aebdce;
+
+font-size:13px;
+}
+
+
+/* =========================
+BACK
+========================= */
+
+.back{
+text-align:center;
+
+padding:
+25px 20px 70px;
+}
+
+.back-button{
+display:inline-block;
+
+padding:11px 24px;
+
+background:#10243a;
+
+border:
+1px solid rgba(255,255,255,0.12);
+
+border-radius:10px;
+
+color:#63d8ff;
+
+font-weight:bold;
+
+font-size:13px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:30px 20px;
+
+text-align:center;
+
+color:#8191a4;
+
+font-size:12px;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+
+gap:10px;
+}
+
+.nav-links{
+gap:10px;
+
+font-size:11px;
+}
+
+.hero{
+padding:
+50px 16px 35px;
+}
+
+.hero p{
+font-size:13px;
+}
+
+.book-grid{
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:12px;
+}
+
+.book-card{
+padding:
+20px 10px;
+}
+
+.book-icon{
+font-size:32px;
+}
+
+.book-card h3{
+font-size:15px;
+}
+
+.book-card p{
+font-size:11px;
+}
+
+.button{
+font-size:10px;
+
+padding:
+8px 10px;
+}
+
+.chapter-header{
+padding:16px;
+}
+
+.chapter-header h3{
+font-size:17px;
+}
+
+.chapter-body{
+padding:12px;
+}
+
+.part{
+padding:14px;
+}
+
+.part-title h4{
+font-size:14px;
+}
+
+.part-links{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.part-link{
+font-size:10px;
+
+padding:8px 4px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="badge">
+H Quantum • مرکز مدیریت
+</div>
+
+<h1>
+<span>مرکز کنترل محتوا</span>
+</h1>
+
+<p>
+
+این صفحه برای مدیریت و دسترسی سریع
+به فایل‌های آموزشی H Quantum ساخته شده است.
+از اینجا می‌توان مستقیماً به فصل‌ها، بخش‌ها
+و انواع محتوای آموزشی دسترسی داشت.
+
+</p>
+
+</section>
+
+
+
+<!-- =========================
+BOOKS
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+📚 کتاب‌های فیزیک
+</h2>
+
+<p>
+دسترسی سریع به پایه‌ها و رشته‌ها
+</p>
+
+</div>
+
+
+<div class="book-grid">
+
+
+<div class="book-card">
+
+<div class="book-icon">
+🔟
+</div>
+
+<h3>
+فیزیک دهم
+</h3>
+
+<p>
+رشته ریاضی و علوم تجربی
+</p>
+
+<a href="physics-10.html"
+   class="button">
+
+ورود
+
+</a>
+
+</div>
+
+
+
+<div class="book-card">
+
+<div class="book-icon">
+1️⃣1️⃣
+</div>
+
+<h3>
+فیزیک یازدهم
+</h3>
+
+<p>
+رشته ریاضی و علوم تجربی
+</p>
+
+<a href="physics-11.html"
+   class="button">
+
+ورود
+
+</a>
+
+</div>
+
+
+
+<div class="book-card">
+
+<div class="book-icon">
+1️⃣2️⃣
+</div>
+
+<h3>
+فیزیک دوازدهم ریاضی
+</h3>
+
+<p>
+دسترسی به فصل‌های رشته ریاضی
+</p>
+
+<a href="physics-12-math.html"
+   class="button">
+
+ورود
+
+</a>
+
+</div>
+
+
+
+<div class="book-card">
+
+<div class="book-icon">
+1️⃣2️⃣
+</div>
+
+<h3>
+فیزیک دوازدهم تجربی
+</h3>
+
+<p>
+دسترسی به فصل‌های رشته تجربی
+</p>
+
+<a href="physics-12-experimental.html"
+   class="button">
+
+ورود
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+PHYSICS 12 MATH
+CHAPTER 5
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+⚛️ فیزیک دوازدهم ریاضی
+</h2>
+
+<p>
+فصل پنجم — آشنایی با فیزیک اتمی
+</p>
+
+</div>
+
+
+<div class="chapter">
+
+
+<div class="chapter-header">
+
+<h3>
+فصل پنجم: آشنایی با فیزیک اتمی
+</h3>
+
+<p>
+مدیریت بخش‌ها و محتواهای آموزشی
+</p>
+
+</div>
+
+
+<div class="chapter-body">
+
+
+<!-- PART 1 -->
+
+<div class="part">
+
+<div class="part-title">
+
+<h4>
+💡 بخش اول: اثر فوتوالکتریک و فوتون
+</h4>
+
+<span>
+بخش ۱
+</span>
+
+</div>
+
+<div class="part-links">
+
+<a href="physics-12-math-chapter-5-photoelectric-effect.html"
+   class="part-link">
+
+📄 صفحه بخش
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- PART 2 -->
+
+<div class="part">
+
+<div class="part-title">
+
+<h4>
+🌈 بخش دوم: طیف خطی
+</h4>
+
+<span>
+بخش ۲
+</span>
+
+</div>
+
+<div class="part-links">
+
+<a href="physics-12-math-chapter-5-line-spectra.html"
+   class="part-link">
+
+📄 صفحه بخش
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- PART 3 -->
+
+<div class="part">
+
+<div class="part-title">
+
+<h4>
+⚛️ بخش سوم: مدل اتم رادرفورد–بور
+</h4>
+
+<span>
+بخش ۳
+</span>
+
+</div>
+
+<div class="part-links">
+
+
+<a href="physics-12-math-chapter-5-rutherford-bohr.html"
+   class="part-link">
+
+📄 صفحه بخش
+
+</a>
+
+
+<a href="physics-12-math-chapter-5-rutherford-bohr-text.html"
+   class="part-link">
+
+📖 درسنامه
+
+</a>
+
+
+<a href="#"
+   class="part-link">
+
+🎙️ پادکست
+
+</a>
+
+
+<a href="#"
+   class="part-link">
+
+🎬 ویدئو
+
+</a>
+
+
+<a href="#"
+   class="part-link">
+
+🧪 شبیه‌ساز
+
+</a>
+
+
+<a href="#"
+   class="part-link">
+
+📝 تمرین
+
+</a>
+
+
+<a href="#"
+   class="part-link">
+
+❓ پرسش مفهومی
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- PART 4 -->
+
+<div class="part">
+
+<div class="part-title">
+
+<h4>
+🔴 بخش چهارم: لیزر
+</h4>
+
+<span>
+بخش ۴
+</span>
+
+</div>
+
+<div class="part-links">
+
+<a href="physics-12-math-chapter-5-laser.html"
+   class="part-link">
+
+📄 صفحه بخش
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+STATUS
+========================= -->
+
+<section>
+
+<div class="status">
+
+<h2>
+📊 وضعیت فعلی پروژه
+</h2>
+
+<p>
+
+🟢 اسکلت اصلی سایت در حال تکمیل است
+
+<br>
+
+🟢 فصل پنجم فیزیک دوازدهم ریاضی ساخته شده
+
+<br>
+
+🟢 چهار بخش فصل پنجم مشخص شده‌اند
+
+<br>
+
+🟢 صفحه بخش سوم ساخته شده است
+
+<br>
+
+🟢 صفحه درسنامه بخش سوم ساخته شده است
+
+<br>
+
+🟡 پادکست، ویدئو، شبیه‌ساز، تمرین و پرسش مفهومی
+در مراحل بعدی اضافه خواهند شد
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="back">
+
+<a href="index.html"
+   class="back-button">
+
+← بازگشت به H Quantum
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
