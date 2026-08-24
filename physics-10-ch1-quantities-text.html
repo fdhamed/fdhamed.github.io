@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>متن آموزشی | کمیت‌های فیزیکی | فیزیک دهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="متن آموزشی بخش اول فصل اول فیزیک دهم رشته علوم تجربی؛ کمیت‌های فیزیکی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:75px 20px 55px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(32px,7vw,56px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(18px,4vw,28px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:16px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:45px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+}
+
+.section-title h2{
+font-size:29px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.content-box{
+max-width:950px;
+margin:auto;
+padding:40px 30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:right;
+}
+
+.content-box h2{
+font-size:27px;
+margin-top:10px;
+margin-bottom:18px;
+color:#63d8ff;
+}
+
+.content-box h3{
+font-size:21px;
+margin-top:30px;
+margin-bottom:12px;
+color:#f4f7fb;
+}
+
+.content-box p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.example-box{
+margin:25px 0;
+padding:22px;
+background:#07111f;
+border:1px solid rgba(99,216,255,0.18);
+border-radius:16px;
+}
+
+.example-box h3{
+margin-top:0;
+color:#63d8ff;
+}
+
+.formula{
+direction:ltr;
+text-align:center;
+padding:18px;
+margin:25px 0;
+background:#07111f;
+border:1px solid rgba(99,216,255,0.18);
+border-radius:15px;
+font-size:22px;
+color:#63d8ff;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.content-box{
+padding:30px 18px;
+}
+
+.content-box h2{
+font-size:23px;
+}
+
+.content-box p{
+font-size:14px;
+}
+
+.formula{
+font-size:18px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:29px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="badge">
+
+فیزیک دهم تجربی • فصل اول • بخش اول
+
+</div>
+
+<h1>
+
+<span>متن آموزشی</span>
+
+</h1>
+
+<h2>
+
+کمیت‌های فیزیکی
+
+</h2>
+
+<p>
+
+در این درس با مفهوم کمیت فیزیکی،
+اندازه‌گیری و نقش کمیت‌ها در زبان فیزیک آشنا می‌شویم.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+
+📖 درسنامه
+
+</h2>
+
+<p>
+
+کمیت‌های فیزیکی
+
+</p>
+
+</div>
+
+
+<div class="content-box">
+
+
+<h2>
+
+۱. کمیت فیزیکی چیست؟
+
+</h2>
+
+<p>
+
+وقتی به جهان اطراف خود نگاه می‌کنیم،
+ویژگی‌های مختلفی از اجسام و پدیده‌ها را مشاهده می‌کنیم.
+برای مثال ممکن است یک میز بلند باشد،
+یک جسم جرم زیادی داشته باشد یا یک خودرو
+با سرعت زیادی حرکت کند.
+
+</p>
+
+<p>
+
+در فیزیک، برای آنکه بتوانیم این ویژگی‌ها را
+با دقت بیان و با یکدیگر مقایسه کنیم،
+به کمیت‌هایی نیاز داریم که بتوان مقدار آن‌ها را
+اندازه‌گیری کرد.
+
+</p>
+
+<p>
+
+به ویژگی‌هایی از یک جسم یا پدیده که بتوان
+مقدار آن‌ها را اندازه‌گیری کرد،
+<strong>کمیت فیزیکی</strong> می‌گوییم.
+
+</p>
+
+
+
+<h2>
+
+۲. چند کمیت فیزیکی مهم
+
+</h2>
+
+<p>
+
+طول، جرم، زمان و دما نمونه‌هایی از کمیت‌های
+فیزیکی هستند که در بسیاری از پدیده‌های روزمره
+و آزمایش‌های فیزیکی با آن‌ها سروکار داریم.
+
+</p>
+
+
+
+<div class="example-box">
+
+<h3>
+
+📏 طول
+
+</h3>
+
+<p>
+
+طول برای بیان اندازه یا فاصله میان دو نقطه
+به کار می‌رود. برای مثال می‌توان گفت طول
+یک میز ۲ متر است.
+
+</p>
+
+</div>
+
+
+
+<div class="example-box">
+
+<h3>
+
+⚖️ جرم
+
+</h3>
+
+<p>
+
+جرم یکی از کمیت‌های اساسی فیزیکی است
+که مقدار ماده یک جسم را توصیف می‌کند.
+جرم را می‌توان با ابزار مناسب اندازه‌گیری کرد.
+
+</p>
+
+</div>
+
+
+
+<div class="example-box">
+
+<h3>
+
+⏱️ زمان
+
+</h3>
+
+<p>
+
+زمان برای بیان فاصله میان رویدادها و بررسی
+تغییرات و حرکت اجسام اهمیت زیادی دارد.
+
+</p>
+
+</div>
+
+
+
+<div class="example-box">
+
+<h3>
+
+🌡️ دما
+
+</h3>
+
+<p>
+
+دما کمیتی فیزیکی است که وضعیت گرمایی
+یک جسم یا سامانه را توصیف می‌کند.
+
+</p>
+
+</div>
+
+
+
+<h2>
+
+۳. چرا کمیت‌های فیزیکی اهمیت دارند؟
+
+</h2>
+
+<p>
+
+فرض کنید بگوییم:
+
+</p>
+
+<p>
+
+«این میز بلند است.»
+
+</p>
+
+<p>
+
+این جمله اطلاعاتی کلی در اختیار ما قرار می‌دهد،
+اما اگر بگوییم:
+
+</p>
+
+
+<div class="formula">
+
+L = 2 m
+
+</div>
+
+
+<p>
+
+اکنون مقدار طول میز را به صورت عددی و همراه
+با یکای آن بیان کرده‌ایم.
+
+</p>
+
+<p>
+
+این نوع بیان به ما اجازه می‌دهد اندازه‌گیری‌های
+مختلف را با یکدیگر مقایسه کنیم و نتیجه آزمایش‌ها
+را به شکلی دقیق‌تر در اختیار دیگران قرار دهیم.
+
+</p>
+
+
+
+<h2>
+
+۴. اندازه‌گیری
+
+</h2>
+
+<p>
+
+برای تعیین مقدار یک کمیت فیزیکی باید آن را
+اندازه‌گیری کنیم.
+
+</p>
+
+<p>
+
+اندازه‌گیری در ساده‌ترین بیان یعنی
+مقایسه یک کمیت با یک مقدار استاندارد.
+
+</p>
+
+<p>
+
+برای مثال، هنگامی که طول یک میز را با متر
+اندازه می‌گیریم، در واقع طول میز را با
+واحد استاندارد طول مقایسه می‌کنیم.
+
+</p>
+
+
+
+<h2>
+
+۵. عدد و یکا
+
+</h2>
+
+<p>
+
+نتیجه یک اندازه‌گیری معمولاً از دو بخش تشکیل می‌شود:
+یک عدد و یک یکا.
+
+</p>
+
+
+<div class="formula">
+
+2 m
+
+</div>
+
+
+<p>
+
+در این مثال، عدد ۲ مقدار عددی و متر یکای اندازه‌گیری
+طول است.
+
+</p>
+
+<p>
+
+نوشتن عدد بدون یکا در بسیاری از مسائل فیزیکی
+اطلاعات کاملی درباره اندازه کمیت در اختیار ما قرار نمی‌دهد.
+
+</p>
+
+
+
+<h2>
+
+۶. یک نگاه دقیق‌تر
+
+</h2>
+
+<p>
+
+وقتی یک فیزیک‌دان می‌گوید طول جسمی
+۲ متر است، فقط یک عدد را بیان نمی‌کند.
+او در واقع نتیجه یک مقایسه را گزارش می‌کند:
+طول جسم مورد نظر دو برابر مقدار استانداردی
+است که «متر» نامیده می‌شود.
+
+</p>
+
+<p>
+
+به همین دلیل، مفهوم کمیت فیزیکی به مفهوم
+اندازه‌گیری و یکا ارتباط بسیار نزدیکی دارد.
+
+</p>
+
+
+
+<h2>
+
+جمع‌بندی
+
+</h2>
+
+<p>
+
+کمیت فیزیکی ویژگی قابل اندازه‌گیری یک جسم
+یا پدیده است.
+
+</p>
+
+<p>
+
+طول، جرم، زمان و دما نمونه‌هایی از کمیت‌های
+فیزیکی هستند.
+
+</p>
+
+<p>
+
+برای بیان مقدار یک کمیت، معمولاً از یک عدد
+به همراه یکای مناسب استفاده می‌کنیم.
+
+</p>
+
+<p>
+
+در بخش بعدی، مفهوم اندازه‌گیری و یکا را
+دقیق‌تر بررسی خواهیم کرد.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+
+ادامه مسیر
+
+</h2>
+
+<p>
+
+حرکت میان بخش‌های فصل اول
+
+</p>
+
+</div>
+
+
+<div class="navigation">
+
+
+<a href="physics-10-ch1-quantities.html"
+   class="nav-card">
+
+<small>
+
+بازگشت
+
+</small>
+
+← کمیت‌های فیزیکی
+
+</a>
+
+
+<a href="physics-10-ch1-measurement.html"
+   class="nav-card">
+
+<small>
+
+بخش بعدی
+
+</small>
+
+اندازه‌گیری و یکا →
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<section class="back">
+
+<a href="physics-10-experimental-chapter-1.html"
+   class="back-button">
+
+← بازگشت به فصل اول
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
