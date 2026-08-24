@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>تمرین | حرکت | فیزیک دوازدهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="تمرین‌های فصل اول فیزیک دوازدهم رشته علوم تجربی؛ حرکت در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.exercise-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+}
+
+.exercise{
+padding:25px;
+margin-bottom:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+}
+
+.exercise:last-child{
+margin-bottom:0;
+}
+
+.exercise-number{
+display:inline-block;
+min-width:36px;
+height:36px;
+line-height:36px;
+text-align:center;
+border-radius:50%;
+background:#10243a;
+color:#63d8ff;
+font-weight:bold;
+margin-left:8px;
+}
+
+.exercise h3{
+display:inline;
+font-size:18px;
+color:#f4f7fb;
+}
+
+.exercise p{
+color:#cbd5e1;
+font-size:15px;
+margin-top:15px;
+}
+
+.answer{
+margin-top:18px;
+padding:16px;
+background:#07111f;
+border-right:3px solid #63d8ff;
+border-radius:10px;
+color:#aebdce;
+font-size:14px;
+}
+
+.answer strong{
+color:#63d8ff;
+}
+
+.note{
+margin:25px 0;
+padding:20px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:12px;
+color:#aebdce;
+font-size:14px;
+}
+
+.info-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+text-align:right;
+}
+
+.info-box h2{
+font-size:25px;
+color:#63d8ff;
+margin-bottom:18px;
+}
+
+.info-box p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:18px;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.exercise-box{
+padding:18px;
+}
+
+.exercise{
+padding:20px 16px;
+}
+
+.exercise h3{
+font-size:16px;
+}
+
+.exercise p{
+font-size:14px;
+}
+
+.info-box{
+padding:25px 18px;
+}
+
+.info-box h2{
+font-size:22px;
+}
+
+.info-box p{
+font-size:14px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="badge">
+
+فیزیک دوازدهم تجربی • فصل اول
+
+</div>
+
+<h1>
+
+<span>تمرین</span>
+
+</h1>
+
+<h2>
+
+حرکت
+
+</h2>
+
+<p>
+
+با حل تمرین‌های این بخش،
+مفاهیم حرکت، موقعیت، مسافت،
+جابه‌جایی، تندی و سرعت را تثبیت کنید.
+
+</p>
+
+</section>
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+📝 تمرین‌های آموزشی
+</h2>
+
+<p>
+تمرین‌های فصل اول فیزیک دوازدهم تجربی
+</p>
+
+</div>
+
+<div class="exercise-box">
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۱
+</span>
+
+<h3>
+تشخیص حرکت
+</h3>
+
+<p>
+
+مسافری داخل یک قطار در حال حرکت نشسته است.
+آیا این مسافر نسبت به صندلی خود در حال حرکت است؟
+آیا نسبت به فردی که کنار ریل ایستاده است حرکت می‌کند؟
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+برای پاسخ باید دستگاه مرجع را مشخص کنیم.
+نسبت به صندلی، مسافر ساکن است؛
+اما نسبت به فرد کنار ریل، در حال حرکت است.
+
+</div>
+
+</div>
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۲
+</span>
+
+<h3>
+مسافت و جابه‌جایی
+</h3>
+
+<p>
+
+جسمی از نقطه A به نقطه B می‌رود و سپس
+به نقطه A بازمی‌گردد.
+
+مسافت پیموده‌شده و جابه‌جایی جسم
+چه تفاوتی با یکدیگر دارند؟
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+مسافت برابر طول کل مسیر پیموده‌شده است،
+اما چون نقطه آغاز و پایان یکسان هستند،
+جابه‌جایی برابر صفر است.
+
+</div>
+
+</div>
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۳
+</span>
+
+<h3>
+محاسبه سرعت متوسط
+</h3>
+
+<p>
+
+خودرویی در مدت ۱۰ ثانیه،
+جابه‌جایی ۵۰ متر را در یک جهت انجام می‌دهد.
+سرعت متوسط خودرو را محاسبه کنید.
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+از رابطه سرعت متوسط استفاده می‌کنیم:
+
+<br>
+
+سرعت متوسط = جابه‌جایی ÷ زمان
+
+<br>
+
+بنابراین:
+
+<br>
+
+۵۰ ÷ ۱۰ = ۵ متر بر ثانیه
+
+</div>
+
+</div>
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۴
+</span>
+
+<h3>
+تندی متوسط
+</h3>
+
+<p>
+
+جسمی در مدت ۲۰ ثانیه،
+مسافت ۱۰۰ متر را طی می‌کند.
+تندی متوسط آن چقدر است؟
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+تندی متوسط برابر است با:
+
+<br>
+
+مسافت ÷ زمان
+
+<br>
+
+۱۰۰ ÷ ۲۰ = ۵ متر بر ثانیه
+
+</div>
+
+</div>
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۵
+</span>
+
+<h3>
+تفاوت تندی و سرعت
+</h3>
+
+<p>
+
+توضیح دهید چرا ممکن است تندی متوسط یک جسم
+صفر نباشد اما سرعت متوسط آن صفر باشد.
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+اگر جسم حرکت کند و دوباره به نقطه آغاز
+بازگردد، مسافت آن صفر نیست؛
+اما جابه‌جایی آن صفر است.
+بنابراین تندی متوسط غیرصفر و سرعت متوسط
+برابر صفر خواهد بود.
+
+</div>
+
+</div>
+
+
+<div class="exercise">
+
+<span class="exercise-number">
+۶
+</span>
+
+<h3>
+مسئله ترکیبی
+</h3>
+
+<p>
+
+جسمی ابتدا ۳۰ متر به سمت شرق حرکت می‌کند
+و سپس ۱۰ متر به سمت غرب بازمی‌گردد.
+
+مسافت طی‌شده و اندازه جابه‌جایی را تعیین کنید.
+
+</p>
+
+<div class="answer">
+
+<strong>راهنمای پاسخ:</strong>
+
+مسافت:
+
+<br>
+
+۳۰ + ۱۰ = ۴۰ متر
+
+<br>
+
+جابه‌جایی:
+
+<br>
+
+۳۰ − ۱۰ = ۲۰ متر به سمت شرق
+
+</div>
+
+</div>
+
+
+<div class="note">
+
+💡 پیشنهاد:
+
+ابتدا هر تمرین را بدون نگاه کردن به راهنمای پاسخ
+حل کنید. سپس پاسخ خود را بررسی کنید.
+
+در نسخه کامل سایت می‌توانیم برای هر تمرین
+دکمه «نمایش پاسخ» نیز اضافه کنیم.
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+🎯 هدف تمرین‌ها
+</h2>
+
+<p>
+چه مهارت‌هایی را تقویت می‌کنیم؟
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h2>
+از مفهوم تا حل مسئله
+</h2>
+
+<p>
+
+هدف این تمرین‌ها فقط به دست آوردن عدد نهایی نیست.
+مهم‌تر از آن، تشخیص درست مفهوم فیزیکی،
+انتخاب رابطه مناسب و تفسیر نتیجه است.
+
+</p>
+
+<p>
+
+در ادامه می‌توانیم مجموعه تمرین‌ها را
+از سطح پایه تا مسائل دشوارتر گسترش دهیم.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان بخش‌های فصل اول
+</p>
+
+</div>
+
+<div class="navigation">
+
+<a href="physics-12-experimental-chapter-1-motion.html"
+   class="nav-card">
+
+<small>
+بازگشت
+</small>
+
+← صفحه اصلی فصل
+
+</a>
+
+<a href="physics-12-experimental-chapter-1-motion-conceptual.html"
+   class="nav-card">
+
+<small>
+مرحله بعد
+</small>
+
+❓ پرسش مفهومی →
+
+</a>
+
+</div>
+
+</section>
+
+
+<section class="back">
+
+<a href="physics-12-experimental.html"
+   class="back-button">
+
+← بازگشت به فیزیک دوازدهم تجربی
+
+</a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 —
+<strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
+</p>
+
+</footer>
+
+</body>
+
+  </html>
