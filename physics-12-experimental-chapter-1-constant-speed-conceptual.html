@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>پرسش مفهومی | حرکت با سرعت ثابت | فیزیک دوازدهم تجربی | H Quantum</title>
+
+<meta name="description"
+      content="پرسش‌های مفهومی حرکت با سرعت ثابت، بخش دوم فصل اول فیزیک دوازدهم تجربی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,17,31,0.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+font-size:14px;
+color:#cbd5e1;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+padding:80px 20px 60px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 18px;
+border:1px solid rgba(99,216,255,0.35);
+border-radius:30px;
+color:#63d8ff;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(34px,8vw,60px);
+line-height:1.4;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(19px,5vw,30px);
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+color:#aebdce;
+font-size:17px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#9eafc2;
+font-size:15px;
+}
+
+.question-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+}
+
+.question{
+padding:25px 0;
+border-bottom:1px solid rgba(255,255,255,0.07);
+}
+
+.question:last-child{
+border-bottom:none;
+}
+
+.question h3{
+color:#63d8ff;
+font-size:20px;
+margin-bottom:15px;
+}
+
+.question p{
+color:#cbd5e1;
+font-size:15px;
+margin-bottom:15px;
+}
+
+.answer{
+margin-top:15px;
+padding:16px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:10px;
+color:#aebdce;
+font-size:14px;
+}
+
+.answer strong{
+color:#63d8ff;
+}
+
+.note{
+margin:25px 0;
+padding:20px;
+background:#07111f;
+border-right:4px solid #63d8ff;
+border-radius:12px;
+color:#aebdce;
+font-size:14px;
+}
+
+.info-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:#0a1828;
+border:1px solid rgba(99,216,255,0.12);
+border-radius:22px;
+}
+
+.info-row{
+padding:14px 0;
+border-bottom:1px solid rgba(255,255,255,0.06);
+color:#cbd5e1;
+}
+
+.info-row:last-child{
+border-bottom:none;
+}
+
+.info-row strong{
+color:#63d8ff;
+}
+
+.navigation{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+background:#0c1b2c;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+text-align:center;
+color:#63d8ff;
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:rgba(99,216,255,0.5);
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+color:#8191a4;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.back{
+text-align:center;
+padding:20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+padding:12px 25px;
+background:#10243a;
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+color:#63d8ff;
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:35px 20px;
+text-align:center;
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 16px 45px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.question-box{
+padding:20px 18px;
+}
+
+.question h3{
+font-size:18px;
+}
+
+.question p{
+font-size:14px;
+}
+
+.info-box{
+padding:25px 18px;
+}
+
+.navigation{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.nav-card{
+padding:16px 8px;
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="badge">
+
+فیزیک دوازدهم تجربی • فصل اول • بخش دوم
+
+</div>
+
+<h1>
+
+<span>پرسش مفهومی</span>
+
+</h1>
+
+<h2>
+
+حرکت با سرعت ثابت
+
+</h2>
+
+<p>
+
+در این بخش با پرسش‌هایی روبه‌رو می‌شویم
+که هدف آن‌ها بررسی عمیق‌تر مفهوم سرعت ثابت
+و درک فیزیکی حرکت است.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+❓ پرسش‌های مفهومی
+</h2>
+
+<p>
+قبل از دیدن پاسخ، خودتان فکر کنید.
+</p>
+
+</div>
+
+
+<div class="question-box">
+
+
+<div class="question">
+
+<h3>
+پرسش ۱
+</h3>
+
+<p>
+
+اگر خودرویی با سرعت ثابت در یک جاده مستقیم حرکت کند،
+آیا می‌توان گفت شتاب آن صفر است؟ چرا؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+بله. چون سرعت برداری است و هم اندازه و هم جهت سرعت
+ثابت مانده‌اند، تغییر سرعت صفر است و در نتیجه شتاب صفر خواهد بود.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۲
+</h3>
+
+<p>
+
+آیا ممکن است جسمی در حال حرکت باشد اما سرعت آن صفر باشد؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+در یک لحظه مشخص ممکن است سرعت جسم صفر شود،
+اما اگر جسم در حال حرکت باشد نمی‌توان گفت در تمام مدت
+حرکت سرعت آن صفر بوده است.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۳
+</h3>
+
+<p>
+
+اگر دو جسم با سرعت‌های متفاوت ولی ثابت حرکت کنند،
+آیا ممکن است در یک لحظه مکان یکسانی داشته باشند؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+بله. اگر دو جسم در یک لحظه از مکان‌های متفاوتی شروع کرده باشند،
+ممکن است در یک زمان مشخص به یک مکان برسند؛
+حتی اگر سرعت‌های آن‌ها متفاوت باشد.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۴
+</h3>
+
+<p>
+
+چرا نمودار مکان ـ زمان برای حرکت با سرعت ثابت
+به شکل خط راست است؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+زیرا در زمان‌های مساوی، جابه‌جایی‌های مساوی رخ می‌دهد.
+بنابراین نسبت تغییر مکان به تغییر زمان ثابت است
+و شیب نمودار مقدار ثابتی خواهد داشت.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۵
+</h3>
+
+<p>
+
+اگر شیب نمودار مکان ـ زمان بیشتر شود،
+چه تغییری در حرکت جسم رخ داده است؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+چون شیب نمودار مکان ـ زمان نشان‌دهنده سرعت است،
+افزایش شیب به معنی افزایش اندازه سرعت جسم است.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۶
+</h3>
+
+<p>
+
+آیا حرکت با تندی ثابت همیشه به معنی حرکت با سرعت ثابت است؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+خیر. تندی فقط اندازه سرعت را بیان می‌کند،
+اما سرعت علاوه بر اندازه، جهت نیز دارد.
+
+برای مثال جسمی که روی یک مسیر دایره‌ای
+با تندی ثابت حرکت می‌کند، سرعتش دائماً تغییر جهت می‌دهد؛
+پس سرعت آن ثابت نیست.
+
+</div>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>
+پرسش ۷
+</h3>
+
+<p>
+
+اگر جسمی در مسیر مستقیم ابتدا با سرعت ۱۰ متر بر ثانیه
+و سپس با سرعت ۲۰ متر بر ثانیه حرکت کند،
+آیا می‌توان گفت حرکت آن در تمام مدت با سرعت ثابت بوده است؟
+
+</p>
+
+<div class="answer">
+
+<strong>پاسخ:</strong>
+
+خیر. چون مقدار سرعت تغییر کرده است،
+سرعت جسم در تمام مدت ثابت نبوده است.
+
+</div>
+
+</div>
+
+
+
+<div class="note">
+
+💡 نکته:
+
+هدف پرسش‌های مفهومی فقط پیدا کردن پاسخ نهایی نیست؛
+مهم‌تر از آن، توانایی توضیح دادن «چرا» است.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+🧠 نکات کلیدی
+</h2>
+
+<p>
+چیزهایی که باید از این بخش به خاطر بسپارید
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+
+<div class="info-row">
+
+<strong>۱.</strong>
+
+در حرکت با سرعت ثابت، اندازه و جهت سرعت تغییر نمی‌کند.
+
+</div>
+
+
+<div class="info-row">
+
+<strong>۲.</strong>
+
+در حرکت با سرعت ثابت روی خط راست، شتاب صفر است.
+
+</div>
+
+
+<div class="info-row">
+
+<strong>۳.</strong>
+
+شیب نمودار مکان ـ زمان برابر سرعت است.
+
+</div>
+
+
+<div class="info-row">
+
+<strong>۴.</strong>
+
+تندی فقط اندازه سرعت را مشخص می‌کند.
+
+</div>
+
+
+<div class="info-row">
+
+<strong>۵.</strong>
+
+سرعت یک کمیت برداری است و جهت حرکت را نیز مشخص می‌کند.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان بخش‌های آموزشی
+</p>
+
+</div>
+
+
+<div class="navigation">
+
+
+<a href="physics-12-experimental-chapter-1-constant-speed-exercises.html"
+   class="nav-card">
+
+<small>
+بخش قبلی
+</small>
+
+📝 تمرین ←
+
+</a>
+
+
+<a href="physics-12-experimental-chapter-1-constant-speed.html"
+   class="nav-card">
+
+<small>
+صفحه اصلی بخش
+</small>
+
+← حرکت با سرعت ثابت
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<section class="back">
+
+<a href="physics-12-experimental-chapter-1-motion.html"
+   class="back-button">
+
+← بازگشت به فصل اول حرکت
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 —
+<strong>H Quantum</strong>
+</p>
+
+<p>
+Physics • Science • Wonder
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
