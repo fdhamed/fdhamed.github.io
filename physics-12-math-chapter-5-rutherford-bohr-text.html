@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>درسنامه مدل اتم رادرفورد–بور | فیزیک دوازدهم ریاضی | H Quantum</title>
+
+<meta name="description"
+      content="درسنامه کامل مدل اتم رادرفورد–بور؛ فیزیک دوازدهم رشته ریاضی در H Quantum.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#07111f;
+color:#f4f7fb;
+line-height:1.9;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+
+background:rgba(7,17,31,0.94);
+
+backdrop-filter:blur(12px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+
+padding:16px 20px;
+
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#63d8ff;
+}
+
+.nav-links{
+display:flex;
+
+gap:18px;
+
+font-size:14px;
+
+color:#cbd5e1;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.nav-links a{
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#63d8ff;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+max-width:1000px;
+
+margin:auto;
+
+padding:70px 20px 50px;
+
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+
+padding:7px 18px;
+
+border:
+1px solid rgba(99,216,255,0.35);
+
+border-radius:30px;
+
+color:#63d8ff;
+
+font-size:14px;
+
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:clamp(32px,8vw,55px);
+
+line-height:1.4;
+
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#63d8ff;
+}
+
+.hero h2{
+font-size:clamp(18px,5vw,28px);
+
+font-weight:normal;
+
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:760px;
+
+margin:auto;
+
+color:#aebdce;
+
+font-size:16px;
+}
+
+
+/* =========================
+CONTENT
+========================= */
+
+section{
+max-width:1100px;
+
+margin:auto;
+
+padding:45px 20px;
+}
+
+.content-box{
+max-width:950px;
+
+margin:auto;
+
+padding:40px 30px;
+
+background:#0a1828;
+
+border:
+1px solid rgba(99,216,255,0.12);
+
+border-radius:22px;
+
+text-align:right;
+}
+
+.content-box h2{
+font-size:28px;
+
+margin-bottom:18px;
+
+color:#63d8ff;
+
+margin-top:35px;
+}
+
+.content-box h2:first-child{
+margin-top:0;
+}
+
+.content-box p{
+color:#cbd5e1;
+
+font-size:15px;
+
+margin-bottom:20px;
+}
+
+
+/* =========================
+FORMULA
+========================= */
+
+.formula{
+direction:ltr;
+
+text-align:center;
+
+padding:18px;
+
+margin:25px 0;
+
+background:#07111f;
+
+border:
+1px solid rgba(99,216,255,0.18);
+
+border-radius:15px;
+
+font-size:22px;
+
+color:#63d8ff;
+
+overflow-x:auto;
+}
+
+
+/* =========================
+NOTE
+========================= */
+
+.note{
+padding:22px 20px;
+
+margin:25px 0;
+
+background:#0c1b2c;
+
+border-right:
+4px solid #63d8ff;
+
+border-radius:12px;
+
+color:#cbd5e1;
+
+font-size:14px;
+}
+
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navigation{
+max-width:900px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:20px;
+}
+
+.nav-card{
+padding:20px;
+
+background:#0c1b2c;
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:18px;
+
+text-align:center;
+
+color:#63d8ff;
+
+transition:0.3s;
+}
+
+.nav-card:hover{
+border-color:
+rgba(99,216,255,0.5);
+
+transform:translateY(-4px);
+}
+
+.nav-card small{
+display:block;
+
+color:#8191a4;
+
+font-size:12px;
+
+margin-bottom:5px;
+}
+
+
+/* =========================
+BACK
+========================= */
+
+.back{
+text-align:center;
+
+padding:
+20px 20px 80px;
+}
+
+.back-button{
+display:inline-block;
+
+padding:12px 25px;
+
+background:#10243a;
+
+border:
+1px solid rgba(255,255,255,0.12);
+
+border-radius:10px;
+
+color:#63d8ff;
+
+font-weight:bold;
+}
+
+.back-button:hover{
+border-color:#63d8ff;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+padding:35px 20px;
+
+text-align:center;
+
+color:#8191a4;
+}
+
+footer strong{
+color:#63d8ff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:750px){
+
+.nav{
+flex-direction:column;
+
+gap:10px;
+}
+
+.nav-links{
+gap:11px;
+
+font-size:12px;
+}
+
+.hero{
+padding:
+50px 16px 40px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.content-box{
+padding:
+30px 18px;
+}
+
+.content-box h2{
+font-size:23px;
+}
+
+.content-box p{
+font-size:14px;
+}
+
+.formula{
+font-size:18px;
+}
+
+.navigation{
+grid-template-columns:
+repeat(2,1fr);
+
+gap:12px;
+}
+
+.nav-card{
+padding:
+16px 8px;
+
+font-size:12px;
+}
+
+}
+
+@media(max-width:400px){
+
+.hero h1{
+font-size:29px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="index.html"
+   class="logo">
+
+H <span>QUANTUM</span>
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="school.html">
+مدرسه فیزیک
+</a>
+
+<a href="physics-10.html">
+دهم
+</a>
+
+<a href="physics-11.html">
+یازدهم
+</a>
+
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+<a href="podcast.html">
+🎙️ پادکست
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<main>
+
+<section class="hero">
+
+
+<div class="badge">
+
+فیزیک دوازدهم ریاضی • فصل پنجم • بخش سوم
+
+</div>
+
+
+<h1>
+
+<span>درسنامه مدل اتم رادرفورد–بور</span>
+
+</h1>
+
+
+<h2>
+
+فیزیک دوازدهم رشته ریاضی
+
+</h2>
+
+
+<p>
+
+در این درسنامه مسیر شناخت ساختار اتم را
+از آزمایش رادرفورد تا مدل بور دنبال می‌کنیم
+و می‌بینیم چگونه مفهوم ترازهای انرژی گسسته
+به توضیح رفتار اتم و طیف خطی کمک می‌کند.
+
+</p>
+
+
+</section>
+
+
+
+<!-- =========================
+CONTENT
+========================= -->
+
+<section>
+
+<div class="content-box">
+
+
+<h2>
+۱. چرا به مدل‌های اتمی نیاز داریم؟
+</h2>
+
+<p>
+
+اتم‌ها برای مدت بسیار طولانی به عنوان اجزای بنیادی
+ماده در نظر گرفته می‌شدند. اما با پیشرفت آزمایش‌های
+فیزیکی، شواهدی به دست آمد که نشان می‌داد اتم ساختاری
+درونی دارد و از ذرات کوچک‌تری تشکیل شده است.
+
+</p>
+
+<p>
+
+شناخت این ساختار ساده نبود. دانشمندان باید از روی
+نتایج آزمایش‌ها درباره چیزی که مستقیماً دیده نمی‌شد
+استدلال می‌کردند. یکی از مهم‌ترین گام‌ها در این مسیر،
+آزمایش پراکندگی ذرات آلفا توسط ارنست رادرفورد بود.
+
+</p>
+
+
+<h2>
+۲. آزمایش پراکندگی ذرات آلفا
+</h2>
+
+<p>
+
+رادرفورد و همکارانش باریکه‌ای از ذرات آلفا را به سوی
+ورقه‌ای بسیار نازک از طلا فرستادند و مسیر ذرات پس از
+عبور از ورقه را بررسی کردند.
+
+</p>
+
+<p>
+
+انتظار می‌رفت بیشتر ذرات تقریباً در مسیر مستقیم حرکت کنند؛
+اما نتیجه آزمایش نکته‌ای بسیار مهم را آشکار کرد:
+بیشتر ذرات بدون انحراف قابل توجه عبور کردند، در حالی که
+تعداد بسیار کمی از آن‌ها با زاویه‌های بزرگ منحرف شدند.
+
+</p>
+
+<div class="note">
+
+نکته مهم:
+
+اگر بیشتر حجم اتم پر از ماده بود، انتظار نداشتیم
+بیشتر ذرات آلفا تقریباً بدون انحراف از آن عبور کنند.
+بنابراین بخش بزرگی از حجم اتم باید فضای خالی باشد.
+
+</div>
+
+
+<h2>
+۳. مدل هسته‌ای رادرفورد
+</h2>
+
+<p>
+
+رادرفورد بر اساس نتایج آزمایش خود پیشنهاد کرد که تقریباً
+تمام جرم اتم و بار مثبت آن در ناحیه‌ای بسیار کوچک و متراکم
+در مرکز اتم قرار دارد. این ناحیه را هسته نامیدند.
+
+</p>
+
+<p>
+
+الکترون‌ها نیز در اطراف هسته قرار دارند. بنابراین می‌توان
+گفت اتم از هسته‌ای بسیار کوچک در مرکز و فضای نسبتاً خالی
+اطراف آن تشکیل شده است.
+
+</p>
+
+
+<h2>
+۴. مشکل مدل رادرفورد
+</h2>
+
+<p>
+
+مدل رادرفورد گام بزرگی در شناخت ساختار اتم بود، اما
+با یک مشکل اساسی روبه‌رو شد.
+
+</p>
+
+<p>
+
+بر اساس فیزیک کلاسیک، یک ذره باردار که در مسیر خمیده
+حرکت می‌کند باید انرژی تابش کند. اگر الکترون در اطراف
+هسته حرکت کند، انتظار می‌رود انرژی از دست بدهد و سرانجام
+به سمت هسته سقوط کند.
+
+</p>
+
+<p>
+
+اما اتم‌های واقعی پایدارند و چنین فروپاشی‌ای در آن‌ها
+مشاهده نمی‌شود. بنابراین برای توضیح پایداری اتم،
+مدل دیگری مورد نیاز بود.
+
+</p>
+
+
+<h2>
+۵. مدل بور
+</h2>
+
+<p>
+
+نیلز بور برای حل این مشکل پیشنهاد کرد که الکترون‌های اتم
+نمی‌توانند هر مقدار انرژی دلخواهی داشته باشند؛ بلکه فقط
+می‌توانند در حالت‌های انرژی مشخصی قرار بگیرند.
+
+</p>
+
+<p>
+
+به این حالت‌های مشخص، ترازهای انرژی گفته می‌شود.
+
+</p>
+
+<div class="formula">
+
+E<sub>n</sub> = −13.6 / n² &nbsp; eV
+
+</div>
+
+<p>
+
+در اتم هیدروژن، انرژی تراز nام با رابطه بالا بیان می‌شود.
+در این رابطه، n عددی صحیح مثبت است که تراز انرژی را مشخص می‌کند.
+
+</p>
+
+
+<h2>
+۶. ترازهای انرژی
+</h2>
+
+<p>
+
+ترازهای انرژی را می‌توان مانند پله‌هایی تصور کرد که
+الکترون فقط اجازه دارد روی آن‌ها قرار بگیرد. الکترون
+نمی‌تواند در فاصله میان دو تراز، انرژی دلخواهی داشته باشد.
+
+</p>
+
+<p>
+
+هرچه مقدار n افزایش پیدا کند، انرژی تراز به صفر نزدیک‌تر
+می‌شود. ترازهای با n بزرگ‌تر به حالت آزاد شدن الکترون
+نزدیک‌تر هستند.
+
+</p>
+
+
+<h2>
+۷. گسیل فوتون
+</h2>
+
+<p>
+
+اگر الکترون از یک تراز انرژی بالاتر به تراز پایین‌تر منتقل
+شود، اختلاف انرژی میان دو تراز به صورت یک فوتون آزاد می‌شود.
+
+</p>
+
+<div class="formula">
+
+ΔE = hf
+
+</div>
+
+<p>
+
+در این رابطه ΔE اختلاف انرژی دو تراز، h ثابت پلانک و f
+بسامد فوتون گسیل‌شده است.
+
+</p>
+
+
+<h2>
+۸. جذب فوتون
+</h2>
+
+<p>
+
+فرایند برعکس نیز ممکن است رخ دهد. اگر اتم فوتونی با انرژی
+مناسب دریافت کند، الکترون می‌تواند از تراز پایین‌تر به تراز
+بالاتر منتقل شود.
+
+</p>
+
+<p>
+
+اما انرژی فوتون باید دقیقاً با اختلاف انرژی میان دو تراز
+متناسب باشد. بنابراین هر فوتونی نمی‌تواند هر گذار انرژی
+دلخواهی را ایجاد کند.
+
+</p>
+
+
+<h2>
+۹. ارتباط مدل بور با طیف خطی
+</h2>
+
+<p>
+
+چون ترازهای انرژی اتم گسسته‌اند، اختلاف انرژی میان ترازها
+نیز مقادیر مشخصی دارد. در نتیجه فوتون‌های گسیل‌شده نیز
+بسامدهای مشخصی خواهند داشت.
+
+</p>
+
+<p>
+
+به همین دلیل اتم‌ها می‌توانند طیف‌هایی شامل خطوط مشخص
+ایجاد کنند. این طیف‌های خطی یکی از شواهد مهمی هستند که
+نشان می‌دهند انرژی در اتم به صورت گسسته تغییر می‌کند.
+
+</p>
+
+
+<h2>
+۱۰. جمع‌بندی
+</h2>
+
+<p>
+
+آزمایش رادرفورد نشان داد که بیشتر حجم اتم فضای خالی است
+و تقریباً تمام جرم و بار مثبت آن در هسته‌ای کوچک متمرکز شده است.
+
+</p>
+
+<p>
+
+مدل رادرفورد اگرچه ساختار هسته‌ای اتم را توضیح داد،
+اما نتوانست پایداری اتم و طیف خطی آن را به طور کامل توضیح دهد.
+
+</p>
+
+<p>
+
+مدل بور با معرفی ترازهای انرژی گسسته، گام مهمی در توضیح
+ساختار انرژی اتم برداشت. در این مدل، انتقال الکترون میان
+ترازهای انرژی با گسیل یا جذب فوتون همراه است.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+NAVIGATION
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+ادامه مسیر
+</h2>
+
+<p>
+حرکت میان مطالب بخش سوم
+</p>
+
+</div>
+
+
+<div class="navigation">
+
+
+<a href="physics-12-math-chapter-5-rutherford-bohr.html"
+   class="nav-card">
+
+<small>
+بازگشت
+</small>
+
+← صفحه بخش سوم
+
+</a>
+
+
+<a href="physics-12-math-chapter-5-line-spectra.html"
+   class="nav-card">
+
+<small>
+موضوع مرتبط
+</small>
+
+← بخش دوم: طیف خطی
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+BACK
+========================= -->
+
+<section class="back">
+
+<a href="physics-12-math-chapter-5-rutherford-bohr.html"
+   class="back-button">
+
+← بازگشت به مدل اتم رادرفورد–بور
+
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 —
+<strong>H Quantum</strong>
+
+</p>
+
+<p>
+
+Physics • Science • Wonder
+
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
