@@ -11,325 +11,416 @@
 <title>متن آموزشی | شناخت حرکت | فیزیک دوازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-      content="متن آموزشی شناخت حرکت در فصل اول فیزیک دوازدهم رشته علوم تجربی؛ مکان و جابه‌جایی در H Quantum.">
+      content="متن کامل فصل اول فیزیک دوازدهم تجربی؛ شناخت حرکت در H Quantum.">
 
 <style>
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+/* =========================
+   RESET
+========================= */
 
-html{
-scroll-behavior:smooth;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-font-family:Tahoma,Arial,sans-serif;
-background:#07111f;
-color:#f4f7fb;
-line-height:1.9;
+
+    font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
+    background:#07111f;
+
+    color:#eaf7ff;
+
+    line-height:1.9;
+
+    min-height:100vh;
 }
 
-a{
-text-decoration:none;
-color:inherit;
-}
+
+/* =========================
+   HEADER
+========================= */
 
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(7,17,31,0.94);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(255,255,255,0.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(7,17,31,0.96);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:
+    1px solid
+    rgba(99,216,255,0.18);
+
 }
 
-.nav{
-max-width:1100px;
-margin:auto;
-padding:16px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+.header-inner{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:
+    14px
+    20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
 }
 
 .logo{
-font-size:24px;
-font-weight:bold;
-letter-spacing:2px;
+
+    color:#63d8ff;
+
+    text-decoration:none;
+
+    font-size:1.25rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
 }
 
-.logo span{
-color:#63d8ff;
+nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
 }
 
-.nav-links{
-display:flex;
-gap:18px;
-font-size:14px;
-color:#cbd5e1;
-flex-wrap:wrap;
-justify-content:center;
+nav a{
+
+    color:#b9d9e8;
+
+    text-decoration:none;
+
+    font-size:0.9rem;
+
+    transition:0.2s;
+
 }
 
-.nav-links a{
-transition:0.3s;
+nav a:hover{
+
+    color:#63d8ff;
+
 }
 
-.nav-links a:hover{
-color:#63d8ff;
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:
+    55px
+    20px
+    70px;
+
 }
 
-.hero{
-max-width:1000px;
-margin:auto;
-padding:80px 20px 60px;
-text-align:center;
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.page-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
 }
 
-.badge{
-display:inline-block;
-padding:7px 18px;
-border:1px solid rgba(99,216,255,0.35);
-border-radius:30px;
-color:#63d8ff;
-font-size:14px;
-margin-bottom:22px;
+.eyebrow{
+
+    color:#63d8ff;
+
+    font-size:0.95rem;
+
+    margin-bottom:8px;
+
 }
 
-.hero h1{
-font-size:clamp(34px,8vw,60px);
-line-height:1.4;
-margin-bottom:15px;
+h1{
+
+    font-size:
+    clamp(2rem,5vw,3.2rem);
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
 }
 
-.hero h1 span{
-color:#63d8ff;
+.subtitle{
+
+    color:#a9c4d3;
+
+    font-size:1rem;
+
 }
 
-.hero h2{
-font-size:clamp(19px,5vw,30px);
-font-weight:normal;
-margin-bottom:20px;
+
+/* =========================
+   PDF SECTION
+========================= */
+
+.pdf-section{
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(99,216,255,0.07),
+        rgba(255,255,255,0.025)
+    );
+
+    border:
+    1px solid
+    rgba(99,216,255,0.20);
+
+    border-radius:22px;
+
+    padding:20px;
+
+    box-shadow:
+    0 15px 45px
+    rgba(0,0,0,0.25);
+
 }
 
-.hero p{
-max-width:760px;
-margin:auto;
-color:#aebdce;
-font-size:17px;
+
+/* =========================
+   PDF HEADER
+========================= */
+
+.pdf-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    flex-wrap:wrap;
+
 }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:55px 20px;
+.pdf-title{
+
+    color:#ffffff;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
 }
 
-.section-title{
-text-align:center;
-margin-bottom:35px;
+.pdf-description{
+
+    color:#9eb9c8;
+
+    font-size:0.9rem;
+
 }
 
-.section-title h2{
-font-size:30px;
-margin-bottom:10px;
+
+/* =========================
+   PDF BUTTON
+========================= */
+
+.pdf-button{
+
+    display:inline-block;
+
+    background:#63d8ff;
+
+    color:#06111d;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:
+    9px
+    16px;
+
+    border-radius:10px;
+
+    transition:0.2s;
+
+    white-space:nowrap;
+
 }
 
-.section-title p{
-color:#9eafc2;
-font-size:15px;
+.pdf-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 20px
+    rgba(99,216,255,0.25);
+
 }
 
-.content-box{
-max-width:900px;
-margin:auto;
-padding:35px 30px;
-background:#0a1828;
-border:1px solid rgba(99,216,255,0.12);
-border-radius:22px;
-text-align:right;
+
+/* =========================
+   PDF VIEWER
+========================= */
+
+.pdf-viewer{
+
+    width:100%;
+
+    height:75vh;
+
+    min-height:650px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    display:block;
+
 }
 
-.content-box h2{
-font-size:27px;
-color:#63d8ff;
-margin-bottom:18px;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .header-inner{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    nav{
+
+        width:100%;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:4px;
+
+    }
+
+    nav a{
+
+        white-space:nowrap;
+
+    }
+
+    main{
+
+        padding:
+        35px
+        12px
+        50px;
+
+    }
+
+    .pdf-section{
+
+        padding:10px;
+
+        border-radius:16px;
+
+    }
+
+    .pdf-header{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+    }
+
+    .pdf-button{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .pdf-viewer{
+
+        height:72vh;
+
+        min-height:500px;
+
+        border-radius:10px;
+
+    }
+
 }
 
-.content-box h3{
-font-size:21px;
-color:#f4f7fb;
-margin-top:30px;
-margin-bottom:12px;
-}
 
-.content-box p{
-color:#cbd5e1;
-font-size:15px;
-margin-bottom:20px;
-}
-
-.formula{
-direction:ltr;
-text-align:center;
-padding:18px;
-margin:25px 0;
-background:#07111f;
-border:1px solid rgba(99,216,255,0.18);
-border-radius:15px;
-font-size:21px;
-color:#63d8ff;
-}
-
-.note{
-margin:25px 0;
-padding:20px;
-background:#07111f;
-border-right:4px solid #63d8ff;
-border-radius:12px;
-color:#aebdce;
-font-size:14px;
-}
-
-.example{
-margin:30px 0;
-padding:25px;
-background:#0c1b2c;
-border:1px solid rgba(99,216,255,0.15);
-border-radius:16px;
-}
-
-.example-title{
-color:#63d8ff;
-font-size:18px;
-font-weight:bold;
-margin-bottom:15px;
-}
-
-.example p{
-margin-bottom:12px;
-}
-
-.navigation{
-max-width:900px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.nav-card{
-padding:20px;
-background:#0c1b2c;
-border:1px solid rgba(255,255,255,0.08);
-border-radius:18px;
-text-align:center;
-color:#63d8ff;
-transition:0.3s;
-}
-
-.nav-card:hover{
-border-color:rgba(99,216,255,0.5);
-transform:translateY(-4px);
-}
-
-.nav-card small{
-display:block;
-color:#8191a4;
-font-size:12px;
-margin-bottom:5px;
-}
-
-.back{
-text-align:center;
-padding:20px 20px 80px;
-}
-
-.back-button{
-display:inline-block;
-padding:12px 25px;
-background:#10243a;
-border:1px solid rgba(255,255,255,0.12);
-border-radius:10px;
-color:#63d8ff;
-font-weight:bold;
-}
-
-.back-button:hover{
-border-color:#63d8ff;
-}
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-border-top:1px solid rgba(255,255,255,0.08);
-padding:35px 20px;
-text-align:center;
-color:#8191a4;
-}
 
-footer strong{
-color:#63d8ff;
-}
+    text-align:center;
 
-@media(max-width:750px){
+    border-top:
+    1px solid
+    rgba(99,216,255,0.12);
 
-.nav{
-flex-direction:column;
-gap:10px;
-}
+    padding:
+    25px
+    15px;
 
-.nav-links{
-gap:11px;
-font-size:12px;
-}
+    color:#6f8b9a;
 
-.hero{
-padding:55px 16px 45px;
-}
-
-.hero p{
-font-size:14px;
-}
-
-.content-box{
-padding:30px 18px;
-}
-
-.content-box h2{
-font-size:23px;
-}
-
-.content-box h3{
-font-size:18px;
-}
-
-.content-box p{
-font-size:14px;
-}
-
-.navigation{
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-}
-
-.nav-card{
-padding:16px 8px;
-font-size:12px;
-}
+    font-size:0.85rem;
 
 }
 
-@media(max-width:400px){
+.footer-line{
 
-.hero h1{
-font-size:30px;
-}
+    margin-top:5px;
 
-.hero h2{
-font-size:18px;
-}
+    color:#526b79;
 
 }
 
@@ -337,1781 +428,152 @@ font-size:18px;
 
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-<nav class="nav">
+    <div class="header-inner">
 
-<a href="index.html"
-   class="logo">
+        <a
+            class="logo"
+            href="index.html">
+            H QUANTUM
+        </a>
 
-H <span>QUANTUM</span>
+        <nav>
 
-</a>
+            <a href="index.html">
+                خانه
+            </a>
 
-<div class="nav-links">
+            <a href="school.html">
+                مدرسه فیزیک
+            </a>
 
-<a href="index.html">
-خانه
-</a>
+            <a href="physics-10.html">
+                دهم
+            </a>
 
-<a href="school.html">
-مدرسه فیزیک
-</a>
+            <a href="physics-11.html">
+                یازدهم
+            </a>
 
-<a href="physics-10.html">
-دهم
-</a>
+            <a href="physics-12.html">
+                دوازدهم
+            </a>
 
-<a href="physics-11.html">
-یازدهم
-</a>
+            <a href="#">
+                🎙️ پادکست
+            </a>
 
-<a href="physics-12.html">
-دوازدهم
-</a>
+        </nav>
 
-<a href="podcast.html">
-🎙️ پادکست
-</a>
-
-</div>
-
-</nav>
+    </div>
 
 </header>
 
 
+
+<!-- =========================
+     MAIN
+========================= -->
+
 <main>
 
 
-<section class="hero">
+    <section class="page-header">
 
-<div class="badge">
+        <div class="eyebrow">
+            فیزیک دوازدهم تجربی • فصل اول
+        </div>
 
-فیزیک دوازدهم تجربی • فصل اول
+        <h1>
+            شناخت حرکت
+        </h1>
 
-</div>
+        <p class="subtitle">
+            متن کامل آموزشی فصل اول
+        </p>
 
-<h1>
+    </section>
 
-<span>شناخت حرکت</span>
 
-</h1>
 
-<h2>
+    <!-- =========================
+         PDF
+    ========================= -->
 
-متن آموزشی
+    <section class="pdf-section">
 
-</h2>
 
-<p>
+        <div class="pdf-header">
 
-در این بخش با مفاهیم بنیادی حرکت
-آشنا می‌شویم و قدم‌به‌قدم از شناخت
-مکان به سوی توصیف دقیق‌تر حرکت می‌رویم.
+            <div>
 
-</p>
+                <div class="pdf-title">
+                    📖 متن کامل کتاب
+                </div>
 
-</section>
+                <div class="pdf-description">
+                    برای مطالعه، PDF را مستقیماً در همین صفحه مشاهده کنید.
+                </div>
 
+            </div>
 
-<!-- =========================
-     بخش اول: مکان
-========================= -->
 
-<section>
+            <a
+                class="pdf-button"
+                href="pdf/physics-12-experimental-chapter-1-motion.pdf"
+                target="_blank">
 
-<div class="section-title">
+                باز کردن PDF
 
-<h2>
-📍 مکان؛ از یک نقطه تا یک بردار
-</h2>
+            </a>
 
-<p>
-شناخت موقعیت جسم در یک دستگاه مختصات
-</p>
+        </div>
 
-</div>
 
-<div class="content-box">
 
+        <!-- PDF VIEWER -->
 
-<h2>
-مکان؛ از یک نقطه تا یک بردار
-</h2>
+        <iframe
 
-<p>
+            class="pdf-viewer"
 
-گاهی برای اینکه بفهمیم یک جسم کجاست،
-فقط کافی است اطرافمان را نگاه کنیم.
+            src="pdf/physics-12-experimental-chapter-1-motion.pdf"
 
-اما در فیزیک، «کجا بودن» یک جسم،
-آن‌قدرها هم ساده نیست.
+            title="متن کامل فصل اول فیزیک دوازدهم تجربی">
 
-فرض کنید دو نفر در یک خیابان مستقیم
-ایستاده‌اند.
+        </iframe>
 
-یکی از آن‌ها می‌گوید:
 
-«من ده متر جلوترم.»
+    </section>
 
-سؤال اینجاست:
-
-جلوتر نسبت به کجا؟
-
-و اصلاً «جلو» یعنی کدام طرف؟
-
-اینجاست که فیزیک، برای توصیف مکان
-یک جسم، یک قرارداد ساده اما بسیار مهم
-تعیین می‌کند.
-
-ما باید یک مبدأ داشته باشیم و یک جهت
-مثبت مشخص کنیم.
-
-از این لحظه به بعد، هر نقطه‌ای که در
-جهت مثبت مبدأ قرار بگیرد، مکان مثبت دارد
-و هر نقطه‌ای که در جهت مخالف قرار بگیرد،
-مکان منفی خواهد داشت.
-
-</p>
-
-
-<h3>
-یک مسیر مستقیم را تصور کنید
-</h3>
-
-<p>
-
-مبدأ را در نظر می‌گیریم و جهت سمت راست
-را مثبت انتخاب می‌کنیم.
-
-در این صورت، نقطه‌ای که پنج متر سمت راست
-مبدأ قرار دارد، مکانش مثبت است:
-
-</p>
-
-<div class="formula">
-
-x = +5 m
-
-</div>
-
-<p>
-
-اما اگر جسم سه متر سمت چپ مبدأ باشد،
-مکان آن منفی است:
-
-</p>
-
-<div class="formula">
-
-x = -3 m
-
-</div>
-
-<div class="note">
-
-💡 مثبت یا منفی بودن مکان، به انتخاب مبدأ
-و جهت مثبت بستگی دارد.
-
-</div>
-
-
-<h3>
-مکان مثبت و منفی
-</h3>
-
-<p>
-
-اگر جهت مثبت را عوض کنیم، علامت مکان‌ها
-هم می‌تواند عوض شود.
-
-پس «منفی» به معنی بد، کمتر یا اشتباه نیست.
-
-فقط یعنی جسم در جهتی قرار گرفته که ما
-آن را به‌عنوان جهت منفی انتخاب کرده‌ایم.
-
-</p>
-
-
-<h3>
-مکان در نمودار مکان–زمان
-</h3>
-
-<p>
-
-در نمودار مکان–زمان، محور افقی معمولاً
-زمان است و محور عمودی مکان.
-
-محور مکان یک خط عمودی دارد که در آن
-یک نقطه بسیار مهم وجود دارد:
-
-صفر.
-
-هر جا نمودار بالای محور زمان باشد،
-یعنی مکان جسم مثبت است.
-
-هر جا نمودار پایین محور زمان قرار بگیرد،
-مکان جسم منفی است.
-
-اگر نمودار دقیقاً روی محور زمان باشد،
-مکان جسم صفر است؛ یعنی جسم در همان
-مبدأ دستگاه مختصات قرار دارد.
-
-</p>
-
-<div class="note">
-
-بالای محور زمان → مکان مثبت
-
-<br>
-
-پایین محور زمان → مکان منفی
-
-<br>
-
-روی محور زمان → مکان صفر
-
-</div>
-
-
-<h3>
-یک نکته مهم در نمودار مکان–زمان
-</h3>
-
-<p>
-
-گاهی دانش‌آموز نمودار مکان–زمان را می‌بیند
-و فکر می‌کند اگر نمودار صعودی باشد،
-مکان مثبت است و اگر نزولی باشد،
-مکان منفی.
-
-این برداشت اشتباه است.
-
-صعودی یا نزولی بودن نمودار، به تغییر مکان
-در طول زمان مربوط است، نه به مثبت یا منفی
-بودن خود مکان.
-
-ممکن است جسم در مکان منفی باشد اما
-نمودار آن صعودی باشد.
-
-مثلاً جسم می‌تواند از مکان منفی سه متر
-شروع کند و به مکان منفی یک متر برسد.
-
-در تمام این مدت مکان جسم منفی است،
-اما نمودار صعودی است.
-
-</p>
-
-<div class="note">
-
-📌 پس دو سؤال را از هم جدا کنیم:
-
-<br><br>
-
-«جسم کجاست؟»
-
-<br>
-
-و
-
-<br>
-
-«مکان جسم چگونه تغییر می‌کند؟»
-
-<br><br>
-
-این دو سؤال یکی نیستند.
-
-</div>
-
-
-<h3>
-مکان در معادله حرکت
-</h3>
-
-<p>
-
-حالا تصور کنید به جای نمودار،
-معادله حرکت را در اختیار داریم.
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-x = 2t - 6
-
-</div>
-
-<p>
-
-اگر بخواهیم بدانیم جسم چه زمانی در مکان
-مثبت یا منفی قرار دارد، کافی است مقدار x
-را بررسی کنیم.
-
-اگر:
-
-</p>
-
-<div class="formula">
-
-x > 0
-
-</div>
-
-<p>
-
-باشد، جسم در مکان مثبت قرار دارد.
-
-اگر:
-
-</p>
-
-<div class="formula">
-
-x < 0
-
-</div>
-
-<p>
-
-باشد، مکان جسم منفی است.
-
-و اگر:
-
-</p>
-
-<div class="formula">
-
-x = 0
-
-</div>
-
-<p>
-
-باشد، جسم دقیقاً در مبدأ قرار دارد.
-
-در معادله:
-
-</p>
-
-<div class="formula">
-
-x = 2t - 6
-
-</div>
-
-<p>
-
-برای پیدا کردن لحظه عبور از مبدأ،
-x را صفر قرار می‌دهیم:
-
-</p>
-
-<div class="formula">
-
-0 = 2t - 6
-
-<br>
-
-t = 3 s
-
-</div>
-
-<p>
-
-یعنی جسم تا قبل از سه ثانیه در مکان منفی
-قرار دارد و بعد از سه ثانیه وارد مکان مثبت
-می‌شود.
-
-البته این نتیجه به دامنه زمانی مسئله نیز
-بستگی دارد.
-
-</p>
-
-
-<h3>
-بردار مکان
-</h3>
-
-<p>
-
-آیا مکان فقط یک عدد است؟
-
-در حرکت یک‌بعدی، می‌توانیم مکان را با
-یک عدد علامت‌دار نشان دهیم.
-
-اما در فضای دو یا سه‌بعدی، موضوع کمی
-متفاوت می‌شود.
-
-اینجاست که با مفهوم بردار مکان روبه‌رو
-می‌شویم.
-
-بردار مکان، برداری است که از مبدأ مختصات
-به سمت مکان جسم کشیده می‌شود.
-
-اگر مبدأ را O و محل جسم را P بنامیم،
-برداری که از O به P کشیده می‌شود،
-بردار مکان جسم است.
-
-</p>
-
-<div class="formula">
-
-r⃗
-
-</div>
-
-<p>
-
-اگر جسم در نقطه‌ای با مختصات:
-
-</p>
-
-<div class="formula">
-
-(x , y)
-
-</div>
-
-<p>
-
-باشد، بردار مکان را می‌توان به صورت زیر نوشت:
-
-</p>
-
-<div class="formula">
-
-r⃗ = x i⃗ + y j⃗
-
-</div>
-
-<p>
-
-در فضای سه‌بعدی نیز:
-
-</p>
-
-<div class="formula">
-
-r⃗ = x i⃗ + y j⃗ + z k⃗
-
-</div>
-
-<p>
-
-بنابراین مکان یک جسم در فیزیک فقط یک
-«جای تقریبی» نیست.
-
-مکان، یک کمیت دقیق برای مشخص کردن
-وضعیت جسم نسبت به یک دستگاه مختصات است.
-
-</p>
-
-
-<h3>
-مکان و فاصله از مبدأ
-</h3>
-
-<p>
-
-فرض کنید جسمی سه متر سمت چپ مبدأ قرار دارد.
-
-مکان آن:
-
-</p>
-
-<div class="formula">
-
-x = -3 m
-
-</div>
-
-<p>
-
-است.
-
-اما اگر فقط فاصله جسم از مبدأ را بخواهیم،
-عدد ۳ متر را در نظر می‌گیریم.
-
-پس مکان و فاصله از مبدأ یک مفهوم یکسان نیستند.
-
-</p>
-
-
-<div class="note">
-
-📌 مکان می‌تواند مثبت یا منفی باشد،
-اما فاصله از مبدأ مقدار منفی ندارد.
-
-</div>
-
-
-<h3>
-جمع‌بندی مکان
-</h3>
-
-<p>
-
-در یک مسیر مستقیم، ابتدا مبدأ و جهت مثبت
-را انتخاب می‌کنیم.
-
-سمت مثبت مبدأ → مکان مثبت
-
-<br>
-
-سمت منفی مبدأ → مکان منفی
-
-<br><br>
-
-در نمودار مکان–زمان نیز موقعیت جسم نسبت
-به محور مکان قابل تشخیص است.
-
-و وقتی از فضای یک‌بعدی فراتر می‌رویم،
-می‌توان مکان جسم را با بردار مکان توصیف کرد؛
-برداری که از مبدأ مختصات به سمت محل جسم
-کشیده می‌شود.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     بخش دوم: جابه‌جایی
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-↔️ جابه‌جایی؛ تغییر مکان جسم
-</h2>
-
-<p>
-تغییر موقعیت جسم از مکان اولیه تا مکان نهایی
-</p>
-
-</div>
-
-<div class="content-box">
-
-
-<h2>
-جابه‌جایی چیست؟
-</h2>
-
-<p>
-
-در بخش قبل دیدیم که برای مشخص کردن مکان
-یک جسم، باید یک مبدأ و یک جهت مثبت انتخاب کنیم.
-
-حالا یک سؤال جدید مطرح می‌شود:
-
-اگر جسم از یک مکان به مکان دیگری برود،
-مکان آن چقدر تغییر کرده است؟
-
-برای پاسخ به این سؤال، در فیزیک از مفهوم
-«جابه‌جایی» استفاده می‌کنیم.
-
-جابه‌جایی یعنی تغییر مکان جسم از موقعیت
-اولیه تا موقعیت نهایی.
-
-به زبان ساده:
-
-</p>
-
-<div class="note">
-
-💡 جابه‌جایی به ما می‌گوید مکان جسم از ابتدا
-تا انتهای حرکت چقدر تغییر کرده و این تغییر
-در کدام جهت بوده است.
-
-</div>
-
-
-<h3>
-مکان اولیه و مکان نهایی
-</h3>
-
-<p>
-
-برای پیدا کردن جابه‌جایی، ابتدا باید
-دو چیز را بدانیم:
-
-مکان اولیه جسم و مکان نهایی جسم.
-
-فرض کنید جسمی ابتدا در مکان:
-
-</p>
-
-<div class="formula">
-
-x₁ = 2 m
-
-</div>
-
-<p>
-
-قرار دارد و پس از مدتی به مکان:
-
-</p>
-
-<div class="formula">
-
-x₂ = 8 m
-
-</div>
-
-<p>
-
-می‌رسد.
-
-جابه‌جایی از رابطه زیر به دست می‌آید:
-
-</p>
-
-<div class="formula">
-
-Δx = x₂ − x₁
-
-</div>
-
-<p>
-
-بنابراین:
-
-</p>
-
-<div class="formula">
-
-Δx = 8 − 2 = +6 m
-
-</div>
-
-<div class="note">
-
-📌 علامت مثبت نشان می‌دهد جابه‌جایی
-در جهت مثبت محور مکان بوده است.
-
-</div>
-
-
-<h3>
-یک قانون بسیار مهم
-</h3>
-
-<p>
-
-برای محاسبه جابه‌جایی همیشه این ترتیب
-را رعایت کن:
-
-</p>
-
-<div class="formula">
-
-جابه‌جایی = مکان نهایی − مکان اولیه
-
-<br><br>
-
-Δx = x₂ − x₁
-
-</div>
-
-<div class="note">
-
-⭐ یک عبارت ساده برای حفظ کردن:
-
-<br>
-
-«نهایی منهای اولیه»
-
-</div>
-
-
-<h3>
-جابه‌جایی مثبت
-</h3>
-
-<p>
-
-فرض کنید:
-
-</p>
-
-<div class="formula">
-
-x₁ = 3 m
-
-<br>
-
-x₂ = 9 m
-
-</div>
-
-<p>
-
-پس:
-
-</p>
-
-<div class="formula">
-
-Δx = 9 − 3 = +6 m
-
-</div>
-
-<p>
-
-بنابراین جابه‌جایی جسم در جهت مثبت
-محور مکان بوده است.
-
-</p>
-
-
-<h3>
-جابه‌جایی منفی
-</h3>
-
-<p>
-
-حالا فرض کنید جسم از مکان:
-
-</p>
-
-<div class="formula">
-
-x₁ = 9 m
-
-</div>
-
-<p>
-
-به مکان:
-
-</p>
-
-<div class="formula">
-
-x₂ = 3 m
-
-</div>
-
-<p>
-
-برود.
-
-در این حالت:
-
-</p>
-
-<div class="formula">
-
-Δx = 3 − 9 = −6 m
-
-</div>
-
-<div class="note">
-
-📌 علامت منفی نشان می‌دهد تغییر مکان
-در جهت منفی محور بوده است.
-
-منفی بودن جابه‌جایی به معنی بد، کمتر
-یا اشتباه بودن آن نیست؛ فقط جهت را مشخص می‌کند.
-
-</div>
-
-
-<h3>
-جابه‌جایی صفر
-</h3>
-
-<p>
-
-اگر جسم در پایان دوباره به همان مکانی برسد
-که از آن شروع کرده بود، مکان اولیه و نهایی
-برابر هستند.
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-x₁ = 5 m
-
-<br>
-
-x₂ = 5 m
-
-</div>
-
-<p>
-
-پس:
-
-</p>
-
-<div class="formula">
-
-Δx = 5 − 5 = 0
-
-</div>
-
-<div class="note">
-
-⚠️ صفر بودن جابه‌جایی الزاماً به معنی
-ساکن بودن جسم نیست.
-
-ممکن است جسم حرکت کرده باشد و در پایان
-دوباره به مکان اولیه خود بازگشته باشد.
-
-</div>
-
-
-<h3>
-اگر مکان اولیه منفی باشد
-</h3>
-
-<p>
-
-برای محاسبه جابه‌جایی هیچ تفاوتی ندارد
-که مکان اولیه مثبت باشد یا منفی.
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-x₁ = −6 m
-
-<br>
-
-x₂ = 2 m
-
-</div>
-
-<p>
-
-بنابراین:
-
-</p>
-
-<div class="formula">
-
-Δx = 2 − (−6)
-
-<br>
-
-Δx = +8 m
-
-</div>
-
-<p>
-
-پس جابه‌جایی برابر +۸ متر است.
-
-</p>
-
-
-<h3>
-اگر مکان نهایی هم منفی باشد
-</h3>
-
-<p>
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-x₁ = −2 m
-
-<br>
-
-x₂ = −7 m
-
-</div>
-
-<p>
-
-داریم:
-
-</p>
-
-<div class="formula">
-
-Δx = −7 − (−2)
-
-<br>
-
-Δx = −5 m
-
-</div>
-
-<p>
-
-پس جسم ۵ متر در جهت منفی جابه‌جا شده است.
-
-</p>
-
-
-<h3>
-یک نکته بسیار مهم درباره مکان و جابه‌جایی
-</h3>
-
-<p>
-
-ممکن است جسم در مکان منفی باشد، اما
-جابه‌جایی آن مثبت باشد.
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-x₁ = −8 m
-
-<br>
-
-x₂ = −3 m
-
-</div>
-
-<p>
-
-در این حالت:
-
-</p>
-
-<div class="formula">
-
-Δx = −3 − (−8)
-
-<br>
-
-Δx = +5 m
-
-</div>
-
-<p>
-
-جسم هنوز در مکان منفی قرار دارد،
-اما جابه‌جایی آن مثبت است.
-
-چرا؟
-
-چون جسم از −۸ متر به −۳ متر رفته است؛
-یعنی در جهت مثبت محور حرکت کرده است.
-
-</p>
-
-<div class="note">
-
-📌 این دو مفهوم را با هم اشتباه نکن:
-
-<br><br>
-
-علامت مکان → موقعیت جسم نسبت به مبدأ
-
-<br>
-
-علامت جابه‌جایی → جهت تغییر مکان
-
-</div>
-
-
-<h3>
-جابه‌جایی در چند مرحله
-</h3>
-
-<p>
-
-گاهی حرکت جسم در چند مرحله انجام می‌شود.
-
-مثلاً جسم ابتدا:
-
-</p>
-
-<div class="formula">
-
-+4 m
-
-</div>
-
-<p>
-
-جابه‌جا می‌شود، سپس:
-
-</p>
-
-<div class="formula">
-
-−3 m
-
-</div>
-
-<p>
-
-و بعد:
-
-</p>
-
-<div class="formula">
-
-+5 m
-
-</div>
-
-<p>
-
-جابه‌جایی کل برابر مجموع جبری
-جابه‌جایی‌های مرحله‌ای است:
-
-</p>
-
-<div class="formula">
-
-Δxکل = (+4) + (−3) + (+5)
-
-<br><br>
-
-Δxکل = +6 m
-
-</div>
-
-<div class="note">
-
-📌 در جمع جابه‌جایی‌ها، علامت هر جابه‌جایی
-بسیار مهم است.
-
-</div>
-
-
-<h3>
-چرا جمع جبری مهم است؟
-</h3>
-
-<p>
-
-فرض کنید جسم ابتدا ۵ متر در جهت مثبت
-و سپس ۵ متر در جهت منفی جابه‌جا شود.
-
-</p>
-
-<div class="formula">
-
-Δxکل = +5 − 5 = 0
-
-</div>
-
-<p>
-
-در نتیجه جابه‌جایی کل صفر است.
-
-بنابراین هنگام ترکیب چند جابه‌جایی،
-فقط مقدار عددی آن‌ها را جمع نمی‌کنیم؛
-جهت آن‌ها را نیز در نظر می‌گیریم.
-
-</p>
-
-
-<h3>
-جابه‌جایی بین دو لحظه مشخص
-</h3>
-
-<p>
-
-گاهی مسئله جابه‌جایی کل حرکت را نمی‌خواهد.
-
-مثلاً می‌پرسد:
-
-«جابه‌جایی جسم از ثانیه ۲ تا ثانیه ۷ چقدر است؟»
-
-در این حالت باید مکان جسم را در همان
-دو لحظه پیدا کنیم.
-
-اگر:
-
-</p>
-
-<div class="formula">
-
-x(2) = 3 m
-
-<br>
-
-x(7) = 11 m
-
-</div>
-
-<p>
-
-باشد:
-
-</p>
-
-<div class="formula">
-
-Δx = x(7) − x(2)
-
-<br>
-
-Δx = 11 − 3
-
-<br>
-
-Δx = +8 m
-
-</div>
-
-<div class="note">
-
-📌 همیشه به بازه زمانی مورد سؤال دقت کن.
-
-</div>
-
-
-<h3>
-جابه‌جایی در نمودار مکان–زمان
-</h3>
-
-<p>
-
-در نمودار مکان–زمان، محور افقی زمان
-و محور عمودی مکان است.
-
-اگر بخواهیم جابه‌جایی جسم را بین دو زمان
-مشخص پیدا کنیم، مکان جسم را در آن دو
-زمان از نمودار می‌خوانیم.
-
-اگر مکان اولیه x₁ و مکان نهایی x₂ باشد:
-
-</p>
-
-<div class="formula">
-
-Δx = x₂ − x₁
-
-</div>
-
-<div class="note">
-
-📌 در نمودار مکان–زمان، اختلاف مکان
-دو نقطه از نمودار، جابه‌جایی جسم
-بین آن دو لحظه است.
-
-</div>
-
-
-<h3>
-یک اشتباه رایج در نمودار مکان–زمان
-</h3>
-
-<p>
-
-گاهی دانش‌آموز فکر می‌کند اگر نمودار
-به سمت بالا برود، جابه‌جایی مثبت است
-و اگر به سمت پایین برود، جابه‌جایی منفی است.
-
-برای تعیین علامت جابه‌جایی باید مکان
-نهایی را با مکان اولیه مقایسه کنیم.
-
-اگر:
-
-</p>
-
-<div class="formula">
-
-x₂ > x₁
-
-</div>
-
-<p>
-
-آنگاه:
-
-</p>
-
-<div class="formula">
-
-Δx > 0
-
-</div>
-
-<p>
-
-و اگر:
-
-</p>
-
-<div class="formula">
-
-x₂ < x₁
-
-</div>
-
-<p>
-
-آنگاه:
-
-</p>
-
-<div class="formula">
-
-Δx < 0
-
-</div>
-
-
-<h3>
-جابه‌جایی و سرعت متوسط
-</h3>
-
-<p>
-
-جابه‌جایی یکی از پایه‌های تعریف سرعت متوسط است.
-
-سرعت متوسط از رابطه زیر به دست می‌آید:
-
-</p>
-
-<div class="formula">
-
-v̄ = Δx / Δt
-
-</div>
-
-<p>
-
-یعنی سرعت متوسط برابر است با جابه‌جایی
-تقسیم بر بازه زمانی.
-
-بنابراین اگر جابه‌جایی مثبت باشد،
-سرعت متوسط نیز مثبت خواهد بود و اگر
-جابه‌جایی منفی باشد، سرعت متوسط منفی
-خواهد شد؛ زیرا بازه زمانی مثبت است.
-
-</p>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال: جابه‌جایی و سرعت متوسط
-</div>
-
-<p>
-
-جسمی در مدت ۴ ثانیه از مکان ۲ متر
-به مکان ۱۸ متر می‌رسد.
-
-</p>
-
-<div class="formula">
-
-Δx = 18 − 2 = 16 m
-
-</div>
-
-<p>
-
-بنابراین:
-
-</p>
-
-<div class="formula">
-
-v̄ = 16 / 4 = 4 m/s
-
-</div>
-
-<p>
-
-پس سرعت متوسط جسم برابر ۴ متر بر ثانیه است.
-
-</p>
-
-</div>
-
-
-<h3>
-اندازه جابه‌جایی
-</h3>
-
-<p>
-
-گاهی به جای خود جابه‌جایی، اندازه جابه‌جایی
-را می‌خواهیم.
-
-اگر:
-
-</p>
-
-<div class="formula">
-
-Δx = −8 m
-
-</div>
-
-<p>
-
-باشد، اندازه آن برابر است با:
-
-</p>
-
-<div class="formula">
-
-|Δx| = 8 m
-
-</div>
-
-<p>
-
-در این حالت علامت منفی کنار گذاشته می‌شود،
-زیرا اندازه فقط مقدار جابه‌جایی را نشان می‌دهد.
-
-</p>
-
-
-<h3>
-جابه‌جایی یک کمیت برداری است
-</h3>
-
-<p>
-
-جابه‌جایی فقط یک مقدار عددی نیست؛
-جهت نیز دارد.
-
-در حرکت یک‌بعدی، این جهت را می‌توان
-با علامت مثبت و منفی مشخص کرد.
-
-مثلاً:
-
-</p>
-
-<div class="formula">
-
-Δx = +7 m
-
-</div>
-
-<p>
-
-یعنی جابه‌جایی در جهت مثبت است.
-
-و:
-
-</p>
-
-<div class="formula">
-
-Δx = −7 m
-
-</div>
-
-<p>
-
-یعنی جابه‌جایی در جهت منفی است.
-
-</p>
-
-
-<h3>
-مثال‌های سریع
-</h3>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال اول
-</div>
-
-<div class="formula">
-
-x₁ = 4 m
-
-<br>
-
-x₂ = 12 m
-
-<br><br>
-
-Δx = 12 − 4 = +8 m
-
-</div>
-
-</div>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال دوم
-</div>
-
-<div class="formula">
-
-x₁ = 12 m
-
-<br>
-
-x₂ = 4 m
-
-<br><br>
-
-Δx = 4 − 12 = −8 m
-
-</div>
-
-</div>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال سوم
-</div>
-
-<div class="formula">
-
-x₁ = −4 m
-
-<br>
-
-x₂ = 6 m
-
-<br><br>
-
-Δx = 6 − (−4) = +10 m
-
-</div>
-
-</div>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال چهارم
-</div>
-
-<div class="formula">
-
-x₁ = −3 m
-
-<br>
-
-x₂ = −9 m
-
-<br><br>
-
-Δx = −9 − (−3) = −6 m
-
-</div>
-
-</div>
-
-
-<div class="example">
-
-<div class="example-title">
-مثال پنجم
-</div>
-
-<div class="formula">
-
-x₁ = 7 m
-
-<br>
-
-x₂ = 7 m
-
-<br><br>
-
-Δx = 0
-
-</div>
-
-</div>
-
-
-<h3>
-دام‌ها و نکات مهم کنکوری
-</h3>
-
-
-<div class="note">
-
-<strong>دام اول:</strong>
-
-<br>
-
-جابه‌جایی همیشه «نهایی منهای اولیه» است:
-
-<br><br>
-
-Δx = x₂ − x₁
-
-</div>
-
-
-<div class="note">
-
-<strong>دام دوم:</strong>
-
-<br>
-
-علامت مکان را فراموش نکن.
-
-اگر:
-
-<br><br>
-
-x₁ = −5 m
-
-<br>
-
-x₂ = 3 m
-
-<br><br>
-
-آنگاه:
-
-<br>
-
-Δx = 3 − (−5) = +8 m
-
-</div>
-
-
-<div class="note">
-
-<strong>دام سوم:</strong>
-
-<br>
-
-مکان و جابه‌جایی یکی نیستند.
-
-x مکان جسم را نشان می‌دهد؛
-
-اما Δx تغییر مکان جسم را نشان می‌دهد.
-
-</div>
-
-
-<div class="note">
-
-<strong>دام چهارم:</strong>
-
-<br>
-
-صفر بودن جابه‌جایی الزاماً به معنی
-ساکن بودن جسم نیست.
-
-ممکن است جسم حرکت کند و در پایان
-به مکان اولیه خود بازگردد.
-
-</div>
-
-
-<div class="note">
-
-<strong>دام پنجم:</strong>
-
-<br>
-
-در چند جابه‌جایی، علامت‌ها را حذف نکن.
-
-مثلاً:
-
-<br><br>
-
-+8 m ، −3 m ، −2 m
-
-<br><br>
-
-پس:
-
-<br>
-
-Δxکل = +3 m
-
-</div>
-
-
-<h3>
-جمع‌بندی جابه‌جایی
-</h3>
-
-<p>
-
-جابه‌جایی یعنی تغییر مکان جسم.
-
-برای محاسبه آن:
-
-</p>
-
-<div class="formula">
-
-Δx = x₂ − x₁
-
-</div>
-
-<p>
-
-یعنی همیشه:
-
-<strong>مکان نهایی منهای مکان اولیه.</strong>
-
-</p>
-
-<p>
-
-جابه‌جایی می‌تواند مثبت، منفی یا صفر باشد.
-
-علامت مثبت و منفی جابه‌جایی، جهت تغییر
-مکان را مشخص می‌کند.
-
-</p>
-
-<p>
-
-اگر جسم در چند مرحله جابه‌جا شود،
-جابه‌جایی‌های مرحله‌ای را با توجه به
-علامتشان با هم جمع می‌کنیم:
-
-</p>
-
-<div class="formula">
-
-Δxکل = Δx₁ + Δx₂ + ...
-
-</div>
-
-<p>
-
-و اگر جابه‌جایی بین دو لحظه مشخص خواسته شود:
-
-</p>
-
-<div class="formula">
-
-Δx = x(t₂) − x(t₁)
-
-</div>
-
-<p>
-
-در نهایت، جابه‌جایی یکی از بنیادی‌ترین
-مفاهیم توصیف حرکت است؛ زیرا وقتی بدانیم
-مکان جسم چگونه تغییر کرده است، می‌توانیم
-در مرحله بعد مفهوم مهم سرعت متوسط را
-بررسی کنیم.
-
-</p>
-
-<div class="note">
-
-⭐ جابه‌جایی یعنی بدانیم جسم از کجا
-شروع کرده، به کجا رسیده و مکان آن
-در چه جهتی تغییر کرده است.
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     ادامه مسیر
-========================= -->
-
-<section>
-
-<div class="section-title">
-
-<h2>
-ادامه مسیر یادگیری
-</h2>
-
-<p>
-حرکت میان بخش‌های آموزشی
-</p>
-
-</div>
-
-<div class="navigation">
-
-<a href="physics-12-experimental-chapter-1-motion.html"
-   class="nav-card">
-
-<small>
-بازگشت
-</small>
-
-← صفحه اصلی فصل
-
-</a>
-
-<a href="physics-12-experimental-chapter-1-motion-podcast.html"
-   class="nav-card">
-
-<small>
-یادگیری شنیداری
-</small>
-
-🎙️ پادکست →
-
-</a>
-
-</div>
-
-</section>
-
-
-<section class="back">
-
-<a href="physics-12-experimental.html"
-   class="back-button">
-
-← بازگشت به فیزیک دوازدهم تجربی
-
-</a>
-
-</section>
 
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-<p>
-© 2026 —
-<strong>H Quantum</strong>
-</p>
+    © 2026 — H Quantum
 
-<p>
-Physics • Science • Wonder
-</p>
-
-<p>
-Physics • Science • Wonder
-</p>
+    <div class="footer-line">
+        Physics • Science • Wonder
+    </div>
 
 </footer>
+
 
 </body>
 
