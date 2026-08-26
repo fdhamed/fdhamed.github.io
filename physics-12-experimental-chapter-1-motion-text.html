@@ -6,18 +6,14 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+content="width=device-width, initial-scale=1.0">
 
-<title>متن آموزشی | شناخت حرکت | فیزیک دوازدهم تجربی | H Quantum</title>
+<title>شناخت حرکت | متن آموزشی | فیزیک دوازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-      content="متن کامل فصل اول فیزیک دوازدهم تجربی؛ شناخت حرکت در H Quantum.">
+content="متن کامل فصل اول فیزیک دوازدهم تجربی، شناخت حرکت، در H Quantum.">
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 *{
     box-sizing:border-box;
@@ -26,7 +22,6 @@
 }
 
 body{
-
     font-family:
     Tahoma,
     Arial,
@@ -37,8 +32,6 @@ body{
     color:#eaf7ff;
 
     line-height:1.9;
-
-    min-height:100vh;
 }
 
 
@@ -61,7 +54,6 @@ header{
     border-bottom:
     1px solid
     rgba(99,216,255,0.18);
-
 }
 
 .header-inner{
@@ -70,9 +62,7 @@ header{
 
     margin:auto;
 
-    padding:
-    14px
-    20px;
+    padding:14px 20px;
 
     display:flex;
 
@@ -81,7 +71,6 @@ header{
     justify-content:space-between;
 
     gap:20px;
-
 }
 
 .logo{
@@ -95,7 +84,6 @@ header{
     font-weight:bold;
 
     letter-spacing:1px;
-
 }
 
 nav{
@@ -105,7 +93,6 @@ nav{
     flex-wrap:wrap;
 
     gap:14px;
-
 }
 
 nav a{
@@ -115,15 +102,11 @@ nav a{
     text-decoration:none;
 
     font-size:0.9rem;
-
-    transition:0.2s;
-
 }
 
 nav a:hover{
 
     color:#63d8ff;
-
 }
 
 
@@ -137,24 +120,19 @@ main{
 
     margin:auto;
 
-    padding:
-    55px
-    20px
-    70px;
-
+    padding:50px 20px 70px;
 }
 
 
 /* =========================
-   PAGE INTRO
+   TITLE
 ========================= */
 
 .page-header{
 
     text-align:center;
 
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 .eyebrow{
@@ -164,18 +142,16 @@ main{
     font-size:0.95rem;
 
     margin-bottom:8px;
-
 }
 
 h1{
 
-    font-size:
-    clamp(2rem,5vw,3.2rem);
-
-    margin-bottom:10px;
-
     color:#ffffff;
 
+    font-size:
+    clamp(2rem,5vw,3rem);
+
+    margin-bottom:8px;
 }
 
 .subtitle{
@@ -183,43 +159,37 @@ h1{
     color:#a9c4d3;
 
     font-size:1rem;
-
 }
 
 
 /* =========================
-   PDF SECTION
+   PDF CARD
 ========================= */
 
-.pdf-section{
+.pdf-card{
 
     background:
-    linear-gradient(
-        145deg,
-        rgba(99,216,255,0.07),
-        rgba(255,255,255,0.025)
-    );
+    rgba(255,255,255,0.025);
 
     border:
     1px solid
     rgba(99,216,255,0.20);
 
-    border-radius:22px;
+    border-radius:20px;
 
-    padding:20px;
+    padding:18px;
 
     box-shadow:
     0 15px 45px
     rgba(0,0,0,0.25);
-
 }
 
 
 /* =========================
-   PDF HEADER
+   PDF TOP
 ========================= */
 
-.pdf-header{
+.pdf-top{
 
     display:flex;
 
@@ -232,35 +202,38 @@ h1{
     margin-bottom:18px;
 
     flex-wrap:wrap;
-
 }
 
 .pdf-title{
 
     color:#ffffff;
 
-    font-size:1.2rem;
+    font-size:1.15rem;
 
     font-weight:bold;
-
 }
 
-.pdf-description{
+.pdf-info{
 
-    color:#9eb9c8;
+    color:#8fa9b8;
 
-    font-size:0.9rem;
+    font-size:0.85rem;
 
+    margin-top:3px;
 }
 
 
 /* =========================
-   PDF BUTTON
+   BUTTON
 ========================= */
 
 .pdf-button{
 
     display:inline-block;
+
+    padding:9px 16px;
+
+    border-radius:10px;
 
     background:#63d8ff;
 
@@ -270,26 +243,12 @@ h1{
 
     font-weight:bold;
 
-    padding:
-    9px
-    16px;
-
-    border-radius:10px;
-
-    transition:0.2s;
-
     white-space:nowrap;
-
 }
 
 .pdf-button:hover{
 
-    transform:translateY(-2px);
-
-    box-shadow:
-    0 8px 20px
-    rgba(99,216,255,0.25);
-
+    opacity:0.9;
 }
 
 
@@ -301,18 +260,44 @@ h1{
 
     width:100%;
 
-    height:75vh;
+    height:78vh;
 
     min-height:650px;
 
     border:none;
 
-    border-radius:14px;
+    border-radius:12px;
 
     background:#ffffff;
 
     display:block;
+}
 
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    text-align:center;
+
+    padding:25px 15px;
+
+    border-top:
+    1px solid
+    rgba(99,216,255,0.12);
+
+    color:#6f8b9a;
+
+    font-size:0.85rem;
+}
+
+.footer-line{
+
+    margin-top:5px;
+
+    color:#526b79;
 }
 
 
@@ -327,7 +312,6 @@ h1{
         flex-direction:column;
 
         align-items:flex-start;
-
     }
 
     nav{
@@ -337,40 +321,31 @@ h1{
         overflow-x:auto;
 
         flex-wrap:nowrap;
-
-        padding-bottom:4px;
-
     }
 
     nav a{
 
         white-space:nowrap;
-
     }
 
     main{
 
         padding:
-        35px
-        12px
-        50px;
-
+        35px 10px 50px;
     }
 
-    .pdf-section{
+    .pdf-card{
 
         padding:10px;
 
         border-radius:16px;
-
     }
 
-    .pdf-header{
-
-        align-items:flex-start;
+    .pdf-top{
 
         flex-direction:column;
 
+        align-items:flex-start;
     }
 
     .pdf-button{
@@ -378,49 +353,16 @@ h1{
         width:100%;
 
         text-align:center;
-
     }
 
     .pdf-viewer{
 
-        height:72vh;
+        height:75vh;
 
         min-height:500px;
 
         border-radius:10px;
-
     }
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-    text-align:center;
-
-    border-top:
-    1px solid
-    rgba(99,216,255,0.12);
-
-    padding:
-    25px
-    15px;
-
-    color:#6f8b9a;
-
-    font-size:0.85rem;
-
-}
-
-.footer-line{
-
-    margin-top:5px;
-
-    color:#526b79;
 
 }
 
@@ -432,145 +374,143 @@ footer{
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
 
-    <div class="header-inner">
+<div class="header-inner">
 
-        <a
-            class="logo"
-            href="index.html">
-            H QUANTUM
-        </a>
+<a
+class="logo"
+href="index.html">
 
-        <nav>
+H QUANTUM
 
-            <a href="index.html">
-                خانه
-            </a>
+</a>
 
-            <a href="school.html">
-                مدرسه فیزیک
-            </a>
 
-            <a href="physics-10.html">
-                دهم
-            </a>
+<nav>
 
-            <a href="physics-11.html">
-                یازدهم
-            </a>
+<a href="index.html">
+خانه
+</a>
 
-            <a href="physics-12.html">
-                دوازدهم
-            </a>
+<a href="school.html">
+مدرسه فیزیک
+</a>
 
-            <a href="#">
-                🎙️ پادکست
-            </a>
+<a href="physics-10.html">
+دهم
+</a>
 
-        </nav>
+<a href="physics-11.html">
+یازدهم
+</a>
 
-    </div>
+<a href="physics-12.html">
+دوازدهم
+</a>
+
+</nav>
+
+</div>
 
 </header>
 
 
 
-<!-- =========================
-     MAIN
-========================= -->
-
 <main>
 
 
-    <section class="page-header">
+<section class="page-header">
 
-        <div class="eyebrow">
-            فیزیک دوازدهم تجربی • فصل اول
-        </div>
+<div class="eyebrow">
 
-        <h1>
-            شناخت حرکت
-        </h1>
+فیزیک دوازدهم تجربی • فصل اول
 
-        <p class="subtitle">
-            متن کامل آموزشی فصل اول
-        </p>
-
-    </section>
+</div>
 
 
+<h1>
 
-    <!-- =========================
-         PDF
-    ========================= -->
+شناخت حرکت
 
-    <section class="pdf-section">
-
-
-        <div class="pdf-header">
-
-            <div>
-
-                <div class="pdf-title">
-                    📖 متن کامل کتاب
-                </div>
-
-                <div class="pdf-description">
-                    برای مطالعه، PDF را مستقیماً در همین صفحه مشاهده کنید.
-                </div>
-
-            </div>
+</h1>
 
 
-            <a
-                class="pdf-button"
-                href="pdf/physics-12-experimental-chapter-1-motion.pdf"
-                target="_blank">
+<p class="subtitle">
 
-                باز کردن PDF
+متن کامل آموزشی فصل اول
 
-            </a>
+</p>
 
-        </div>
+</section>
 
 
 
-        <!-- PDF VIEWER -->
-
-        <iframe
-
-            class="pdf-viewer"
-
-            src="pdf/physics-12-experimental-chapter-1-motion.pdf"
-
-            title="متن کامل فصل اول فیزیک دوازدهم تجربی">
-
-        </iframe>
+<section class="pdf-card">
 
 
-    </section>
+<div class="pdf-top">
+
+<div>
+
+<div class="pdf-title">
+
+📖 متن کامل فصل اول
+
+</div>
+
+<div class="pdf-info">
+
+مطالعه مستقیم فایل PDF
+
+</div>
+
+</div>
+
+
+<a
+
+class="pdf-button"
+
+href="physics-12-experimental-chapter-1-motion.pdf"
+
+target="_blank">
+
+باز کردن PDF
+
+</a>
+
+</div>
+
+
+
+<iframe
+
+class="pdf-viewer"
+
+src="physics-12-experimental-chapter-1-motion.pdf"
+
+title="متن کامل فصل اول فیزیک دوازدهم تجربی">
+
+</iframe>
+
+
+</section>
 
 
 </main>
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
 
-    © 2026 — H Quantum
+© 2026 — H Quantum
 
-    <div class="footer-line">
-        Physics • Science • Wonder
-    </div>
+<div class="footer-line">
+
+Physics • Science • Wonder
+
+</div>
 
 </footer>
 
