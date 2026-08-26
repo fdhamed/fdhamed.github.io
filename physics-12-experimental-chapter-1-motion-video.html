@@ -8,369 +8,369 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>ویدئو | حرکت | فیزیک دوازدهم تجربی | H Quantum</title>
+<title>شناخت حرکت | ویدئو آموزشی | فیزیک دوازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-      content="ویدئوی آموزشی فصل اول فیزیک دوازدهم رشته علوم تجربی؛ حرکت در H Quantum.">
+      content="ویدئوی آموزشی شناخت حرکت، فصل اول فیزیک دوازدهم تجربی در H Quantum.">
 
 <style>
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+/* =========================
+   RESET
+========================= */
 
-html{
-scroll-behavior:smooth;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-font-family:Tahoma,Arial,sans-serif;
-background:#07111f;
-color:#f4f7fb;
-line-height:1.9;
+
+    font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
+    background:#07111f;
+
+    color:#eaf7ff;
+
+    line-height:1.9;
+
+    min-height:100vh;
 }
 
-a{
-text-decoration:none;
-color:inherit;
-}
+
+/* =========================
+   HEADER
+========================= */
 
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(7,17,31,0.94);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(255,255,255,0.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(7,17,31,0.96);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:
+    1px solid
+    rgba(99,216,255,0.18);
 }
 
-.nav{
-max-width:1100px;
-margin:auto;
-padding:16px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+
+.header-inner{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:14px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
 }
+
 
 .logo{
-font-size:24px;
-font-weight:bold;
-letter-spacing:2px;
+
+    color:#63d8ff;
+
+    text-decoration:none;
+
+    font-size:1.25rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
 }
 
-.logo span{
-color:#63d8ff;
+
+nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
 }
 
-.nav-links{
-display:flex;
-gap:18px;
-font-size:14px;
-color:#cbd5e1;
-flex-wrap:wrap;
-justify-content:center;
+
+nav a{
+
+    color:#b9d9e8;
+
+    text-decoration:none;
+
+    font-size:0.9rem;
+
+    transition:0.2s;
 }
 
-.nav-links a{
-transition:0.3s;
+
+nav a:hover{
+
+    color:#63d8ff;
 }
 
-.nav-links a:hover{
-color:#63d8ff;
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:
+    50px 20px 70px;
 }
 
-.hero{
-max-width:1000px;
-margin:auto;
-padding:80px 20px 60px;
-text-align:center;
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
 }
 
-.badge{
-display:inline-block;
-padding:7px 18px;
-border:1px solid rgba(99,216,255,0.35);
-border-radius:30px;
-color:#63d8ff;
-font-size:14px;
-margin-bottom:22px;
+
+.eyebrow{
+
+    color:#63d8ff;
+
+    font-size:0.95rem;
+
+    margin-bottom:8px;
 }
 
-.hero h1{
-font-size:clamp(34px,8vw,60px);
-line-height:1.4;
-margin-bottom:15px;
+
+h1{
+
+    color:#ffffff;
+
+    font-size:
+    clamp(2rem,5vw,3rem);
+
+    margin-bottom:8px;
 }
 
-.hero h1 span{
-color:#63d8ff;
+
+.subtitle{
+
+    color:#a9c4d3;
+
+    font-size:1rem;
 }
 
-.hero h2{
-font-size:clamp(19px,5vw,30px);
-font-weight:normal;
-margin-bottom:20px;
+
+/* =========================
+   VIDEO CARD
+========================= */
+
+.video-card{
+
+    background:
+    rgba(255,255,255,0.025);
+
+    border:
+    1px solid
+    rgba(99,216,255,0.20);
+
+    border-radius:20px;
+
+    padding:18px;
+
+    box-shadow:
+    0 15px 45px
+    rgba(0,0,0,0.25);
 }
 
-.hero p{
-max-width:760px;
-margin:auto;
-color:#aebdce;
-font-size:17px;
+
+/* =========================
+   VIDEO TITLE
+========================= */
+
+.video-title{
+
+    color:#ffffff;
+
+    font-size:1.15rem;
+
+    font-weight:bold;
+
+    margin-bottom:5px;
 }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:55px 20px;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:35px;
-}
-
-.section-title h2{
-font-size:30px;
-margin-bottom:10px;
-}
-
-.section-title p{
-color:#9eafc2;
-font-size:15px;
-}
-
-.video-box{
-max-width:950px;
-margin:auto;
-padding:30px;
-background:#0a1828;
-border:1px solid rgba(99,216,255,0.12);
-border-radius:22px;
-text-align:center;
-}
-
-.video-icon{
-font-size:60px;
-margin-bottom:15px;
-}
-
-.video-box h2{
-font-size:27px;
-margin-bottom:12px;
-color:#63d8ff;
-}
-
-.video-box p{
-color:#aebdce;
-font-size:15px;
-margin-bottom:25px;
-}
-
-.video-placeholder{
-width:100%;
-aspect-ratio:16/9;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-gap:12px;
-background:#050d18;
-border:1px dashed rgba(99,216,255,0.3);
-border-radius:16px;
-color:#8191a4;
-font-size:15px;
-}
-
-.video-placeholder .play{
-font-size:55px;
-}
 
 .video-info{
-max-width:800px;
-margin:25px auto 0;
-padding:20px;
-background:#07111f;
-border-radius:14px;
-color:#aebdce;
-font-size:14px;
+
+    color:#8fa9b8;
+
+    font-size:0.85rem;
+
+    margin-bottom:18px;
 }
 
-.content-box{
-max-width:900px;
-margin:auto;
-padding:35px 30px;
-background:#0a1828;
-border:1px solid rgba(99,216,255,0.12);
-border-radius:22px;
-text-align:right;
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16 / 9;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    background:#000;
 }
 
-.content-box h2{
-font-size:27px;
-color:#63d8ff;
-margin-bottom:18px;
+
+.video-wrapper iframe{
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
 }
 
-.content-box h3{
-font-size:21px;
-color:#f4f7fb;
-margin-top:30px;
-margin-bottom:12px;
+
+/* =========================
+   APARAT LINK
+========================= */
+
+.aparat-link{
+
+    display:block;
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#63d8ff;
+
+    text-decoration:none;
+
+    font-size:0.9rem;
 }
 
-.content-box p{
-color:#cbd5e1;
-font-size:15px;
-margin-bottom:20px;
+
+.aparat-link:hover{
+
+    text-decoration:underline;
 }
 
-.note{
-margin:25px 0;
-padding:20px;
-background:#07111f;
-border-right:4px solid #63d8ff;
-border-radius:12px;
-color:#aebdce;
-font-size:14px;
-}
 
-.navigation{
-max-width:900px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.nav-card{
-padding:20px;
-background:#0c1b2c;
-border:1px solid rgba(255,255,255,0.08);
-border-radius:18px;
-text-align:center;
-color:#63d8ff;
-transition:0.3s;
-}
-
-.nav-card:hover{
-border-color:rgba(99,216,255,0.5);
-transform:translateY(-4px);
-}
-
-.nav-card small{
-display:block;
-color:#8191a4;
-font-size:12px;
-margin-bottom:5px;
-}
-
-.back{
-text-align:center;
-padding:20px 20px 80px;
-}
-
-.back-button{
-display:inline-block;
-padding:12px 25px;
-background:#10243a;
-border:1px solid rgba(255,255,255,0.12);
-border-radius:10px;
-color:#63d8ff;
-font-weight:bold;
-}
-
-.back-button:hover{
-border-color:#63d8ff;
-}
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-border-top:1px solid rgba(255,255,255,0.08);
-padding:35px 20px;
-text-align:center;
-color:#8191a4;
+
+    text-align:center;
+
+    padding:
+    25px 15px;
+
+    border-top:
+    1px solid
+    rgba(99,216,255,0.12);
+
+    color:#6f8b9a;
+
+    font-size:0.85rem;
 }
 
-footer strong{
-color:#63d8ff;
+
+.footer-line{
+
+    margin-top:5px;
+
+    color:#526b79;
 }
 
-@media(max-width:750px){
 
-.nav{
-flex-direction:column;
-gap:10px;
-}
+/* =========================
+   MOBILE
+========================= */
 
-.nav-links{
-gap:11px;
-font-size:12px;
-}
+@media(max-width:700px){
 
-.hero{
-padding:55px 16px 45px;
-}
+    .header-inner{
 
-.hero p{
-font-size:14px;
-}
+        flex-direction:column;
 
-.video-box{
-padding:20px 15px;
-}
+        align-items:flex-start;
+    }
 
-.video-box h2{
-font-size:23px;
-}
 
-.video-placeholder{
-border-radius:12px;
-}
+    nav{
 
-.video-placeholder .play{
-font-size:45px;
-}
+        width:100%;
 
-.content-box{
-padding:30px 18px;
-}
+        overflow-x:auto;
 
-.content-box h2{
-font-size:23px;
-}
+        flex-wrap:nowrap;
 
-.content-box h3{
-font-size:18px;
-}
+        padding-bottom:4px;
+    }
 
-.content-box p{
-font-size:14px;
-}
 
-.navigation{
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-}
+    nav a{
 
-.nav-card{
-padding:16px 8px;
-font-size:12px;
-}
+        white-space:nowrap;
+    }
 
-}
 
-@media(max-width:400px){
+    main{
 
-.hero h1{
-font-size:30px;
-}
+        padding:
+        35px 10px 50px;
+    }
 
-.hero h2{
-font-size:18px;
-}
+
+    .video-card{
+
+        padding:10px;
+
+        border-radius:16px;
+    }
+
+
+    .video-wrapper{
+
+        border-radius:10px;
+    }
 
 }
 
@@ -378,20 +378,29 @@ font-size:18px;
 
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-<nav class="nav">
+<div class="header-inner">
 
-<a href="index.html"
-   class="logo">
 
-H <span>QUANTUM</span>
+<a
+class="logo"
+href="index.html">
+
+H QUANTUM
 
 </a>
 
-<div class="nav-links">
+
+<nav>
 
 <a href="index.html">
 خانه
@@ -413,303 +422,126 @@ H <span>QUANTUM</span>
 دوازدهم
 </a>
 
-<a href="podcast.html">
-🎙️ پادکست
-</a>
+</nav>
+
 
 </div>
-
-</nav>
 
 </header>
 
 
+
+<!-- =========================
+     MAIN
+========================= -->
+
 <main>
 
-<section class="hero">
 
-<div class="badge">
+<section class="page-header">
+
+
+<div class="eyebrow">
 
 فیزیک دوازدهم تجربی • فصل اول
 
 </div>
 
+
 <h1>
 
-<span>ویدئو</span>
+شناخت حرکت
 
 </h1>
 
-<h2>
 
-حرکت
+<p class="subtitle">
 
-</h2>
-
-<p>
-
-آموزش تصویری مفاهیم بنیادی حرکت،
-موقعیت، مسیر، مسافت، جابه‌جایی،
-تندی و سرعت.
+ویدئوی آموزشی
 
 </p>
+
 
 </section>
 
 
-<section>
 
-<div class="section-title">
+<!-- =========================
+     VIDEO
+========================= -->
 
-<h2>
-🎬 ویدئوی آموزشی
-</h2>
-
-<p>
-نسخه تصویری فصل اول
-</p>
-
-</div>
-
-<div class="video-box">
-
-<div class="video-icon">
-🎬
-</div>
-
-<h2>
-حرکت
-</h2>
-
-<p>
-ویدئوی آموزشی فصل اول فیزیک دوازدهم تجربی
-</p>
+<section class="video-card">
 
 
-<div class="video-placeholder">
+<div class="video-title">
 
-<div class="play">
-▶️
-</div>
-
-<div>
-ویدئوی این بخش پس از آماده‌سازی
-در این قسمت قرار خواهد گرفت.
-</div>
+🎬 ویدئوی آموزشی شناخت حرکت
 
 </div>
 
 
 <div class="video-info">
 
-📌 این قسمت برای نمایش ویدئوی آموزشی طراحی شده است.
-
-در صورت استفاده از سرویس میزبانی ویدئو،
-ویدئو در همین قسمت نمایش داده خواهد شد.
+این ویدئو از کانال H Quantum در آپارات پخش می‌شود.
 
 </div>
 
-</div>
-
-</section>
 
 
-<section>
-
-<div class="section-title">
-
-<h2>
-📺 درباره ویدئو
-</h2>
-
-<p>
-ساختار محتوای آموزشی
-</p>
-
-</div>
-
-<div class="content-box">
-
-<h2>
-موضوعات ویدئو
-</h2>
-
-<h3>
-حرکت و دستگاه مرجع
-</h3>
-
-<p>
-
-در ابتدای ویدئو مفهوم حرکت و اهمیت
-انتخاب دستگاه مرجع بررسی می‌شود.
-
-</p>
+<div class="video-wrapper">
 
 
-<h3>
-موقعیت و مسیر
-</h3>
+<iframe
 
-<p>
+src="https://www.aparat.com/video/video/embed/videohash/otde7ug/vt/frame"
 
-سپس با استفاده از مثال‌های تصویری،
-موقعیت جسم و مسیر حرکت آن توضیح داده می‌شود.
+allowfullscreen
 
-</p>
+title="ویدئوی آموزشی شناخت حرکت">
 
+</iframe>
 
-<h3>
-مسافت و جابه‌جایی
-</h3>
-
-<p>
-
-در این قسمت تفاوت مسافت و جابه‌جایی
-با استفاده از مثال‌های ساده و قابل مشاهده
-بررسی خواهد شد.
-
-</p>
-
-
-<h3>
-تندی و سرعت
-</h3>
-
-<p>
-
-در پایان، مفهوم تندی و سرعت و تفاوت
-میان این دو کمیت معرفی می‌شود.
-
-</p>
-
-
-<div class="note">
-
-🎬 ویدئوی نهایی می‌تواند شامل توضیح مدرس،
-انیمیشن، نمودار و مثال‌های حل‌شده باشد.
 
 </div>
 
-</div>
-
-</section>
 
 
-<section>
+<a
 
-<div class="section-title">
+class="aparat-link"
 
-<h2>
-📋 اطلاعات ویدئو
-</h2>
+href="https://www.aparat.com/v/otde7ug"
 
-<p>
-مشخصات محتوای تصویری
-</p>
+target="_blank">
 
-</div>
-
-<div class="video-box">
-
-<p>
-<strong>عنوان:</strong>
-حرکت
-</p>
-
-<p>
-<strong>درس:</strong>
-فیزیک دوازدهم رشته علوم تجربی
-</p>
-
-<p>
-<strong>فصل:</strong>
-فصل اول
-</p>
-
-<p>
-<strong>نوع محتوا:</strong>
-ویدئوی آموزشی
-</p>
-
-<p>
-<strong>وضعیت:</strong>
-در حال آماده‌سازی
-</p>
-
-</div>
-
-</section>
-
-
-<section>
-
-<div class="section-title">
-
-<h2>
-ادامه مسیر
-</h2>
-
-<p>
-حرکت میان بخش‌های فصل اول
-</p>
-
-</div>
-
-<div class="navigation">
-
-<a href="physics-12-experimental-chapter-1-motion.html"
-   class="nav-card">
-
-<small>
-بازگشت
-</small>
-
-← صفحه اصلی فصل
+مشاهده ویدئو در آپارات
 
 </a>
 
-<a href="physics-12-experimental-chapter-1-motion-text.html"
-   class="nav-card">
-
-<small>
-مطالعه
-</small>
-
-📖 متن آموزشی →
-
-</a>
-
-</div>
 
 </section>
 
-
-<section class="back">
-
-<a href="physics-12-experimental.html"
-   class="back-button">
-
-← بازگشت به فیزیک دوازدهم تجربی
-
-</a>
-
-</section>
 
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-<p>
-© 2026 —
-<strong>H Quantum</strong>
-</p>
+© 2026 — H Quantum
 
-<p>
+<div class="footer-line">
+
 Physics • Science • Wonder
-</p>
+
+</div>
 
 </footer>
+
 
 </body>
 
