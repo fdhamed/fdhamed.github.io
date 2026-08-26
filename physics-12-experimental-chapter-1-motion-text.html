@@ -6,14 +6,18 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
 <title>شناخت حرکت | متن آموزشی | فیزیک دوازدهم تجربی | H Quantum</title>
 
 <meta name="description"
-content="متن کامل فصل اول فیزیک دوازدهم تجربی، شناخت حرکت، در H Quantum.">
+      content="متن کامل فصل اول فیزیک دوازدهم تجربی، شناخت حرکت، در H Quantum.">
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 *{
     box-sizing:border-box;
@@ -32,6 +36,8 @@ body{
     color:#eaf7ff;
 
     line-height:1.9;
+
+    min-height:100vh;
 }
 
 
@@ -102,6 +108,8 @@ nav a{
     text-decoration:none;
 
     font-size:0.9rem;
+
+    transition:0.2s;
 }
 
 nav a:hover{
@@ -125,7 +133,7 @@ main{
 
 
 /* =========================
-   TITLE
+   PAGE HEADER
 ========================= */
 
 .page-header{
@@ -186,7 +194,7 @@ h1{
 
 
 /* =========================
-   PDF TOP
+   PDF HEADER
 ========================= */
 
 .pdf-top{
@@ -224,7 +232,7 @@ h1{
 
 
 /* =========================
-   BUTTON
+   PDF BUTTON
 ========================= */
 
 .pdf-button{
@@ -244,11 +252,15 @@ h1{
     font-weight:bold;
 
     white-space:nowrap;
+
+    transition:0.2s;
 }
 
 .pdf-button:hover{
 
     opacity:0.9;
+
+    transform:translateY(-1px);
 }
 
 
@@ -321,6 +333,8 @@ footer{
         overflow-x:auto;
 
         flex-wrap:nowrap;
+
+        padding-bottom:4px;
     }
 
     nav a{
@@ -374,9 +388,14 @@ footer{
 <body>
 
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
 <div class="header-inner">
+
 
 <a
 class="logo"
@@ -411,16 +430,22 @@ H QUANTUM
 
 </nav>
 
+
 </div>
 
 </header>
 
 
 
+<!-- =========================
+     MAIN
+========================= -->
+
 <main>
 
 
 <section class="page-header">
+
 
 <div class="eyebrow">
 
@@ -442,16 +467,23 @@ H QUANTUM
 
 </p>
 
+
 </section>
 
 
+
+<!-- =========================
+     PDF
+========================= -->
 
 <section class="pdf-card">
 
 
 <div class="pdf-top">
 
+
 <div>
+
 
 <div class="pdf-title">
 
@@ -459,20 +491,23 @@ H QUANTUM
 
 </div>
 
+
 <div class="pdf-info">
 
 مطالعه مستقیم فایل PDF
 
 </div>
 
+
 </div>
+
 
 
 <a
 
 class="pdf-button"
 
-href="physics-12-experimental-chapter-1-motion.pdf"
+href="physics-12-experimental-chapter-1-motion.pdf.pdf"
 
 target="_blank">
 
@@ -480,15 +515,20 @@ target="_blank">
 
 </a>
 
+
 </div>
 
 
+
+<!-- =========================
+     PDF VIEWER
+========================= -->
 
 <iframe
 
 class="pdf-viewer"
 
-src="physics-12-experimental-chapter-1-motion.pdf"
+src="physics-12-experimental-chapter-1-motion.pdf.pdf"
 
 title="متن کامل فصل اول فیزیک دوازدهم تجربی">
 
@@ -501,6 +541,10 @@ title="متن کامل فصل اول فیزیک دوازدهم تجربی">
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
